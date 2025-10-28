@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo: Actividad Económica | SOFOMES.COM</title>
+  <link rel="stylesheet" href="../assets/css/main-v2.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="container">
+      <div class="nav-brand"><a href="../index-new.html">SOFOMES.COM</a></div>
+      <div class="nav-menu">
+        <a href="../index-new.html">Inicio</a>
+        <a href="../lista-sofomes-mexico.html">Directorio</a>
+        <a href="../index-new.html#catalogos">Catálogos</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero" style="padding: 3rem 0;">
+    <div class="container">
+      <h1 class="hero-title" style="text-align: center; font-size: 2.5rem;">
+        📊 Actividad Económica RIPS F36
+      </h1>
+      <p class="hero-subtitle" style="text-align: center;">
+        <span id="total-count">1,263</span> actividades según SCIAN adaptado a CNBV
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="alert alert-info">
+        <strong>📋 Catálogo oficial CNBV</strong><br>
+        Clasificación de actividades económicas de clientes basada en el Sistema de Clasificación Industrial de América del Norte (SCIAN) adaptado para reportes RIPS F36.
+      </div>
+
+      <!-- Search -->
+      <div style="margin: 2rem 0;">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="🔍 Buscar por actividad o clave..."
+          style="width: 100%; padding: 1rem; border: 1px solid var(--neutral-300); border-radius: var(--border-radius); font-size: 1rem;"
+        />
+      </div>
+
+      <!-- Results info -->
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; padding: 1rem; background: var(--primary-50); border-radius: var(--border-radius);">
+        <div style="font-weight: 700; color: var(--primary-500);">
+          Mostrando <span id="showing-count">0</span> de <span id="total-results">0</span> actividades
+        </div>
+        <button class="btn btn-sm btn-outline" onclick="exportToCSV()">📥 Exportar CSV</button>
+      </div>
+
+      <div class="directory-table">
+        <table id="catalog-table">
+          <thead>
+            <tr>
+              <th style="width: 120px; text-align: center;">Clave</th>
+              <th>Actividad Económica</th>
+            </tr>
+          </thead>
+          <tbody id="table-body">
+            <tr>
+              <td colspan="2" style="text-align: center; padding: 2rem;">
+                <div style="display: inline-block; width: 40px; height: 40px; border: 4px solid #E5E7EB; border-top-color: #042c64; border-radius: 50%; animation: spin 1s linear infinite;"></div>
+                <p style="margin-top: 1rem;">Cargando 1,263 actividades...</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-copyright">
+        <p>© <span class="current-year"></span> SOFOMES.COM | <a href="../index-new.html">Volver a inicio</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    let allData = [];
+    let filteredData = [];
+
+    async function loadCatalog() {
+      try {
+        const response = await fetch('../catalogs/json/actividad-economica.json');
+        const data = await response.json();
+
+        allData = data;
+        filteredData = data;
+
+        document.getElementById('total-count').textContent = data.length.toLocaleString('es-MX');
+        document.getElementById('total-results').textContent = data.length.toLocaleString('es-MX');
+
+        renderTable();
+
+        console.log(`✅ ${data.length} actividades económicas cargadas`);
+
+      } catch (error) {
+        console.error('Error cargando catálogo:', error);
+        document.getElementById('table-body').innerHTML = `
+          <tr>
+            <td colspan="2" style="text-align: center; padding: 2rem; color: #EF4444;">
+              ❌ Error cargando catálogo: ${error.message}
+            </td>
+          </tr>
+        `;
+      }
+    }
+
+    function renderTable() {
+      const tbody = document.getElementById('table-body');
+      document.getElementById('showing-count').textContent = filteredData.length.toLocaleString('es-MX');
+
+      if (filteredData.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="2" style="text-align: center; padding: 2rem;">🔍 No se encontraron resultados</td></tr>';
+        return;
+      }
+
+      tbody.innerHTML = filteredData.map(item => {
+        const clave = item['CLAVE ACTIVIDAD ECONOMICA'];
+        const actividad = item['ACTIVIDAD ECONOMICA'];
+
+        return `
+          <tr>
+            <td style="text-align: center; font-weight: 700; color: var(--primary-500); font-family: monospace;">${clave}</td>
+            <td>${actividad}</td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    function applySearch() {
+      const searchTerm = document.getElementById('search-input').value.toLowerCase();
+
+      if (!searchTerm) {
+        filteredData = allData;
+      } else {
+        filteredData = allData.filter(item => {
+          const clave = String(item['CLAVE ACTIVIDAD ECONOMICA']).toLowerCase();
+          const actividad = item['ACTIVIDAD ECONOMICA'].toLowerCase();
+          return clave.includes(searchTerm) || actividad.includes(searchTerm);
+        });
+      }
+
+      renderTable();
+    }
+
+    function exportToCSV() {
+      const headers = ['Clave', 'Actividad Económica'];
+      const rows = filteredData.map(item => [
+        item['CLAVE ACTIVIDAD ECONOMICA'],
+        `"${item['ACTIVIDAD ECONOMICA']}"`
+      ]);
+
+      const csv = [
+        headers.join(','),
+        ...rows.map(r => r.join(','))
+      ].join('\n');
+
+      const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(blob);
+      link.download = `actividad-economica-${new Date().toISOString().split('T')[0]}.csv`;
+      link.click();
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      loadCatalog();
+      document.getElementById('search-input').addEventListener('input', applySearch);
+    });
+  </script>
+
+  <style>
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .directory-table {
+      background: white;
+      border-radius: var(--border-radius-lg);
+      box-shadow: var(--shadow-lg);
+      overflow: hidden;
+    }
+
+    .directory-table table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .directory-table thead {
+      background: var(--primary-500);
+      color: white;
+      position: sticky;
+      top: 0;
+    }
+
+    .directory-table th {
+      padding: 1rem;
+      text-align: left;
+      font-weight: 600;
+    }
+
+    .directory-table td {
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--neutral-200);
+      font-size: 0.875rem;
+    }
+
+    .directory-table tbody tr:hover {
+      background: var(--neutral-50);
+    }
+  </style>
+
+  <!-- Dynamic Year Update Script -->
+  <script>
+    (function() {
+      const currentYear = new Date().getFullYear();
+      document.querySelectorAll('.current-year').forEach(el => {
+        el.textContent = currentYear;
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo: Tipos de Reporte | SOFOMES.COM</title>
+  <link rel="stylesheet" href="../assets/css/main-v2.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="container">
+      <div class="nav-brand"><a href="../index-new.html">SOFOMES.COM</a></div>
+      <div class="nav-menu">
+        <a href="../index-new.html">Inicio</a>
+        <a href="../lista-sofomes-mexico.html">Directorio</a>
+        <a href="../index-new.html#catalogos">Catálogos</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero" style="padding: 3rem 0;">
+    <div class="container">
+      <h1 class="hero-title" style="text-align: center; font-size: 2.5rem;">
+        🚨 Tipos de Reporte RIPS F36
+      </h1>
+      <p class="hero-subtitle" style="text-align: center;">
+        Catálogo oficial CNBV para clasificación de reportes regulatorios
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="alert alert-info">
+        <strong>📋 Catálogo oficial</strong><br>
+        Este catálogo contiene los tipos de reporte que las SOFOMes deben utilizar para clasificar sus operaciones según LFPIORPI.
+      </div>
+
+      <div class="directory-table" style="margin-top: 2rem;">
+        <table id="catalog-table">
+          <thead>
+            <tr>
+              <th>Clave</th>
+              <th>Tipo de Reporte</th>
+              <th>Descripción</th>
+            </tr>
+          </thead>
+          <tbody id="table-body">
+            <tr>
+              <td colspan="3" style="text-align: center; padding: 2rem;">
+                <div style="display: inline-block; width: 40px; height: 40px; border: 4px solid #E5E7EB; border-top-color: #042c64; border-radius: 50%; animation: spin 1s linear infinite;"></div>
+                <p style="margin-top: 1rem;">Cargando...</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div style="margin-top: 2rem; padding: 1.5rem; background: var(--neutral-50); border-radius: var(--border-radius-lg);">
+        <h3 style="margin-bottom: 1rem;">Definiciones</h3>
+        <dl>
+          <dt style="font-weight: 700; margin-top: 1rem;">Operaciones Relevantes:</dt>
+          <dd>Operaciones que superan el umbral establecido por la UIF (actualmente $206,841.15 pesos o equivalente).</dd>
+
+          <dt style="font-weight: 700; margin-top: 1rem;">Operaciones Inusuales:</dt>
+          <dd>Operaciones que no concuerdan con el perfil transaccional del cliente o carecen de justificación económica o legal aparente.</dd>
+
+          <dt style="font-weight: 700; margin-top: 1rem;">Operaciones Preocupantes:</dt>
+          <dd>Operaciones que pudieran favorecer, prestar ayuda, auxilio o cooperación de cualquier especie para la comisión de lavado de dinero o financiamiento al terrorismo.</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-copyright">
+        <p>© <span class="current-year"></span> SOFOMES.COM | <a href="../index-new.html">Volver a inicio</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    async function loadCatalog() {
+      try {
+        const response = await fetch('../catalogs/json/tipo-reporte.json');
+        const data = await response.json();
+
+        const tbody = document.getElementById('table-body');
+
+        if (data.length === 0) {
+          tbody.innerHTML = '<tr><td colspan="3">No hay datos disponibles</td></tr>';
+          return;
+        }
+
+        tbody.innerHTML = data.map(item => {
+          const clave = item['CLAVE TIPO REPORTE'];
+          const tipo = item['TIPO DE REPORTE'];
+
+          return `
+            <tr>
+              <td style="text-align: center; font-weight: 700; color: var(--primary-500);">${clave}</td>
+              <td style="font-weight: 600;">${tipo}</td>
+              <td>${getDescription(clave)}</td>
+            </tr>
+          `;
+        }).join('');
+
+        console.log(`✅ ${data.length} tipos de reporte cargados`);
+
+      } catch (error) {
+        console.error('Error cargando catálogo:', error);
+        document.getElementById('table-body').innerHTML = `
+          <tr>
+            <td colspan="3" style="text-align: center; padding: 2rem; color: #EF4444;">
+              ❌ Error cargando catálogo: ${error.message}
+            </td>
+          </tr>
+        `;
+      }
+    }
+
+    function getDescription(clave) {
+      const descriptions = {
+        1: 'Operaciones que superan $206,841.15 MXN o equivalente',
+        2: 'Operaciones que no concuerdan con el perfil del cliente',
+        3: 'Operaciones sospechosas de lavado de dinero o financiamiento al terrorismo'
+      };
+      return descriptions[clave] || '-';
+    }
+
+    document.addEventListener('DOMContentLoaded', loadCatalog);
+  </script>
+
+  <style>
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    dl dt {
+      font-weight: 700;
+      color: var(--primary-900);
+      margin-top: 1rem;
+    }
+
+    dl dd {
+      margin-left: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: var(--neutral-700);
+    }
+
+    .directory-table {
+      background: white;
+      border-radius: var(--border-radius-lg);
+      box-shadow: var(--shadow-lg);
+      overflow: hidden;
+    }
+
+    .directory-table table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .directory-table thead {
+      background: var(--primary-500);
+      color: white;
+    }
+
+    .directory-table th {
+      padding: 1rem;
+      text-align: left;
+      font-weight: 600;
+    }
+
+    .directory-table td {
+      padding: 1rem;
+      border-bottom: 1px solid var(--neutral-200);
+    }
+
+    .directory-table tbody tr:hover {
+      background: var(--neutral-50);
+    }
+  </style>
+
+  <!-- Dynamic Year Update Script -->
+  <script>
+    (function() {
+      const currentYear = new Date().getFullYear();
+      document.querySelectorAll('.current-year').forEach(el => {
+        el.textContent = currentYear;
+      });
+    })();
+  </script>
+</body>
+</html>

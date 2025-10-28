@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- SEO Meta Tags -->
-  <title>SOFOMES en México: Financiamiento PyMEs y Constitución SOFOM ENR 2025</title>
+  <title>SOFOMES en México: Financiamiento PyMEs y Constitución SOFOM ENR <span id="year-title"></span></title>
   <meta name="description" content="Guía completa sobre SOFOMEs en México. Financiamiento para PyMEs, constitución de SOFOM ENR en 8-12 semanas. Alternativa al banco tradicional con 70% más aprobaciones.">
   <meta name="keywords" content="SOFOM, SOFOM ENR, financiamiento pymes, constituir sofom, crédito mexico, alternativa banco">
 
@@ -19,7 +19,7 @@
 
   <!-- Open Graph -->
   <meta property="og:title" content="SOFOMES en México: La Alternativa de Financiamiento para PyMEs">
-  <meta property="og:description" content="Obtén financiamiento que el banco rechazó o constituye tu SOFOM ENR en 8-12 semanas. Guía completa 2025.">
+  <meta property="og:description" content="Obtén financiamiento que el banco rechazó o constituye tu SOFOM ENR en 8-12 semanas. Guía completa." id="og-description-meta">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://sofomes.com/">
   <meta property="og:image" content="https://sofomes.com/assets/img/main.jpeg">
@@ -853,7 +853,7 @@
 
       <div class="footer-bottom">
         <p>
-          © 2025 SOFOMES.COM. Todos los derechos reservados. |
+          © <span class="current-year"></span> SOFOMES.COM. Todos los derechos reservados. |
           <a href="/privacidad" style="color: inherit; text-decoration: underline">Aviso de Privacidad</a> |
           <a href="/terminos" style="color: inherit; text-decoration: underline">Términos y Condiciones</a>
         </p>
@@ -966,5 +966,28 @@
   <!-- Defer JavaScript -->
   <script src="assets/js/personalization.js" defer></script>
   <script src="assets/js/main.js" defer></script>
+
+  <!-- Dynamic Year Update Script -->
+  <script>
+    (function() {
+      const currentYear = new Date().getFullYear();
+
+      // Update all elements with class 'current-year'
+      document.querySelectorAll('.current-year').forEach(el => {
+        el.textContent = currentYear;
+      });
+
+      // Update document title
+      document.title = document.title.replace(/<span[^>]*><\/span>/, currentYear);
+
+      // Update OG description meta tag
+      const ogDescMeta = document.getElementById('og-description-meta');
+      if (ogDescMeta) {
+        ogDescMeta.setAttribute('content',
+          ogDescMeta.getAttribute('content') + ' ' + currentYear + '.'
+        );
+      }
+    })();
+  </script>
 </body>
 </html>

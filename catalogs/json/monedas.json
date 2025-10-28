@@ -1,0 +1,762 @@
+[
+  {
+    "CLAVE MONEDA": "AED",
+    "MONEDA": "DIRHAM"
+  },
+  {
+    "CLAVE MONEDA": "ALL",
+    "MONEDA": "LEK"
+  },
+  {
+    "CLAVE MONEDA": "ANG",
+    "MONEDA": "FLORIN"
+  },
+  {
+    "CLAVE MONEDA": "AUD",
+    "MONEDA": "DOLAR"
+  },
+  {
+    "CLAVE MONEDA": "BBD",
+    "MONEDA": "DOLAR"
+  },
+  {
+    "CLAVE MONEDA": "BHD",
+    "MONEDA": "DINAR"
+  },
+  {
+    "CLAVE MONEDA": "BMD",
+    "MONEDA": "DOLAR"
+  },
+  {
+    "CLAVE MONEDA": "BSD",
+    "MONEDA": "DOLAR"
+  },
+  {
+    "CLAVE MONEDA": "BZD",
+    "MONEDA": "DOLAR"
+  },
+  {
+    "CLAVE MONEDA": "CAD",
+    "MONEDA": "DOLAR"
+  },
+  {
+    "CLAVE MONEDA": "CHF",
+    "MONEDA": "FRANCO"
+  },
+  {
+    "CLAVE MONEDA": "CLP",
+    "MONEDA": "PESO"
+  },
+  {
+    "CLAVE MONEDA": "CNY",
+    "MONEDA": "YUAN"
+  },
+  {
+    "CLAVE MONEDA": "COP",
+    "MONEDA": "PESO"
+  },
+  {
+    "CLAVE MONEDA": "CRC",
+    "MONEDA": "COLON"
+  },
+  {
+    "CLAVE MONEDA": "CUP",
+    "MONEDA": "PESO"
+  },
+  {
+    "CLAVE MONEDA": "DKK",
+    "MONEDA": "CORONA"
+  },
+  {
+    "CLAVE MONEDA": "DOP",
+    "MONEDA": "PESO"
+  },
+  {
+    "CLAVE MONEDA": "DZD",
+    "MONEDA": "DINAR"
+  },
+  {
+    "CLAVE MONEDA": "EEK",
+    "MONEDA": "CORONA"
+  },
+  {
+    "CLAVE MONEDA": "EGP",
+    "MONEDA": "LIBRA"
+  },
+  {
+    "CLAVE MONEDA": "ETB",
+    "MONEDA": "BIRR"
+  },
+  {
+    "CLAVE MONEDA": "EUR",
+    "MONEDA": "EURO"
+  },
+  {
+    "CLAVE MONEDA": "FJD",
+    "MONEDA": "DOLAR"
+  },
+  {
+    "CLAVE MONEDA": "GYD",
+    "MONEDA": "DOLAR"
+  },
+  {
+    "CLAVE MONEDA": "HKD",
+    "MONEDA": "DOLAR"
+  },
+  {
+    "CLAVE MONEDA": "HNL",
+    "MONEDA": "LEMPIRA"
+  },
+  {
+    "CLAVE MONEDA": "HTG",
+    "MONEDA": "GOURDE"
+  },
+  {
+    "CLAVE MONEDA": "HUF",
+    "MONEDA": "FORINT"
+  },
+  {
+    "CLAVE MONEDA": "IDR",
+    "MONEDA": "RUPIA"
+  },
+  {
+    "CLAVE MONEDA": "ILS",
+    "MONEDA": "SHEKEL"
+  },
+  {
+    "CLAVE MONEDA": "INR",
+    "MONEDA": "RUPIA"
+  },
+  {
+    "CLAVE MONEDA": "IQD",
+    "MONEDA": "DINAR"
+  },
+  {
+    "CLAVE MONEDA": "IRR",
+    "MONEDA": "RIYAL"
+  },
+  {
+    "CLAVE MONEDA": "ISK",
+    "MONEDA": "CORONA"
+  },
+  {
+    "CLAVE MONEDA": "JMD",
+    "MONEDA": "DOLAR"
+  },
+  {
+    "CLAVE MONEDA": "JOD",
+    "MONEDA": "DINAR"
+  },
+  {
+    "CLAVE MONEDA": "JPY",
+    "MONEDA": "YEN"
+  },
+  {
+    "CLAVE MONEDA": "KES",
+    "MONEDA": "CHELIN"
+  },
+  {
+    "CLAVE MONEDA": "KPW",
+    "MONEDA": "WON"
+  },
+  {
+    "CLAVE MONEDA": "KRW",
+    "MONEDA": "WON"
+  },
+  {
+    "CLAVE MONEDA": "KWD",
+    "MONEDA": "DINAR"
+  },
+  {
+    "CLAVE MONEDA": "LBP",
+    "MONEDA": "LIBRA"
+  },
+  {
+    "CLAVE MONEDA": "LKR",
+    "MONEDA": "RUPIA"
+  },
+  {
+    "CLAVE MONEDA": "LYD",
+    "MONEDA": "DINAR"
+  },
+  {
+    "CLAVE MONEDA": "MAD",
+    "MONEDA": "DIRHAM"
+  },
+  {
+    "CLAVE MONEDA": "MYR",
+    "MONEDA": "RINGGIT"
+  },
+  {
+    "CLAVE MONEDA": "NGN",
+    "MONEDA": "NAIRA"
+  },
+  {
+    "CLAVE MONEDA": "NOK",
+    "MONEDA": "CORONA"
+  },
+  {
+    "CLAVE MONEDA": "NZD",
+    "MONEDA": "DOLAR"
+  },
+  {
+    "CLAVE MONEDA": "PAB",
+    "MONEDA": "BALBOA"
+  },
+  {
+    "CLAVE MONEDA": "PHP",
+    "MONEDA": "PESO"
+  },
+  {
+    "CLAVE MONEDA": "PKR",
+    "MONEDA": "RUPIA"
+  },
+  {
+    "CLAVE MONEDA": "PYG",
+    "MONEDA": "GUARANI"
+  },
+  {
+    "CLAVE MONEDA": "SAR",
+    "MONEDA": "RIYAL"
+  },
+  {
+    "CLAVE MONEDA": "SEK",
+    "MONEDA": "CORONA"
+  },
+  {
+    "CLAVE MONEDA": "SGD",
+    "MONEDA": "DOLAR"
+  },
+  {
+    "CLAVE MONEDA": "SVC",
+    "MONEDA": "COLON"
+  },
+  {
+    "CLAVE MONEDA": "SYP",
+    "MONEDA": "LIBRA"
+  },
+  {
+    "CLAVE MONEDA": "THB",
+    "MONEDA": "BAHT"
+  },
+  {
+    "CLAVE MONEDA": "TTD",
+    "MONEDA": "DOLAR"
+  },
+  {
+    "CLAVE MONEDA": "TWD",
+    "MONEDA": "DOLAR"
+  },
+  {
+    "CLAVE MONEDA": "TZS",
+    "MONEDA": "CHELIN"
+  },
+  {
+    "CLAVE MONEDA": "VND",
+    "MONEDA": "DONG"
+  },
+  {
+    "CLAVE MONEDA": "XDR",
+    "MONEDA": "DEG"
+  },
+  {
+    "CLAVE MONEDA": "XOF",
+    "MONEDA": "FRANCO"
+  },
+  {
+    "CLAVE MONEDA": "ZAR",
+    "MONEDA": "RAND"
+  },
+  {
+    "CLAVE MONEDA": "MXN",
+    "MONEDA": "MEXICAN PESO"
+  },
+  {
+    "CLAVE MONEDA": "USD",
+    "MONEDA": "US Dollar"
+  },
+  {
+    "CLAVE MONEDA": "MXA",
+    "MONEDA": "Azteca"
+  },
+  {
+    "CLAVE MONEDA": "MXC",
+    "MONEDA": "Centenario"
+  },
+  {
+    "CLAVE MONEDA": "MXH",
+    "MONEDA": "Hidalgo"
+  },
+  {
+    "CLAVE MONEDA": "MXB",
+    "MONEDA": "1/2 Hidalgo"
+  },
+  {
+    "CLAVE MONEDA": "MXD",
+    "MONEDA": "1/4 Hidalgo"
+  },
+  {
+    "CLAVE MONEDA": "MXE",
+    "MONEDA": "1/5 Hidalgo"
+  },
+  {
+    "CLAVE MONEDA": "MXU",
+    "MONEDA": "UDIS Gubernamentales"
+  },
+  {
+    "CLAVE MONEDA": "MXV",
+    "MONEDA": "Mexican Unidad de Inversion (UDI)"
+  },
+  {
+    "CLAVE MONEDA": "MXZ",
+    "MONEDA": "1 OZ Liberta"
+  },
+  {
+    "CLAVE MONEDA": "MXF",
+    "MONEDA": "1/2 OZ Libertad"
+  },
+  {
+    "CLAVE MONEDA": "MXG",
+    "MONEDA": "1/4 OZ Libertad"
+  },
+  {
+    "CLAVE MONEDA": "MXI",
+    "MONEDA": "1/10 OZ Libertad"
+  },
+  {
+    "CLAVE MONEDA": "MXJ",
+    "MONEDA": "1/20 OZ Libertad"
+  },
+  {
+    "CLAVE MONEDA": "USN",
+    "MONEDA": "US Dollar (Next day)"
+  },
+  {
+    "CLAVE MONEDA": "USS",
+    "MONEDA": "US Dollar (Same day)"
+  },
+  {
+    "CLAVE MONEDA": "AFN",
+    "MONEDA": "Afghani"
+  },
+  {
+    "CLAVE MONEDA": "AMD",
+    "MONEDA": "Armenian Dram"
+  },
+  {
+    "CLAVE MONEDA": "AOA",
+    "MONEDA": "Kwanza"
+  },
+  {
+    "CLAVE MONEDA": "ARS",
+    "MONEDA": "Argentine Peso"
+  },
+  {
+    "CLAVE MONEDA": "AWG",
+    "MONEDA": "Aruban Guilder"
+  },
+  {
+    "CLAVE MONEDA": "AZN",
+    "MONEDA": "Azerbaijanian Manat"
+  },
+  {
+    "CLAVE MONEDA": "BAM",
+    "MONEDA": "Convertible Marks"
+  },
+  {
+    "CLAVE MONEDA": "BDT",
+    "MONEDA": "Taka"
+  },
+  {
+    "CLAVE MONEDA": "BGN",
+    "MONEDA": "Bulgarian Lev"
+  },
+  {
+    "CLAVE MONEDA": "BIF",
+    "MONEDA": "Burundi Franc"
+  },
+  {
+    "CLAVE MONEDA": "BND",
+    "MONEDA": "Brunei Dollar"
+  },
+  {
+    "CLAVE MONEDA": "BOB",
+    "MONEDA": "Boliviano"
+  },
+  {
+    "CLAVE MONEDA": "BRL",
+    "MONEDA": "Brazilian Real"
+  },
+  {
+    "CLAVE MONEDA": "BTN",
+    "MONEDA": "Ngultrum"
+  },
+  {
+    "CLAVE MONEDA": "BWP",
+    "MONEDA": "Pula"
+  },
+  {
+    "CLAVE MONEDA": "BYR",
+    "MONEDA": "Belarussian Ruble"
+  },
+  {
+    "CLAVE MONEDA": "CDF",
+    "MONEDA": "Congolese Franc"
+  },
+  {
+    "CLAVE MONEDA": "CHE",
+    "MONEDA": "WIR Euro"
+  },
+  {
+    "CLAVE MONEDA": "CHW",
+    "MONEDA": "WIR Franc"
+  },
+  {
+    "CLAVE MONEDA": "CLF",
+    "MONEDA": "Unidades de fomento"
+  },
+  {
+    "CLAVE MONEDA": "COU",
+    "MONEDA": "Unidad de Valor Real"
+  },
+  {
+    "CLAVE MONEDA": "CUC",
+    "MONEDA": "Peso Convertible"
+  },
+  {
+    "CLAVE MONEDA": "CVE",
+    "MONEDA": "Cape Verde Escudo"
+  },
+  {
+    "CLAVE MONEDA": "CZK",
+    "MONEDA": "Czech Koruna"
+  },
+  {
+    "CLAVE MONEDA": "DJF",
+    "MONEDA": "Djibouti Franc"
+  },
+  {
+    "CLAVE MONEDA": "ERN",
+    "MONEDA": "Nakfa"
+  },
+  {
+    "CLAVE MONEDA": "FKP",
+    "MONEDA": "Falkland Islands Pound"
+  },
+  {
+    "CLAVE MONEDA": "GBP",
+    "MONEDA": "Pound Sterling"
+  },
+  {
+    "CLAVE MONEDA": "GEL",
+    "MONEDA": "Lari"
+  },
+  {
+    "CLAVE MONEDA": "GHS",
+    "MONEDA": "Cedi"
+  },
+  {
+    "CLAVE MONEDA": "GIP",
+    "MONEDA": "Gibraltar Pound"
+  },
+  {
+    "CLAVE MONEDA": "GMD",
+    "MONEDA": "Dalasi"
+  },
+  {
+    "CLAVE MONEDA": "GNF",
+    "MONEDA": "Guinea Franc"
+  },
+  {
+    "CLAVE MONEDA": "GTQ",
+    "MONEDA": "Quetzal"
+  },
+  {
+    "CLAVE MONEDA": "HRK",
+    "MONEDA": "Croatian Kuna"
+  },
+  {
+    "CLAVE MONEDA": "KGS",
+    "MONEDA": "Som"
+  },
+  {
+    "CLAVE MONEDA": "KHR",
+    "MONEDA": "Riel"
+  },
+  {
+    "CLAVE MONEDA": "KMF",
+    "MONEDA": "Comoro Franc"
+  },
+  {
+    "CLAVE MONEDA": "KYD",
+    "MONEDA": "Cayman Islands Dollar"
+  },
+  {
+    "CLAVE MONEDA": "KZT",
+    "MONEDA": "Tenge"
+  },
+  {
+    "CLAVE MONEDA": "LAK",
+    "MONEDA": "Kip"
+  },
+  {
+    "CLAVE MONEDA": "LRD",
+    "MONEDA": "Liberian Dollar"
+  },
+  {
+    "CLAVE MONEDA": "LSL",
+    "MONEDA": "Loti"
+  },
+  {
+    "CLAVE MONEDA": "LTL",
+    "MONEDA": "Lithuanian Litas"
+  },
+  {
+    "CLAVE MONEDA": "LVL",
+    "MONEDA": "Latvian Lats"
+  },
+  {
+    "CLAVE MONEDA": "MDL",
+    "MONEDA": "Moldovan Leu"
+  },
+  {
+    "CLAVE MONEDA": "MGA",
+    "MONEDA": "Malagasy Ariary"
+  },
+  {
+    "CLAVE MONEDA": "MKD",
+    "MONEDA": "Denar"
+  },
+  {
+    "CLAVE MONEDA": "MMK",
+    "MONEDA": "Kyat"
+  },
+  {
+    "CLAVE MONEDA": "MNT",
+    "MONEDA": "Tugrik"
+  },
+  {
+    "CLAVE MONEDA": "MOP",
+    "MONEDA": "Pataca"
+  },
+  {
+    "CLAVE MONEDA": "MRO",
+    "MONEDA": "Ouguiya"
+  },
+  {
+    "CLAVE MONEDA": "MUR",
+    "MONEDA": "Mauritius Rupee"
+  },
+  {
+    "CLAVE MONEDA": "MVR",
+    "MONEDA": "Rufiyaa"
+  },
+  {
+    "CLAVE MONEDA": "MWK",
+    "MONEDA": "Kwacha"
+  },
+  {
+    "CLAVE MONEDA": "MZN",
+    "MONEDA": "Metical"
+  },
+  {
+    "CLAVE MONEDA": "NAD",
+    "MONEDA": "Namibia Dollar"
+  },
+  {
+    "CLAVE MONEDA": "NIO",
+    "MONEDA": "Cordoba Oro"
+  },
+  {
+    "CLAVE MONEDA": "NPR",
+    "MONEDA": "Nepalese Rupee"
+  },
+  {
+    "CLAVE MONEDA": "OMR",
+    "MONEDA": "Rial Omani"
+  },
+  {
+    "CLAVE MONEDA": "PEN",
+    "MONEDA": "Nuevo Sol"
+  },
+  {
+    "CLAVE MONEDA": "PGK",
+    "MONEDA": "Kina"
+  },
+  {
+    "CLAVE MONEDA": "PLN",
+    "MONEDA": "Zloty"
+  },
+  {
+    "CLAVE MONEDA": "QAR",
+    "MONEDA": "Qatari Rial"
+  },
+  {
+    "CLAVE MONEDA": "RON",
+    "MONEDA": "New Leu"
+  },
+  {
+    "CLAVE MONEDA": "RSD",
+    "MONEDA": "Serbian Dinar"
+  },
+  {
+    "CLAVE MONEDA": "RUB",
+    "MONEDA": "Russian Ruble"
+  },
+  {
+    "CLAVE MONEDA": "RWF",
+    "MONEDA": "Rwanda Franc"
+  },
+  {
+    "CLAVE MONEDA": "SBD",
+    "MONEDA": "Solomon Islands Dollar"
+  },
+  {
+    "CLAVE MONEDA": "SCR",
+    "MONEDA": "Seychelles Rupee"
+  },
+  {
+    "CLAVE MONEDA": "SDG",
+    "MONEDA": "Sudanese Pound"
+  },
+  {
+    "CLAVE MONEDA": "SHP",
+    "MONEDA": "Saint Helena Pound"
+  },
+  {
+    "CLAVE MONEDA": "SLL",
+    "MONEDA": "Leone"
+  },
+  {
+    "CLAVE MONEDA": "SOS",
+    "MONEDA": "Somali Shilling"
+  },
+  {
+    "CLAVE MONEDA": "SRD",
+    "MONEDA": "Surinam Dollar"
+  },
+  {
+    "CLAVE MONEDA": "STD",
+    "MONEDA": "Dobra"
+  },
+  {
+    "CLAVE MONEDA": "SZL",
+    "MONEDA": "Lilangeni"
+  },
+  {
+    "CLAVE MONEDA": "TJS",
+    "MONEDA": "Somoni"
+  },
+  {
+    "CLAVE MONEDA": "TMT",
+    "MONEDA": "Manat"
+  },
+  {
+    "CLAVE MONEDA": "TND",
+    "MONEDA": "Tunisian Dinar"
+  },
+  {
+    "CLAVE MONEDA": "TOP",
+    "MONEDA": "Pa'anga"
+  },
+  {
+    "CLAVE MONEDA": "TRY",
+    "MONEDA": "Turkish Lira"
+  },
+  {
+    "CLAVE MONEDA": "UAH",
+    "MONEDA": "Hryvnia"
+  },
+  {
+    "CLAVE MONEDA": "UGX",
+    "MONEDA": "Uganda Shilling"
+  },
+  {
+    "CLAVE MONEDA": "UYI",
+    "MONEDA": "Uruguay Peso en Unidades Indexadas"
+  },
+  {
+    "CLAVE MONEDA": "UYU",
+    "MONEDA": "Peso Uruguayo"
+  },
+  {
+    "CLAVE MONEDA": "UZS",
+    "MONEDA": "Uzbekistan Sum"
+  },
+  {
+    "CLAVE MONEDA": "VEF",
+    "MONEDA": "Bolivar Fuerte"
+  },
+  {
+    "CLAVE MONEDA": "VUV",
+    "MONEDA": "Vatu"
+  },
+  {
+    "CLAVE MONEDA": "WST",
+    "MONEDA": "Tala"
+  },
+  {
+    "CLAVE MONEDA": "XAF",
+    "MONEDA": "CFA Franc BEAC ‡"
+  },
+  {
+    "CLAVE MONEDA": "XAG",
+    "MONEDA": "Silver"
+  },
+  {
+    "CLAVE MONEDA": "XAU",
+    "MONEDA": "Gold"
+  },
+  {
+    "CLAVE MONEDA": "XBA",
+    "MONEDA": "Bond Markets Units European Composite Unit (EURCO)"
+  },
+  {
+    "CLAVE MONEDA": "XBB",
+    "MONEDA": "European Monetary Unit (E.M.U.-6)"
+  },
+  {
+    "CLAVE MONEDA": "XBC",
+    "MONEDA": "European Unit of Account 9(E.U.A.-9)"
+  },
+  {
+    "CLAVE MONEDA": "XBD",
+    "MONEDA": "European Unit of Account 17(E.U.A.-17)"
+  },
+  {
+    "CLAVE MONEDA": "XCD",
+    "MONEDA": "East Caribbean Dollar"
+  },
+  {
+    "CLAVE MONEDA": "XFU",
+    "MONEDA": "UIC-Franc"
+  },
+  {
+    "CLAVE MONEDA": "XPD",
+    "MONEDA": "Palladium"
+  },
+  {
+    "CLAVE MONEDA": "XPF",
+    "MONEDA": "CFP Franc"
+  },
+  {
+    "CLAVE MONEDA": "XPT",
+    "MONEDA": "Platinum"
+  },
+  {
+    "CLAVE MONEDA": "YER",
+    "MONEDA": "Yemeni Rial"
+  },
+  {
+    "CLAVE MONEDA": "ZMK",
+    "MONEDA": "Zambian Kwacha"
+  },
+  {
+    "CLAVE MONEDA": "ZWL",
+    "MONEDA": "Zimbabwe Dollar"
+  },
+  {
+    "CLAVE MONEDA": "0",
+    "MONEDA": "SE DESCONOCE (TENTATIVA)"
+  }
+]
