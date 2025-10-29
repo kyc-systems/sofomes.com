@@ -91,7 +91,7 @@ include 'includes/header.php';
         </div>
 
         <div class="hero-image">
-          <img src="assets/img/main.jpeg" alt="Directorio SOFOMes México - SOFOMes en operación CONDUSEF" loading="eager">
+          <img src="assets/img/main.webp" alt="Directorio SOFOMes México - SOFOMes en operación CONDUSEF" loading="eager">
         </div>
       </div>
     </div>
