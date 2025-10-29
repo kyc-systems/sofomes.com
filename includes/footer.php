@@ -77,6 +77,14 @@
   </script>
 
   <!-- Código de instalación Cliengo - Carga diferida -->
+  <!--
+    NOTA: Cliengo genera warnings de cookies en Chrome DevTools (Issues panel)
+    Esto es inevitable porque es un servicio de terceros que gestiona sus propias cookies.
+    Optimizaciones implementadas:
+    - Carga diferida (2s después de window.load)
+    - Script async (no bloquea render)
+    - No afecta Core Web Vitals ni performance
+  -->
   <script>
     window.addEventListener('load', function() {
       setTimeout(function() {

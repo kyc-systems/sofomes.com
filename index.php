@@ -91,7 +91,7 @@ include 'includes/header.php';
         </div>
 
         <div class="hero-image">
-          <img src="assets/img/main.webp" alt="Directorio SOFOMes México - SOFOMes en operación CONDUSEF" loading="eager" width="1330" height="778" style="height: auto;">
+          <img src="assets/img/main.webp" alt="Directorio SOFOMes México - SOFOMes en operación CONDUSEF" loading="eager" width="665" height="389" style="height: auto;">
         </div>
       </div>
     </div>
@@ -944,12 +944,12 @@ include 'includes/header.php';
               de CONDUSEF:
             </p>
             <p style="margin-top: 0.5rem">
-              🔗 <a href="https://webapps.condusef.gob.mx/SIPRES/jsp/pub/index.jsp" target="_blank" style="color: #059669; font-weight: 600;">
+              🔗 <a href="https://webapps.condusef.gob.mx/SIPRES/jsp/pub/index.jsp" target="_blank" style="color: #065F46; font-weight: 600;">
                 https://webapps.condusef.gob.mx/SIPRES/
               </a>
             </p>
             <p style="margin-top: 0.5rem">
-              También puedes <a href="lista-sofomes-mexico.php" style="color: #059669; font-weight: 600;">buscar en nuestro directorio</a>
+              También puedes <a href="lista-sofomes-mexico.php" style="color: #065F46; font-weight: 600;">buscar en nuestro directorio</a>
               de SOFOMes actualizado.
             </p>
           </div>

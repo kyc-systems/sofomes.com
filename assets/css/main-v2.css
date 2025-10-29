@@ -406,13 +406,13 @@ strong {
 
 /* CTA PRIMARY (10% - Green) - WCAG AA compliant */
 .btn-primary {
-  background: var(--secondary-600); /* Darker for better contrast: #059669 */
+  background: var(--secondary-700); /* #047857 - Contrast ratio 5.8:1 with white */
   color: var(--white);
   font-weight: 600; /* Helps readability */
 }
 
 .btn-primary:hover {
-  background: var(--secondary-700);
+  background: var(--secondary-800); /* #065F46 - Even darker on hover */
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);
   text-decoration: none;
