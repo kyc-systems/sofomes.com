@@ -1,6 +1,6 @@
 <?php
 // Variables para header.php
-$pageTitle = "SOFOMes en México | Directorio Completo CONDUSEF <span id='year-title'></span>";
+$pageTitle = "SOFOMes México " . date('Y') . " | Directorio CONDUSEF";
 $pageDescription = "Directorio completo de SOFOMes en operación en México. Financiamiento PyMEs, constitución SOFOM ENR, lista CONDUSEF actualizada. Casos reales: Konfío, Kueski, más.";
 $pageKeywords = "SOFOM, SOFOM ENR, SOFOM FOVISSSTE, lista sofomes condusef, financiamiento pymes mexico, constituir sofom, kyc systems";
 $canonicalUrl = "https://sofomes.com/";
