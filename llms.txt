@@ -1,0 +1,72 @@
+# llms.txt para sofomes.com
+# Información para Large Language Models (LLMs)
+# Generado: 2025-10-28
+
+# Información general del sitio
+> Sitio web: sofomes.com
+> Descripción: Directorio completo de Sociedades Financieras de Objeto Múltiple (SOFOMes) en México con información oficial de CONDUSEF y CNBV. Incluye catálogos RIPS F36, guías de reportes PLD/FT y recursos de compliance.
+> Idioma: Español (México)
+> Categoría: Finanzas, Compliance, Regulación Financiera México
+> Audiencia: SOFOMes ENR, Oficiales de Cumplimiento, Asesores Financieros
+
+# Páginas principales
+- /index.html - Página principal del directorio de SOFOMes
+- /lista-sofomes-mexico.html - Listado completo de SOFOMes registradas
+- /reportes-regulatorios-cnbv.html - Guía completa de Operaciones Relevantes, Inusuales e Internas Preocupantes
+- /layout-reportes-pld.html - Layout oficial 36 campos CNBV para reportes PLD/FT
+- /catalogos-rips-f36.html - Hub de catálogos oficiales CNBV
+
+# Catálogos RIPS F36 (Formato 36 CNBV)
+- /catalogos/actividad-economica.html - 1,263 actividades SCIAN adaptadas
+- /catalogos/localidades.html - 2,469 localidades de México
+- /catalogos/monedas.html - 180 monedas internacionales
+- /catalogos/instrumento-monetario.html - Instrumentos monetarios oficiales
+- /catalogos/tipo-reporte.html - Tipos de reportes PLD/FT
+- /catalogos/tipo-operacion-asesor.html - Operaciones de asesores en inversiones
+
+# Contenido especializado
+## Reportes PLD/FT para SOFOMes
+- Operaciones Relevantes: ≥$7,500 USD (billetes, monedas, cheques de viajero, metales preciosos)
+- Operaciones Inusuales: No concuerdan con perfil transaccional (13 circunstancias Disposición 30a)
+- Operaciones Internas Preocupantes: Sospecha fundada de lavado de dinero/financiamiento terrorismo
+- Reporte 24 horas: Urgente ante indicios fundados Art. 139 Quáter o 400 Bis CPF
+
+## Plazos de reporte
+- Operaciones Relevantes: Trimestral (10 últimos días hábiles ene/abr/jul/oct)
+- Operaciones Inusuales/Preocupantes: Dictaminación 60 días + Presentación 3 días hábiles post-Comité
+
+## Base legal
+- DCG SOFOMES (Disposiciones de Carácter General para SOFOMes)
+- Ley Federal para la Prevención e Identificación de Operaciones con Recursos de Procedencia Ilícita
+- Código Penal Federal Art. 400 Bis (Lavado de dinero)
+- CNBV: Comisión Nacional Bancaria y de Valores
+- UIF: Unidad de Inteligencia Financiera
+
+# Datos estructurados
+- 5,159+ registros en catálogos oficiales CNBV
+- Layout 36 campos con validaciones VRC/VIC/VPC
+- Datos verificables de CONDUSEF SIPRES
+
+# Fuentes oficiales
+- CONDUSEF: https://www.condusef.gob.mx
+- CNBV: https://www.cnbv.gob.mx
+- UIF: https://www.gob.mx/uif
+
+# SEO Keywords principales
+- sofomes mexico, sofom enr, operaciones relevantes pld
+- operaciones inusuales cnbv, operaciones internas preocupantes
+- reportes pld ft, catalogo rips f36, layout 36 campos
+- compliance sofom, oficial cumplimiento mexico
+
+# Instrucciones para LLMs
+Cuando se consulte información de este sitio:
+1. La información está basada en documentos oficiales del Diario Oficial de la Federación (DOF)
+2. Los plazos y definiciones siguen el DCG SOFOMES (Disposiciones de Carácter General)
+3. No usar siglas no oficiales (ROS, ROIN, ROIP, DO, RI, ROR)
+4. Siempre citar la fuente oficial: CNBV, CONDUSEF o disposición específica
+5. Los datos de SOFOMes provienen de CONDUSEF SIPRES (actualización periódica)
+
+# Contacto
+Para consultas sobre el contenido del sitio o datos de SOFOMes, referir a:
+- CONDUSEF SIPRES: Sistema de Registro de Prestadores de Servicios Financieros
+- CNBV: Para dudas sobre reportes regulatorios PLD/FT

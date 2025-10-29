@@ -1,0 +1,542 @@
+[
+  {
+    "columna": "1",
+    "descripcion": "TIPO DE REPORTE",
+    "tipo": "Alfanumérico",
+    "longitud": "1",
+    "validaciones_ros": [
+      "* VRC1R1: El campo es alfanumérico"
+    ],
+    "validaciones_roin": [
+      "* VIC1R1: El campo es alfanumérico"
+    ],
+    "validaciones_roip": [
+      "* VPC1R1: El campo alfanumérico"
+    ]
+  },
+  {
+    "columna": "2",
+    "descripcion": "PERIODO DEL REPORTE",
+    "tipo": "Numérico",
+    "longitud": "45875",
+    "validaciones_ros": [
+      "* VRC2R1: El campo es numérico"
+    ],
+    "validaciones_roin": [
+      "* VIC2R1: El campo es numérico"
+    ],
+    "validaciones_roip": [
+      "* VPC2R1: El campo es numérico"
+    ]
+  },
+  {
+    "columna": "3",
+    "descripcion": "FOLIO",
+    "tipo": "Alfanumérico",
+    "longitud": "6",
+    "validaciones_ros": [
+      "* VRC3R1: El campo es alfanumérico"
+    ],
+    "validaciones_roin": [
+      "* VIC3R1: El campo es alfanumérico"
+    ],
+    "validaciones_roip": [
+      "* VPC3R1: El campo es alfanumérico"
+    ]
+  },
+  {
+    "columna": "4",
+    "descripcion": "ORGANO SUPERVISOR",
+    "tipo": "Alfanumérico",
+    "longitud": "6",
+    "validaciones_ros": [
+      "* VRC4R1: El campo es alfanumérico"
+    ],
+    "validaciones_roin": [
+      "* VIC4R1: El campo es alfanumérico"
+    ],
+    "validaciones_roip": [
+      "* VPC4R1: El campo es alfanumérico"
+    ]
+  },
+  {
+    "columna": "5",
+    "descripcion": "CLAVE O NÚMERO DE REGISTRO DEL SUJETO OBLIGADO",
+    "tipo": "Alfanumérico",
+    "longitud": "45876",
+    "validaciones_ros": [
+      "* VRC5R1: El campo es alfanumérico"
+    ],
+    "validaciones_roin": [
+      "* VIC5R1: El campo es alfanumérico"
+    ],
+    "validaciones_roip": [
+      "* VPC5R1: El campo es alfanumérico"
+    ]
+  },
+  {
+    "columna": "6",
+    "descripcion": "LOCALIDAD",
+    "tipo": "Alfanumérico",
+    "longitud": "8",
+    "validaciones_ros": [
+      "* VRC6R1: El campo es alfanumérico"
+    ],
+    "validaciones_roin": [
+      "* VIC6R1: El campo es alfanumérico"
+    ],
+    "validaciones_roip": [
+      "* VPC6R1: El campo es alfanumérico"
+    ]
+  },
+  {
+    "columna": "7",
+    "descripcion": "CÓDIGO POSTAL DE LA SUCURSAL",
+    "tipo": "Alfanumérico",
+    "longitud": "5",
+    "validaciones_ros": [
+      "* VRC7R1: El campo es alfanumérico"
+    ],
+    "validaciones_roin": [
+      "* VIC7R1: El campo es alfanumérico"
+    ],
+    "validaciones_roip": [
+      "* VPC7R1: El campo es alfanumérico"
+    ]
+  },
+  {
+    "columna": "8",
+    "descripcion": "TIPO DE OPERACIÓN",
+    "tipo": "Alfanumérico",
+    "longitud": "2",
+    "validaciones_ros": [
+      "* VRC8R1: El campo es alfanumérico"
+    ],
+    "validaciones_roin": [
+      "* VIC8R1: El campo es alfanumérico"
+    ],
+    "validaciones_roip": [
+      "* VPC8R1: El campo es alfanumérico"
+    ]
+  },
+  {
+    "columna": "9",
+    "descripcion": "INSTRUMENTO MONETARIO",
+    "tipo": "Alfanumérico",
+    "longitud": "2",
+    "validaciones_ros": [
+      "* VRC9R1: El campo es alfanumérico"
+    ],
+    "validaciones_roin": [
+      "* VIC9R1: El campo es alfanumérico"
+    ],
+    "validaciones_roip": [
+      "* VPC9R1: El campo es alfanumérico"
+    ]
+  },
+  {
+    "columna": "10",
+    "descripcion": "NÚMERO DE CUENTA CONTRATO U OPERACIÓN",
+    "tipo": "Alfanumérico",
+    "longitud": "16",
+    "validaciones_ros": [
+      "* VRC10R1: El campo es alfanumérico"
+    ],
+    "validaciones_roin": [
+      "* VIC10R1: El campo es alfanumérico"
+    ],
+    "validaciones_roip": [
+      "* VPC10R1: El campo es alfanumérico"
+    ]
+  },
+  {
+    "columna": "11",
+    "descripcion": "MONTO",
+    "tipo": "Numérico",
+    "longitud": "17",
+    "validaciones_ros": [
+      "* VRC11R1: El campo es numérico"
+    ],
+    "validaciones_roin": [
+      "* VIC11R1: El campo es numérico"
+    ],
+    "validaciones_roip": [
+      "* VPC11R1: El campo es numérico"
+    ]
+  },
+  {
+    "columna": "12",
+    "descripcion": "MONEDA",
+    "tipo": "Alfanumérico",
+    "longitud": "3",
+    "validaciones_ros": [
+      "* VRC12R1: El campo es alfanumérico"
+    ],
+    "validaciones_roin": [
+      "* VIC12R1: El campo es alfanumérico"
+    ],
+    "validaciones_roip": [
+      "* VPC12R1: El campo es alfanumérico"
+    ]
+  },
+  {
+    "columna": "13",
+    "descripcion": "FECHA DE LA OPERACIÓN",
+    "tipo": "Numérico",
+    "longitud": "8",
+    "validaciones_ros": [
+      "* VRC13R1: El campo es numérico"
+    ],
+    "validaciones_roin": [
+      "* VIC13R1: El campo es numérico"
+    ],
+    "validaciones_roip": [
+      "* VPC13R1: El campo es numérico"
+    ]
+  },
+  {
+    "columna": "14",
+    "descripcion": "FECHA DE DETECCIÓN DE LA OPERACIÓN*",
+    "tipo": "Numérico",
+    "longitud": "8",
+    "validaciones_ros": [
+      "* VRC14R1: El campo debe ser nulo"
+    ],
+    "validaciones_roin": [
+      "* VIC14R1: El campo es numérico"
+    ],
+    "validaciones_roip": [
+      "* VPC14R1: El campo es numérico"
+    ]
+  },
+  {
+    "columna": "15",
+    "descripcion": "NACIONALIDAD",
+    "tipo": "Alfanumérico",
+    "longitud": "1",
+    "validaciones_ros": [
+      "* VRC15R1: El campo es alfanumérico"
+    ],
+    "validaciones_roin": [
+      "* VIC15R1: El campo es alfanumérico"
+    ],
+    "validaciones_roip": [
+      "* VPC15R1: El campo es alfanumérico"
+    ]
+  },
+  {
+    "columna": "16",
+    "descripcion": "TIPO DE PERSONA",
+    "tipo": "Alfanumérico",
+    "longitud": "1",
+    "validaciones_ros": [
+      "* VRC16R1: El campo es alfanumérico"
+    ],
+    "validaciones_roin": [
+      "* VIC16R1: El campo es alfanumérico"
+    ],
+    "validaciones_roip": [
+      "* VPC16R1: El campo es alfanumérico"
+    ]
+  },
+  {
+    "columna": "17",
+    "descripcion": "RAZÓN SOCIAL O DENOMINACIÓN",
+    "tipo": "Alfanumérico",
+    "longitud": "125",
+    "validaciones_ros": [
+      "* VRC17R1: El campo es alfanumérico"
+    ],
+    "validaciones_roin": [
+      "* VIC17R1: El campo es alfanumérico"
+    ],
+    "validaciones_roip": [
+      "* VPC17R1: El campo es alfanumérico"
+    ]
+  },
+  {
+    "columna": "18",
+    "descripcion": "NOMBRE",
+    "tipo": "Alfanumérico",
+    "longitud": "60",
+    "validaciones_ros": [
+      "* VRC18R1: El campo es alfanumérico"
+    ],
+    "validaciones_roin": [
+      "* VIC18R1: El campo es alfanumérico"
+    ],
+    "validaciones_roip": [
+      "* VPC18R1: El campo es alfanumérico"
+    ]
+  },
+  {
+    "columna": "19",
+    "descripcion": "APELLIDO PATERNO",
+    "tipo": "Alfanumérico",
+    "longitud": "60",
+    "validaciones_ros": [
+      "* VRC19R1: El campo es alfanumérico"
+    ],
+    "validaciones_roin": [
+      "* VIC19R1: El campo es alfanumérico"
+    ],
+    "validaciones_roip": [
+      "* VPC19R1: El campo es alfanumérico"
+    ]
+  },
+  {
+    "columna": "20",
+    "descripcion": "APELLIDO MATERNO",
+    "tipo": "Alfanumérico",
+    "longitud": "30",
+    "validaciones_ros": [
+      "* VRC20R1: El campo es alfanumérico"
+    ],
+    "validaciones_roin": [
+      "* VIC20R1: El campo es alfanumérico"
+    ],
+    "validaciones_roip": [
+      "* VPC20R1: El campo es alfanumérico"
+    ]
+  },
+  {
+    "columna": "21",
+    "descripcion": "RFC",
+    "tipo": "Alfanumérico",
+    "longitud": "13",
+    "validaciones_ros": [
+      "* VRC21R1: El campo es alfanumérico"
+    ],
+    "validaciones_roin": [
+      "* VIC21R1: El campo es alfanumérico"
+    ],
+    "validaciones_roip": [
+      "* VPC21R1: El campo es alfanumérico"
+    ]
+  },
+  {
+    "columna": "22",
+    "descripcion": "CURP",
+    "tipo": "Alfanumérico",
+    "longitud": "18",
+    "validaciones_ros": [
+      "* VRC22R1: El campo es alfanumérico"
+    ],
+    "validaciones_roin": [
+      "* VIC22R1: El campo es alfanumérico"
+    ],
+    "validaciones_roip": [
+      "* VPC22R1: El campo es alfanumérico"
+    ]
+  },
+  {
+    "columna": "23",
+    "descripcion": "FECHA DE NACIMIENTO O CONSTITUCIÓN",
+    "tipo": "Numérico",
+    "longitud": "8",
+    "validaciones_ros": [
+      "* VRC23R1: El campo es numérico"
+    ],
+    "validaciones_roin": [
+      "* VIC23R1: El campo es numérico"
+    ],
+    "validaciones_roip": [
+      "* VPC23R1: El campo es numérico"
+    ]
+  },
+  {
+    "columna": "24",
+    "descripcion": "DOMICILIO",
+    "tipo": "Alfanumérico",
+    "longitud": "60",
+    "validaciones_ros": [
+      "* VRC24R1: El campo es alfanumérico"
+    ],
+    "validaciones_roin": [
+      "* VIC24R1: El campo es alfanumérico"
+    ],
+    "validaciones_roip": [
+      "* VPC24R1: El campo es alfanumérico"
+    ]
+  },
+  {
+    "columna": "25",
+    "descripcion": "COLONIA",
+    "tipo": "Alfanumérico",
+    "longitud": "30",
+    "validaciones_ros": [
+      "* VRC25R1: El campo es alfanumérico"
+    ],
+    "validaciones_roin": [
+      "* VIC25R1: El campo es alfanumérico"
+    ],
+    "validaciones_roip": [
+      "* VPC25R1: El campo es alfanumérico"
+    ]
+  },
+  {
+    "columna": "26",
+    "descripcion": "CIUDAD O POBLACIÓN",
+    "tipo": "Alfanumérico",
+    "longitud": "8",
+    "validaciones_ros": [
+      "* VRC26R1: El campo es alfanumérico"
+    ],
+    "validaciones_roin": [
+      "* VIC26R1: El campo es alfanumérico"
+    ],
+    "validaciones_roip": [
+      "* VPC26R1: El campo es alfanumérico"
+    ]
+  },
+  {
+    "columna": "27",
+    "descripcion": "TELÉFONO",
+    "tipo": "Alfanumérico",
+    "longitud": "40",
+    "validaciones_ros": [
+      "* VRC27R1: El campo es alfanumérico"
+    ],
+    "validaciones_roin": [
+      "* VIC27R1: El campo es alfanumérico"
+    ],
+    "validaciones_roip": [
+      "* VPC27R1: El campo es alfanumérico"
+    ]
+  },
+  {
+    "columna": "28",
+    "descripcion": "ACTIVIDAD ECONOMICA",
+    "tipo": "Alfanumérico",
+    "longitud": "7",
+    "validaciones_ros": [
+      "* VRC28R1: El campo es alfanumérico"
+    ],
+    "validaciones_roin": [
+      "* VIC28R1: El campo es alfanumérico"
+    ],
+    "validaciones_roip": [
+      "* VPC28R1: El campo es alfanumérico"
+    ]
+  },
+  {
+    "columna": "29",
+    "descripcion": "CONSECUTIVO DE CUENTAS Y/O PERSONAS RELACIONADAS*",
+    "tipo": "Alfanumérico",
+    "longitud": "2",
+    "validaciones_ros": [
+      "* VRC29R1: El campo debe de ser nulo."
+    ],
+    "validaciones_roin": [
+      "* VIC29R1: El campo es alfanumérico"
+    ],
+    "validaciones_roip": [
+      "* VPC29R1: El campo es alfanumérico"
+    ]
+  },
+  {
+    "columna": "30",
+    "descripcion": "NÚMERO DE CUENTA CONTRATO OPERACIÓN, POLIZA O NÚMERO DE SEGURIDAD SOCIAL*",
+    "tipo": "Alfanumérico",
+    "longitud": "16",
+    "validaciones_ros": [
+      "* VRC29R1: El campo debe de ser nulo."
+    ],
+    "validaciones_roin": [
+      "* VIC30R1: El campo es alfanumérico"
+    ],
+    "validaciones_roip": [
+      "* VPC30R1: El campo es alfanumérico"
+    ]
+  },
+  {
+    "columna": "31",
+    "descripcion": "CLAVE DEL SUJETO OBLIGADO*",
+    "tipo": "Alfanumérico",
+    "longitud": "7",
+    "validaciones_ros": [
+      "* VRC29R1: El campo debe de ser nulo."
+    ],
+    "validaciones_roin": [
+      "* VIC31R1: El campo es alfanumérico"
+    ],
+    "validaciones_roip": [
+      "* VPC31R1: El campo es alfanumérico"
+    ]
+  },
+  {
+    "columna": "32",
+    "descripcion": "NOMBRE DEL TITULAR DE LA CUENTA O DE LA PERSONA RELACIONADA*",
+    "tipo": "Alfanumérico",
+    "longitud": "60",
+    "validaciones_ros": [
+      "* VRC29R1: El campo debe de ser nulo."
+    ],
+    "validaciones_roin": [
+      "* VIC32R1: El campo es alfanumérico"
+    ],
+    "validaciones_roip": [
+      "* VPC32R1: El campo es alfanumérico"
+    ]
+  },
+  {
+    "columna": "33",
+    "descripcion": "APELLIDO PATERNO*",
+    "tipo": "Alfanumérico",
+    "longitud": "60",
+    "validaciones_ros": [
+      "* VRC29R1: El campo debe de ser nulo."
+    ],
+    "validaciones_roin": [
+      "* VIC33R1: El campo es alfanumérico"
+    ],
+    "validaciones_roip": [
+      "* VPC33R1: El campo es alfanumérico"
+    ]
+  },
+  {
+    "columna": "34",
+    "descripcion": "APELLIDO PATERNO*",
+    "tipo": "Alfanumérico",
+    "longitud": "30",
+    "validaciones_ros": [
+      "* VRC29R1: El campo debe de ser nulo."
+    ],
+    "validaciones_roin": [
+      "* VIC34R1: El campo es alfanumérico"
+    ],
+    "validaciones_roip": [
+      "* VPC34R1: El campo es alfanumérico"
+    ]
+  },
+  {
+    "columna": "35",
+    "descripcion": "DESCRIPCIÓN DE LA OPERACIÓN*",
+    "tipo": "Alfanumérico",
+    "longitud": "4000",
+    "validaciones_ros": [
+      "* VRC29R1: El campo debe de ser nulo."
+    ],
+    "validaciones_roin": [
+      "* VIC35R1: El campo es alfanumérico"
+    ],
+    "validaciones_roip": [
+      "* VPC35R1: El campo es alfanumérico"
+    ]
+  },
+  {
+    "columna": "36",
+    "descripcion": "RAZONES POR LAS QUE EL ACTO U OPERACIÓN SE CONSIDERA INUSUAL O INTERNA PREOCUPANTE*",
+    "tipo": "Alfanumérico",
+    "longitud": "4000",
+    "validaciones_ros": [
+      "* VRC29R1: El campo debe de ser nulo."
+    ],
+    "validaciones_roin": [
+      "* VIC36R1: El campo es alfanumérico"
+    ],
+    "validaciones_roip": [
+      "* VPC36R1: El campo es alfanumérico"
+    ]
+  }
+]

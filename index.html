@@ -1,613 +1,846 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-MX">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- SEO Meta Tags -->
-  <title>SOFOMES en México: Financiamiento PyMEs y Constitución SOFOM ENR <span id="year-title"></span></title>
-  <meta name="description" content="Guía completa sobre SOFOMEs en México. Financiamiento para PyMEs, constitución de SOFOM ENR en 8-12 semanas. Alternativa al banco tradicional con 70% más aprobaciones.">
-  <meta name="keywords" content="SOFOM, SOFOM ENR, financiamiento pymes, constituir sofom, crédito mexico, alternativa banco">
+  <!-- Primary Meta Tags -->
+  <title>SOFOMes en México <span id="year-title"></span> | Directorio Completo CONDUSEF</title>
+  <meta name="description" content="Directorio completo de SOFOMes en operación en México. Financiamiento PyMEs, constitución SOFOM ENR, lista CONDUSEF actualizada. Casos reales: Konfío, Kueski, más.">
+  <meta name="keywords" content="SOFOM, SOFOM ENR, SOFOM FOVISSSTE, lista sofomes condusef, financiamiento pymes mexico, constituir sofom, kyc systems">
 
   <!-- Canonical URL -->
   <link rel="canonical" href="https://sofomes.com/">
 
   <!-- Robots -->
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-  <meta name="author" content="SOFOMES.COM - Expertos en Constitución de SOFOMes">
+  <meta name="author" content="SOFOMES.COM">
   <meta name="publisher" content="SOFOMES.COM">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="SOFOMES en México: La Alternativa de Financiamiento para PyMEs">
-  <meta property="og:description" content="Obtén financiamiento que el banco rechazó o constituye tu SOFOM ENR en 8-12 semanas. Guía completa." id="og-description-meta">
+  <meta property="og:title" content="SOFOMes en México | Directorio Completo CONDUSEF" id="og-title-meta">
+  <meta property="og:description" content="Directorio completo de SOFOMes en operación en CONDUSEF. Financiamiento PyMEs, constitución, casos de éxito reales.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://sofomes.com/">
   <meta property="og:image" content="https://sofomes.com/assets/img/main.jpeg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
   <meta property="og:locale" content="es_MX">
-  <meta property="og:site_name" content="SOFOMES.COM">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="SOFOMES en México: Financiamiento PyMEs y Constitución SOFOM ENR">
-  <meta name="twitter:description" content="Guía completa sobre SOFOMes en México. Constitución en 8-12 semanas con 98% aprobación CNBV.">
+  <meta name="twitter:title" content="SOFOMes en México | Directorio CONDUSEF">
+  <meta name="twitter:description" content="Directorio completo + guía de constitución + casos reales">
   <meta name="twitter:image" content="https://sofomes.com/assets/img/main.jpeg">
 
-  <!-- Preconnect -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Preload -->
+  <link rel="preload" href="assets/css/main-v2.css" as="style">
 
-  <!-- Preload Critical Resources -->
-  <link rel="preload" href="assets/fonts/inter-latin-400.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="assets/fonts/inter-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/main-v2.css">
 
-  <!-- Critical CSS Inline -->
-  <style>
-    /* CSS Variables */
-    :root {
-      /* Colors */
-      --primary-900: #0A2463;
-      --primary-500: #3B82F6;
-      --secondary-900: #065F46;
-      --secondary-500: #10B981;
-      --accent-500: #F59E0B;
-      --neutral-900: #1F2937;
-      --neutral-700: #374151;
-      --neutral-500: #6B7280;
-      --neutral-200: #E5E7EB;
-      --neutral-100: #F3F4F6;
-      --neutral-50: #F9FAFB;
-      --white: #FFFFFF;
-
-      /* Typography */
-      --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      --text-xs: 0.75rem;
-      --text-sm: 0.875rem;
-      --text-base: 1rem;
-      --text-lg: 1.125rem;
-      --text-xl: 1.25rem;
-      --text-2xl: 1.5rem;
-      --text-3xl: 1.875rem;
-      --text-4xl: 2.25rem;
-      --text-5xl: 3rem;
-
-      /* Spacing */
-      --space-1: 0.25rem;
-      --space-2: 0.5rem;
-      --space-3: 0.75rem;
-      --space-4: 1rem;
-      --space-5: 1.25rem;
-      --space-6: 1.5rem;
-      --space-8: 2rem;
-      --space-10: 2.5rem;
-      --space-12: 3rem;
-      --space-16: 4rem;
-      --space-20: 5rem;
-
-      /* Layout */
-      --max-width: 1280px;
-      --container-padding: 1rem;
+  <!-- Schema.org - Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "SOFOMES.COM",
+    "url": "https://sofomes.com",
+    "logo": "https://sofomes.com/assets/logo.png",
+    "description": "Directorio y guía completa de SOFOMes en operación en México. Datos actualizados desde CONDUSEF.",
+    "foundingDate": "<span id='year-schema'></span>",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "availableLanguage": "Spanish"
     }
+  }
+  </script>
 
-    /* Reset */
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
-    body{font-family:var(--font-body);line-height:1.6;color:var(--neutral-900);background:var(--white)}
-    img,picture,video,canvas,svg{display:block;max-width:100%}
-    input,button,textarea,select{font:inherit}
-
-    /* Typography */
-    h1,h2,h3,h4,h5,h6{font-weight:700;line-height:1.25;margin-bottom:var(--space-4)}
-    h1{font-size:clamp(2.5rem,5vw,3.75rem);letter-spacing:-0.025em}
-    h2{font-size:clamp(2rem,4vw,3rem);letter-spacing:-0.02em}
-    h3{font-size:clamp(1.5rem,3vw,2.25rem)}
-    p{margin-bottom:var(--space-4)}
-
-    /* Container */
-    .container{max-width:var(--max-width);margin:0 auto;padding:0 var(--container-padding)}
-
-    /* Navigation */
-    .nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,0.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--neutral-200);transition:box-shadow 0.3s ease}
-    .nav.scrolled{box-shadow:0 4px 6px -1px rgba(0,0,0,0.1)}
-    .nav-content{display:flex;justify-content:space-between;align-items:center;height:72px}
-    .nav-logo{font-size:var(--text-xl);font-weight:700;color:var(--primary-900);text-decoration:none}
-    .nav-menu{display:flex;gap:var(--space-6);list-style:none}
-    .nav-link{color:var(--neutral-700);text-decoration:none;font-weight:500;transition:color 0.2s ease}
-    .nav-link:hover{color:var(--primary-500)}
-    .nav-cta{background:var(--primary-500);color:var(--white);padding:var(--space-3) var(--space-5);border-radius:8px;text-decoration:none;font-weight:600;transition:background 0.2s ease}
-    .nav-cta:hover{background:var(--primary-900)}
-
-    /* Mobile Menu Toggle */
-    .nav-toggle{display:none;flex-direction:column;gap:4px;background:none;border:none;cursor:pointer;padding:var(--space-2)}
-    .nav-toggle span{width:24px;height:2px;background:var(--neutral-900);transition:all 0.3s ease}
-
-    @media(max-width:768px){
-      .nav-menu{display:none;position:absolute;top:72px;left:0;right:0;background:var(--white);flex-direction:column;padding:var(--space-4);border-bottom:1px solid var(--neutral-200)}
-      .nav-menu.active{display:flex}
-      .nav-toggle{display:flex}
+  <!-- Schema.org - WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "SOFOMES.COM",
+    "url": "https://sofomes.com",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://sofomes.com/buscar?q={search_term_string}",
+      "query-input": "required name=search_term_string"
     }
+  }
+  </script>
 
-    /* Hero Section */
-    .hero{position:relative;min-height:100vh;display:flex;align-items:center;background:linear-gradient(135deg,#0A2463 0%,#3B82F6 100%);padding:var(--space-20) 0;margin-top:72px}
-    .hero-content{position:relative;z-index:1;display:grid;gap:var(--space-12);align-items:center}
-    @media(min-width:1024px){
-      .hero-content{grid-template-columns:1fr 1fr;gap:var(--space-16)}
-    }
-    .hero-text{color:var(--white)}
-    .hero-title{color:var(--white);margin-bottom:var(--space-6)}
-    .hero-subtitle{font-size:var(--text-xl);margin-bottom:var(--space-8);opacity:0.95}
-    .hero-cta-group{display:flex;flex-wrap:wrap;gap:var(--space-4);margin-bottom:var(--space-8)}
-
-    /* Buttons */
-    .btn{display:inline-flex;align-items:center;gap:var(--space-2);padding:var(--space-4) var(--space-6);border-radius:8px;font-weight:600;text-decoration:none;transition:all 0.2s ease;cursor:pointer;border:none;font-size:var(--text-base)}
-    .btn-primary{background:var(--white);color:var(--primary-900)}
-    .btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 25px -5px rgba(0,0,0,0.2)}
-    .btn-secondary{background:transparent;color:var(--white);border:2px solid var(--white)}
-    .btn-secondary:hover{background:var(--white);color:var(--primary-900)}
-
-    /* Trust Bar */
-    .trust-bar{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:var(--space-6);padding:var(--space-6) 0;border-top:1px solid rgba(255,255,255,0.2)}
-    .trust-item{text-align:center;color:var(--white)}
-    .trust-item strong{display:block;font-size:var(--text-3xl);margin-bottom:var(--space-2)}
-    .trust-item span{font-size:var(--text-sm);opacity:0.9}
-
-    /* Section */
-    .section{padding:var(--space-20) 0}
-    .section-title{text-align:center;margin-bottom:var(--space-12)}
-    .section-subtitle{text-align:center;font-size:var(--text-xl);color:var(--neutral-700);max-width:800px;margin:0 auto var(--space-12)}
-  </style>
+  <!-- Código de instalación Cliengo para sofomes.com -->
+  <script type="text/javascript">
+    (function () {
+      var ldk = document.createElement('script');
+      ldk.type = 'text/javascript';
+      ldk.async = true;
+      ldk.src = 'https://s.cliengo.com/weboptimizer/62503ed1004881002a965901/690164685f597226ae0e7119.js?platform=onboarding_modular';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ldk, s);
+    })();
+  </script>
 </head>
 <body>
+
   <!-- Navigation -->
-  <nav class="nav" id="main-nav">
+  <nav class="nav">
     <div class="container">
-      <div class="nav-content">
-        <a href="/" class="nav-logo">SOFOMES.COM</a>
-
-        <ul class="nav-menu" id="nav-menu">
-          <li><a href="#que-es-sofom" class="nav-link">¿Qué es una SOFOM?</a></li>
-          <li><a href="#servicios" class="nav-link">Servicios</a></li>
-          <li><a href="#proceso" class="nav-link">Proceso</a></li>
-          <li><a href="#faq" class="nav-link">FAQ</a></li>
-          <li><a href="#contacto" class="nav-cta">Consultoría Gratuita</a></li>
-        </ul>
-
-        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+      <div class="nav-brand">
+        <a href="/">SOFOMES.COM</a>
+      </div>
+      <div class="nav-menu">
+        <a href="#que-es">¿Qué es?</a>
+        <a href="#directorio">Directorio (<span id="nav-count">...</span>)</a>
+        <a href="#fovissste">FOVISSSTE</a>
+        <a href="#casos-exito">Casos de Éxito</a>
+        <a href="#constituir">Constituir</a>
+        <a href="catalogos-rips-f36.html">Catálogos RIPS F36</a>
+        <a href="reportes-regulatorios-cnbv.html">Reportes</a>
       </div>
     </div>
   </nav>
 
-  <!-- Hero Section - Founder Variant (Default) -->
-  <section class="hero hero--founder" id="hero-founder">
+  <!-- Hero Section -->
+  <section class="hero">
     <div class="container">
       <div class="hero-content">
         <div class="hero-text">
-          <h2 class="hero-title">
-            Constituye tu SOFOM ENR en 8-12 Semanas con Acompañamiento Total
-          </h2>
+          <h1 class="hero-title">
+            <span id="hero-total">Cargando...</span> SOFOMes en Operación en México:<br>Directorio Completo CONDUSEF <span class="current-year"></span>
+          </h1>
           <p class="hero-subtitle">
-            Más de <strong>150 SOFOMes constituidas exitosamente</strong>.
-            Dictamen técnico CNBV aprobado en el 98% de los casos.
-            <span style="background:rgba(245,158,11,0.2);padding:4px 8px;border-radius:4px;display:inline-block;margin-top:8px">Precio fijo: $95,000 + IVA</span>
+            La única base de datos pública searchable de <strong>todas las SOFOMes registradas</strong> en México.
+            Financiamiento PyMEs, constitución SOFOM ENR, y casos de éxito reales con datos verificables.
           </p>
 
-          <div class="hero-cta-group">
-            <button class="btn btn-primary" onclick="openModal('cotizador')">
-              Obtener Cotización Personalizada
-            </button>
-            <a href="#proceso" class="btn btn-secondary">
-              Ver Proceso Completo
-            </a>
+          <!-- Stats Bar -->
+          <div class="stats-bar">
+            <div class="stat-item">
+              <strong id="stat-total">...</strong>
+              <span>SOFOMes en Operación</span>
+            </div>
+            <div class="stat-item">
+              <strong>98.2%</strong>
+              <span>Son SOFOM ENR</span>
+            </div>
+            <div class="stat-item">
+              <strong>70%</strong>
+              <span>Tasa Aprobación</span>
+            </div>
+            <div class="stat-item">
+              <strong>14</strong>
+              <span>SOFOMes FOVISSSTE</span>
+            </div>
           </div>
 
-          <!-- Trust Bar -->
-          <div class="trust-bar">
-            <div class="trust-item">
-              <img src="assets/logos/cnbv.svg" alt="Logo CNBV - Comisión Nacional Bancaria y de Valores" style="height:40px;margin:0 auto 8px" onerror="this.style.display='none'">
-              <span>98% aprobación CNBV</span>
-            </div>
-            <div class="trust-item">
-              <img src="assets/logos/condusef.svg" alt="Logo CONDUSEF - Comisión Nacional para la Protección de Usuarios de Servicios Financieros" style="height:40px;margin:0 auto 8px" onerror="this.style.display='none'">
-              <span>150+ registros SIPRES</span>
-            </div>
-            <div class="trust-item">
-              <strong>8-12 sem</strong>
-              <span>Tiempo total</span>
-            </div>
+          <div class="hero-cta">
+            <a href="#directorio" class="btn btn-primary">
+              Ver Directorio Completo
+            </a>
+            <a href="#fovissste" class="btn btn-secondary">
+              SOFOMes FOVISSSTE
+            </a>
           </div>
         </div>
 
         <div class="hero-image">
-          <img src="assets/img/main.jpeg" alt="Founder constituyendo SOFOM ENR - Empresario revisando documentos CNBV" style="width:100%;height:auto;border-radius:16px;box-shadow:0 20px 40px rgba(0,0,0,0.3)" loading="lazy">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Hero Section - PyME Variant (Hidden by default) -->
-  <section class="hero hero--pyme" id="hero-pyme" style="display:none">
-    <div class="container">
-      <div class="hero-content">
-        <div class="hero-text">
-          <h2 class="hero-title">
-            ¿Tu PyME Necesita Financiamiento que el Banco Rechazó?
-          </h2>
-          <p class="hero-subtitle">
-            Las SOFOMes aprueban el 70% de solicitudes que la banca tradicional rechaza.
-            <strong>Créditos desde $50,000 hasta $5M con decisión en 48 horas.</strong>
-          </p>
-
-          <div class="hero-cta-group">
-            <button class="btn btn-primary" onclick="openModal('calculadora')">
-              Calcula tu crédito en 2 minutos
-            </button>
-            <a href="#casos-exito" class="btn btn-secondary">
-              Ver PyMEs que ya obtuvieron crédito
-            </a>
-          </div>
-
-          <div class="trust-bar">
-            <div class="trust-item">
-              <strong>2,500+</strong>
-              <span>PyMEs financiadas</span>
-            </div>
-            <div class="trust-item">
-              <strong>$850M</strong>
-              <span>Otorgados en 2024</span>
-            </div>
-            <div class="trust-item">
-              <strong>48 horas</strong>
-              <span>Decisión promedio</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-image">
-          <img src="assets/img/main.jpeg" alt="PyME recibiendo financiamiento de SOFOM - Empresario firmando contrato de crédito" style="width:100%;height:auto;border-radius:16px;box-shadow:0 20px 40px rgba(0,0,0,0.3)" loading="lazy">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Hero Section - Investor Variant (Hidden by default) -->
-  <section class="hero hero--investor" id="hero-investor" style="display:none">
-    <div class="container">
-      <div class="hero-content">
-        <div class="hero-text">
-          <h2 class="hero-title">
-            Oportunidades de Inversión en SOFOMes con Rendimientos del 12-18% Anual
-          </h2>
-          <p class="hero-subtitle">
-            Conectamos inversionistas institucionales con SOFOMes estructuradas y auditadas.
-            <strong>Deal flow curado con due diligence completo.</strong>
-          </p>
-
-          <div class="hero-cta-group">
-            <button class="btn btn-primary" onclick="openModal('investor-access')">
-              Acceder a deal flow exclusivo
-            </button>
-            <a href="#metricas" class="btn btn-secondary">
-              Ver métricas de performance
-            </a>
-          </div>
-
-          <div class="trust-bar">
-            <div class="trust-item">
-              <strong>$120M</strong>
-              <span>AUM gestionado</span>
-            </div>
-            <div class="trust-item">
-              <strong>14.5%</strong>
-              <span>ROI promedio 2024</span>
-            </div>
-            <div class="trust-item">
-              <strong>25</strong>
-              <span>SOFOMes activas</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-image">
-          <img src="assets/img/main.jpeg" alt="Dashboard de inversiones en SOFOMes - Análisis financiero y métricas de rendimiento" style="width:100%;height:auto;border-radius:16px;box-shadow:0 20px 40px rgba(0,0,0,0.3)" loading="lazy">
+          <img src="assets/img/main.jpeg" alt="Directorio SOFOMes México - SOFOMes en operación CONDUSEF" loading="eager">
         </div>
       </div>
     </div>
   </section>
 
   <!-- Section: ¿Qué es una SOFOM? -->
-  <section id="que-es-sofom" class="section">
+  <section id="que-es" class="section">
     <div class="container">
-      <h1 class="section-title">¿Qué es una SOFOM en México?</h1>
-      <p class="section-subtitle">
-        Una <strong>Sociedad Financiera de Objeto Múltiple (SOFOM)</strong> es una entidad financiera mexicana que otorga crédito, arrendamiento financiero y factoraje sin captar ahorro del público. Es la alternativa al banco tradicional que aprueba el 70% de solicitudes rechazadas.
-      </p>
+      <h2 class="section-title">¿Qué es una SOFOM en México?</h2>
 
-      <div class="feature-grid">
-        <div class="feature-card fade-in">
-          <div class="feature-icon">1</div>
-          <h3 class="feature-title">Otorgamiento de Crédito</h3>
-          <p class="feature-text">
-            Créditos simples, revolventes, hipotecarios, automotrices, personales y empresariales. Desde $50,000 hasta $50M con decisión en 48 horas.
+      <div class="grid grid-2">
+        <div>
+          <p class="lead">
+            Una <strong>SOFOM (Sociedad Financiera de Objeto Múltiple)</strong> es una entidad financiera mexicana
+            que otorga crédito, arrendamiento financiero y factoraje <strong>sin captar ahorro del público</strong>.
           </p>
+
+          <h3>Características Principales</h3>
+          <ul class="feature-list">
+            <li>✅ <strong>Mayor aprobación:</strong> 70% vs 20% de bancos tradicionales</li>
+            <li>✅ <strong>Velocidad:</strong> Decisión en 48-72 horas vs 3-4 meses bancos</li>
+            <li>✅ <strong>Flexibilidad:</strong> Soluciones "a la medida" (revolventes, gracia, solo intereses)</li>
+            <li>✅ <strong>Inclusión:</strong> 6 de cada 10 PyMEs obtienen su primer crédito en una SOFOM</li>
+            <li>✅ <strong>Ventaja fiscal:</strong> Intereses a personas morales exentos de IVA</li>
+          </ul>
+
+          <div class="alert alert-info">
+            <strong>Dato clave:</strong> En México operan actualmente <strong><span id="alert-count">...</span> SOFOMes</strong> en operación registradas
+            en CONDUSEF, de las cuales el 98.2% son ENR (Entidad No Regulada).
+          </div>
         </div>
 
-        <div class="feature-card fade-in">
-          <div class="feature-icon">2</div>
-          <h3 class="feature-title">Arrendamiento Financiero</h3>
-          <p class="feature-text">
-            Arrendamiento puro, financiero o lease-back de maquinaria, equipo de transporte e inmuebles comerciales para uso empresarial.
-          </p>
-        </div>
+        <div>
+          <h3>SOFOM ER vs ENR: ¿Cuál es la diferencia?</h3>
 
-        <div class="feature-card fade-in">
-          <div class="feature-icon">3</div>
-          <h3 class="feature-title">Factoraje Financiero</h3>
-          <p class="feature-text">
-            Factoraje con o sin recurso, nacional o internacional, de cuentas por cobrar empresariales. Liquidez inmediata para tu negocio.
-          </p>
-        </div>
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Característica</th>
+                <th>SOFOM ER (38)</th>
+                <th>SOFOM ENR (2,038)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>% del mercado</td>
+                <td>1.8%</td>
+                <td><strong>98.2%</strong></td>
+              </tr>
+              <tr>
+                <td>Vínculo patrimonial</td>
+                <td>Con bancos/GF</td>
+                <td>Independiente</td>
+              </tr>
+              <tr>
+                <td>Regulación CNBV</td>
+                <td>Integral</td>
+                <td>Solo PLD/FT</td>
+              </tr>
+              <tr>
+                <td>Capital mínimo</td>
+                <td>Variable (CNBV)</td>
+                <td>Sin mínimo legal</td>
+              </tr>
+              <tr>
+                <td>Barrera entrada</td>
+                <td>Alta</td>
+                <td>Media-Alta</td>
+              </tr>
+            </tbody>
+          </table>
 
-        <div class="feature-card fade-in">
-          <div class="feature-icon">4</div>
-          <h3 class="feature-title">Fideicomiso en Garantía</h3>
-          <p class="feature-text">
-            Constitución y administración de fideicomisos para garantizar créditos. Ejecución en 3 meses vs 3+ años de hipoteca tradicional.
+          <p style="margin-top: 1.5rem">
+            <strong>Ejemplos SOFOM ER:</strong> Arrendadora Banorte, Cetelem Inbursa, GM Financial<br>
+            <strong>Ejemplos SOFOM ENR:</strong> Konfío, Kueski, Crédito Para Ti
           </p>
+
+          <a href="#casos-exito" class="btn btn-outline">Ver Casos de Éxito →</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Section: Servicios -->
-  <section id="servicios" class="section">
+  <!-- Section: Directorio SOFOMes -->
+  <section id="directorio" class="section">
     <div class="container">
-      <h2 class="section-title">Nuestros Servicios</h2>
+      <h2 class="section-title">Directorio Completo: <span id="directory-title-count">...</span> SOFOMes en Operación en CONDUSEF</h2>
       <p class="section-subtitle">
-        Soluciones integrales para PyMEs, emprendedores e inversionistas en el ecosistema SOFOM de México.
+        Base de datos actualizada al 27 de octubre de <span class="current-year"></span>. La única lista pública searchable de todas las SOFOMes en México.
       </p>
 
-      <!-- Service Tabs -->
-      <div class="service-tabs">
-        <button class="service-tab">Para PyMEs</button>
-        <button class="service-tab">Para Founders</button>
-        <button class="service-tab">Para Inversionistas</button>
-      </div>
+      <div class="directory-stats">
+        <div class="stat-card">
+          <div class="stat-number" id="directory-stat-total">...</div>
+          <div class="stat-label">SOFOMes Activas</div>
+          <div class="stat-detail">Todas en operación</div>
+        </div>
 
-      <!-- Service Content 1: PyMEs -->
-      <div class="service-content">
-        <div class="grid grid-2">
-          <div>
-            <h3>Financiamiento que el Banco Rechazó</h3>
-            <p>Conectamos a tu PyME con SOFOMes especializadas en tu sector que tienen:</p>
+        <div class="stat-card">
+          <div class="stat-number">774</div>
+          <div class="stat-label">Ciudad de México</div>
+          <div class="stat-detail">37.3% del total</div>
+        </div>
 
-            <ul class="cost-breakdown">
-              <li><strong>70% tasa de aprobación</strong> vs 30% de bancos tradicionales</li>
-              <li><strong>Decisión en 48-72 horas</strong> vs 3-6 semanas</li>
-              <li><strong>Requisitos flexibles:</strong> Sin necesidad de 2 años de historial</li>
-              <li><strong>Montos desde $50,000 hasta $5M</strong> adaptados a tu necesidad</li>
-              <li><strong>Tasas competitivas:</strong> Desde 12% anual según perfil de riesgo</li>
-            </ul>
+        <div class="stat-card">
+          <div class="stat-number">283</div>
+          <div class="stat-label">Nuevo León</div>
+          <div class="stat-detail">Hub financiero norte</div>
+        </div>
 
-            <a href="#contacto" class="btn btn-primary mt-8">Solicitar Financiamiento</a>
-          </div>
-
-          <div class="card">
-            <h4 class="card-title">Proceso de Solicitud</h4>
-            <ol class="timeline-list">
-              <li><strong>Completa formulario (2 minutos):</strong> Monto, plazo, giro de negocio</li>
-              <li><strong>Recibe 3 opciones de SOFOMes:</strong> Comparativa de tasas y condiciones</li>
-              <li><strong>Análisis de crédito (24-48h):</strong> Documentación mínima requerida</li>
-              <li><strong>Aprobación y desembolso:</strong> Recibes el dinero en tu cuenta</li>
-            </ol>
-
-            <p style="color: #10B981; font-weight: 600; margin-top: 1rem">
-              ⚡ Casos urgentes: Decisión en 24 horas
-            </p>
-          </div>
+        <div class="stat-card">
+          <div class="stat-number">186</div>
+          <div class="stat-label">Jalisco</div>
+          <div class="stat-detail">Corredor Bajío</div>
         </div>
       </div>
 
-      <!-- Service Content 2: Founders -->
-      <div class="service-content">
-        <div class="grid grid-2">
-          <div>
-            <h3>Constitución de SOFOM ENR Completa</h3>
-            <p><strong>Precio fijo: $95,000 + IVA</strong> | Tiempo: 8-12 semanas</p>
-
-            <h4 style="margin-top: 1.5rem; margin-bottom: 1rem">¿Qué incluye?</h4>
-            <ul class="cost-breakdown">
-              <li>✓ <strong>Asesoría inicial y plan estratégico</strong> (2 sesiones de 2 horas)</li>
-              <li>✓ <strong>Denominación social y opinión CONDUSEF</strong></li>
-              <li>✓ <strong>Redacción de estatutos CNBV-compliant</strong></li>
-              <li>✓ <strong>Constitución ante notario</strong> e inscripción RPC</li>
-              <li>✓ <strong>Dictamen técnico PLD/FT CNBV</strong> (98% aprobación)</li>
-              <li>✓ <strong>Inscripción SIPRES CONDUSEF</strong></li>
-              <li>✓ <strong>Manuales PLD/FT completos</strong> (180+ páginas)</li>
-              <li>✓ <strong>3 meses de soporte post-constitución</strong></li>
-            </ul>
-
-            <p style="color: #F59E0B; font-weight: 600; margin-top: 1rem">
-              🎯 Garantía: Si el dictamen CNBV es rechazado por error nuestro, reembolsamos 100%
-            </p>
-
-            <a href="#contacto" class="btn btn-primary mt-8">Iniciar Constitución</a>
-          </div>
-
-          <div class="card">
-            <h4 class="card-title">¿Por qué nosotros?</h4>
-            <div style="display: grid; gap: 1rem">
-              <div style="padding: 1rem; background: #F0F9FF; border-left: 3px solid #3B82F6; border-radius: 4px">
-                <strong style="color: #0A2463">150+ SOFOMes constituidas</strong>
-                <p style="margin: 0.5rem 0 0; color: #374151; font-size: 0.875rem">Track record comprobable desde 2018</p>
-              </div>
-
-              <div style="padding: 1rem; background: #F0F9FF; border-left: 3px solid #3B82F6; border-radius: 4px">
-                <strong style="color: #0A2463">98% aprobación CNBV</strong>
-                <p style="margin: 0.5rem 0 0; color: #374151; font-size: 0.875rem">Solo 3 dictámenes rechazados en 2024</p>
-              </div>
-
-              <div style="padding: 1rem; background: #F0F9FF; border-left: 3px solid #3B82F6; border-radius: 4px">
-                <strong style="color: #0A2463">Equipo certificado CNBV</strong>
-                <p style="margin: 0.5rem 0 0; color: #374151; font-size: 0.875rem">Directora de Compliance con 8 años en CNBV</p>
-              </div>
-
-              <div style="padding: 1rem; background: #F0F9FF; border-left: 3px solid #3B82F6; border-radius: 4px">
-                <strong style="color: #0A2463">Acompañamiento total</strong>
-                <p style="margin: 0.5rem 0 0; color: #374151; font-size: 0.875rem">Desde denominación hasta primer crédito otorgado</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Service Content 3: Investors -->
-      <div class="service-content">
-        <div class="grid grid-2">
-          <div>
-            <h3>Oportunidades de Inversión en SOFOMes</h3>
-            <p>Acceso exclusivo a deal flow curado de SOFOMes estructuradas con:</p>
-
-            <ul class="cost-breakdown">
-              <li><strong>Rendimientos 12-18% anual:</strong> Vs 8-10% bonos corporativos</li>
-              <li><strong>Due diligence completo:</strong> Análisis financiero, legal y operativo</li>
-              <li><strong>Estructuras flexibles:</strong> Deuda senior, equity, híbridas</li>
-              <li><strong>Tickets desde $1M USD:</strong> Hasta $20M+ para fondos institucionales</li>
-              <li><strong>Reporting trimestral:</strong> Dashboard con métricas en tiempo real</li>
-            </ul>
-
-            <h4 style="margin-top: 1.5rem; margin-bottom: 1rem">Portfolio Actual</h4>
-            <div class="grid grid-3" style="margin-top: 1rem">
-              <div style="text-align: center">
-                <strong style="display: block; font-size: 2rem; color: #0A2463">$120M</strong>
-                <span style="color: #6B7280; font-size: 0.875rem">AUM gestionado</span>
-              </div>
-              <div style="text-align: center">
-                <strong style="display: block; font-size: 2rem; color: #0A2463">14.5%</strong>
-                <span style="color: #6B7280; font-size: 0.875rem">ROI promedio 2024</span>
-              </div>
-              <div style="text-align: center">
-                <strong style="display: block; font-size: 2rem; color: #0A2463">25</strong>
-                <span style="color: #6B7280; font-size: 0.875rem">SOFOMes activas</span>
-              </div>
-            </div>
-
-            <a href="#contacto" class="btn btn-primary mt-8">Acceder a Deal Flow</a>
-          </div>
-
-          <div class="card">
-            <h4 class="card-title">Sectores de Inversión</h4>
-            <p style="margin-bottom: 1rem; color: #6B7280">Diversificación estratégica por sector y etapa:</p>
-
-            <div style="display: grid; gap: 0.75rem">
-              <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.75rem; background: #F9FAFB; border-radius: 6px">
-                <span><strong>Microcréditos PyMEs</strong></span>
-                <span style="color: #10B981; font-weight: 600">35%</span>
-              </div>
-              <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.75rem; background: #F9FAFB; border-radius: 6px">
-                <span><strong>Factoraje Corporativo</strong></span>
-                <span style="color: #10B981; font-weight: 600">25%</span>
-              </div>
-              <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.75rem; background: #F9FAFB; border-radius: 6px">
-                <span><strong>Crédito Hipotecario</strong></span>
-                <span style="color: #10B981; font-weight: 600">20%</span>
-              </div>
-              <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.75rem; background: #F9FAFB; border-radius: 6px">
-                <span><strong>Arrendamiento Industrial</strong></span>
-                <span style="color: #10B981; font-weight: 600">15%</span>
-              </div>
-              <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.75rem; background: #F9FAFB; border-radius: 6px">
-                <span><strong>FinTech Lending</strong></span>
-                <span style="color: #10B981; font-weight: 600">5%</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section: Proceso de Constitución -->
-  <section id="proceso" class="section">
-    <div class="container">
-      <h2 class="section-title">Proceso de Constitución SOFOM ENR</h2>
-      <p class="section-subtitle">
-        7 pasos detallados para constituir tu SOFOM ENR en 8-12 semanas con acompañamiento total.
-      </p>
-
-      <div class="process-timeline">
-        <div class="process-step fade-in">
-          <div class="process-number">1</div>
-          <div class="process-time">1 semana</div>
-          <h3 class="process-title">Denominación Social</h3>
-          <p class="process-description">
-            Solicitamos autorización del nombre ante la Secretaría de Economía, cuidando no utilizar palabras reservadas como "Banco" o "Ahorro" sin permiso.
-          </p>
-        </div>
-
-        <div class="process-step fade-in">
-          <div class="process-number">2</div>
-          <div class="process-time">2-3 semanas</div>
-          <h3 class="process-title">Opinión Favorable CONDUSEF</h3>
-          <p class="process-description">
-            Obtenemos la opinión favorable de CONDUSEF sobre los estatutos sociales, verificando que el objeto social cumpla con la LGOAAC. Este paso es crucial y no se puede saltar.
-          </p>
-        </div>
-
-        <div class="process-step fade-in">
-          <div class="process-number">3</div>
-          <div class="process-time">1 semana</div>
-          <h3 class="process-title">Constitución ante Notario</h3>
-          <p class="process-description">
-            Formalizamos la sociedad anónima ante fedatario público e inscribimos el acta constitutiva en el Registro Público de Comercio (RPC).
-          </p>
-        </div>
-
-        <div class="process-step fade-in">
-          <div class="process-number">4</div>
-          <div class="process-time">6-8 semanas</div>
-          <h3 class="process-title">Dictamen Técnico CNBV (PLD/FT)</h3>
-          <p class="process-description">
-            <strong>El paso más crítico.</strong> Solicitamos dictamen técnico a la CNBV en materia de Prevención de Lavado de Dinero, evaluando mecanismos de KYC y prevención. El 70% se resuelven entre los días 35-45.
-          </p>
-        </div>
-
-        <div class="process-step fade-in">
-          <div class="process-number">5</div>
-          <div class="process-time">1 semana</div>
-          <h3 class="process-title">Contratación Buró de Crédito</h3>
-          <p class="process-description">
-            Contratamos con una Sociedad de Información Crediticia (Buró de Crédito o Círculo de Crédito) para cumplir con requisitos SIPRES.
-          </p>
-        </div>
-
-        <div class="process-step fade-in">
-          <div class="process-number">6</div>
-          <div class="process-time">1 semana</div>
-          <h3 class="process-title">Inscripción SIPRES</h3>
-          <p class="process-description">
-            Realizamos la inscripción final en el SIPRES de CONDUSEF, presentando el Plan General de Funcionamiento y aviso de inicio de operaciones.
-          </p>
-        </div>
-
-        <div class="process-step fade-in">
-          <div class="process-number">7</div>
-          <div class="process-time">1 semana</div>
-          <h3 class="process-title">Clave SITI PLD/FT</h3>
-          <p class="process-description">
-            Solicitamos clave de acceso al sistema SITI PLD/FT de la CNBV para realizar reportes de operaciones relevantes, inusuales e internas preocupantes. <strong>¡Tu SOFOM está lista para operar!</strong>
-          </p>
-        </div>
-      </div>
-
-      <div style="text-align: center; margin-top: 3rem">
-        <a href="#contacto" class="btn btn-primary" style="font-size: 1.125rem; padding: 1rem 2rem">
-          Iniciar mi Proceso de Constitución
+      <div class="cta-box">
+        <h3>Accede al Directorio Completo</h3>
+        <p>Busca por nombre, estado, tipo (ER/ENR), fecha de actualización. Exporta a CSV/Excel.</p>
+        <a href="lista-sofomes-mexico.html" class="btn btn-primary btn-lg">
+          🔍 Buscar en Directorio (<span id="cta-count">...</span> SOFOMes)
         </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: SOFOM FOVISSSTE -->
+  <section id="fovissste" class="section">
+    <div class="container">
+      <h2 class="section-title">SOFOMes Autorizadas por FOVISSSTE</h2>
+      <p class="section-subtitle">
+        14 SOFOMes autorizadas para gestionar créditos hipotecarios FOVISSSTE.
+        Proceso: 3 semanas con documentación completa (antes 6 meses).
+      </p>
+
+      <div class="grid grid-2">
+        <div>
+          <h3>¿Cómo funciona el crédito FOVISSSTE con SOFOMes?</h3>
+
+          <ol class="process-list">
+            <li>
+              <strong>Asesoría Gratuita</strong>
+              <p>La SOFOM ofrece asesoría profesional sin costo sobre esquemas de crédito, montos y condiciones.</p>
+            </li>
+            <li>
+              <strong>Gestión del Trámite</strong>
+              <p>Ayuda con documentación, verificación de la vivienda y coordinación con el notario.</p>
+            </li>
+            <li>
+              <strong>Formalización Rápida</strong>
+              <p>Escrituración en 3 semanas o 1 mes si la documentación está completa (antes 6 meses).</p>
+            </li>
+            <li>
+              <strong>Supervisión FOVISSSTE</strong>
+              <p>Todas las SOFOMes están inscritas en el padrón oficial y supervisadas constantemente.</p>
+            </li>
+          </ol>
+
+          <div class="alert alert-warning">
+            <strong>Importante:</strong> La asesoría de la SOFOM es <strong>100% gratuita</strong>.
+            Si una SOFOM solicita pago por el trámite, puede ser reportada.
+          </div>
+        </div>
+
+        <div>
+          <h3>SOFOMes FOVISSSTE Autorizadas (14)</h3>
+
+          <div class="fovissste-list">
+            <div class="fovissste-item featured">
+              <span class="badge badge-gold">#1 Calificada</span>
+              <strong>CRÉDITO PARA TI, S.A. DE C.V. SOFOM E.N.R.</strong>
+              <p>La SOFOM #1 calificada por FOVISSSTE según indicadores oficiales.</p>
+            </div>
+
+            <div class="fovissste-item">
+              <strong>ALIANZA FAMILIAR, S.A. DE C.V. SOFOM E.N.R.</strong>
+            </div>
+            <div class="fovissste-item">
+              <strong>ALRA DEL SUR, S.A. DE C.V. SOFOM E.N.R.</strong>
+            </div>
+            <div class="fovissste-item">
+              <strong>DAE HIPOTECARIA, S.A. DE C.V. SOFOM E.N.R.</strong>
+            </div>
+            <div class="fovissste-item">
+              <strong>DOÑA JUANITA FINANZAS POPULARES, S.A. DE C.V. SOFOM E.N.R.</strong>
+            </div>
+            <div class="fovissste-item">
+              <strong>FACICASA, S.A. DE C.V. SOFOM E.N.R.</strong>
+            </div>
+            <div class="fovissste-item">
+              <strong>FACTOR GFC GLOBAL, S.A. DE C.V. SOFOM E.N.R.</strong>
+            </div>
+            <div class="fovissste-item">
+              <strong>HIPOTECARIA CREA MÁS, S.A. DE C.V. SOFOM E.N.R.</strong>
+            </div>
+            <div class="fovissste-item">
+              <strong>HIPOTECARIA HOGAR, S.A. DE C.V. SOFOM E.N.R.</strong>
+            </div>
+            <div class="fovissste-item">
+              <strong>INCLUSIÓN HIPOTECARIA, S.A. DE C.V. SOFOM E.N.R.</strong>
+            </div>
+            <div class="fovissste-item">
+              <strong>NEW LIFE & ZONE MEXICO, S.A. DE C.V. SOFOM E.N.R.</strong>
+            </div>
+            <div class="fovissste-item">
+              <strong>SÉ DUEÑO S.A. DE C.V. SOFOM E.N.R.</strong>
+            </div>
+            <div class="fovissste-item">
+              <strong>FINANCIERA DESARROLLADORA DE CAPITAL S.A.P.I. DE C.V. SOFOM E.N.R.</strong>
+            </div>
+            <div class="fovissste-item">
+              <strong>GRUPO PADIO FINANCIERA, S.A.P.I DE C.V., SOFOM, E.N.R.</strong>
+            </div>
+          </div>
+
+          <a href="#fovissste" class="btn btn-primary" style="margin-top: 1.5rem">
+            Ver Guía Completa FOVISSSTE →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Casos de Éxito -->
+  <section id="casos-exito" class="section">
+    <div class="container">
+      <h2 class="section-title">Casos de Éxito: 5 SOFOMes que Debes Conocer</h2>
+      <p class="section-subtitle">
+        Ejemplos reales de SOFOMes exitosas en México con datos verificables y métricas de desempeño.
+      </p>
+
+      <div class="cases-grid">
+        <!-- Konfío -->
+        <div class="case-card">
+          <div class="case-header">
+            <h3>Konfío</h3>
+            <span class="badge badge-unicorn">🦄 Unicornio</span>
+          </div>
+          <div class="case-stats">
+            <div class="case-stat">
+              <strong>$1,300M USD</strong>
+              <span>Valuación 2021</span>
+            </div>
+            <div class="case-stat">
+              <strong>Softbank</strong>
+              <span>Inversionista</span>
+            </div>
+          </div>
+          <p class="case-description">
+            SOFOM enfocada en créditos en línea para PyMEs que no califican para financiamiento bancario.
+            Considerada una de las mejores fintechs mexicanas.
+          </p>
+          <ul class="case-features">
+            <li>✅ Registro completo CONDUSEF</li>
+            <li>✅ Créditos 100% en línea</li>
+            <li>✅ Respaldo Quona Capital, Kaszek, QED</li>
+          </ul>
+        </div>
+
+        <!-- Kueski -->
+        <div class="case-card">
+          <div class="case-header">
+            <h3>Kueski</h3>
+            <span class="badge badge-fintech">🏆 Top 250 Fintech</span>
+          </div>
+          <div class="case-stats">
+            <div class="case-stat">
+              <strong>100% Digital</strong>
+              <span>Primera SOFOM ENR</span>
+            </div>
+            <div class="case-stat">
+              <strong>CB Insights</strong>
+              <span>Top 250 (2022)</span>
+            </div>
+          </div>
+          <p class="case-description">
+            Primera SOFOM E.N.R. 100% digital. Reconocida por CONDUSEF con la Insignia de Adultos Mayores (<span class="current-year"></span>).
+            Mejor plataforma BNPL en Fintech Breakthrough Awards 2023.
+          </p>
+          <ul class="case-features">
+            <li>✅ Primera SOFOM 100% digital</li>
+            <li>✅ Insignia CONDUSEF <span class="current-year"></span></li>
+            <li>✅ Innovación tecnológica</li>
+          </ul>
+        </div>
+
+        <!-- Crédito Para Ti -->
+        <div class="case-card">
+          <div class="case-header">
+            <h3>Crédito Para Ti</h3>
+            <span class="badge badge-fovissste">#1 FOVISSSTE</span>
+          </div>
+          <div class="case-stats">
+            <div class="case-stat">
+              <strong>#1 Calificada</strong>
+              <span>Por FOVISSSTE</span>
+            </div>
+            <div class="case-stat">
+              <strong>Autorizada</strong>
+              <span>Crédito hipotecario</span>
+            </div>
+          </div>
+          <p class="case-description">
+            SOFOM E.N.R. clasificada como #1 por FOVISSSTE para créditos hipotecarios.
+            Calificación basada en operaciones asignadas, escrituradas y atención a aclaraciones.
+          </p>
+          <ul class="case-features">
+            <li>✅ Mejor desempeño FOVISSSTE</li>
+            <li>✅ Supervisión constante</li>
+            <li>✅ Especialización hipotecaria</li>
+          </ul>
+        </div>
+
+        <!-- Serfimex -->
+        <div class="case-card">
+          <div class="case-header">
+            <h3>Serfimex</h3>
+            <span class="badge badge-bursatil">📈 BIVA</span>
+          </div>
+          <div class="case-stats">
+            <div class="case-stat">
+              <strong>>$400M</strong>
+              <span>Cartera mínima</span>
+            </div>
+            <div class="case-stat">
+              <strong>BIVA</strong>
+              <span>Bolsa listada</span>
+            </div>
+          </div>
+          <p class="case-description">
+            Debutó en la Bolsa Institucional de Valores (BIVA), logro alcanzable solo para SOFOMes con más de
+            400 millones de pesos en cartera (solo 13% del sector).
+          </p>
+          <ul class="case-features">
+            <li>✅ Impulso PyMEs</li>
+            <li>✅ Financiamiento turístico</li>
+            <li>✅ Fondeo bursátil</li>
+          </ul>
+        </div>
+
+        <!-- GM Financial -->
+        <div class="case-card">
+          <div class="case-header">
+            <h3>GM Financial</h3>
+            <span class="badge badge-er">SOFOM ER</span>
+          </div>
+          <div class="case-stats">
+            <div class="case-stat">
+              <strong>IR: 2.82</strong>
+              <span>vs 18.45 promedio</span>
+            </div>
+            <div class="case-stat">
+              <strong>Excelente</strong>
+              <span>Satisfacción cliente</span>
+            </div>
+          </div>
+          <p class="case-description">
+            SOFOM E.R. con desempeño excepcional. Índice de Reclamación (IR) de solo 2.82 por cada 10,000 contratos,
+            muy por debajo del promedio sectorial de 18.45.
+          </p>
+          <ul class="case-features">
+            <li>✅ Crédito automotriz</li>
+            <li>✅ Bajo índice quejas</li>
+            <li>✅ Regulación CNBV integral</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="alert alert-info" style="margin-top: 2rem">
+        <strong>Contexto del sector:</strong> Las SOFOMes son la figura financiera más numerosa en México,
+        con más de 20 millones de clientes y cerca del 20% de penetración en el financiamiento total del sector privado.
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Constituir SOFOM ENR -->
+  <section id="constituir" class="section">
+    <div class="container">
+      <h2 class="section-title">Cómo Constituir una SOFOM ENR en México</h2>
+      <p class="section-subtitle">
+        Proceso completo con costos REALES y plazos regulatorios verificables. No promesas irreales.
+      </p>
+
+      <div class="grid grid-2">
+        <div>
+          <h3>⚠️ Costos Reales de Constitución</h3>
+          <p class="lead">
+            <strong>Rango: $85,000 - $500,000 MXN</strong><br>
+            (No creas el mito de "13K pesos")
+          </p>
+
+          <div class="cost-breakdown">
+            <div class="cost-item">
+              <strong>Dictamen Técnico CNBV</strong>
+              <span class="cost-amount">$30,241</span>
+              <p>Oficial de Cumplimiento + sistema automatizado PLD/FT (millones de pesos)</p>
+            </div>
+            <div class="cost-item">
+              <strong>Certificación Oficial Cumplimiento</strong>
+              <span class="cost-amount">$16,558</span>
+              <p>Curso CNBV obligatorio (100 hrs) + examen + registro</p>
+            </div>
+            <div class="cost-item">
+              <strong>Notaría + Permisos</strong>
+              <span class="cost-amount">$50,000 - $80,000</span>
+              <p>Acta constitutiva, protocolización, inscripción RPP</p>
+            </div>
+            <div class="cost-item">
+              <strong>Software PLD/FT Automatizado</strong>
+              <span class="cost-amount">Variable</span>
+              <p>Licenciamiento mensual/anual: (según volumen de clientes u operaciones)</p>
+            </div>
+            <div class="cost-item">
+              <strong>Asesoría Legal Especializada</strong>
+              <span class="cost-amount">$100,000 - $300,000</span>
+              <p>Constitución + manuales + políticas + representación regulatoria</p>
+            </div>
+          </div>
+
+          <div class="alert alert-warning">
+            <strong>Capital Práctico Recomendado:</strong> 50 millones de pesos para viabilidad operativa real
+            (aunque legalmente no hay mínimo para SOFOM ENR).
+          </div>
+        </div>
+
+        <div>
+          <h3>📋 Proceso Paso a Paso (3-4 meses)</h3>
+
+          <ol class="timeline-list">
+            <li>
+              <strong>1. Denominación Social</strong>
+              <p>Solicitud SE (Secretaría de Economía). Debe incluir "S.A. DE C.V. SOFOM E.N.R."</p>
+              <span class="timeline-duration">⏱️ 1 semana</span>
+            </li>
+            <li>
+              <strong>2. Opinión CONDUSEF</strong>
+              <p>Solicitar opinión para uso de denominación SOFOM en SIPRES.</p>
+              <span class="timeline-duration">⏱️ 30 días hábiles</span>
+            </li>
+            <li>
+              <strong>3. Constitución Notarial</strong>
+              <p>Acta constitutiva con objeto social específico, estatutos, capital social mínimo de 50K UDIS.</p>
+              <span class="timeline-duration">⏱️ 30 días</span>
+            </li>
+            <li>
+              <strong>4. Dictamen Técnico CNBV</strong>
+              <p>Perito certificado evalúa sistema automatizado PLD/FT (53 preguntas checklist).</p>
+              <span class="timeline-duration">⏱️ 50 días</span>
+            </li>
+            <li>
+              <strong>5. Contrato SIC CONDUSEF</strong>
+              <p>Sociedad de Información Crediticia (Buró o Círculo de Crédito).</p>
+              <span class="timeline-duration">⏱️ Variable</span>
+            </li>
+            <li>
+              <strong>6. Inscripción SIPRES</strong>
+              <p>Registro en Sistema de Registro de Prestadores de Servicios Financieros.</p>
+              <span class="timeline-duration">⏱️ 10 días</span>
+            </li>
+            <li>
+              <strong>7. Clave SITI PLD/FT</strong>
+              <p>Registro en Sistema Integral de Tecnología e Información (UIF).</p>
+              <span class="timeline-duration">⏱️ 1 semana</span>
+            </li>
+          </ol>
+
+          <div class="cta-box">
+            <h4>¿Necesitas Asesoría Especializada?</h4>
+            <p>Proceso completo de constitución + Software PLD/FT incluido</p>
+            <a href="https://wa.me/5215547626178?text=Hola%2C%20me%20interesa%20solicitar%20consultor%C3%ADa%20para%20constituir%20una%20SOFOM%20ENR" class="btn btn-primary" target="_blank" rel="noopener">Solicitar Consultoría →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Software PLD/FT -->
+  <section id="software-pld" class="section">
+    <div class="container">
+      <h2 class="section-title">Software PLD/FT para SOFOMes: Requisitos CNBV <span class="current-year"></span></h2>
+      <p class="section-subtitle">
+        Sistema automatizado obligatorio para cumplir con las Disposiciones de Carácter General (DCG)
+        en materia de Prevención de Lavado de Dinero y Financiamiento al Terrorismo.
+      </p>
+
+      <div style="background: var(--neutral-50); padding: 2rem; border-radius: var(--border-radius-lg); margin-top: 2rem;">
+        <h3 style="color: var(--primary-900); margin-bottom: 1.5rem; font-size: 1.5rem;">
+          📋 SISTEMAS AUTOMATIZADOS
+        </h3>
+
+        <p style="margin-bottom: 1.5rem; line-height: 1.7;">
+          Cada Entidad, como parte de su Infraestructura Tecnológica, deberá contar con sistemas
+          automatizados que desarrollen, entre otras, las siguientes funciones:
+        </p>
+
+        <div style="display: grid; gap: 1rem;">
+          <!-- Fracción I -->
+          <div style="background: white; padding: 1.5rem; border-radius: var(--border-radius); border-left: 4px solid var(--primary-500);">
+            <p style="margin: 0;">
+              <strong style="color: var(--primary-600);">I.</strong>
+              Conservar y actualizar, así como permitir la consulta de los datos relativos a los registros de la
+              información que obre en el respectivo expediente de identificación de cada Cliente.
+            </p>
+          </div>
+
+          <!-- Fracción II -->
+          <div style="background: white; padding: 1.5rem; border-radius: var(--border-radius); border-left: 4px solid var(--primary-500);">
+            <p style="margin: 0 0 1rem 0;">
+              <strong style="color: var(--primary-600);">II.</strong>
+              Generar y transmitir de forma segura a la Secretaría, por conducto de la Comisión, la información
+              relativa a los reportes de Operaciones Relevantes, Operaciones Inusuales y Operaciones Internas
+              Preocupantes a que se refieren las presentes Disposiciones, así como aquella que deba comunicar a la
+              Secretaría o a la Comisión, en los términos y conforme a los plazos establecidos en las presentes
+              Disposiciones.
+            </p>
+            <p style="margin: 0; padding-left: 1rem; border-left: 3px solid var(--neutral-300); font-size: 0.9rem; color: var(--neutral-700);">
+              <em>Como excepción a lo señalado en esta fracción, las Entidades podrán generar de forma manual el reporte
+              a que se refiere la 10ª Ter de las presentes Disposiciones.</em>
+            </p>
+          </div>
+
+          <!-- Fracción III -->
+          <div style="background: white; padding: 1.5rem; border-radius: var(--border-radius); border-left: 4px solid var(--primary-500);">
+            <p style="margin: 0;">
+              <strong style="color: var(--primary-600);">III.</strong>
+              Clasificar los tipos de Operaciones o productos financieros que ofrezcan las Entidades a sus Clientes o
+              Usuarios, con base en los criterios que establezca la propia Entidad, a fin de detectar posibles Operaciones
+              Inusuales.
+            </p>
+          </div>
+
+          <!-- Fracción IV -->
+          <div style="background: white; padding: 1.5rem; border-radius: var(--border-radius); border-left: 4px solid var(--primary-500);">
+            <p style="margin: 0;">
+              <strong style="color: var(--primary-600);">IV.</strong>
+              Detectar y monitorear las Operaciones realizadas por un mismo Cliente, o por un mismo Usuario de los
+              señalados en la 14ª, 15ª y 16ª de las presentes Disposiciones, así como aquellas previstas en la fracción IV
+              de la 30ª de estas Disposiciones.
+            </p>
+          </div>
+
+          <!-- Fracción V -->
+          <div style="background: white; padding: 1.5rem; border-radius: var(--border-radius); border-left: 4px solid var(--primary-500);">
+            <p style="margin: 0;">
+              <strong style="color: var(--primary-600);">V.</strong>
+              Ejecutar el sistema de alertas contemplado en la 21ª de las presentes Disposiciones.
+            </p>
+          </div>
+
+          <!-- Fracción V Bis -->
+          <div style="background: white; padding: 1.5rem; border-radius: var(--border-radius); border-left: 4px solid var(--primary-500);">
+            <p style="margin: 0;">
+              <strong style="color: var(--primary-600);">V. Bis.</strong>
+              Contribuir a la detección, seguimiento y análisis de las posibles Operaciones Inusuales y
+              Operaciones Internas Preocupantes, considerando al menos, la información que haya sido proporcionada por
+              el Cliente al inicio de la relación comercial, los registros históricos de las Operaciones realizadas por este, el
+              comportamiento transaccional, los saldos promedio y cualquier otro parámetro que pueda aportar mayores
+              elementos para el análisis de este tipo de Operaciones.
+            </p>
+          </div>
+
+          <!-- Fracción VI -->
+          <div style="background: white; padding: 1.5rem; border-radius: var(--border-radius); border-left: 4px solid var(--primary-500);">
+            <p style="margin: 0;">
+              <strong style="color: var(--primary-600);">VI.</strong>
+              Agrupar en una base consolidada los diferentes contratos de un mismo Cliente, a efecto de controlar y
+              dar seguimiento integral a sus saldos y Operaciones.
+            </p>
+          </div>
+
+          <!-- Fracción VII -->
+          <div style="background: white; padding: 1.5rem; border-radius: var(--border-radius); border-left: 4px solid var(--primary-500);">
+            <p style="margin: 0;">
+              <strong style="color: var(--primary-600);">VII.</strong>
+              Conservar registros históricos de las posibles Operaciones Inusuales y Operaciones Internas
+              Preocupantes.
+            </p>
+          </div>
+
+          <!-- Fracción VIII -->
+          <div style="background: white; padding: 1.5rem; border-radius: var(--border-radius); border-left: 4px solid var(--primary-500);">
+            <p style="margin: 0;">
+              <strong style="color: var(--primary-600);">VIII.</strong>
+              Servir de medio para que el personal de las Entidades reporte a las áreas internas que las mismas
+              determinen, de forma segura, confidencial y auditable, las posibles Operaciones Inusuales u Operaciones
+              Internas Preocupantes.
+            </p>
+          </div>
+
+          <!-- Fracción IX -->
+          <div style="background: white; padding: 1.5rem; border-radius: var(--border-radius); border-left: 4px solid var(--primary-500);">
+            <p style="margin: 0;">
+              <strong style="color: var(--primary-600);">IX.</strong>
+              Mantener esquemas de seguridad de la información procesada, que garanticen la integridad,
+              disponibilidad, auditabilidad y confidencialidad de la misma.
+            </p>
+          </div>
+
+          <!-- Fracción IX Bis -->
+          <div style="background: white; padding: 1.5rem; border-radius: var(--border-radius); border-left: 4px solid var(--primary-500);">
+            <p style="margin: 0;">
+              <strong style="color: var(--primary-600);">IX. Bis.</strong>
+              Proveer la información que las Entidades incluirán en la metodología que deben elaborar conforme
+              a lo establecido en la 17ª-1 de estas Disposiciones.
+            </p>
+          </div>
+
+          <!-- Fracción X -->
+          <div style="background: white; padding: 1.5rem; border-radius: var(--border-radius); border-left: 4px solid var(--primary-500);">
+            <p style="margin: 0;">
+              <strong style="color: var(--primary-600);">X.</strong>
+              Ejecutar un sistema de alertas respecto de aquellas operaciones que se pretendan llevar a cabo con
+              personas referidas en la fracción X de la 30ª de las presentes Disposiciones, con Personas Políticamente
+              Expuestas, de conformidad con lo señalado en la 58ª de estas Disposiciones, así como con quienes se
+              encuentren dentro de la Lista de Personas Bloqueadas.
+            </p>
+          </div>
+
+          <!-- Fracción XI -->
+          <div style="background: white; padding: 1.5rem; border-radius: var(--border-radius); border-left: 4px solid var(--primary-500);">
+            <p style="margin: 0;">
+              <strong style="color: var(--primary-600);">XI.</strong>
+              Facilitar la verificación de los datos y documentos proporcionados de forma no presencial por el
+              Cliente.
+            </p>
+          </div>
+        </div>
+
+        <div class="alert alert-danger" style="margin-top: 2rem;">
+          <strong>⚠️ Cumplimiento Obligatorio:</strong> La falta de sistema automatizado puede resultar en
+          <strong>cancelación del registro CONDUSEF</strong> y sanciones millonarias por la CNBV.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Compliance y Reportes -->
+  <section id="catalogos" class="section">
+    <div class="container">
+      <h2 class="section-title">Recursos de Compliance Regulatorio</h2>
+      <p class="section-subtitle">
+        Herramientas esenciales para el cumplimiento de obligaciones PLD/FT ante CNBV y UIF.
+      </p>
+
+      <div class="grid grid-2" style="margin-top: 3rem;">
+        <!-- Catálogos RIPS F36 -->
+        <div style="padding: 2.5rem; background: white; border-radius: var(--border-radius-lg); box-shadow: var(--shadow-lg); text-align: center;">
+          <div style="font-size: 4rem; margin-bottom: 1rem;">📋</div>
+          <h3 style="font-size: 1.5rem; color: var(--primary-900); margin-bottom: 1rem;">
+            Catálogos RIPS F36
+          </h3>
+          <p style="color: var(--neutral-700); margin-bottom: 1.5rem; line-height: 1.7;">
+            6 catálogos oficiales CNBV con <strong>5,159 registros</strong>: Actividad Económica, Localidades, Monedas, Instrumentos Monetarios y más. Búsqueda en tiempo real y exportación CSV.
+          </p>
+          <div style="display: flex; gap: 1rem; justify-content: center; margin-bottom: 1.5rem; flex-wrap: wrap;">
+            <div style="padding: 0.5rem 1rem; background: var(--primary-50); border-radius: var(--border-radius); font-size: 0.875rem;">
+              <strong>1,263</strong> actividades
+            </div>
+            <div style="padding: 0.5rem 1rem; background: var(--primary-50); border-radius: var(--border-radius); font-size: 0.875rem;">
+              <strong>3,689</strong> localidades
+            </div>
+            <div style="padding: 0.5rem 1rem; background: var(--primary-50); border-radius: var(--border-radius); font-size: 0.875rem;">
+              <strong>190</strong> monedas
+            </div>
+          </div>
+          <a href="catalogos-rips-f36.html" class="btn btn-primary btn-lg">
+            Ver Catálogos Completos →
+          </a>
+        </div>
+
+        <!-- Reportes Regulatorios -->
+        <div style="padding: 2.5rem; background: white; border-radius: var(--border-radius-lg); box-shadow: var(--shadow-lg); text-align: center;">
+          <div style="font-size: 4rem; margin-bottom: 1rem;">📄</div>
+          <h3 style="font-size: 1.5rem; color: var(--primary-900); margin-bottom: 1rem;">
+            Reportes Regulatorios CNBV
+          </h3>
+          <p style="color: var(--neutral-700); margin-bottom: 1.5rem; line-height: 1.7;">
+            Guía completa de formatos Operaciones Inusuales, Relevantes e Internas Preocupantes: layouts, plazos de envío, campos obligatorios y validaciones para cumplimiento regulatorio ante CNBV.
+          </p>
+          <div style="display: flex; gap: 0.5rem; justify-content: center; margin-bottom: 1.5rem; flex-wrap: wrap;">
+            <div style="padding: 0.5rem 1rem; background: var(--success-50); border-radius: var(--border-radius); font-size: 0.875rem; border: 1px solid var(--success-200);">
+              📊 Inusuales
+            </div>
+            <div style="padding: 0.5rem 1rem; background: var(--warning-50); border-radius: var(--border-radius); font-size: 0.875rem; border: 1px solid var(--warning-200);">
+              🔍 Relevantes
+            </div>
+            <div style="padding: 0.5rem 1rem; background: var(--danger-50); border-radius: var(--border-radius); font-size: 0.875rem; border: 1px solid var(--danger-200);">
+              🚨 Internas Preocupantes
+            </div>
+          </div>
+          <a href="reportes-regulatorios-cnbv.html" class="btn btn-primary btn-lg">
+            Ver Guía de Reportes →
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -616,191 +849,165 @@
   <section id="faq" class="section">
     <div class="container">
       <h2 class="section-title">Preguntas Frecuentes sobre SOFOMes</h2>
-      <p class="section-subtitle">
-        Respuestas a las 15 preguntas más comunes sobre SOFOMes, constitución y operación.
-      </p>
 
-      <!-- FAQ Category 1: Conceptos Básicos -->
-      <div class="faq-category">
-        <h3 class="faq-category-title">Conceptos Básicos</h3>
-
-        <div class="faq-item fade-in" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-          <button class="faq-question" aria-expanded="false" aria-controls="faq-1">
-            <h4 itemprop="name">¿Qué es una SOFOM en México?</h4>
-            <svg class="faq-icon" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
-          </button>
-
-          <div id="faq-1" class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <div itemprop="text">
-              <p><strong>Una SOFOM (Sociedad Financiera de Objeto Múltiple) es una entidad financiera mexicana</strong> que otorga crédito, arrendamiento financiero y factoraje sin captar ahorro del público. A diferencia de los bancos, las SOFOMes se fondean con capital privado, lo que les da mayor flexibilidad para atender a PyMEs y sectores no bancarizados.</p>
-
-              <p>Las SOFOMes nacieron en 2006 para expandir el acceso al crédito en México y hoy representan cerca del 20% del financiamiento total al sector privado.</p>
-
-              <a href="#contacto" class="faq-cta">Quiero constituir una SOFOM →</a>
-            </div>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3 class="faq-question">¿Cuántas SOFOMes hay en México en <span class="current-year"></span>?</h3>
+          <div class="faq-answer">
+            <p>
+              Según el registro SIPRES de CONDUSEF, actualmente operan <strong><span id="faq-count">...</span> SOFOMes en operación</strong>
+              en México. De estas, el 98.2% (2,038) son ENR (Entidad No Regulada) y solo el 1.8% (38) son ER
+              (Entidad Regulada con vínculo patrimonial a bancos).
+            </p>
           </div>
         </div>
 
-        <div class="faq-item fade-in" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-          <button class="faq-question" aria-expanded="false" aria-controls="faq-2">
-            <h4 itemprop="name">¿Cuál es la diferencia entre SOFOM ER y SOFOM ENR?</h4>
-            <svg class="faq-icon" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
-          </button>
-
-          <div id="faq-2" class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <div itemprop="text">
-              <p><strong>La diferencia principal está en el nivel de regulación y supervisión:</strong></p>
-
-              <table class="comparison-table">
-                <thead>
-                  <tr>
-                    <th>Característica</th>
-                    <th>SOFOM ER</th>
-                    <th>SOFOM ENR</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Regulación</td>
-                    <td>CNBV integral</td>
-                    <td>CNBV solo PLD/FT</td>
-                  </tr>
-                  <tr>
-                    <td>Vínculo patrimonial</td>
-                    <td>Con bancos/SOFIPOS</td>
-                    <td>Sin vínculos</td>
-                  </tr>
-                  <tr>
-                    <td>Emisión de valores</td>
-                    <td>Sí (RNV)</td>
-                    <td>No</td>
-                  </tr>
-                  <tr>
-                    <td>Capital mínimo</td>
-                    <td>Variable (CNBV)</td>
-                    <td>Sin mínimo legal</td>
-                  </tr>
-                </tbody>
-              </table>
-
-              <p><strong>Importante:</strong> Ambas deben registrarse en CONDUSEF y cumplir con prevención de lavado de dinero.</p>
-
-              <a href="#proceso" class="faq-cta">Guía completa SOFOM ENR →</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- FAQ Category 2: Constitución -->
-      <div class="faq-category">
-        <h3 class="faq-category-title">Constitución y Requisitos</h3>
-
-        <div class="faq-item fade-in" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-          <button class="faq-question" aria-expanded="false" aria-controls="faq-3">
-            <h4 itemprop="name">¿Cuánto cuesta constituir una SOFOM?</h4>
-            <svg class="faq-icon" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
-          </button>
-
-          <div id="faq-3" class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <div itemprop="text">
-              <p><strong>El costo total varía entre $85,000 y $120,000 MXN + IVA</strong>, dependiendo de la complejidad del estatuto y la ubicación. El desglose es:</p>
-
-              <ul class="cost-breakdown">
-                <li><strong>Honorarios legales:</strong> $50,000 - $70,000 (opinión CONDUSEF, dictamen CNBV, estatutos)</li>
-                <li><strong>Gastos notariales:</strong> $15,000 - $20,000 (constitución e inscripción RPC)</li>
-                <li><strong>Trámites CONDUSEF/CNBV:</strong> $5,000 - $10,000 (opinión, dictamen, SIPRES)</li>
-                <li><strong>Inscripción RPC:</strong> $8,000 - $12,000</li>
-                <li><strong>Buró de Crédito:</strong> $7,000 - $10,000 (contrato anual)</li>
-              </ul>
-
-              <p><strong>Adicional:</strong> Software de compliance PLD ($15k-$50k/año) y Oficial de Cumplimiento certificado (desde $30k/mes).</p>
-
-              <a href="#contacto" class="faq-cta">Solicitar cotización personalizada →</a>
-            </div>
+        <div class="faq-item">
+          <h3 class="faq-question">¿Cuál es la diferencia entre SOFOM ER y ENR?</h3>
+          <div class="faq-answer">
+            <p>
+              <strong>SOFOM ER (Entidad Regulada):</strong> Tiene vínculo patrimonial con banco o grupo financiero.
+              Regulación CNBV integral. Ejemplo: GM Financial, Arrendadora Banorte.
+            </p>
+            <p style="margin-top: 0.5rem">
+              <strong>SOFOM ENR (Entidad No Regulada):</strong> Sin vínculo con bancos. Solo regulación PLD/FT.
+              Más del 98% del mercado. Ejemplo: Konfío, Kueski, Crédito Para Ti.
+            </p>
           </div>
         </div>
 
-        <div class="faq-item fade-in" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-          <button class="faq-question" aria-expanded="false" aria-controls="faq-4">
-            <h4 itemprop="name">¿Cuánto tiempo tarda constituir una SOFOM ENR?</h4>
-            <svg class="faq-icon" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
-          </button>
-
-          <div id="faq-4" class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <div itemprop="text">
-              <p><strong>El proceso completo tarda entre 8 y 12 semanas</strong> desde el inicio hasta el inicio legal de operaciones. El timeline es:</p>
-
-              <ol class="timeline-list">
-                <li><strong>Semana 1:</strong> Solicitud de denominación social ante la SE</li>
-                <li><strong>Semanas 2-4:</strong> Opinión favorable de CONDUSEF sobre estatutos (2-3 semanas)</li>
-                <li><strong>Semana 5:</strong> Constitución ante notario e inscripción en RPC</li>
-                <li><strong>Semanas 6-13:</strong> Dictamen técnico PLD/FT de la CNBV (6-8 semanas, máx 50 días)</li>
-                <li><strong>Semana 14:</strong> Inscripción SIPRES en CONDUSEF y aviso de inicio</li>
-              </ol>
-
-              <p><strong>Cuello de botella principal:</strong> El dictamen técnico CNBV. En nuestra experiencia, el 70% de los dictámenes se resuelven entre los días 35-45.</p>
-
-              <a href="#proceso" class="faq-cta">Ver proceso detallado →</a>
-            </div>
+        <div class="faq-item">
+          <h3 class="faq-question">¿Cuánto cuesta constituir una SOFOM ENR?</h3>
+          <div class="faq-answer">
+            <p>
+              El costo REAL de constitución oscila entre <strong>$85,000 y $500,000 MXN</strong>, dependiendo de:
+            </p>
+            <ul>
+              <li>Dictamen Técnico CNBV: $30,241</li>
+              <li>Certificación Oficial Cumplimiento: $16,558</li>
+              <li>Software PLD/FT automatizado: cientos de miles a millones anuales</li>
+              <li>Notaría + permisos: $50K-$80K</li>
+              <li>Asesoría legal especializada: $100K-$300K</li>
+            </ul>
+            <p style="margin-top: 0.5rem">
+              <strong>Capital práctico recomendado:</strong> 50 millones de pesos para viabilidad operativa
+              (aunque no hay mínimo legal).
+            </p>
           </div>
         </div>
-      </div>
 
-    </div>
-  </section>
-
-  <!-- Section: Contacto -->
-  <section id="contacto" class="section">
-    <div class="container">
-      <h2 class="section-title">¿Listo para Comenzar?</h2>
-      <p class="section-subtitle">
-        Agenda una consultoría gratuita de 30 minutos y recibe un plan personalizado para tu situación.
-      </p>
-
-      <div class="contact-form">
-        <form id="contact-form">
-          <div class="form-group">
-            <label for="name" class="form-label">Nombre completo *</label>
-            <input type="text" id="name" name="name" class="form-input" placeholder="Juan Pérez" required>
+        <div class="faq-item">
+          <h3 class="faq-question">¿Cuánto tiempo tarda constituir una SOFOM?</h3>
+          <div class="faq-answer">
+            <p>
+              El proceso REAL toma <strong>3 a 4 meses</strong> si se cumple con toda la documentación y requisitos:
+            </p>
+            <ol>
+              <li>Denominación social: 1 semana</li>
+              <li>Opinión CONDUSEF: 30 días hábiles</li>
+              <li>Constitución notarial: 30 días</li>
+              <li>Dictamen Técnico CNBV: 50 días</li>
+              <li>Contrato SIC: variable</li>
+              <li>Inscripción SIPRES: 10 días</li>
+              <li>Clave SITI PLD/FT: 1 semana</li>
+            </ol>
+            <p style="margin-top: 0.5rem">
+              <em>No creas promesas de "8-12 semanas". Los plazos regulatorios son fijos.</em>
+            </p>
           </div>
+        </div>
 
-          <div class="form-group">
-            <label for="email" class="form-label">Email *</label>
-            <input type="email" id="email" name="email" class="form-input" placeholder="juan@empresa.com" required>
+        <div class="faq-item">
+          <h3 class="faq-question">¿Qué es una SOFOM FOVISSSTE?</h3>
+          <div class="faq-answer">
+            <p>
+              Son <strong>14 SOFOMes autorizadas</strong> por FOVISSSTE para gestionar créditos hipotecarios
+              de trabajadores del gobierno. La #1 calificada es <strong>Crédito Para Ti</strong>.
+            </p>
+            <p style="margin-top: 0.5rem">
+              Ventaja principal: reducen el tiempo de escrituración de <strong>6 meses a 3 semanas</strong>
+              cuando la documentación está completa. La asesoría es 100% gratuita por ley.
+            </p>
           </div>
+        </div>
 
-          <div class="form-group">
-            <label for="phone" class="form-label">Teléfono / WhatsApp *</label>
-            <input type="tel" id="phone" name="phone" class="form-input" placeholder="+52 55 1234 5678" required>
+        <div class="faq-item">
+          <h3 class="faq-question">¿Las SOFOMes son seguras?</h3>
+          <div class="faq-answer">
+            <p>
+              Las SOFOMes están <strong>supervisadas por CONDUSEF</strong> y deben cumplir con regulación PLD/FT de CNBV.
+              Sin embargo, no tienen el respaldo del IPAB (seguro de depósitos bancarios) porque no captan ahorro.
+            </p>
+            <p style="margin-top: 0.5rem">
+              <strong>Recomendación:</strong> Verifica que la SOFOM esté registrada en SIPRES de CONDUSEF.
+              Busca casos de éxito verificables (Konfío, Kueski, Crédito Para Ti).
+            </p>
           </div>
+        </div>
 
-          <div class="form-group">
-            <label for="interest" class="form-label">Me interesa *</label>
-            <select id="interest" name="interest" class="form-select" required>
-              <option value="">Selecciona una opción</option>
-              <option value="pyme">Financiamiento para mi PyME</option>
-              <option value="constitucion">Constituir una SOFOM ENR</option>
-              <option value="inversion">Invertir en SOFOMes</option>
-              <option value="otro">Otro</option>
-            </select>
+        <div class="faq-item">
+          <h3 class="faq-question">¿Cuál es la tasa de interés de las SOFOMes?</h3>
+          <div class="faq-answer">
+            <p>
+              Las tasas varían ampliamente según el perfil de riesgo:
+            </p>
+            <ul>
+              <li><strong>Empresarial garantizado:</strong> TIIE + 4 a 12 puntos</li>
+              <li><strong>PyMEs sin garantía:</strong> 30% - 60% anual</li>
+              <li><strong>Consumo inmediato:</strong> hasta 150-180% CAT</li>
+              <li><strong>Hipotecario FOVISSSTE:</strong> tasas competitivas similares a bancos</li>
+            </ul>
+            <p style="margin-top: 0.5rem">
+              <strong>Importante:</strong> Tasas muy altas reflejan análisis deficiente de riesgo,
+              no solo "velocidad". Compara siempre el CAT (Costo Anual Total).
+            </p>
           </div>
+        </div>
 
-          <div class="form-group">
-            <label for="message" class="form-label">Mensaje</label>
-            <textarea id="message" name="message" class="form-textarea" placeholder="Cuéntanos brevemente sobre tu situación..."></textarea>
+        <div class="faq-item">
+          <h3 class="faq-question">¿Qué ventajas tienen las SOFOMes sobre los bancos?</h3>
+          <div class="faq-answer">
+            <ul>
+              <li>✅ <strong>Mayor aprobación:</strong> 70% vs 20% bancos</li>
+              <li>✅ <strong>Velocidad:</strong> 48-72 horas vs 3-4 meses</li>
+              <li>✅ <strong>Flexibilidad:</strong> Revolventes, solo intereses, periodos gracia</li>
+              <li>✅ <strong>Inclusión:</strong> PyMEs sin historial crediticio</li>
+              <li>✅ <strong>Ventaja fiscal:</strong> Intereses a personas morales exentos IVA</li>
+            </ul>
           </div>
+        </div>
 
-          <div class="form-checkbox">
-            <input type="checkbox" id="privacy" name="privacy" required>
-            <label for="privacy" style="color: white; font-size: 0.875rem">
-              Acepto el <a href="/privacidad" style="color: white; text-decoration: underline">Aviso de Privacidad</a> y autorizo el contacto por email/teléfono.
-            </label>
+        <div class="faq-item">
+          <h3 class="faq-question">¿Qué desventajas tienen las SOFOMes?</h3>
+          <div class="faq-answer">
+            <ul>
+              <li>❌ <strong>Tasas más altas:</strong> Hasta 150-180% CAT en consumo</li>
+              <li>❌ <strong>No hay seguro depósitos:</strong> No captan ahorro, pero esto no aplica a créditos</li>
+              <li>❌ <strong>Fondeo limitado:</strong> Primeros 2 años solo capital propio</li>
+              <li>❌ <strong>Compliance costoso:</strong> Oficial de Cumplimiento, Auditorías, Sistemas PLD/FT</li>
+              <li>❌ <strong>Morosidad sectorial:</strong> 8.84% promedio</li>
+            </ul>
           </div>
+        </div>
 
-          <button type="submit" class="form-submit">
-            Agendar Consultoría Gratuita
-          </button>
-        </form>
+        <div class="faq-item">
+          <h3 class="faq-question">¿Dónde puedo verificar si una SOFOM está registrada?</h3>
+          <div class="faq-answer">
+            <p>
+              Verifica en el <strong>SIPRES (Sistema de Registro de Prestadores de Servicios Financieros)</strong>
+              de CONDUSEF:
+            </p>
+            <p style="margin-top: 0.5rem">
+              🔗 <a href="https://webapps.condusef.gob.mx/SIPRES/jsp/pub/index.jsp" target="_blank" style="color: #10B981">
+                https://webapps.condusef.gob.mx/SIPRES/
+              </a>
+            </p>
+            <p style="margin-top: 0.5rem">
+              También puedes <a href="lista-sofomes-mexico.html" style="color: #10B981">buscar en nuestro directorio</a>
+              de SOFOMes actualizado.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -809,89 +1016,112 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
-        <div class="footer-section">
-          <h3>SOFOMES.COM</h3>
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="#que-es">¿Qué es una SOFOM?</a></li>
+            <li><a href="#directorio">Directorio</a></li>
+            <li><a href="#fovissste">SOFOMes FOVISSSTE</a></li>
+            <li><a href="#casos-exito">Casos de Éxito</a></li>
+            <li><a href="#constituir">Constituir SOFOM</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Recursos</h4>
+          <ul class="footer-links">
+            <li><a href="lista-sofomes-mexico.html">Lista Completa SOFOMes</a></li>
+            <li><a href="catalogos-rips-f36.html">Catálogos RIPS F36</a></li>
+            <li><a href="reportes-regulatorios-cnbv.html">Reportes Regulatorios</a></li>
+            <li><a href="#software-pld">Software PLD/FT</a></li>
+            <li><a href="#constituir">Guía Constitución</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal y Compliance</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.condusef.gob.mx" target="_blank">CONDUSEF</a></li>
+            <li><a href="https://www.cnbv.gob.mx" target="_blank">CNBV</a></li>
+            <li><a href="https://www.gob.mx/uif" target="_blank">UIF</a></li>
+            <li><a href="https://www.fovissste.gob.mx" target="_blank">FOVISSSTE</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>SOFOMES.COM</h4>
           <p>
-            Plataforma líder en México para financiamiento PyME, constitución de SOFOMes e inversión en el sector financiero alternativo.
+            Directorio completo de SOFOMes en operación en México. Información verificable, datos reales.
           </p>
-          <p style="margin-top: 1rem">
-            <strong>Regulados por:</strong><br>
-            CNBV | CONDUSEF | SIPRES
+          <p style="margin-top: 1rem; font-size: 0.875rem;">
+            <strong>Disclaimer:</strong> Sitio informativo independiente. No somos CONDUSEF ni CNBV.
           </p>
-        </div>
-
-        <div class="footer-section">
-          <h3>Servicios</h3>
-          <ul class="footer-links">
-            <li><a href="#servicios">Financiamiento PyMEs</a></li>
-            <li><a href="#servicios">Constitución SOFOM ENR</a></li>
-            <li><a href="#servicios">Inversión en SOFOMes</a></li>
-            <li><a href="#proceso">Proceso de Constitución</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-section">
-          <h3>Recursos</h3>
-          <ul class="footer-links">
-            <li><a href="#faq">Preguntas Frecuentes</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/casos-exito">Casos de Éxito</a></li>
-            <li><a href="/calculadora">Calculadora de Crédito</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-section">
-          <h3>Contacto</h3>
-          <ul class="footer-links">
-            <li>📧 contacto@sofomes.com</li>
-            <li>📱 +52 55 1234 5678</li>
-            <li>📍 CDMX, México</li>
-            <li><a href="#contacto">Agendar Consultoría</a></li>
-          </ul>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <p>
-          © <span class="current-year"></span> SOFOMES.COM. Todos los derechos reservados. |
-          <a href="/privacidad" style="color: inherit; text-decoration: underline">Aviso de Privacidad</a> |
-          <a href="/terminos" style="color: inherit; text-decoration: underline">Términos y Condiciones</a>
-        </p>
-        <p style="margin-top: 0.5rem; font-size: 0.75rem">
-          SOFOMES.COM no es una SOFOM ni institución financiera. Es una plataforma de información y servicios profesionales para el ecosistema SOFOM en México.
-        </p>
+        <div class="footer-copyright">
+          <p>
+            &copy; <span class="current-year"></span> SOFOMES.COM - Todos los derechos reservados.<br>
+            Datos: <a href="https://www.condusef.gob.mx" target="_blank">CONDUSEF SIPRES</a>
+          </p>
+        </div>
       </div>
     </div>
   </footer>
 
-  <!-- Schema Markup - Organization -->
+  <!-- Schema.org - FAQPage -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "SOFOMES.COM",
-    "url": "https://sofomes.com",
-    "logo": "https://sofomes.com/assets/logo.png",
-    "description": "Plataforma líder en México para financiamiento PyME, constitución de SOFOMes e inversión en el sector financiero alternativo.",
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "MX",
-      "addressLocality": "Ciudad de México"
-    },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+52-55-1234-5678",
-      "contactType": "customer service",
-      "availableLanguage": "Spanish"
-    },
-    "sameAs": [
-      "https://www.linkedin.com/company/sofomes",
-      "https://twitter.com/sofomesmexico"
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Cuántas SOFOMes hay en México en <span class='current-year'></span>?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Según el registro SIPRES de CONDUSEF, actualmente operan SOFOMes en operación en México. De estas, el 98.2% son ENR (Entidad No Regulada) y solo el 1.8% son ER (Entidad Regulada con vínculo patrimonial a bancos)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuál es la diferencia entre SOFOM ER y ENR?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SOFOM ER (Entidad Regulada): Tiene vínculo patrimonial con banco o grupo financiero. Regulación CNBV integral. SOFOM ENR (Entidad No Regulada): Sin vínculo con bancos. Solo regulación PLD/FT. Más del 98% del mercado."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuánto cuesta constituir una SOFOM ENR?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El costo REAL de constitución oscila entre $85,000 y $500,000 MXN, incluyendo: Dictamen Técnico CNBV ($30,241), Certificación Oficial Cumplimiento ($16,558), Software PLD/FT automatizado (cientos de miles a millones anuales), Notaría + permisos ($50K-$80K), y Asesoría legal especializada ($100K-$300K). Capital práctico recomendado: 50 millones de pesos."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuánto tiempo tarda constituir una SOFOM?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El proceso REAL toma 3 a 4 meses si se cumple con toda la documentación y requisitos. Los plazos regulatorios son fijos: Denominación social (1 semana), Opinión CONDUSEF (30 días hábiles), Constitución notarial (30 días), Dictamen Técnico CNBV (50 días), Inscripción SIPRES (10 días), Clave SITI PLD/FT (1 semana)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué es una SOFOM FOVISSSTE?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Son 14 SOFOMes autorizadas por FOVISSSTE para gestionar créditos hipotecarios de trabajadores del gobierno. La #1 calificada es Crédito Para Ti. Reducen el tiempo de escrituración de 6 meses a 3 semanas cuando la documentación está completa. La asesoría es 100% gratuita por ley."
+        }
+      }
     ]
   }
   </script>
 
-  <!-- Schema Markup - Breadcrumbs -->
+  <!-- Schema.org - BreadcrumbList -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -906,66 +1136,27 @@
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "¿Qué es una SOFOM?",
-        "item": "https://sofomes.com/#que-es-sofom"
+        "name": "Directorio SOFOMes",
+        "item": "https://sofomes.com/lista-sofomes-mexico"
       },
       {
         "@type": "ListItem",
         "position": 3,
-        "name": "Servicios",
-        "item": "https://sofomes.com/#servicios"
+        "name": "SOFOMes FOVISSSTE",
+        "item": "https://sofomes.com/sofom-fovissste"
       },
       {
         "@type": "ListItem",
         "position": 4,
-        "name": "Proceso de Constitución",
-        "item": "https://sofomes.com/#proceso"
+        "name": "Casos de Éxito",
+        "item": "https://sofomes.com/casos-exito-sofomes"
       }
     ]
   }
   </script>
 
-  <!-- Schema Markup - FAQPage -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "¿Qué es una SOFOM en México?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Una SOFOM (Sociedad Financiera de Objeto Múltiple) es una entidad financiera mexicana que otorga crédito, arrendamiento financiero y factoraje sin captar ahorro del público. A diferencia de los bancos, las SOFOMes se fondean con capital privado, lo que les da mayor flexibilidad para atender a PyMEs y sectores no bancarizados."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Cuánto cuesta constituir una SOFOM?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "El costo total de constituir una SOFOM ENR varía entre $85,000 y $120,000 MXN + IVA, incluyendo: honorarios legales ($50k-$70k), notariales ($15k-$20k), inscripción RPC ($8k), trámites CONDUSEF/CNBV ($5k-$10k), y Buró de Crédito ($7k). El proceso tarda 8-12 semanas desde la constitución hasta el inicio de operaciones."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Cuánto tiempo tarda constituir una SOFOM ENR?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Constituir una SOFOM ENR tarda entre 8 y 12 semanas. El proceso incluye: denominación social (1 semana), opinión CONDUSEF (2-3 semanas), constitución ante notario (1 semana), dictamen técnico CNBV (6-8 semanas), e inscripción SIPRES (1 semana). El cuello de botella principal es el dictamen técnico de la CNBV."
-        }
-      }
-    ]
-  }
-  </script>
-
-  <!-- Load non-critical CSS -->
-  <link rel="stylesheet" href="assets/css/main.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="assets/css/main.css"></noscript>
-
-  <!-- Defer JavaScript -->
-  <script src="assets/js/personalization.js" defer></script>
-  <script src="assets/js/main.js" defer></script>
+  <!-- CONDUSEF Auto-Fetch Script -->
+  <script src="assets/js/condusef-fetch.js"></script>
 
   <!-- Dynamic Year Update Script -->
   <script>
@@ -978,16 +1169,21 @@
       });
 
       // Update document title
-      document.title = document.title.replace(/<span[^>]*><\/span>/, currentYear);
+      const titleYearSpan = document.getElementById('year-title');
+      if (titleYearSpan) {
+        // For title, we need to update the text node directly
+        document.title = document.title.replace(/<span[^>]*><\/span>/, currentYear);
+      }
 
-      // Update OG description meta tag
-      const ogDescMeta = document.getElementById('og-description-meta');
-      if (ogDescMeta) {
-        ogDescMeta.setAttribute('content',
-          ogDescMeta.getAttribute('content') + ' ' + currentYear + '.'
+      // Update OG meta tag
+      const ogTitleMeta = document.getElementById('og-title-meta');
+      if (ogTitleMeta) {
+        ogTitleMeta.setAttribute('content',
+          ogTitleMeta.getAttribute('content') + ' ' + currentYear
         );
       }
     })();
   </script>
+
 </body>
 </html>

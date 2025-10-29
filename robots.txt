@@ -1,0 +1,30 @@
+# robots.txt para sofomes.com
+# Generado: 2025-10-28
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://sofomes.com/sitemap.xml
+
+# Bloquear archivos temporales y de respaldo
+Disallow: /*.tmp$
+Disallow: /*~$
+Disallow: /*.bak$
+
+# Bloquear directorios de desarrollo (si existen)
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /.vscode/
+
+# Permitir todos los recursos importantes
+Allow: /assets/
+Allow: /catalogos/
+Allow: /docs/
+
+# Crawl-delay para bots agresivos
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
