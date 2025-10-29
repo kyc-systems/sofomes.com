@@ -1,28 +1,15 @@
-<!DOCTYPE html>
-<html lang="es-MX">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<?php
+// Variables para header.php
+$pageTitle = "Operaciones Relevantes, Inusuales e Internas Preocupantes CNBV | Guía Completa 2025";
+$pageDescription = "Guía completa de Operaciones Relevantes (≥$7,500 USD con billetes/monedas), Operaciones Inusuales (perfil transaccional) e Internas Preocupantes (lavado de dinero). Formatos oficiales, layouts, plazos, ejemplos prácticos.";
+$pageKeywords = "operaciones relevantes inusuales preocupantes cnbv, pld sofom, reportes regulatorios, operaciones relevantes pld, operaciones inusuales pld, operaciones internas preocupantes";
+$canonicalUrl = "https://sofomes.com/reportes-regulatorios-cnbv";
+$activeMenu = "reportes";
+$cssPath = "/assets/css/main-v2.css";
 
-  <!-- Primary Meta Tags -->
-  <title>Operaciones Relevantes, Inusuales e Internas Preocupantes CNBV | Guía Completa 2025</title>
-  <meta name="description" content="Guía oficial de reportes PLD para SOFOMes: Operaciones Relevantes (≥$7,500 USD), Operaciones Inusuales (perfil transaccional) e Internas Preocupantes (lavado de dinero). Formatos, plazos y ejemplos prácticos.">
-  <meta name="keywords" content="operaciones relevantes, operaciones inusuales, operaciones internas preocupantes, operaciones relevantes pld, reportes cnbv, lavado de dinero, SOFOM, PLD/FT">
-
-  <!-- Canonical URL -->
-  <link rel="canonical" href="https://sofomes.com/reportes-regulatorios-cnbv">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Operaciones Relevantes, Inusuales e Internas Preocupantes CNBV | Guía 2025">
-  <meta property="og:description" content="Guía completa de reportes PLD: Operaciones Relevantes (≥$7,500 USD), Inusuales (perfil transaccional) e Internas Preocupantes (LD/FT). Con formatos oficiales CNBV.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://sofomes.com/reportes-regulatorios-cnbv">
-
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="assets/css/main-v2.css">
-
-  <!-- JSON-LD Schema for FAQ -->
-  <script type="application/ld+json">
+// Schemas JSON-LD
+$schemaJson = <<<'SCHEMA'
+<script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -105,24 +92,13 @@
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ldk, s);
     })();
   </script>
-</head>
-<body>
 
-  <!-- Navigation -->
-  <nav class="nav">
-    <div class="container">
-      <div class="nav-brand">
-        <a href="index.html">SOFOMES.COM</a>
-      </div>
-      <div class="nav-menu">
-        <a href="index.html">Inicio</a>
-        <a href="lista-sofomes-mexico.html">Directorio</a>
-        <a href="catalogos-rips-f36.html">Catálogos RIPS F36</a>
-        <a href="reportes-regulatorios-cnbv.html" class="active">Reportes Regulatorios</a>
-        <a href="layout-reportes-pld.html">Layout 36 Campos</a>
-      </div>
-    </div>
-  </nav>
+SCHEMA;
+
+include 'includes/header.php';
+?>
+
+
 
   <!-- Hero Section -->
   <section class="hero" style="padding: 4rem 0;">
@@ -320,7 +296,7 @@
             <li>✅ Estructura para campos 35 (DO) y 36 (RI)</li>
           </ul>
         </div>
-        <a href="layout-reportes-pld.html"
+        <a href="layout-reportes-pld.php"
            class="btn btn-primary btn-lg"
            style="margin-top: 2rem;">
           📋 Ver Layout Completo 36 Campos →
@@ -416,26 +392,26 @@
         <div style="padding: 1.5rem; background: white; border-radius: var(--border-radius); box-shadow: var(--shadow-md);">
           <h4 style="color: var(--primary-600); margin-bottom: 1rem;">📊 Para Operaciones Relevantes</h4>
           <ul class="feature-list">
-            <li><a href="catalogos/actividad-economica.html">Actividad Económica del cliente</a></li>
-            <li><a href="catalogos/localidades.html">Localidad de la operación</a></li>
-            <li><a href="catalogos/monedas.html">Moneda utilizada</a></li>
-            <li><a href="catalogos/instrumento-monetario.html">Instrumento monetario</a></li>
+            <li><a href="catalogos/actividad-economica.php">Actividad Económica del cliente</a></li>
+            <li><a href="catalogos/localidades.php">Localidad de la operación</a></li>
+            <li><a href="catalogos/monedas.php">Moneda utilizada</a></li>
+            <li><a href="catalogos/instrumento-monetario.php">Instrumento monetario</a></li>
           </ul>
         </div>
 
         <div style="padding: 1.5rem; background: white; border-radius: var(--border-radius); box-shadow: var(--shadow-md);">
           <h4 style="color: var(--primary-600); margin-bottom: 1rem;">🔍 Para Operaciones Inusuales e Internas Preocupantes</h4>
           <ul class="feature-list">
-            <li><a href="catalogos/tipo-reporte.html">Tipo de reporte</a></li>
-            <li><a href="catalogos/actividad-economica.html">Actividad económica</a></li>
-            <li><a href="catalogos/localidades.html">Localidades involucradas</a></li>
+            <li><a href="catalogos/tipo-reporte.php">Tipo de reporte</a></li>
+            <li><a href="catalogos/actividad-economica.php">Actividad económica</a></li>
+            <li><a href="catalogos/localidades.php">Localidades involucradas</a></li>
             <li>Motivos de reporte (según análisis)</li>
           </ul>
         </div>
       </div>
 
       <div style="text-align: center; margin-top: 2rem;">
-        <a href="catalogos-rips-f36.html" class="btn btn-outline">
+        <a href="catalogos-rips-f36.php" class="btn btn-outline">
           Ver Todos los Catálogos RIPS F36 →
         </a>
       </div>
@@ -591,76 +567,11 @@
       </div>
 
       <div class="alert alert-info" style="margin-top: 3rem; max-width: 900px; margin-left: auto; margin-right: auto;">
-        <strong>💡 ¿Más dudas?</strong> Consulta el <a href="layout-reportes-pld.html" style="color: var(--primary-700); text-decoration: underline;">layout completo de 36 campos</a> con validaciones específicas y ejemplos, o revisa los <a href="catalogos-rips-f36.html" style="color: var(--primary-700); text-decoration: underline;">catálogos oficiales CNBV</a> necesarios para llenar correctamente cada campo.
+        <strong>💡 ¿Más dudas?</strong> Consulta el <a href="layout-reportes-pld.php" style="color: var(--primary-700); text-decoration: underline;">layout completo de 36 campos</a> con validaciones específicas y ejemplos, o revisa los <a href="catalogos-rips-f36.php" style="color: var(--primary-700); text-decoration: underline;">catálogos oficiales CNBV</a> necesarios para llenar correctamente cada campo.
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-col">
-          <h4>SOFOMES.COM</h4>
-          <p>
-            Directorio completo de SOFOMes en operación en México. Información verificable, datos reales.
-          </p>
-          <p style="margin-top: 1rem">
-            <strong>Fuente:</strong> CONDUSEF SIPRES | CNBV
-          </p>
-        </div>
 
-        <div class="footer-col">
-          <h4>Navegación</h4>
-          <ul class="footer-links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="lista-sofomes-mexico.html">Directorio SOFOMes</a></li>
-            <li><a href="catalogos-rips-f36.html">Catálogos RIPS F36</a></li>
-            <li><a href="reportes-regulatorios-cnbv.html">Reportes Regulatorios</a></li>
-          </ul>
-        </div>
 
-        <div class="footer-col">
-          <h4>Reportes PLD/FT</h4>
-          <ul class="footer-links">
-            <li><a href="reportes-regulatorios-cnbv.html">Operaciones Relevantes</a></li>
-            <li><a href="reportes-regulatorios-cnbv.html">Operaciones Inusuales</a></li>
-            <li><a href="reportes-regulatorios-cnbv.html">Internas Preocupantes</a></li>
-            <li><a href="layout-reportes-pld.html">Layout Completo 36 Campos</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Legal y Compliance</h4>
-          <ul class="footer-links">
-            <li><a href="https://www.condusef.gob.mx" target="_blank">CONDUSEF</a></li>
-            <li><a href="https://www.cnbv.gob.mx" target="_blank">CNBV</a></li>
-            <li><a href="https://www.gob.mx/uif" target="_blank">UIF</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <div class="footer-copyright">
-          <p>
-            &copy; <span class="current-year"></span> SOFOMES.COM - Todos los derechos reservados.<br>
-            Datos: <a href="https://www.condusef.gob.mx" target="_blank">CONDUSEF SIPRES</a> |
-            <a href="https://www.cnbv.gob.mx" target="_blank">CNBV</a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Dynamic Year Update Script -->
-  <script>
-    (function() {
-      const currentYear = new Date().getFullYear();
-      document.querySelectorAll('.current-year').forEach(el => {
-        el.textContent = currentYear;
-      });
-    })();
-  </script>
-
-</body>
-</html>
+<?php include 'includes/footer.php'; ?>

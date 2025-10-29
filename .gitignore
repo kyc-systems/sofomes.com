@@ -1,0 +1,21 @@
+# Cache de API CONDUSEF
+api/condusef-cache.json
+
+# Respuestas de debug
+api/condusef-response-*.json
+
+# Backups
+*.zip
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+error_log
+
+# Archivos temporales
+*.tmp
+*~
+*.bak

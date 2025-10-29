@@ -1,7 +1,8 @@
 <?php
 /**
- * CONDUSEF SIPRES Proxy
+ * CONDUSEF SIPRES Proxy con Cache de 24 horas
  * Evita problemas de CORS haciendo el request desde el servidor
+ * Cache: Los datos se actualizan cada 24 horas automáticamente
  */
 
 header('Content-Type: application/json; charset=utf-8');
@@ -15,8 +16,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     exit;
 }
 
-// Configuración CONDUSEF
+// Configuración
 $CONDUSEF_URL = 'https://webapps.condusef.gob.mx/SIPRES/jsp/pub/resulbusq.jsp';
+$CACHE_FILE = __DIR__ . '/condusef-cache.json';
+$CACHE_LIFETIME = 86400; // 24 horas en segundos
 
 // Parámetros para obtener TODAS las SOFOMes en operación
 $params = [
@@ -27,6 +30,42 @@ $params = [
     'psta' => '60'      // Status: En operación (código 60)
 ];
 
+// **SISTEMA DE CACHE**
+// Verificar si se solicita forzar actualización
+$forceRefresh = isset($_GET['refresh']) && $_GET['refresh'] === 'true';
+
+if ($forceRefresh) {
+    error_log("REFRESH FORZADO - Eliminando cache y fetching desde CONDUSEF...");
+    if (file_exists($CACHE_FILE)) {
+        unlink($CACHE_FILE);
+    }
+}
+
+// Verificar si existe cache válido (menos de 24 horas)
+if (!$forceRefresh && file_exists($CACHE_FILE)) {
+    $cacheAge = time() - filemtime($CACHE_FILE);
+
+    if ($cacheAge < $CACHE_LIFETIME) {
+        // Cache válido, retornar desde archivo
+        $cachedData = json_decode(file_get_contents($CACHE_FILE), true);
+
+        // Agregar info de cache
+        $cachedData['cached'] = true;
+        $cachedData['cache_age_hours'] = round($cacheAge / 3600, 1);
+        $cachedData['cache_expires_in_hours'] = round(($CACHE_LIFETIME - $cacheAge) / 3600, 1);
+
+        error_log("Sirviendo desde CACHE - Age: " . round($cacheAge / 3600, 1) . " horas");
+
+        echo json_encode($cachedData, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+        exit;
+    } else {
+        error_log("Cache EXPIRADO - Age: " . round($cacheAge / 3600, 1) . " horas. Fetching desde CONDUSEF...");
+    }
+} else {
+    error_log("No existe cache. Fetching desde CONDUSEF...");
+}
+
+// Si llegamos aquí, necesitamos fetch desde CONDUSEF
 try {
     // Inicializar cURL
     $ch = curl_init($CONDUSEF_URL);
@@ -145,8 +184,23 @@ try {
         'sofomes' => $sofomes,
         'fecha' => date('c'), // ISO 8601
         'source' => 'CONDUSEF SIPRES',
-        'params' => $params
+        'params' => $params,
+        'cached' => false
     ];
+
+    // **GUARDAR EN CACHE**
+    $cacheWritten = file_put_contents(
+        $CACHE_FILE,
+        json_encode($response, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE)
+    );
+
+    if ($cacheWritten) {
+        error_log("Cache GUARDADO exitosamente: " . $CACHE_FILE);
+        $response['cache_saved'] = true;
+    } else {
+        error_log("ERROR al guardar cache en: " . $CACHE_FILE);
+        $response['cache_saved'] = false;
+    }
 
     // Opcional: guardar en archivo para debugging
     if (isset($_GET['debug'])) {

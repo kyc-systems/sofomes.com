@@ -1,53 +1,16 @@
-<!DOCTYPE html>
-<html lang="es-MX">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<?php
+// Variables para header.php
+$pageTitle = "Catálogos Oficiales RIPS F36 | CNBV PLD/FT";
+$pageDescription = "Catálogos oficiales CNBV para reportes RIPS F36: Actividad Económica, Tipo de Reporte, Instrumento Monetario, Monedas, Localidades, Tipo de Operación del Asesor.";
+$pageKeywords = "catalogos cnbv, rips f36, catalogos pld, actividad economica scian, catalogos reportes";
+$canonicalUrl = "https://sofomes.com/catalogos-rips-f36";
+$activeMenu = "catalogos";
+$cssPath = "/assets/css/main-v2.css";
 
-  <!-- Primary Meta Tags -->
-  <title>Catálogos RIPS F36 CNBV | SOFOMes en México</title>
-  <meta name="description" content="Catálogos oficiales CNBV para reportes RIPS F36: Actividad Económica, Localidades, Monedas, Instrumentos Monetarios. 5,159 registros para SOFOMes.">
-  <meta name="keywords" content="RIPS F36, catálogos CNBV, reportes regulatorios, SOFOM, actividad económica SCIAN, localidades México">
+include 'includes/header.php';
+?>
 
-  <!-- Canonical URL -->
-  <link rel="canonical" href="https://sofomes.com/catalogos-rips-f36">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Catálogos RIPS F36 CNBV | SOFOMes México">
-  <meta property="og:description" content="5,159 registros oficiales CNBV para reportes regulatorios de SOFOMes. Búsqueda y exportación CSV.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://sofomes.com/catalogos-rips-f36">
-
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="assets/css/main-v2.css">
-
-  <!-- Código de instalación Cliengo para sofomes.com -->
-  <script type="text/javascript">
-    (function () {
-      var ldk = document.createElement('script');
-      ldk.type = 'text/javascript';
-      ldk.async = true;
-      ldk.src = 'https://s.cliengo.com/weboptimizer/62503ed1004881002a965901/690164685f597226ae0e7119.js?platform=onboarding_modular';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ldk, s);
-    })();
-  </script>
-</head>
-<body>
-
-  <!-- Navigation -->
-  <nav class="nav">
-    <div class="container">
-      <div class="nav-brand">
-        <a href="index.html">SOFOMES.COM</a>
-      </div>
-      <div class="nav-menu">
-        <a href="index.html">Inicio</a>
-        <a href="lista-sofomes-mexico.html">Directorio</a>
-        <a href="catalogos-rips-f36.html" class="active">Catálogos RIPS F36</a>
-        <a href="reportes-regulatorios-cnbv.html">Reportes Regulatorios</a>
-      </div>
-    </div>
-  </nav>
 
   <!-- Hero Section -->
   <section class="hero" style="padding: 4rem 0;">
@@ -111,7 +74,7 @@
             <li>Comercio al por mayor y menor</li>
             <li>Servicios financieros y profesionales</li>
           </ul>
-          <a href="catalogos/actividad-economica.html" class="btn btn-primary btn-sm">Ver Catálogo →</a>
+          <a href="catalogos/actividad-economica.php" class="btn btn-primary btn-sm">Ver Catálogo →</a>
         </div>
 
         <!-- Localidades -->
@@ -125,7 +88,7 @@
             <li>2,469 municipios</li>
             <li>Claves de 8 dígitos</li>
           </ul>
-          <a href="catalogos/localidades.html" class="btn btn-primary btn-sm">Ver Catálogo →</a>
+          <a href="catalogos/localidades.php" class="btn btn-primary btn-sm">Ver Catálogo →</a>
         </div>
 
         <!-- Monedas -->
@@ -140,7 +103,7 @@
             <li>JPY - Yen japonés</li>
             <li>GBP - Libra esterlina</li>
           </ul>
-          <a href="catalogos/monedas.html" class="btn btn-primary btn-sm">Ver Catálogo →</a>
+          <a href="catalogos/monedas.php" class="btn btn-primary btn-sm">Ver Catálogo →</a>
         </div>
 
         <!-- Tipo de Operación Asesor -->
@@ -154,7 +117,7 @@
             <li>Asesoría de inversión</li>
             <li>Transmisión de órdenes</li>
           </ul>
-          <a href="catalogos/tipo-operacion-asesor.html" class="btn btn-primary btn-sm">Ver Catálogo →</a>
+          <a href="catalogos/tipo-operacion-asesor.php" class="btn btn-primary btn-sm">Ver Catálogo →</a>
         </div>
 
         <!-- Tipo de Reporte -->
@@ -168,7 +131,7 @@
             <li>2. Operaciones Inusuales (Perfil transaccional)</li>
             <li>3. Operaciones Internas Preocupantes</li>
           </ul>
-          <a href="catalogos/tipo-reporte.html" class="btn btn-primary btn-sm">Ver Catálogo →</a>
+          <a href="catalogos/tipo-reporte.php" class="btn btn-primary btn-sm">Ver Catálogo →</a>
         </div>
 
         <!-- Instrumentos Monetarios -->
@@ -183,7 +146,7 @@
             <li>10 - Cheques</li>
             <li>05 - Oro/platino amonedado</li>
           </ul>
-          <a href="catalogos/instrumento-monetario.html" class="btn btn-primary btn-sm">Ver Catálogo →</a>
+          <a href="catalogos/instrumento-monetario.php" class="btn btn-primary btn-sm">Ver Catálogo →</a>
         </div>
       </div>
     </div>
@@ -196,77 +159,12 @@
       <p class="section-subtitle" style="max-width: 700px; margin: 0 auto 2rem;">
         Consulta nuestra guía completa de formatos de reportes CNBV: Operaciones Relevantes, Inusuales e Internas Preocupantes con layouts, validaciones y ejemplos prácticos.
       </p>
-      <a href="reportes-regulatorios-cnbv.html" class="btn btn-primary btn-lg">
+      <a href="reportes-regulatorios-cnbv.php" class="btn btn-primary btn-lg">
         📄 Ver Guía de Reportes Regulatorios
       </a>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-col">
-          <h4>SOFOMES.COM</h4>
-          <p>
-            Directorio completo de SOFOMes en operación en México. Información verificable, datos reales.
-          </p>
-          <p style="margin-top: 1rem">
-            <strong>Fuente:</strong> CONDUSEF SIPRES | CNBV
-          </p>
-        </div>
 
-        <div class="footer-col">
-          <h4>Navegación</h4>
-          <ul class="footer-links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="lista-sofomes-mexico.html">Directorio SOFOMes</a></li>
-            <li><a href="catalogos-rips-f36.html">Catálogos RIPS F36</a></li>
-            <li><a href="reportes-regulatorios-cnbv.html">Reportes Regulatorios</a></li>
-          </ul>
-        </div>
 
-        <div class="footer-col">
-          <h4>Catálogos</h4>
-          <ul class="footer-links">
-            <li><a href="catalogos/actividad-economica.html">Actividad Económica</a></li>
-            <li><a href="catalogos/localidades.html">Localidades</a></li>
-            <li><a href="catalogos/monedas.html">Monedas</a></li>
-            <li><a href="catalogos/tipo-reporte.html">Tipos de Reporte</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Legal y Compliance</h4>
-          <ul class="footer-links">
-            <li><a href="https://www.condusef.gob.mx" target="_blank">CONDUSEF</a></li>
-            <li><a href="https://www.cnbv.gob.mx" target="_blank">CNBV</a></li>
-            <li><a href="https://www.gob.mx/uif" target="_blank">UIF</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <div class="footer-copyright">
-          <p>
-            &copy; <span class="current-year"></span> SOFOMES.COM - Todos los derechos reservados.<br>
-            Datos: <a href="https://www.condusef.gob.mx" target="_blank">CONDUSEF SIPRES</a> |
-            <a href="https://www.cnbv.gob.mx" target="_blank">CNBV</a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Dynamic Year Update Script -->
-  <script>
-    (function() {
-      const currentYear = new Date().getFullYear();
-      document.querySelectorAll('.current-year').forEach(el => {
-        el.textContent = currentYear;
-      });
-    })();
-  </script>
-
-</body>
-</html>
+<?php include 'includes/footer.php'; ?>

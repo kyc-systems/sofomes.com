@@ -10,19 +10,19 @@
 > Audiencia: SOFOMes ENR, Oficiales de Cumplimiento, Asesores Financieros
 
 # Páginas principales
-- /index.html - Página principal del directorio de SOFOMes
-- /lista-sofomes-mexico.html - Listado completo de SOFOMes registradas
-- /reportes-regulatorios-cnbv.html - Guía completa de Operaciones Relevantes, Inusuales e Internas Preocupantes
-- /layout-reportes-pld.html - Layout oficial 36 campos CNBV para reportes PLD/FT
-- /catalogos-rips-f36.html - Hub de catálogos oficiales CNBV
+- / - Página principal del directorio de SOFOMes
+- /lista-sofomes-mexico - Listado completo de SOFOMes registradas
+- /reportes-regulatorios-cnbv - Guía completa de Operaciones Relevantes, Inusuales e Internas Preocupantes
+- /layout-reportes-pld - Layout oficial 36 campos CNBV para reportes PLD/FT
+- /catalogos-rips-f36 - Hub de catálogos oficiales CNBV
 
 # Catálogos RIPS F36 (Formato 36 CNBV)
-- /catalogos/actividad-economica.html - 1,263 actividades SCIAN adaptadas
-- /catalogos/localidades.html - 2,469 localidades de México
-- /catalogos/monedas.html - 180 monedas internacionales
-- /catalogos/instrumento-monetario.html - Instrumentos monetarios oficiales
-- /catalogos/tipo-reporte.html - Tipos de reportes PLD/FT
-- /catalogos/tipo-operacion-asesor.html - Operaciones de asesores en inversiones
+- /catalogos/actividad-economica - 1,263 actividades SCIAN adaptadas
+- /catalogos/localidades - 2,469 localidades de México
+- /catalogos/monedas - 180 monedas internacionales
+- /catalogos/instrumento-monetario - Instrumentos monetarios oficiales
+- /catalogos/tipo-reporte - Tipos de reportes PLD/FT
+- /catalogos/tipo-operacion-asesor - Operaciones de asesores en inversiones
 
 # Contenido especializado
 ## Reportes PLD/FT para SOFOMes

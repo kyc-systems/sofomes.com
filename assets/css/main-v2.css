@@ -559,7 +559,7 @@ strong {
 .comparison-table th,
 .comparison-table td {
   padding: var(--space-4);
-  text-align: left;
+  text-align: center;
   border-bottom: 1px solid var(--neutral-200);
 }
 
@@ -1107,6 +1107,17 @@ strong {
 .footer strong {
   color: var(--white);
   font-weight: 700;
+}
+
+.footer-col p a {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.footer-col p a:hover {
+  color: var(--white);
+  text-decoration: underline;
 }
 
 .footer-links {

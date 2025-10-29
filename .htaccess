@@ -4,8 +4,8 @@
 # Habilitar engine de reescritura
 RewriteEngine On
 
-# Página de inicio predeterminada
-DirectoryIndex index.html
+# Página de inicio predeterminada (PHP primero, HTML como fallback)
+DirectoryIndex index.php index.html
 
 # Habilitar seguimiento de enlaces simbólicos
 Options +FollowSymLinks
@@ -19,8 +19,8 @@ Options -Indexes
   Allow from all
 </FilesMatch>
 
-# Permitir acceso a archivos HTML
-<FilesMatch "\.(html|htm)$">
+# Permitir acceso a archivos HTML y PHP
+<FilesMatch "\.(html|htm|php)$">
   Order Allow,Deny
   Allow from all
 </FilesMatch>
@@ -71,6 +71,16 @@ AddType application/x-font-woff2 .woff2
   Header set X-XSS-Protection "1; mode=block"
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
 </IfModule>
+
+# Redirecciones 301: HTML → PHP (mantener SEO)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)\.html$ /$1.php [L,R=301]
+
+# URLs amigables: permitir acceso sin extensión
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php [L,QSA]
 
 # Redirección de www a no-www (opcional, descomentar si lo necesitas)
 # RewriteCond %{HTTP_HOST} ^www\.sofomes\.com [NC]

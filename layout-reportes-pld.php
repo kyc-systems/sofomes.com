@@ -1,0 +1,823 @@
+<?php
+// Variables para header.php
+$pageTitle = "Layout 36 Campos RIPS F36 | Reportes PLD/FT CNBV";
+$pageDescription = "Referencia técnica completa del layout de 36 campos para Reportes de Operaciones (RIPS F36). Validaciones, catálogos oficiales, ejemplos prácticos.";
+$pageKeywords = "layout pld, rips f36, 36 campos cnbv, reportes pld sofom, formato reportes cnbv";
+$canonicalUrl = "https://sofomes.com/layout-reportes-pld";
+$activeMenu = "reportes";
+$cssPath = "/assets/css/main-v2.css";
+
+include 'includes/header.php';
+?>
+
+  <style>
+    .layout-filters {
+      display: flex;
+      gap: 1rem;
+      margin: 2rem 0;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .filter-btn {
+      padding: 0.75rem 1.5rem;
+      border: 2px solid var(--primary-600);
+      background: white;
+      color: var(--primary-600);
+      border-radius: var(--border-radius);
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .filter-btn:hover {
+      background: var(--primary-50);
+    }
+
+    .filter-btn.active {
+      background: var(--primary-600);
+      color: white;
+    }
+
+    .field-card {
+      background: white;
+      border-radius: var(--border-radius);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: var(--shadow-md);
+      border-left: 4px solid var(--primary-600);
+    }
+
+    .field-card.hidden {
+      display: none;
+    }
+
+    .field-header {
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .field-number {
+      background: var(--primary-600);
+      color: white;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.25rem;
+      flex-shrink: 0;
+    }
+
+    .field-title-area {
+      flex: 1;
+    }
+
+    .field-name {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--neutral-900);
+      margin-bottom: 0.5rem;
+    }
+
+    .field-meta {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .meta-badge {
+      padding: 0.25rem 0.75rem;
+      border-radius: 4px;
+      font-size: 0.875rem;
+      font-weight: 600;
+    }
+
+    .meta-type {
+      background: var(--primary-100);
+      color: var(--primary-700);
+    }
+
+    .meta-length {
+      background: var(--neutral-100);
+      color: var(--neutral-700);
+    }
+
+    .report-tags {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .tag {
+      padding: 0.375rem 0.75rem;
+      border-radius: 20px;
+      font-size: 0.875rem;
+      font-weight: 600;
+    }
+
+    .tag-ros {
+      background: var(--success-100);
+      color: var(--success-700);
+    }
+
+    .tag-roin {
+      background: var(--warning-100);
+      color: var(--warning-700);
+    }
+
+    .tag-roip {
+      background: var(--danger-100);
+      color: var(--danger-700);
+    }
+
+    .tag-null {
+      background: var(--neutral-100);
+      color: var(--neutral-500);
+      text-decoration: line-through;
+    }
+
+    .validations-section {
+      margin-top: 1.5rem;
+    }
+
+    .validation-group {
+      margin-bottom: 1rem;
+    }
+
+    .validation-group-title {
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      padding: 0.5rem 0.75rem;
+      border-radius: 4px;
+    }
+
+    .validation-group-title.ros {
+      background: var(--success-50);
+      color: var(--success-700);
+    }
+
+    .validation-group-title.roin {
+      background: var(--warning-50);
+      color: var(--warning-700);
+    }
+
+    .validation-group-title.roip {
+      background: var(--danger-50);
+      color: var(--danger-700);
+    }
+
+    .validation-list {
+      list-style: none;
+      padding: 0;
+      margin: 0.5rem 0 0 0;
+    }
+
+    .validation-list li {
+      padding: 0.5rem 0.75rem;
+      margin: 0.25rem 0;
+      background: var(--neutral-50);
+      border-radius: 4px;
+      font-size: 0.875rem;
+      line-height: 1.6;
+    }
+
+    .validation-list li strong {
+      color: var(--primary-600);
+    }
+
+    .search-box {
+      max-width: 600px;
+      margin: 2rem auto;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 1rem;
+      border: 2px solid var(--neutral-300);
+      border-radius: var(--border-radius);
+      font-size: 1rem;
+    }
+
+    .search-input:focus {
+      outline: none;
+      border-color: var(--primary-600);
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+
+    .stat-card {
+      text-align: center;
+      padding: 1.5rem;
+      background: white;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .stat-number {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--primary-600);
+    }
+
+    .stat-label {
+      font-size: 0.875rem;
+      color: var(--neutral-600);
+      margin-top: 0.5rem;
+    }
+
+    .legend {
+      background: var(--neutral-50);
+      padding: 1.5rem;
+      border-radius: var(--border-radius);
+      margin: 2rem 0;
+    }
+
+    .legend-title {
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .legend-items {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .field-header {
+        flex-direction: column;
+      }
+
+      .filter-btn {
+        width: 100%;
+      }
+    }
+  </style>
+
+  <!-- Hero Section -->
+  <section class="hero" style="padding: 4rem 0;">
+    <div class="container">
+      <h1 class="hero-title" style="text-align: center; font-size: 2.5rem;">
+        📋 Layout Completo: 36 Campos PLD/FT
+      </h1>
+      <p class="hero-subtitle" style="text-align: center; max-width: 900px; margin: 1rem auto;">
+        Guía detallada campo por campo del formato oficial CNBV para reportes de Operaciones Relevantes, Operaciones Inusuales e Internas Preocupantes. Incluye validaciones, tipos de dato y qué información capturar en cada campo.
+      </p>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number">36</div>
+          <div class="stat-label">Campos Totales</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">28</div>
+          <div class="stat-label">Operaciones Relevantes</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">36</div>
+          <div class="stat-label">Operaciones Inusuales</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">36</div>
+          <div class="stat-label">Internas Preocupantes</div>
+        </div>
+      </div>
+
+      <!-- Legend -->
+      <div class="legend">
+        <div class="legend-title">Leyenda de Tipos de Reporte:</div>
+        <div class="legend-items">
+          <div class="legend-item">
+            <span class="tag tag-ros">Relevantes</span>
+            <span>Operaciones Relevantes (≥ $7,500 USD)</span>
+          </div>
+          <div class="legend-item">
+            <span class="tag tag-roin">Inusuales</span>
+            <span>Operaciones Inusuales (Perfil transaccional)</span>
+          </div>
+          <div class="legend-item">
+            <span class="tag tag-roip">Preocupantes</span>
+            <span>Operaciones Internas Preocupantes (Sospecha LD/FT - buzón de denuncias)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filters and Search -->
+  <section class="section" style="background: var(--neutral-50); padding: 2rem 0;">
+    <div class="container">
+      <div class="search-box">
+        <input
+          type="text"
+          id="searchInput"
+          class="search-input"
+          placeholder="🔍 Buscar campo por nombre o número..."
+        >
+      </div>
+
+      <div class="layout-filters">
+        <button class="filter-btn active" data-filter="all">
+          Todos los Campos (36)
+        </button>
+        <button class="filter-btn" data-filter="ros">
+          Operaciones Relevantes (28)
+        </button>
+        <button class="filter-btn" data-filter="roin">
+          Operaciones Inusuales (36)
+        </button>
+        <button class="filter-btn" data-filter="roip">
+          Internas Preocupantes (36)
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fields Layout -->
+  <section class="section">
+    <div class="container">
+      <div id="fieldsContainer">
+        <!-- Fields will be injected here by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Catálogos -->
+  <section class="section" style="background: var(--primary-50);">
+    <div class="container" style="text-align: center;">
+      <h2 class="section-title">¿Necesitas los Catálogos para Llenar los Reportes?</h2>
+      <p class="section-subtitle" style="max-width: 700px; margin: 0 auto 2rem;">
+        Consulta los catálogos oficiales CNBV necesarios: Actividad Económica, Localidades, Monedas, Instrumentos Monetarios.
+      </p>
+      <a href="catalogos-rips-f36.php" class="btn btn-primary btn-lg">
+        📚 Ver Catálogos RIPS F36
+      </a>
+    </div>
+  </section>
+
+
+
+<?php include 'includes/footer.php'; ?>
+  <script>
+    // Fields data
+    const fieldsData = [
+      {
+        "columna": "1",
+        "descripcion": "TIPO DE REPORTE",
+        "tipo": "Alfanumérico",
+        "longitud": "1",
+        "validaciones_ros": ["* VRC1R1: El campo es alfanumérico", "* VRC1R2 El campo debe medir 1 caracter", "* VRC1R3: El campo es obligatorio", "* VRC1R5: El dato debe ser igual a 1", "* VRC1R4: El archivo debe de contener únicamente operaciones del tipo de reporte 1"],
+        "validaciones_roin": ["* VIC1R1: El campo es alfanumérico", "* VIC1R2: El campo debe medir 1 caracter", "* VIC1R3: El campo es obligatorio", "* VIC1R5: El dato debe ser igual a 2", "* VIC1R4: El archivo debe de contener únicamente operaciones del tipo de reporte 2"],
+        "validaciones_roip": ["* VPC1R1: El campo alfanumérico", "* VPC1R2: El campo debe medir 1 caracter", "* VPC1R3: El campo es obligatorio", "* VPC1R5 El dato debe ser igual a 3", "* VPC1R4. El archivo debe de contener únicamente operaciones del tipo de reporte 3"]
+      },
+      {
+        "columna": "2",
+        "descripcion": "PERIODO DEL REPORTE",
+        "tipo": "Numérico",
+        "longitud": "6 (Relevantes) / 8 (Inusuales, Preocupantes)",
+        "validaciones_ros": ["* VRC2R1: El campo es numérico", "* VRC2R2: El campo debe medir 6 caracteres", "* VRC2R3: El campo es obligatorio", "* VRC2R4: Formato AAAAMM", "* VRC2R5: Únicamente podrá existir un período por archivo", "* VRC2R6: Sólo se recibe el período vigente y/o anterior. No posteriores"],
+        "validaciones_roin": ["* VIC2R1: El campo es numérico", "* VIC2R2: El campo debe medir 8 caracteres", "* VIC2R3: El campo es obligatorio", "* VIC2R4: Formato AAAAMMDD"],
+        "validaciones_roip": ["* VPC2R1: El campo es numérico", "* VPC2R2: El campo debe medir 8 caracteres", "* VPC2R3: El campo es obligatorio", "* VPC2R4: Formato AAAAMMDD"]
+      },
+      {
+        "columna": "3",
+        "descripcion": "FOLIO",
+        "tipo": "Alfanumérico",
+        "longitud": "6",
+        "validaciones_ros": ["* VRC3R1: El campo es alfanumérico", "* VRC3R2: El campo debe medir 6 caracteres", "* VRC3R3: El campo es obligatorio", "* VRC3R4: El campo debe de ser de 6 números", "* VRC3R5: El consecutivo debe iniciar en 000001 y se incrementará en 1 por cada operación principal que se reporte dentro de un mismo archivo"],
+        "validaciones_roin": ["* VIC3R1: El campo es alfanumérico", "* VIC3R2: El campo debe medir 6 caracteres", "* VIC3R3: El campo es obligatorio", "* VIC3R5: El consecutivo deberá iniciar en 000001 y se incrementará en 1 por cada operación principal que se reporte dentro de un mismo archivo"],
+        "validaciones_roip": ["* VPC3R1: El campo es alfanumérico", "* VPC3R2: El campo debe medir 6 caracteres", "* VPC3R3: El campo es obligatorio", "* VPC3R4: El campo debe de ser de 6 números", "* VPC3R5: El consecutivo deberá iniciar en 000001 y se incrementará en 1 por cada operación principal que se reporte dentro de un mismo archivo"]
+      },
+      {
+        "columna": "4",
+        "descripcion": "ORGANO SUPERVISOR",
+        "tipo": "Alfanumérico",
+        "longitud": "6",
+        "validaciones_ros": ["* VRC4R1: El campo es alfanumérico", "* VRC4R2: El campo debe medir 6 caracteres", "* VRC4R3: El campo es obligatorio", "* VRC4R4: Debe de usar la clave correspondiente según el órgano supervisor", "* VRC4R5: Para SOFOMes ENR debe ser: 160000"],
+        "validaciones_roin": ["* VIC4R1: El campo es alfanumérico", "* VIC4R2: El campo debe medir 6 caracteres", "* VIC4R3: El campo es obligatorio", "* VIC4R4: Debe de usar la clave correspondiente según el órgano supervisor", "* VIC4R5: Para SOFOMes ENR debe ser: 160000"],
+        "validaciones_roip": ["* VPC4R1: El campo es alfanumérico", "* VPC4R2: El campo debe medir 6 caracteres", "* VPC4R3: El campo es obligatorio", "* VPC4R4: Debe de usar la clave correspondiente según el órgano supervisor", "* VPC4R5: Para SOFOMes ENR debe ser: 160000"]
+      },
+      {
+        "columna": "5",
+        "descripcion": "CLAVE O NÚMERO DE REGISTRO DEL SUJETO OBLIGADO",
+        "tipo": "Alfanumérico",
+        "longitud": "7",
+        "validaciones_ros": ["* VRC5R1: El campo es alfanumérico", "* VRC5R2: El campo debe medir 7 caracteres", "* VRC5R3: El campo es obligatorio", "* VRC5R4: Debe corresponder a la clave de registro ante CONDUSEF"],
+        "validaciones_roin": ["* VIC5R1: El campo es alfanumérico", "* VIC5R2: El campo debe medir 7 caracteres", "* VIC5R3: El campo es obligatorio", "* VIC5R4: Debe corresponder a la clave de registro ante CONDUSEF"],
+        "validaciones_roip": ["* VPC5R1: El campo es alfanumérico", "* VPC5R2: El campo debe medir 7 caracteres", "* VPC5R3: El campo es obligatorio", "* VPC5R4: Debe corresponder a la clave de registro ante CONDUSEF"]
+      },
+      {
+        "columna": "6",
+        "descripcion": "LOCALIDAD",
+        "tipo": "Alfanumérico",
+        "longitud": "8",
+        "validaciones_ros": ["* VRC6R1: El campo es alfanumérico", "* VRC6R2: El campo debe medir 8 caracteres", "* VRC6R3: El campo es obligatorio", "* VRC6R4: Debe existir en el catálogo de localidades CNBV"],
+        "validaciones_roin": ["* VIC6R1: El campo es alfanumérico", "* VIC6R2: El campo debe medir 8 caracteres", "* VIC6R3: El campo es obligatorio", "* VIC6R4: Debe existir en el catálogo de localidades CNBV"],
+        "validaciones_roip": ["* VPC6R1: El campo es alfanumérico", "* VPC6R2: El campo debe medir 8 caracteres", "* VPC6R3: El campo es obligatorio", "* VPC6R4: Debe existir en el catálogo de localidades CNBV"]
+      },
+      {
+        "columna": "7",
+        "descripcion": "CÓDIGO POSTAL DE LA SUCURSAL",
+        "tipo": "Alfanumérico",
+        "longitud": "5",
+        "validaciones_ros": ["* VRC7R1: El campo es alfanumérico", "* VRC7R2: El campo debe medir 5 caracteres", "* VRC7R3: El campo es obligatorio", "* VRC7R4: Debe ser un código postal válido de México"],
+        "validaciones_roin": ["* VIC7R1: El campo es alfanumérico", "* VIC7R2: El campo debe medir 5 caracteres", "* VIC7R3: El campo es obligatorio", "* VIC7R4: Debe ser un código postal válido de México"],
+        "validaciones_roip": ["* VPC7R1: El campo es alfanumérico", "* VPC7R2: El campo debe medir 5 caracteres", "* VPC7R3: El campo es obligatorio", "* VPC7R4: Debe ser un código postal válido de México"]
+      },
+      {
+        "columna": "8",
+        "descripcion": "TIPO DE OPERACIÓN",
+        "tipo": "Alfanumérico",
+        "longitud": "2",
+        "validaciones_ros": ["* VRC8R1: El campo es alfanumérico", "* VRC8R2: El campo debe medir 2 caracteres", "* VRC8R3: El campo es obligatorio", "* VRC8R4: Debe existir en el catálogo de tipo de operación CNBV", "* VRC8R5: Ejemplos: 01=Crédito, 02=Arrendamiento, 03=Factoraje"],
+        "validaciones_roin": ["* VIC8R1: El campo es alfanumérico", "* VIC8R2: El campo debe medir 2 caracteres", "* VIC8R3: El campo es obligatorio", "* VIC8R4: Debe existir en el catálogo de tipo de operación CNBV"],
+        "validaciones_roip": ["* VPC8R1: El campo es alfanumérico", "* VPC8R2: El campo debe medir 2 caracteres", "* VPC8R3: El campo es obligatorio", "* VPC8R4: Debe existir en el catálogo de tipo de operación CNBV"]
+      },
+      {
+        "columna": "9",
+        "descripcion": "INSTRUMENTO MONETARIO",
+        "tipo": "Alfanumérico",
+        "longitud": "2",
+        "validaciones_ros": ["* VRC9R1: El campo es alfanumérico", "* VRC9R2: El campo debe medir 2 caracteres", "* VRC9R3: El campo es obligatorio", "* VRC9R4: Debe existir en el catálogo de instrumentos monetarios CNBV", "* VRC9R5: Ejemplos: 01=Efectivo, 03=Transferencia, 10=Cheque"],
+        "validaciones_roin": ["* VIC9R1: El campo es alfanumérico", "* VIC9R2: El campo debe medir 2 caracteres", "* VIC9R3: El campo es obligatorio", "* VIC9R4: Debe existir en el catálogo de instrumentos monetarios CNBV"],
+        "validaciones_roip": ["* VPC9R1: El campo es alfanumérico", "* VPC9R2: El campo debe medir 2 caracteres", "* VPC9R3: El campo es obligatorio", "* VPC9R4: Debe existir en el catálogo de instrumentos monetarios CNBV"]
+      },
+      {
+        "columna": "10",
+        "descripcion": "NÚMERO DE CUENTA CONTRATO U OPERACIÓN",
+        "tipo": "Alfanumérico",
+        "longitud": "16",
+        "validaciones_ros": ["* VRC10R1: El campo es alfanumérico", "* VRC10R2: El campo debe medir máximo 16 caracteres", "* VRC10R3: El campo es obligatorio", "* VRC10R4: Debe ser el número de cuenta o contrato del cliente"],
+        "validaciones_roin": ["* VIC10R1: El campo es alfanumérico", "* VIC10R2: El campo debe medir máximo 16 caracteres", "* VIC10R3: El campo es obligatorio", "* VIC10R4: Debe ser el número de cuenta o contrato del cliente"],
+        "validaciones_roip": ["* VPC10R1: El campo es alfanumérico", "* VPC10R2: El campo debe medir máximo 16 caracteres", "* VPC10R3: El campo es obligatorio", "* VPC10R4: Debe ser el número de cuenta o contrato del cliente"]
+      },
+      {
+        "columna": "11",
+        "descripcion": "MONTO",
+        "tipo": "Numérico",
+        "longitud": "17",
+        "validaciones_ros": ["* VRC11R1: El campo es numérico", "* VRC11R2: El campo debe medir máximo 17 caracteres (con 2 decimales)", "* VRC11R3: El campo es obligatorio", "* VRC11R4: Debe ser mayor o igual al umbral de $7,500 USD o equivalente", "* VRC11R5: Formato: 999999999999999.99"],
+        "validaciones_roin": ["* VIC11R1: El campo es numérico", "* VIC11R2: El campo debe medir máximo 17 caracteres (con 2 decimales)", "* VIC11R3: El campo es obligatorio", "* VIC11R4: Formato: 999999999999999.99"],
+        "validaciones_roip": ["* VPC11R1: El campo es numérico", "* VPC11R2: El campo debe medir máximo 17 caracteres (con 2 decimales)", "* VPC11R3: El campo es obligatorio", "* VPC11R4: Formato: 999999999999999.99"]
+      },
+      {
+        "columna": "12",
+        "descripcion": "MONEDA",
+        "tipo": "Alfanumérico",
+        "longitud": "3",
+        "validaciones_ros": ["* VRC12R1: El campo es alfanumérico", "* VRC12R2: El campo debe medir 3 caracteres", "* VRC12R3: El campo es obligatorio", "* VRC12R4: Debe existir en el catálogo de monedas CNBV (ISO 4217)", "* VRC12R5: Ejemplos: MXN, USD, EUR"],
+        "validaciones_roin": ["* VIC12R1: El campo es alfanumérico", "* VIC12R2: El campo debe medir 3 caracteres", "* VIC12R3: El campo es obligatorio", "* VIC12R4: Debe existir en el catálogo de monedas CNBV (ISO 4217)"],
+        "validaciones_roip": ["* VPC12R1: El campo es alfanumérico", "* VPC12R2: El campo debe medir 3 caracteres", "* VPC12R3: El campo es obligatorio", "* VPC12R4: Debe existir en el catálogo de monedas CNBV (ISO 4217)"]
+      },
+      {
+        "columna": "13",
+        "descripcion": "FECHA DE LA OPERACIÓN",
+        "tipo": "Numérico",
+        "longitud": "8",
+        "validaciones_ros": ["* VRC13R1: El campo es numérico", "* VRC13R2: El campo debe medir 8 caracteres", "* VRC13R3: El campo es obligatorio", "* VRC13R4: Formato AAAAMMDD", "* VRC13R5: La fecha debe estar dentro del período reportado"],
+        "validaciones_roin": ["* VIC13R1: El campo es numérico", "* VIC13R2: El campo debe medir 8 caracteres", "* VIC13R3: El campo es obligatorio", "* VIC13R4: Formato AAAAMMDD"],
+        "validaciones_roip": ["* VPC13R1: El campo es numérico", "* VPC13R2: El campo debe medir 8 caracteres", "* VPC13R3: El campo es obligatorio", "* VPC13R4: Formato AAAAMMDD"]
+      },
+      {
+        "columna": "14",
+        "descripcion": "FECHA DE DETECCIÓN DE LA OPERACIÓN*",
+        "tipo": "Numérico",
+        "longitud": "8",
+        "validaciones_ros": ["* VRC14R1: El campo debe ser nulo (NO aplica para Operaciones Relevantes)"],
+        "validaciones_roin": ["* VIC14R1: El campo es numérico", "* VIC14R2: El campo debe medir 8 caracteres", "* VIC14R3: El campo es obligatorio", "* VIC14R4: Formato AAAAMMDD", "* VIC14R5: Fecha en que el sistema o analista detectó la operación inusual"],
+        "validaciones_roip": ["* VPC14R1: El campo es numérico", "* VPC14R2: El campo debe medir 8 caracteres", "* VPC14R3: El campo es obligatorio", "* VPC14R4: Formato AAAAMMDD", "* VPC14R5: Fecha en que se detectó la operación preocupante"]
+      },
+      {
+        "columna": "15",
+        "descripcion": "NACIONALIDAD",
+        "tipo": "Alfanumérico",
+        "longitud": "1",
+        "validaciones_ros": ["* VRC15R1: El campo es alfanumérico", "* VRC15R2: El campo debe medir 1 caracter", "* VRC15R3: El campo es obligatorio", "* VRC15R4: N = Nacional, E = Extranjero"],
+        "validaciones_roin": ["* VIC15R1: El campo es alfanumérico", "* VIC15R2: El campo debe medir 1 caracter", "* VIC15R3: El campo es obligatorio", "* VIC15R4: N = Nacional, E = Extranjero"],
+        "validaciones_roip": ["* VPC15R1: El campo es alfanumérico", "* VPC15R2: El campo debe medir 1 caracter", "* VPC15R3: El campo es obligatorio", "* VPC15R4: N = Nacional, E = Extranjero"]
+      },
+      {
+        "columna": "16",
+        "descripcion": "TIPO DE PERSONA",
+        "tipo": "Alfanumérico",
+        "longitud": "1",
+        "validaciones_ros": ["* VRC16R1: El campo es alfanumérico", "* VRC16R2: El campo debe medir 1 caracter", "* VRC16R3: El campo es obligatorio", "* VRC16R4: F = Física, M = Moral"],
+        "validaciones_roin": ["* VIC16R1: El campo es alfanumérico", "* VIC16R2: El campo debe medir 1 caracter", "* VIC16R3: El campo es obligatorio", "* VIC16R4: F = Física, M = Moral"],
+        "validaciones_roip": ["* VPC16R1: El campo es alfanumérico", "* VPC16R2: El campo debe medir 1 caracter", "* VPC16R3: El campo es obligatorio", "* VPC16R4: F = Física, M = Moral"]
+      },
+      {
+        "columna": "17",
+        "descripcion": "RAZÓN SOCIAL O DENOMINACIÓN",
+        "tipo": "Alfanumérico",
+        "longitud": "125",
+        "validaciones_ros": ["* VRC17R1: El campo es alfanumérico", "* VRC17R2: El campo debe medir máximo 125 caracteres", "* VRC17R3: El campo es opcional si es Persona Física", "* VRC17R4: Campo obligatorio si Tipo de Persona = M (Moral)", "* VRC17R5: Debe coincidir con acta constitutiva"],
+        "validaciones_roin": ["* VIC17R1: El campo es alfanumérico", "* VIC17R2: El campo debe medir máximo 125 caracteres", "* VIC17R3: El campo es opcional si es Persona Física", "* VIC17R4: Campo obligatorio si Tipo de Persona = M (Moral)"],
+        "validaciones_roip": ["* VPC17R1: El campo es alfanumérico", "* VPC17R2: El campo debe medir máximo 125 caracteres", "* VPC17R3: El campo es opcional si es Persona Física", "* VPC17R4: Campo obligatorio si Tipo de Persona = M (Moral)"]
+      },
+      {
+        "columna": "18",
+        "descripcion": "NOMBRE",
+        "tipo": "Alfanumérico",
+        "longitud": "60",
+        "validaciones_ros": ["* VRC18R1: El campo es alfanumérico", "* VRC18R2: El campo debe medir máximo 60 caracteres", "* VRC18R3: El campo es obligatorio si Tipo de Persona = F (Física)", "* VRC18R4: Debe coincidir con identificación oficial"],
+        "validaciones_roin": ["* VIC18R1: El campo es alfanumérico", "* VIC18R2: El campo debe medir máximo 60 caracteres", "* VIC18R3: El campo es obligatorio si Tipo de Persona = F (Física)"],
+        "validaciones_roip": ["* VPC18R1: El campo es alfanumérico", "* VPC18R2: El campo debe medir máximo 60 caracteres", "* VPC18R3: El campo es obligatorio si Tipo de Persona = F (Física)"]
+      },
+      {
+        "columna": "19",
+        "descripcion": "APELLIDO PATERNO",
+        "tipo": "Alfanumérico",
+        "longitud": "60",
+        "validaciones_ros": ["* VRC19R1: El campo es alfanumérico", "* VRC19R2: El campo debe medir máximo 60 caracteres", "* VRC19R3: El campo es obligatorio si Tipo de Persona = F (Física)", "* VRC19R4: Debe coincidir con identificación oficial"],
+        "validaciones_roin": ["* VIC19R1: El campo es alfanumérico", "* VIC19R2: El campo debe medir máximo 60 caracteres", "* VIC19R3: El campo es obligatorio si Tipo de Persona = F (Física)"],
+        "validaciones_roip": ["* VPC19R1: El campo es alfanumérico", "* VPC19R2: El campo debe medir máximo 60 caracteres", "* VPC19R3: El campo es obligatorio si Tipo de Persona = F (Física)"]
+      },
+      {
+        "columna": "20",
+        "descripcion": "APELLIDO MATERNO",
+        "tipo": "Alfanumérico",
+        "longitud": "30",
+        "validaciones_ros": ["* VRC20R1: El campo es alfanumérico", "* VRC20R2: El campo debe medir máximo 30 caracteres", "* VRC20R3: El campo es opcional para Personas Físicas", "* VRC20R4: Debe coincidir con identificación oficial"],
+        "validaciones_roin": ["* VIC20R1: El campo es alfanumérico", "* VIC20R2: El campo debe medir máximo 30 caracteres", "* VIC20R3: El campo es opcional para Personas Físicas"],
+        "validaciones_roip": ["* VPC20R1: El campo es alfanumérico", "* VPC20R2: El campo debe medir máximo 30 caracteres", "* VPC20R3: El campo es opcional para Personas Físicas"]
+      },
+      {
+        "columna": "21",
+        "descripcion": "RFC",
+        "tipo": "Alfanumérico",
+        "longitud": "13",
+        "validaciones_ros": ["* VRC21R1: El campo es alfanumérico", "* VRC21R2: El campo debe medir 13 caracteres para PF o 12 para PM", "* VRC21R3: El campo es obligatorio", "* VRC21R4: Debe tener formato válido de RFC México", "* VRC21R5: Si es extranjero sin RFC usar: XEXX010101000"],
+        "validaciones_roin": ["* VIC21R1: El campo es alfanumérico", "* VIC21R2: El campo debe medir 13 caracteres para PF o 12 para PM", "* VIC21R3: El campo es obligatorio", "* VIC21R4: Debe tener formato válido de RFC México"],
+        "validaciones_roip": ["* VPC21R1: El campo es alfanumérico", "* VPC21R2: El campo debe medir 13 caracteres para PF o 12 para PM", "* VPC21R3: El campo es obligatorio", "* VPC21R4: Debe tener formato válido de RFC México"]
+      },
+      {
+        "columna": "22",
+        "descripcion": "CURP",
+        "tipo": "Alfanumérico",
+        "longitud": "18",
+        "validaciones_ros": ["* VRC22R1: El campo es alfanumérico", "* VRC22R2: El campo debe medir 18 caracteres", "* VRC22R3: El campo es obligatorio si es Persona Física Nacional", "* VRC22R4: Debe tener formato válido de CURP"],
+        "validaciones_roin": ["* VIC22R1: El campo es alfanumérico", "* VIC22R2: El campo debe medir 18 caracteres", "* VIC22R3: El campo es obligatorio si es Persona Física Nacional"],
+        "validaciones_roip": ["* VPC22R1: El campo es alfanumérico", "* VPC22R2: El campo debe medir 18 caracteres", "* VPC22R3: El campo es obligatorio si es Persona Física Nacional"]
+      },
+      {
+        "columna": "23",
+        "descripcion": "FECHA DE NACIMIENTO O CONSTITUCIÓN",
+        "tipo": "Numérico",
+        "longitud": "8",
+        "validaciones_ros": ["* VRC23R1: El campo es numérico", "* VRC23R2: El campo debe medir 8 caracteres", "* VRC23R3: El campo es obligatorio", "* VRC23R4: Formato AAAAMMDD", "* VRC23R5: Para PF: fecha de nacimiento. Para PM: fecha constitución"],
+        "validaciones_roin": ["* VIC23R1: El campo es numérico", "* VIC23R2: El campo debe medir 8 caracteres", "* VIC23R3: El campo es obligatorio", "* VIC23R4: Formato AAAAMMDD"],
+        "validaciones_roip": ["* VPC23R1: El campo es numérico", "* VPC23R2: El campo debe medir 8 caracteres", "* VPC23R3: El campo es obligatorio", "* VPC23R4: Formato AAAAMMDD"]
+      },
+      {
+        "columna": "24",
+        "descripcion": "DOMICILIO",
+        "tipo": "Alfanumérico",
+        "longitud": "60",
+        "validaciones_ros": ["* VRC24R1: El campo es alfanumérico", "* VRC24R2: El campo debe medir máximo 60 caracteres", "* VRC24R3: El campo es obligatorio", "* VRC24R4: Incluir calle y número"],
+        "validaciones_roin": ["* VIC24R1: El campo es alfanumérico", "* VIC24R2: El campo debe medir máximo 60 caracteres", "* VIC24R3: El campo es obligatorio"],
+        "validaciones_roip": ["* VPC24R1: El campo es alfanumérico", "* VPC24R2: El campo debe medir máximo 60 caracteres", "* VPC24R3: El campo es obligatorio"]
+      },
+      {
+        "columna": "25",
+        "descripcion": "COLONIA",
+        "tipo": "Alfanumérico",
+        "longitud": "30",
+        "validaciones_ros": ["* VRC25R1: El campo es alfanumérico", "* VRC25R2: El campo debe medir máximo 30 caracteres", "* VRC25R3: El campo es obligatorio"],
+        "validaciones_roin": ["* VIC25R1: El campo es alfanumérico", "* VIC25R2: El campo debe medir máximo 30 caracteres", "* VIC25R3: El campo es obligatorio"],
+        "validaciones_roip": ["* VPC25R1: El campo es alfanumérico", "* VPC25R2: El campo debe medir máximo 30 caracteres", "* VPC25R3: El campo es obligatorio"]
+      },
+      {
+        "columna": "26",
+        "descripcion": "CIUDAD O POBLACIÓN",
+        "tipo": "Alfanumérico",
+        "longitud": "8",
+        "validaciones_ros": ["* VRC26R1: El campo es alfanumérico", "* VRC26R2: El campo debe medir 8 caracteres", "* VRC26R3: El campo es obligatorio", "* VRC26R4: Debe existir en el catálogo de localidades CNBV"],
+        "validaciones_roin": ["* VIC26R1: El campo es alfanumérico", "* VIC26R2: El campo debe medir 8 caracteres", "* VIC26R3: El campo es obligatorio", "* VIC26R4: Debe existir en el catálogo de localidades CNBV"],
+        "validaciones_roip": ["* VPC26R1: El campo es alfanumérico", "* VPC26R2: El campo debe medir 8 caracteres", "* VPC26R3: El campo es obligatorio", "* VPC26R4: Debe existir en el catálogo de localidades CNBV"]
+      },
+      {
+        "columna": "27",
+        "descripcion": "TELÉFONO",
+        "tipo": "Alfanumérico",
+        "longitud": "40",
+        "validaciones_ros": ["* VRC27R1: El campo es alfanumérico", "* VRC27R2: El campo debe medir máximo 40 caracteres", "* VRC27R3: El campo es opcional", "* VRC27R4: Incluir lada si es de México"],
+        "validaciones_roin": ["* VIC27R1: El campo es alfanumérico", "* VIC27R2: El campo debe medir máximo 40 caracteres", "* VIC27R3: El campo es opcional"],
+        "validaciones_roip": ["* VPC27R1: El campo es alfanumérico", "* VPC27R2: El campo debe medir máximo 40 caracteres", "* VPC27R3: El campo es opcional"]
+      },
+      {
+        "columna": "28",
+        "descripcion": "ACTIVIDAD ECONOMICA",
+        "tipo": "Alfanumérico",
+        "longitud": "7",
+        "validaciones_ros": ["* VRC28R1: El campo es alfanumérico", "* VRC28R2: El campo debe medir 7 caracteres", "* VRC28R3: El campo es obligatorio", "* VRC28R4: Debe existir en el catálogo de actividad económica CNBV (SCIAN)", "* VRC28R5: Usar nivel más específico disponible"],
+        "validaciones_roin": ["* VIC28R1: El campo es alfanumérico", "* VIC28R2: El campo debe medir 7 caracteres", "* VIC28R3: El campo es obligatorio", "* VIC28R4: Debe existir en el catálogo de actividad económica CNBV (SCIAN)"],
+        "validaciones_roip": ["* VPC28R1: El campo es alfanumérico", "* VPC28R2: El campo debe medir 7 caracteres", "* VPC28R3: El campo es obligatorio", "* VPC28R4: Debe existir en el catálogo de actividad económica CNBV (SCIAN)"]
+      },
+      {
+        "columna": "29",
+        "descripcion": "CONSECUTIVO DE CUENTAS Y/O PERSONAS RELACIONADAS*",
+        "tipo": "Alfanumérico",
+        "longitud": "2",
+        "validaciones_ros": ["* VRC29R1: El campo debe de ser nulo (NO aplica para Operaciones Relevantes)"],
+        "validaciones_roin": ["* VIC29R1: El campo es alfanumérico", "* VIC29R2: El campo debe medir 2 caracteres", "* VIC29R3: El campo es opcional", "* VIC29R4: Usar si hay cuentas o personas relacionadas con la operación inusual", "* VIC29R5: Iniciar en 01 por cada folio principal"],
+        "validaciones_roip": ["* VPC29R1: El campo es alfanumérico", "* VPC29R2: El campo debe medir 2 caracteres", "* VPC29R3: El campo es opcional", "* VPC29R4: Usar si hay cuentas o personas relacionadas con la operación preocupante", "* VPC29R5: Iniciar en 01 por cada folio principal"]
+      },
+      {
+        "columna": "30",
+        "descripcion": "NÚMERO DE CUENTA CONTRATO OPERACIÓN, POLIZA O NÚMERO DE SEGURIDAD SOCIAL*",
+        "tipo": "Alfanumérico",
+        "longitud": "16",
+        "validaciones_ros": ["* VRC30R1: El campo debe de ser nulo (NO aplica para Operaciones Relevantes)"],
+        "validaciones_roin": ["* VIC30R1: El campo es alfanumérico", "* VIC30R2: El campo debe medir máximo 16 caracteres", "* VIC30R3: El campo es opcional", "* VIC30R4: Usar solo si Campo 29 tiene valor", "* VIC30R5: Cuenta o contrato de la persona relacionada"],
+        "validaciones_roip": ["* VPC30R1: El campo es alfanumérico", "* VPC30R2: El campo debe medir máximo 16 caracteres", "* VPC30R3: El campo es opcional", "* VPC30R4: Usar solo si Campo 29 tiene valor"]
+      },
+      {
+        "columna": "31",
+        "descripcion": "CLAVE DEL SUJETO OBLIGADO*",
+        "tipo": "Alfanumérico",
+        "longitud": "7",
+        "validaciones_ros": ["* VRC31R1: El campo debe de ser nulo (NO aplica para Operaciones Relevantes)"],
+        "validaciones_roin": ["* VIC31R1: El campo es alfanumérico", "* VIC31R2: El campo debe medir 7 caracteres", "* VIC31R3: El campo es opcional", "* VIC31R4: Usar solo si Campo 29 tiene valor", "* VIC31R5: Clave CONDUSEF del sujeto obligado donde está la cuenta relacionada"],
+        "validaciones_roip": ["* VPC31R1: El campo es alfanumérico", "* VPC31R2: El campo debe medir 7 caracteres", "* VPC31R3: El campo es opcional", "* VPC31R4: Usar solo si Campo 29 tiene valor"]
+      },
+      {
+        "columna": "32",
+        "descripcion": "NOMBRE DEL TITULAR DE LA CUENTA O DE LA PERSONA RELACIONADA*",
+        "tipo": "Alfanumérico",
+        "longitud": "60",
+        "validaciones_ros": ["* VRC32R1: El campo debe de ser nulo (NO aplica para Operaciones Relevantes)"],
+        "validaciones_roin": ["* VIC32R1: El campo es alfanumérico", "* VIC32R2: El campo debe medir máximo 60 caracteres", "* VIC32R3: El campo es opcional", "* VIC32R4: Usar solo si Campo 29 tiene valor", "* VIC32R5: Nombre de la persona relacionada"],
+        "validaciones_roip": ["* VPC32R1: El campo es alfanumérico", "* VPC32R2: El campo debe medir máximo 60 caracteres", "* VPC32R3: El campo es opcional", "* VPC32R4: Usar solo si Campo 29 tiene valor"]
+      },
+      {
+        "columna": "33",
+        "descripcion": "APELLIDO PATERNO*",
+        "tipo": "Alfanumérico",
+        "longitud": "60",
+        "validaciones_ros": ["* VRC33R1: El campo debe de ser nulo (NO aplica para Operaciones Relevantes)"],
+        "validaciones_roin": ["* VIC33R1: El campo es alfanumérico", "* VIC33R2: El campo debe medir máximo 60 caracteres", "* VIC33R3: El campo es opcional", "* VIC33R4: Usar solo si Campo 29 tiene valor", "* VIC33R5: Apellido paterno de la persona relacionada"],
+        "validaciones_roip": ["* VPC33R1: El campo es alfanumérico", "* VPC33R2: El campo debe medir máximo 60 caracteres", "* VPC33R3: El campo es opcional", "* VPC33R4: Usar solo si Campo 29 tiene valor"]
+      },
+      {
+        "columna": "34",
+        "descripcion": "APELLIDO MATERNO*",
+        "tipo": "Alfanumérico",
+        "longitud": "30",
+        "validaciones_ros": ["* VRC34R1: El campo debe de ser nulo (NO aplica para Operaciones Relevantes)"],
+        "validaciones_roin": ["* VIC34R1: El campo es alfanumérico", "* VIC34R2: El campo debe medir máximo 30 caracteres", "* VIC34R3: El campo es opcional", "* VIC34R4: Usar solo si Campo 29 tiene valor", "* VIC34R5: Apellido materno de la persona relacionada"],
+        "validaciones_roip": ["* VPC34R1: El campo es alfanumérico", "* VPC34R2: El campo debe medir máximo 30 caracteres", "* VPC34R3: El campo es opcional", "* VPC34R4: Usar solo si Campo 29 tiene valor"]
+      },
+      {
+        "columna": "35",
+        "descripcion": "DESCRIPCIÓN DE LA OPERACIÓN*",
+        "tipo": "Alfanumérico",
+        "longitud": "4000",
+        "validaciones_ros": ["* VRC35R1: El campo debe de ser nulo (NO aplica para Operaciones Relevantes)"],
+        "validaciones_roin": ["* VIC35R1: El campo es alfanumérico", "* VIC35R2: El campo debe medir máximo 4000 caracteres", "* VIC35R3: El campo es OBLIGATORIO", "* VIC35R4: Describir la operación inusual de forma completa y estructurada", "* VIC35R5: Incluir: Prioridad, Conocimiento del cliente, Producto/servicio, Perfil transaccional"],
+        "validaciones_roip": ["* VPC35R1: El campo es alfanumérico", "* VPC35R2: El campo debe medir máximo 4000 caracteres", "* VPC35R3: El campo es OBLIGATORIO", "* VPC35R4: Describir la operación preocupante de forma completa y estructurada", "* VPC35R5: Incluir elementos que fundamentan la sospecha de LD/FT"]
+      },
+      {
+        "columna": "36",
+        "descripcion": "RAZONES POR LAS QUE EL ACTO U OPERACIÓN SE CONSIDERA INUSUAL O INTERNA PREOCUPANTE*",
+        "tipo": "Alfanumérico",
+        "longitud": "4000",
+        "validaciones_ros": ["* VRC36R1: El campo debe de ser nulo (NO aplica para Operaciones Relevantes)"],
+        "validaciones_roin": ["* VIC36R1: El campo es alfanumérico", "* VIC36R2: El campo debe medir máximo 4000 caracteres", "* VIC36R3: El campo es OBLIGATORIO", "* VIC36R4: Explicar de forma fundamentada por qué se considera inusual", "* VIC36R5: Incluir: Alerta y análisis, Contexto del cliente, Antecedentes de reportes previos, Gestiones realizadas, Determinación"],
+        "validaciones_roip": ["* VPC36R1: El campo es alfanumérico", "* VPC36R2: El campo debe medir máximo 4000 caracteres", "* VPC36R3: El campo es OBLIGATORIO", "* VPC36R4: Explicar de forma fundamentada por qué se considera preocupante", "* VPC36R5: Fundamentar sospecha de lavado de dinero o financiamiento al terrorismo"]
+      }
+    ];
+
+    // Render fields
+    function renderFields(filter = 'all', searchTerm = '') {
+      const container = document.getElementById('fieldsContainer');
+      container.innerHTML = '';
+
+      fieldsData.forEach(field => {
+        // Apply search filter
+        const matchesSearch = searchTerm === '' ||
+          field.columna.includes(searchTerm) ||
+          field.descripcion.toLowerCase().includes(searchTerm.toLowerCase());
+
+        if (!matchesSearch) return;
+
+        // Apply report type filter
+        const isNullROS = field.validaciones_ros.some(v => v.includes('debe de ser nulo') || v.includes('debe ser nulo'));
+        const isNullROIN = field.validaciones_roin.some(v => v.includes('debe de ser nulo') || v.includes('debe ser nulo'));
+        const isNullROIP = field.validaciones_roip.some(v => v.includes('debe de ser nulo') || v.includes('debe ser nulo'));
+
+        if (filter === 'ros' && isNullROS) return;
+        if (filter === 'roin' && isNullROIN) return;
+        if (filter === 'roip' && isNullROIP) return;
+
+        // Create field card
+        const card = document.createElement('div');
+        card.className = 'field-card';
+        card.innerHTML = `
+          <div class="field-header">
+            <div class="field-number">${field.columna}</div>
+            <div class="field-title-area">
+              <div class="field-name">${field.descripcion}</div>
+              <div class="field-meta">
+                <span class="meta-badge meta-type">Tipo: ${field.tipo}</span>
+                <span class="meta-badge meta-length">Longitud: ${field.longitud}</span>
+              </div>
+            </div>
+            <div class="report-tags">
+              <span class="tag ${isNullROS ? 'tag-null' : 'tag-ros'}">${isNullROS ? 'Relevantes ✗' : 'Relevantes ✓'}</span>
+              <span class="tag ${isNullROIN ? 'tag-null' : 'tag-roin'}">${isNullROIN ? 'Inusuales ✗' : 'Inusuales ✓'}</span>
+              <span class="tag ${isNullROIP ? 'tag-null' : 'tag-roip'}">${isNullROIP ? 'Preocupantes ✗' : 'Preocupantes ✓'}</span>
+            </div>
+          </div>
+
+          <div class="validations-section">
+            ${!isNullROS ? `
+              <div class="validation-group">
+                <div class="validation-group-title ros">✓ Validaciones: Operaciones Relevantes</div>
+                <ul class="validation-list">
+                  ${field.validaciones_ros.map(v => `<li>${v}</li>`).join('')}
+                </ul>
+              </div>
+            ` : ''}
+
+            ${!isNullROIN ? `
+              <div class="validation-group">
+                <div class="validation-group-title roin">✓ Validaciones: Operaciones Inusuales</div>
+                <ul class="validation-list">
+                  ${field.validaciones_roin.map(v => `<li>${v}</li>`).join('')}
+                </ul>
+              </div>
+            ` : ''}
+
+            ${!isNullROIP ? `
+              <div class="validation-group">
+                <div class="validation-group-title roip">✓ Validaciones: Internas Preocupantes</div>
+                <ul class="validation-list">
+                  ${field.validaciones_roip.map(v => `<li>${v}</li>`).join('')}
+                </ul>
+              </div>
+            ` : ''}
+          </div>
+        `;
+
+        container.appendChild(card);
+      });
+
+      // Show message if no results
+      if (container.children.length === 0) {
+        container.innerHTML = `
+          <div style="text-align: center; padding: 3rem; color: var(--neutral-600);">
+            <h3>No se encontraron campos</h3>
+            <p>Intenta con otros términos de búsqueda</p>
+          </div>
+        `;
+      }
+    }
+
+    // Initialize
+    renderFields();
+
+    // Filter buttons
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        e.target.classList.add('active');
+        const filter = e.target.dataset.filter;
+        const searchTerm = document.getElementById('searchInput').value;
+        renderFields(filter, searchTerm);
+      });
+    });
+
+    // Search input
+    document.getElementById('searchInput').addEventListener('input', (e) => {
+      const filter = document.querySelector('.filter-btn.active').dataset.filter;
+      renderFields(filter, e.target.value);
+    });
+
+    // Update year
+    document.querySelectorAll('.current-year').forEach(el => {
+      el.textContent = new Date().getFullYear();
+    });
+  </script>

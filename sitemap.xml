@@ -14,7 +14,7 @@
 
   <!-- Lista de SOFOMes -->
   <url>
-    <loc>https://sofomes.com/lista-sofomes-mexico.html</loc>
+    <loc>https://sofomes.com/lista-sofomes-mexico</loc>
     <lastmod>2025-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -22,7 +22,7 @@
 
   <!-- Reportes Regulatorios -->
   <url>
-    <loc>https://sofomes.com/reportes-regulatorios-cnbv.html</loc>
+    <loc>https://sofomes.com/reportes-regulatorios-cnbv</loc>
     <lastmod>2025-10-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -30,7 +30,7 @@
 
   <!-- Layout 36 Campos -->
   <url>
-    <loc>https://sofomes.com/layout-reportes-pld.html</loc>
+    <loc>https://sofomes.com/layout-reportes-pld</loc>
     <lastmod>2025-10-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -38,7 +38,7 @@
 
   <!-- Catálogos RIPS F36 -->
   <url>
-    <loc>https://sofomes.com/catalogos-rips-f36.html</loc>
+    <loc>https://sofomes.com/catalogos-rips-f36</loc>
     <lastmod>2025-10-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -46,42 +46,42 @@
 
   <!-- Catálogos individuales -->
   <url>
-    <loc>https://sofomes.com/catalogos/actividad-economica.html</loc>
+    <loc>https://sofomes.com/catalogos/actividad-economica</loc>
     <lastmod>2025-10-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://sofomes.com/catalogos/localidades.html</loc>
+    <loc>https://sofomes.com/catalogos/localidades</loc>
     <lastmod>2025-10-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://sofomes.com/catalogos/monedas.html</loc>
+    <loc>https://sofomes.com/catalogos/monedas</loc>
     <lastmod>2025-10-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://sofomes.com/catalogos/instrumento-monetario.html</loc>
+    <loc>https://sofomes.com/catalogos/instrumento-monetario</loc>
     <lastmod>2025-10-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://sofomes.com/catalogos/tipo-reporte.html</loc>
+    <loc>https://sofomes.com/catalogos/tipo-reporte</loc>
     <lastmod>2025-10-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://sofomes.com/catalogos/tipo-operacion-asesor.html</loc>
+    <loc>https://sofomes.com/catalogos/tipo-operacion-asesor</loc>
     <lastmod>2025-10-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

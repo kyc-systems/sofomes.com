@@ -1,43 +1,14 @@
-<!DOCTYPE html>
-<html lang="es-MX">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<?php
+// Variables para header.php
+$pageTitle = "SOFOMes en México | Directorio Completo CONDUSEF <span id='year-title'></span>";
+$pageDescription = "Directorio completo de SOFOMes en operación en México. Financiamiento PyMEs, constitución SOFOM ENR, lista CONDUSEF actualizada. Casos reales: Konfío, Kueski, más.";
+$pageKeywords = "SOFOM, SOFOM ENR, SOFOM FOVISSSTE, lista sofomes condusef, financiamiento pymes mexico, constituir sofom, kyc systems";
+$canonicalUrl = "https://sofomes.com/";
+$activeMenu = "inicio";
 
-  <!-- Primary Meta Tags -->
-  <title>SOFOMes en México <span id="year-title"></span> | Directorio Completo CONDUSEF</title>
-  <meta name="description" content="Directorio completo de SOFOMes en operación en México. Financiamiento PyMEs, constitución SOFOM ENR, lista CONDUSEF actualizada. Casos reales: Konfío, Kueski, más.">
-  <meta name="keywords" content="SOFOM, SOFOM ENR, SOFOM FOVISSSTE, lista sofomes condusef, financiamiento pymes mexico, constituir sofom, kyc systems">
-
-  <!-- Canonical URL -->
-  <link rel="canonical" href="https://sofomes.com/">
-
-  <!-- Robots -->
-  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-  <meta name="author" content="SOFOMES.COM">
-  <meta name="publisher" content="SOFOMES.COM">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="SOFOMes en México | Directorio Completo CONDUSEF" id="og-title-meta">
-  <meta property="og:description" content="Directorio completo de SOFOMes en operación en CONDUSEF. Financiamiento PyMEs, constitución, casos de éxito reales.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://sofomes.com/">
-  <meta property="og:image" content="https://sofomes.com/assets/img/main.jpeg">
-  <meta property="og:locale" content="es_MX">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="SOFOMes en México | Directorio CONDUSEF">
-  <meta name="twitter:description" content="Directorio completo + guía de constitución + casos reales">
-  <meta name="twitter:image" content="https://sofomes.com/assets/img/main.jpeg">
-
-  <!-- Preload -->
-  <link rel="preload" href="assets/css/main-v2.css" as="style">
-
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="assets/css/main-v2.css">
-
-  <!-- Schema.org - Organization -->
+// Schemas JSON-LD
+$schemaJson = <<<'SCHEMA'
+<!-- Schema.org - Organization -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -69,37 +40,12 @@
     }
   }
   </script>
+SCHEMA;
 
-  <!-- Código de instalación Cliengo para sofomes.com -->
-  <script type="text/javascript">
-    (function () {
-      var ldk = document.createElement('script');
-      ldk.type = 'text/javascript';
-      ldk.async = true;
-      ldk.src = 'https://s.cliengo.com/weboptimizer/62503ed1004881002a965901/690164685f597226ae0e7119.js?platform=onboarding_modular';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ldk, s);
-    })();
-  </script>
-</head>
-<body>
+include 'includes/header.php';
+?>
 
-  <!-- Navigation -->
-  <nav class="nav">
-    <div class="container">
-      <div class="nav-brand">
-        <a href="/">SOFOMES.COM</a>
-      </div>
-      <div class="nav-menu">
-        <a href="#que-es">¿Qué es?</a>
-        <a href="#directorio">Directorio (<span id="nav-count">...</span>)</a>
-        <a href="#fovissste">FOVISSSTE</a>
-        <a href="#casos-exito">Casos de Éxito</a>
-        <a href="#constituir">Constituir</a>
-        <a href="catalogos-rips-f36.html">Catálogos RIPS F36</a>
-        <a href="reportes-regulatorios-cnbv.html">Reportes</a>
-      </div>
-    </div>
-  </nav>
+
 
   <!-- Hero Section -->
   <section class="hero">
@@ -165,11 +111,11 @@
 
           <h3>Características Principales</h3>
           <ul class="feature-list">
-            <li>✅ <strong>Mayor aprobación:</strong> 70% vs 20% de bancos tradicionales</li>
-            <li>✅ <strong>Velocidad:</strong> Decisión en 48-72 horas vs 3-4 meses bancos</li>
-            <li>✅ <strong>Flexibilidad:</strong> Soluciones "a la medida" (revolventes, gracia, solo intereses)</li>
-            <li>✅ <strong>Inclusión:</strong> 6 de cada 10 PyMEs obtienen su primer crédito en una SOFOM</li>
-            <li>✅ <strong>Ventaja fiscal:</strong> Intereses a personas morales exentos de IVA</li>
+            <li><strong>Mayor aprobación:</strong> 70% vs 20% de bancos tradicionales</li>
+            <li><strong>Velocidad:</strong> Decisión en 48-72 horas vs 3-4 meses bancos</li>
+            <li><strong>Flexibilidad:</strong> Soluciones "a la medida" (revolventes, gracia, solo intereses)</li>
+            <li><strong>Inclusión:</strong> 6 de cada 10 PyMEs obtienen su primer crédito en una SOFOM</li>
+            <li><strong>Ventaja fiscal:</strong> Intereses a personas morales exentos de IVA</li>
           </ul>
 
           <div class="alert alert-info">
@@ -266,7 +212,7 @@
       <div class="cta-box">
         <h3>Accede al Directorio Completo</h3>
         <p>Busca por nombre, estado, tipo (ER/ENR), fecha de actualización. Exporta a CSV/Excel.</p>
-        <a href="lista-sofomes-mexico.html" class="btn btn-primary btn-lg">
+        <a href="lista-sofomes-mexico.php" class="btn btn-primary btn-lg">
           🔍 Buscar en Directorio (<span id="cta-count">...</span> SOFOMes)
         </a>
       </div>
@@ -400,9 +346,9 @@
             Considerada una de las mejores fintechs mexicanas.
           </p>
           <ul class="case-features">
-            <li>✅ Registro completo CONDUSEF</li>
-            <li>✅ Créditos 100% en línea</li>
-            <li>✅ Respaldo Quona Capital, Kaszek, QED</li>
+            <li>Registro completo CONDUSEF</li>
+            <li>Créditos 100% en línea</li>
+            <li>Respaldo Quona Capital, Kaszek, QED</li>
           </ul>
         </div>
 
@@ -427,9 +373,9 @@
             Mejor plataforma BNPL en Fintech Breakthrough Awards 2023.
           </p>
           <ul class="case-features">
-            <li>✅ Primera SOFOM 100% digital</li>
-            <li>✅ Insignia CONDUSEF <span class="current-year"></span></li>
-            <li>✅ Innovación tecnológica</li>
+            <li>Primera SOFOM 100% digital</li>
+            <li>Insignia CONDUSEF <span class="current-year"></span></li>
+            <li>Innovación tecnológica</li>
           </ul>
         </div>
 
@@ -454,9 +400,9 @@
             Calificación basada en operaciones asignadas, escrituradas y atención a aclaraciones.
           </p>
           <ul class="case-features">
-            <li>✅ Mejor desempeño FOVISSSTE</li>
-            <li>✅ Supervisión constante</li>
-            <li>✅ Especialización hipotecaria</li>
+            <li>Mejor desempeño FOVISSSTE</li>
+            <li>Supervisión constante</li>
+            <li>Especialización hipotecaria</li>
           </ul>
         </div>
 
@@ -481,9 +427,9 @@
             400 millones de pesos en cartera (solo 13% del sector).
           </p>
           <ul class="case-features">
-            <li>✅ Impulso PyMEs</li>
-            <li>✅ Financiamiento turístico</li>
-            <li>✅ Fondeo bursátil</li>
+            <li>Impulso PyMEs</li>
+            <li>Financiamiento turístico</li>
+            <li>Fondeo bursátil</li>
           </ul>
         </div>
 
@@ -508,9 +454,9 @@
             muy por debajo del promedio sectorial de 18.45.
           </p>
           <ul class="case-features">
-            <li>✅ Crédito automotriz</li>
-            <li>✅ Bajo índice quejas</li>
-            <li>✅ Regulación CNBV integral</li>
+            <li>Crédito automotriz</li>
+            <li>Bajo índice quejas</li>
+            <li>Regulación CNBV integral</li>
           </ul>
         </div>
       </div>
@@ -812,7 +758,7 @@
               <strong>190</strong> monedas
             </div>
           </div>
-          <a href="catalogos-rips-f36.html" class="btn btn-primary btn-lg">
+          <a href="catalogos-rips-f36.php" class="btn btn-primary btn-lg">
             Ver Catálogos Completos →
           </a>
         </div>
@@ -837,7 +783,7 @@
               🚨 Internas Preocupantes
             </div>
           </div>
-          <a href="reportes-regulatorios-cnbv.html" class="btn btn-primary btn-lg">
+          <a href="reportes-regulatorios-cnbv.php" class="btn btn-primary btn-lg">
             Ver Guía de Reportes →
           </a>
         </div>
@@ -968,11 +914,11 @@
           <h3 class="faq-question">¿Qué ventajas tienen las SOFOMes sobre los bancos?</h3>
           <div class="faq-answer">
             <ul>
-              <li>✅ <strong>Mayor aprobación:</strong> 70% vs 20% bancos</li>
-              <li>✅ <strong>Velocidad:</strong> 48-72 horas vs 3-4 meses</li>
-              <li>✅ <strong>Flexibilidad:</strong> Revolventes, solo intereses, periodos gracia</li>
-              <li>✅ <strong>Inclusión:</strong> PyMEs sin historial crediticio</li>
-              <li>✅ <strong>Ventaja fiscal:</strong> Intereses a personas morales exentos IVA</li>
+              <li><strong>Mayor aprobación:</strong> 70% vs 20% bancos</li>
+              <li><strong>Velocidad:</strong> 48-72 horas vs 3-4 meses</li>
+              <li><strong>Flexibilidad:</strong> Revolventes, solo intereses, periodos gracia</li>
+              <li><strong>Inclusión:</strong> PyMEs sin historial crediticio</li>
+              <li><strong>Ventaja fiscal:</strong> Intereses a personas morales exentos IVA</li>
             </ul>
           </div>
         </div>
@@ -1003,7 +949,7 @@
               </a>
             </p>
             <p style="margin-top: 0.5rem">
-              También puedes <a href="lista-sofomes-mexico.html" style="color: #10B981">buscar en nuestro directorio</a>
+              También puedes <a href="lista-sofomes-mexico.php" style="color: #10B981">buscar en nuestro directorio</a>
               de SOFOMes actualizado.
             </p>
           </div>
@@ -1012,66 +958,11 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-col">
-          <h4>Navegación</h4>
-          <ul class="footer-links">
-            <li><a href="#que-es">¿Qué es una SOFOM?</a></li>
-            <li><a href="#directorio">Directorio</a></li>
-            <li><a href="#fovissste">SOFOMes FOVISSSTE</a></li>
-            <li><a href="#casos-exito">Casos de Éxito</a></li>
-            <li><a href="#constituir">Constituir SOFOM</a></li>
-            <li><a href="#faq">FAQ</a></li>
-          </ul>
-        </div>
 
-        <div class="footer-col">
-          <h4>Recursos</h4>
-          <ul class="footer-links">
-            <li><a href="lista-sofomes-mexico.html">Lista Completa SOFOMes</a></li>
-            <li><a href="catalogos-rips-f36.html">Catálogos RIPS F36</a></li>
-            <li><a href="reportes-regulatorios-cnbv.html">Reportes Regulatorios</a></li>
-            <li><a href="#software-pld">Software PLD/FT</a></li>
-            <li><a href="#constituir">Guía Constitución</a></li>
-          </ul>
-        </div>
 
-        <div class="footer-col">
-          <h4>Legal y Compliance</h4>
-          <ul class="footer-links">
-            <li><a href="https://www.condusef.gob.mx" target="_blank">CONDUSEF</a></li>
-            <li><a href="https://www.cnbv.gob.mx" target="_blank">CNBV</a></li>
-            <li><a href="https://www.gob.mx/uif" target="_blank">UIF</a></li>
-            <li><a href="https://www.fovissste.gob.mx" target="_blank">FOVISSSTE</a></li>
-          </ul>
-        </div>
+<?php include 'includes/footer.php'; ?>
 
-        <div class="footer-col">
-          <h4>SOFOMES.COM</h4>
-          <p>
-            Directorio completo de SOFOMes en operación en México. Información verificable, datos reales.
-          </p>
-          <p style="margin-top: 1rem; font-size: 0.875rem;">
-            <strong>Disclaimer:</strong> Sitio informativo independiente. No somos CONDUSEF ni CNBV.
-          </p>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <div class="footer-copyright">
-          <p>
-            &copy; <span class="current-year"></span> SOFOMES.COM - Todos los derechos reservados.<br>
-            Datos: <a href="https://www.condusef.gob.mx" target="_blank">CONDUSEF SIPRES</a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Schema.org - FAQPage -->
+<!-- Schema.org - FAQPage -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -1121,69 +1012,109 @@
   }
   </script>
 
-  <!-- Schema.org - BreadcrumbList -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Inicio",
-        "item": "https://sofomes.com/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Directorio SOFOMes",
-        "item": "https://sofomes.com/lista-sofomes-mexico"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "SOFOMes FOVISSSTE",
-        "item": "https://sofomes.com/sofom-fovissste"
-      },
-      {
-        "@type": "ListItem",
-        "position": 4,
-        "name": "Casos de Éxito",
-        "item": "https://sofomes.com/casos-exito-sofomes"
+<!-- Scripts específicos de index -->
+<script>
+  // Fetch count from API and update nav
+  console.log('🔍 Fetching API from: ./api/condusef-proxy.php');
+
+  fetch('./api/condusef-proxy.php')
+    .then(response => {
+      console.log('✅ API Response status:', response.status);
+      return response.json();
+    })
+    .then(data => {
+      console.log('📊 API Data:', data);
+
+      if (data.success) {
+        const total = data.total.toLocaleString('es-MX');
+        console.log('📈 Total SOFOMes:', total);
+
+        // Update nav counter
+        const navCount = document.getElementById('nav-count');
+        if (navCount) {
+          navCount.textContent = total;
+          console.log('✅ nav-count actualizado');
+        } else {
+          console.log('❌ nav-count NO encontrado');
+        }
+
+        // Update hero total
+        const heroTotal = document.getElementById('hero-total');
+        if (heroTotal) {
+          heroTotal.textContent = total;
+          console.log('✅ hero-total actualizado');
+        } else {
+          console.log('❌ hero-total NO encontrado');
+        }
+
+        // Update stat-total
+        const statTotal = document.getElementById('stat-total');
+        if (statTotal) {
+          statTotal.textContent = total;
+          console.log('✅ stat-total actualizado');
+        } else {
+          console.log('❌ stat-total NO encontrado');
+        }
+
+        // Update directory-stat-total
+        const directoryStatTotal = document.getElementById('directory-stat-total');
+        if (directoryStatTotal) {
+          directoryStatTotal.textContent = total;
+          console.log('✅ directory-stat-total actualizado');
+        } else {
+          console.log('❌ directory-stat-total NO encontrado');
+        }
+
+        // Update directory-title-count
+        const directoryTitleCount = document.getElementById('directory-title-count');
+        if (directoryTitleCount) {
+          directoryTitleCount.textContent = total;
+          console.log('✅ directory-title-count actualizado');
+        } else {
+          console.log('❌ directory-title-count NO encontrado');
+        }
+
+        // Update alert-count
+        const alertCount = document.getElementById('alert-count');
+        if (alertCount) {
+          alertCount.textContent = total;
+          console.log('✅ alert-count actualizado');
+        } else {
+          console.log('❌ alert-count NO encontrado');
+        }
+
+        // Update cta-count
+        const ctaCount = document.getElementById('cta-count');
+        if (ctaCount) {
+          ctaCount.textContent = total;
+          console.log('✅ cta-count actualizado');
+        } else {
+          console.log('❌ cta-count NO encontrado');
+        }
+
+        // Update faq-count
+        const faqCount = document.getElementById('faq-count');
+        if (faqCount) {
+          faqCount.textContent = total;
+          console.log('✅ faq-count actualizado');
+        } else {
+          console.log('❌ faq-count NO encontrado');
+        }
+
+        // Update year in title
+        const currentYear = new Date().getFullYear();
+        document.querySelectorAll('#year-title, #og-title-meta, #year-schema').forEach(el => {
+          if (el.tagName === 'META') {
+            el.content = el.content.replace('<span id="year-title"></span>', currentYear);
+          } else {
+            el.textContent = currentYear;
+          }
+        });
+      } else {
+        console.error('❌ API returned success: false');
       }
-    ]
-  }
-  </script>
-
-  <!-- CONDUSEF Auto-Fetch Script -->
-  <script src="assets/js/condusef-fetch.js"></script>
-
-  <!-- Dynamic Year Update Script -->
-  <script>
-    (function() {
-      const currentYear = new Date().getFullYear();
-
-      // Update all elements with class 'current-year'
-      document.querySelectorAll('.current-year').forEach(el => {
-        el.textContent = currentYear;
-      });
-
-      // Update document title
-      const titleYearSpan = document.getElementById('year-title');
-      if (titleYearSpan) {
-        // For title, we need to update the text node directly
-        document.title = document.title.replace(/<span[^>]*><\/span>/, currentYear);
-      }
-
-      // Update OG meta tag
-      const ogTitleMeta = document.getElementById('og-title-meta');
-      if (ogTitleMeta) {
-        ogTitleMeta.setAttribute('content',
-          ogTitleMeta.getAttribute('content') + ' ' + currentYear
-        );
-      }
-    })();
-  </script>
-
-</body>
-</html>
+    })
+    .catch(error => {
+      console.error('❌ Error fetching SOFOM count:', error);
+    });
+</script>
