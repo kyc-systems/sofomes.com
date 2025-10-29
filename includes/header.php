@@ -50,6 +50,11 @@
   <meta name="twitter:description" content="<?php echo isset($pageDescription) ? $pageDescription : 'Directorio completo de SOFOMes.'; ?>">
   <meta name="twitter:image" content="https://sofomes.com/assets/img/main.jpeg">
 
+  <!-- Preconnect to external origins -->
+  <link rel="preconnect" href="https://lw2.cliengo.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.icomoon.io" crossorigin>
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
   <!-- Preload -->
   <link rel="preload" href="<?php echo $basePath; ?>assets/css/main-v2.css" as="style">
 
@@ -69,18 +74,11 @@
   <?php echo $schemaJson; ?>
   <?php endif; ?>
 
-  <!-- Código de instalación Cliengo para sofomes.com -->
-  <script type="text/javascript">
-    (function () {
-      var ldk = document.createElement('script');
-      ldk.type = 'text/javascript';
-      ldk.async = true;
-      ldk.src = 'https://s.cliengo.com/weboptimizer/62503ed1004881002a965901/690164685f597226ae0e7119.js?platform=onboarding_modular';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ldk, s);
-    })();
-  </script>
 </head>
 <body>
+
+  <!-- Skip to main content for screen readers -->
+  <a href="#main-content" class="skip-to-main">Saltar al contenido principal</a>
 
   <!-- Navigation -->
   <nav class="nav">
@@ -116,3 +114,6 @@
       </div>
     </div>
   </nav>
+
+  <!-- Main content landmark for accessibility -->
+  <main id="main-content">

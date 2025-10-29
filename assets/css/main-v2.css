@@ -233,6 +233,28 @@ strong {
   color: var(--primary-900);
 }
 
+/* ============================================
+   Accessibility: Skip to Main Content Link
+   ============================================ */
+.skip-to-main {
+  position: absolute;
+  left: -9999px;
+  z-index: 999;
+  padding: 1rem 1.5rem;
+  background: var(--primary-600);
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 0 0 var(--border-radius) 0;
+}
+
+.skip-to-main:focus {
+  left: 0;
+  top: 0;
+  outline: 3px solid var(--accent-500);
+  outline-offset: 2px;
+}
+
 .section-title {
   font-size: var(--text-4xl);
   font-weight: 700;
@@ -382,14 +404,15 @@ strong {
   white-space: nowrap;
 }
 
-/* CTA PRIMARY (10% - Green) */
+/* CTA PRIMARY (10% - Green) - WCAG AA compliant */
 .btn-primary {
-  background: var(--secondary-500);
+  background: var(--secondary-600); /* Darker for better contrast: #059669 */
   color: var(--white);
+  font-weight: 600; /* Helps readability */
 }
 
 .btn-primary:hover {
-  background: var(--secondary-600);
+  background: var(--secondary-700);
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);
   text-decoration: none;
@@ -513,18 +536,21 @@ strong {
 }
 
 .badge-fintech {
-  background: var(--secondary-500);
+  background: var(--secondary-700); /* Darker green for contrast: #047857 */
   color: var(--white);
+  font-weight: 600;
 }
 
 .badge-fovissste {
-  background: var(--primary-500);
+  background: var(--primary-600); /* Darker blue for contrast: #032350 */
   color: var(--white);
+  font-weight: 600;
 }
 
 .badge-bursatil {
-  background: #3B82F6;
+  background: #2563EB; /* Darker blue for better contrast */
   color: var(--white);
+  font-weight: 600;
 }
 
 .badge-er {
@@ -861,7 +887,7 @@ strong {
   display: block;
   font-size: var(--text-2xl);
   font-weight: 700;
-  color: var(--accent-500);
+  color: var(--accent-700); /* Darker orange for better contrast: #B45309 */
   margin-bottom: var(--space-3);
 }
 
@@ -1241,21 +1267,9 @@ strong {
    23. FONTS
    ============================================ */
 
-@font-face {
-  font-family: 'Inter';
-  src: url('../fonts/inter-latin-400.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Inter';
-  src: url('../fonts/inter-latin-700.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
+/* Usando fuentes del sistema para mejor rendimiento y sin errores 404
+   Inter está disponible como fallback en la mayoría de sistemas modernos
+   Si no está disponible, usa -apple-system, BlinkMacSystemFont, o Segoe UI */
 
 /* ============================================
    24. UTILITIES

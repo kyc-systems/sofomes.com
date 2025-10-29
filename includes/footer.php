@@ -1,3 +1,6 @@
+  </main>
+  <!-- End main content -->
+
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
@@ -71,6 +74,20 @@
         el.textContent = currentYear;
       });
     })();
+  </script>
+
+  <!-- Código de instalación Cliengo - Carga diferida -->
+  <script>
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        var ldk = document.createElement('script');
+        ldk.type = 'text/javascript';
+        ldk.async = true;
+        ldk.src = 'https://s.cliengo.com/weboptimizer/62503ed1004881002a965901/690164685f597226ae0e7119.js?platform=onboarding_modular';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ldk, s);
+      }, 2000);
+    });
   </script>
 
 </body>
