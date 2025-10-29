@@ -1,0 +1,42 @@
+# .htaccess para directorio assets/
+# Permitir acceso a todos los recursos estáticos
+
+# Permitir acceso público
+Order Allow,Deny
+Allow from all
+
+# Habilitar lectura de archivos
+<FilesMatch "\.(css|js|jpg|jpeg|png|gif|svg|webp|woff|woff2|ttf|eot|ico)$">
+  Order Allow,Deny
+  Allow from all
+  <IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+  </IfModule>
+</FilesMatch>
+
+# Tipos MIME correctos
+AddType text/css .css
+AddType application/javascript .js
+AddType image/svg+xml .svg
+AddType image/jpeg .jpg .jpeg
+AddType image/png .png
+AddType image/gif .gif
+AddType image/webp .webp
+AddType application/x-font-woff .woff
+AddType application/x-font-woff2 .woff2
+AddType font/ttf .ttf
+AddType font/eot .eot
+
+# Cache headers
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType font/woff "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>
