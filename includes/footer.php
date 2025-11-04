@@ -64,6 +64,56 @@
     </div>
   </footer>
 
+  <?php if (isset($useDatatables) && $useDatatables): ?>
+  <!-- jQuery y DataTables (cargados al final para mejor rendimiento) -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+  <?php endif; ?>
+
+  <?php if (isset($pageScript)): ?>
+  <!-- Page-specific script (loaded after jQuery/DataTables) -->
+  <?php echo $pageScript; ?>
+  <?php endif; ?>
+
+  <!-- Mobile Menu Toggle Script -->
+  <script>
+    (function() {
+      const navToggle = document.querySelector('.nav-toggle');
+      const navMenu = document.querySelector('.nav-menu');
+
+      if (navToggle && navMenu) {
+        navToggle.addEventListener('click', function() {
+          const isExpanded = this.getAttribute('aria-expanded') === 'true';
+
+          // Toggle aria-expanded
+          this.setAttribute('aria-expanded', !isExpanded);
+
+          // Toggle active class on menu
+          navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        const navLinks = navMenu.querySelectorAll('a');
+        navLinks.forEach(link => {
+          link.addEventListener('click', function() {
+            navMenu.classList.remove('active');
+            navToggle.setAttribute('aria-expanded', 'false');
+          });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+          const isClickInsideNav = navToggle.contains(event.target) || navMenu.contains(event.target);
+
+          if (!isClickInsideNav && navMenu.classList.contains('active')) {
+            navMenu.classList.remove('active');
+            navToggle.setAttribute('aria-expanded', 'false');
+          }
+        });
+      }
+    })();
+  </script>
+
   <!-- Dynamic Year Update Script -->
   <script>
     (function() {

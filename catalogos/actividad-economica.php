@@ -52,50 +52,55 @@ include '../includes/header.php';
     </div>
   </section>
 
-  <script>
-    $(document).ready(function() {
-      // Cargar datos del JSON
-      fetch('../catalogs/json/actividad-economica.json')
-        .then(response => response.json())
-        .then(data => {
-          // Actualizar contador en el hero
-          document.getElementById('total-count').textContent = data.length;
+<?php
+// Script específico de esta página (se cargará después de jQuery en el footer)
+$pageScript = <<<'SCRIPT'
+<script>
+  $(document).ready(function() {
+    // Cargar datos del JSON
+    fetch('../catalogs/json/actividad-economica.json')
+      .then(response => response.json())
+      .then(data => {
+        // Actualizar contador en el hero
+        document.getElementById('total-count').textContent = data.length;
 
-          // Agregar datos a la tabla
-          const tbody = document.getElementById('table-body');
-          tbody.innerHTML = data.map(item => `
-            <tr>
-              <td style="text-align: center; font-family: monospace; font-weight: 600;">${item['CLAVE ACTIVIDAD ECONOMICA']}</td>
-              <td>${item['ACTIVIDAD ECONOMICA']}</td>
-            </tr>
-          `).join('');
+        // Agregar datos a la tabla
+        const tbody = document.getElementById('table-body');
+        tbody.innerHTML = data.map(item => `
+          <tr>
+            <td style="text-align: center; font-family: monospace; font-weight: 600;">${item['CLAVE ACTIVIDAD ECONOMICA']}</td>
+            <td>${item['ACTIVIDAD ECONOMICA']}</td>
+          </tr>
+        `).join('');
 
-          // Inicializar DataTables
-          $('#catalog-table').DataTable({
-            language: {
-              url: 'https://cdn.datatables.net/plug-ins/1.13.7/i18n/es-MX.json'
-            },
-            pageLength: 25,
-            lengthMenu: [[10, 25, 50, 100, -1], [10, 25, 50, 100, "Todos"]],
-            order: [[0, 'asc']],
-            columnDefs: [
-              { width: '120px', targets: 0 }
-            ],
-            dom: 'frtip',
-            searching: true
-          });
-        })
-        .catch(error => {
-          console.error('Error al cargar el catálogo:', error);
-          document.getElementById('table-body').innerHTML = `
-            <tr>
-              <td colspan="2" style="text-align: center; padding: 2rem; color: var(--error-500);">
-                ❌ Error al cargar el catálogo. Por favor recarga la página.
-              </td>
-            </tr>
-          `;
+        // Inicializar DataTables
+        $('#catalog-table').DataTable({
+          language: {
+            url: 'https://cdn.datatables.net/plug-ins/1.13.7/i18n/es-MX.json'
+          },
+          pageLength: 25,
+          lengthMenu: [[10, 25, 50, 100, -1], [10, 25, 50, 100, "Todos"]],
+          order: [[0, 'asc']],
+          columnDefs: [
+            { width: '120px', targets: 0 }
+          ],
+          dom: 'frtip',
+          searching: true
         });
-    });
-  </script>
+      })
+      .catch(error => {
+        console.error('Error al cargar el catálogo:', error);
+        document.getElementById('table-body').innerHTML = `
+          <tr>
+            <td colspan="2" style="text-align: center; padding: 2rem; color: var(--error-500);">
+              ❌ Error al cargar el catálogo. Por favor recarga la página.
+            </td>
+          </tr>
+        `;
+      });
+  });
+</script>
+SCRIPT;
 
-<?php include '../includes/footer.php'; ?>
+include '../includes/footer.php';
+?>

@@ -11,8 +11,6 @@ $useDatatables = true;
 include '../includes/header.php';
 ?>
 
-
-
   <section class="hero" style="padding: 3rem 0;">
     <div class="container">
       <h1 class="hero-title" style="text-align: center; font-size: 2.5rem;">
@@ -52,6 +50,12 @@ include '../includes/header.php';
     </div>
   </section>
 
+  <?php
+
+  // Script específico de esta página (se cargará después de jQuery en el footer)
+
+  $pageScript = <<<'SCRIPT'
+
   <script>
     $(document).ready(function() {
       fetch('../catalogs/json/localidades.json')
@@ -83,4 +87,9 @@ include '../includes/header.php';
     });
   </script>
 
-<?php include '../includes/footer.php'; ?>
+  SCRIPT;
+
+  
+
+  include '../includes/footer.php';
+?>

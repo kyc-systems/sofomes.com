@@ -50,6 +50,19 @@
   <meta name="twitter:description" content="<?php echo isset($pageDescription) ? $pageDescription : 'Directorio completo de SOFOMes.'; ?>">
   <meta name="twitter:image" content="https://sofomes.com/assets/img/main.jpeg">
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="<?php echo $basePath; ?>assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="<?php echo $basePath; ?>assets/img/favicon.png">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1Q8YFKJTFT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-1Q8YFKJTFT');
+  </script>
+
   <!-- Preconnect to external origins -->
   <link rel="preconnect" href="https://lw2.cliengo.com" crossorigin>
   <link rel="preconnect" href="https://cdn.icomoon.io" crossorigin>
@@ -64,9 +77,6 @@
   <?php if (isset($useDatatables) && $useDatatables): ?>
   <!-- DataTables CSS -->
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
-  <!-- jQuery (necesario antes de DataTables) -->
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
   <?php endif; ?>
 
   <?php if (isset($schemaJson)): ?>
@@ -84,8 +94,16 @@
   <nav class="nav">
     <div class="container">
       <div class="nav-brand">
-        <a href="<?php echo $basePath; ?>index.php">SOFOMES.COM</a>
+        <a href="<?php echo $basePath; ?>index.php">
+          <img src="<?php echo $basePath; ?>assets/img/logo_sofomes.png" alt="SOFOMES.COM" class="nav-logo">
+        </a>
       </div>
+
+      <!-- Mobile menu button -->
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+
       <div class="nav-menu">
         <?php
         $activeMenu = isset($activeMenu) ? $activeMenu : '';

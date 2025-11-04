@@ -55,6 +55,12 @@ include '../includes/header.php';
     </div>
   </section>
 
+  <?php
+
+  // Script específico de esta página (se cargará después de jQuery en el footer)
+
+  $pageScript = <<<'SCRIPT'
+
   <script>
     $(document).ready(function() {
       fetch('../catalogs/json/instrumento-monetario.json')
@@ -84,5 +90,7 @@ include '../includes/header.php';
         });
     });
   </script>
+SCRIPT;
 
-<?php include '../includes/footer.php'; ?>
+include '../includes/footer.php';
+?>
