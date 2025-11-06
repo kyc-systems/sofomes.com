@@ -28,8 +28,21 @@
   <meta name="keywords" content="<?php echo $pageKeywords; ?>">
   <?php endif; ?>
 
-  <!-- Canonical URL -->
-  <link rel="canonical" href="<?php echo isset($canonicalUrl) ? $canonicalUrl : 'https://sofomes.com/'; ?>">
+  <?php
+// Generar canonical automáticamente
+$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https" : "http";
+$host = $_SERVER['HTTP_HOST'];
+$uri = strtok($_SERVER['REQUEST_URI'], '?'); // Elimina parámetros de consulta
+
+// Si es index.php, apunta a la raíz
+if (strpos($uri, 'index.php') !== false) {
+    $canonicalUrl = $protocol . "://" . $host . "/";
+} else {
+    $canonicalUrl = $protocol . "://" . $host . $uri;
+}
+?>
+<!-- Canonical URL -->
+<link rel="canonical" href="<?php echo $canonicalUrl; ?>">
 
   <!-- Robots -->
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
