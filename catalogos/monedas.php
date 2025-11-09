@@ -1,6 +1,6 @@
 <?php
 $pageTitle = "Catálogo: Monedas | SOFOMES.COM";
-$pageDescription = "Catálogo oficial CNBV para reportes RIPS F36 PLD/FT de SOFOMes.";
+$pageDescription = "Catálogo de monedas ISO 4217 para reportes internacionales: USD, EUR, MXN, JPY y más. RIPS F36 CNBV para operaciones en divisas.";
 $pageKeywords = "catalogo cnbv, rips f36, pld sofom, catálogo: monedas";
 $canonicalUrl = "https://sofomes.com/catalogos/monedas";
 $activeMenu = "catalogos";

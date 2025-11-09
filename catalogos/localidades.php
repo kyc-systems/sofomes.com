@@ -1,7 +1,7 @@
 <?php
 // Variables para header.php
 $pageTitle = "Catálogo: Localidades | SOFOMES.COM";
-$pageDescription = "Catálogo oficial CNBV para reportes RIPS F36 PLD/FT de SOFOMes.";
+$pageDescription = "Catálogo de localidades de México por estado, municipio y colonia. Códigos oficiales SEPOMEX para reportes RIPS F36 CNBV.";
 $pageKeywords = "catalogo cnbv, rips f36, pld sofom, catálogo: localidades";
 $canonicalUrl = "https://sofomes.com/catalogos/localidades";
 $activeMenu = "catalogos";

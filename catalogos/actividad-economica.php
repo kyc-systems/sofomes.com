@@ -1,7 +1,7 @@
 <?php
 // Variables para header.php
 $pageTitle = "Catálogo: Actividad Económica | SOFOMES.COM";
-$pageDescription = "Catálogo oficial CNBV para reportes RIPS F36 PLD/FT de SOFOMes.";
+$pageDescription = "Catálogo completo de 1,263 actividades económicas SCIAN para reportes RIPS F36. Clasificación oficial CNBV para SOFOMes en PLD/FT.";
 $pageKeywords = "catalogo cnbv, rips f36, pld sofom, catálogo: actividad económica";
 $canonicalUrl = "https://sofomes.com/catalogos/actividad-economica";
 $activeMenu = "catalogos";

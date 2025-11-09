@@ -1,6 +1,6 @@
 <?php
 $pageTitle = "Catálogo: Instrumentos Monetarios | SOFOMES.COM";
-$pageDescription = "Catálogo oficial CNBV para reportes RIPS F36 PLD/FT de SOFOMes.";
+$pageDescription = "Catálogo de instrumentos monetarios para reportes PLD/FT: efectivo, transferencias, cheques, metales preciosos. RIPS F36 CNBV SOFOMes.";
 $pageKeywords = "catalogo cnbv, rips f36, pld sofom, catálogo: instrumentos monetarios";
 $canonicalUrl = "https://sofomes.com/catalogos/instrumento-monetario";
 $activeMenu = "catalogos";

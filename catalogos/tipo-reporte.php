@@ -1,6 +1,6 @@
 <?php
 $pageTitle = "Catálogo: Tipo de Reporte | SOFOMES.COM";
-$pageDescription = "Catálogo oficial CNBV para reportes RIPS F36 PLD/FT de SOFOMes.";
+$pageDescription = "Catálogo de tipos de reporte PLD/FT: operaciones relevantes, inusuales e internas preocupantes. Guía oficial CNBV RIPS F36.";
 $pageKeywords = "catalogo cnbv, rips f36, pld sofom, catálogo: tipo de reporte";
 $canonicalUrl = "https://sofomes.com/catalogos/tipo-reporte";
 $activeMenu = "catalogos";

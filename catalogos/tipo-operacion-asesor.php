@@ -1,6 +1,6 @@
 <?php
 $pageTitle = "Catálogo: Tipo de Operación Asesor | SOFOMES.COM";
-$pageDescription = "Catálogo oficial CNBV para reportes RIPS F36 PLD/FT de SOFOMes.";
+$pageDescription = "Catálogo de tipos de operación con asesor externo para reportes PLD/FT. Clasificación CNBV RIPS F36 para SOFOMes.";
 $pageKeywords = "catalogo cnbv, rips f36, pld sofom, catálogo: tipo de operación asesor";
 $canonicalUrl = "https://sofomes.com/catalogos/tipo-operacion-asesor";
 $activeMenu = "catalogos";
