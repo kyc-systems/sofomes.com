@@ -214,12 +214,36 @@ try {
     echo json_encode($response, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
 
 } catch (Exception $e) {
-    http_response_code(500);
+    // **FALLBACK: Si hay error, intentar usar cache antiguo aunque esté expirado**
+    error_log("ERROR al consultar CONDUSEF: " . $e->getMessage());
+    error_log("Intentando usar cache de emergencia...");
 
-    echo json_encode([
-        'success' => false,
-        'error' => $e->getMessage(),
-        'fecha' => date('c')
-    ], JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+    if (file_exists($CACHE_FILE)) {
+        $cachedData = json_decode(file_get_contents($CACHE_FILE), true);
+        $cacheAge = time() - filemtime($CACHE_FILE);
+
+        // Usar cache aunque esté expirado
+        error_log("Usando CACHE DE EMERGENCIA - Age: " . round($cacheAge / 3600, 1) . " horas");
+
+        $cachedData['cached'] = true;
+        $cachedData['cache_age_hours'] = round($cacheAge / 3600, 1);
+        $cachedData['emergency_fallback'] = true;
+        $cachedData['condusef_error'] = $e->getMessage();
+        $cachedData['warning'] = 'CONDUSEF no disponible. Mostrando datos del último cache disponible.';
+
+        // Retornar con código 200 (no es un error del servidor, es fallback intencional)
+        http_response_code(200);
+        echo json_encode($cachedData, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+    } else {
+        // Si no hay cache, entonces sí es un error real
+        http_response_code(500);
+
+        echo json_encode([
+            'success' => false,
+            'error' => $e->getMessage(),
+            'fecha' => date('c'),
+            'message' => 'CONDUSEF no disponible y no hay cache previo.'
+        ], JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+    }
 }
 ?>

@@ -286,6 +286,25 @@ include 'includes/header.php';
       const response = await fetch('./api/condusef-proxy.php');
       const data = await response.json();
 
+      // Mostrar advertencia si es cache de emergencia
+      if (data.emergency_fallback) {
+        console.warn('⚠️ CONDUSEF no disponible. Usando cache de emergencia.');
+        console.warn('⏰ Cache age: ' + data.cache_age_hours + ' horas');
+
+        // Mostrar banner de advertencia al usuario
+        const warningBanner = document.createElement('div');
+        warningBanner.className = 'alert alert-warning';
+        warningBanner.style.cssText = 'position: fixed; top: 70px; left: 50%; transform: translateX(-50%); z-index: 1000; max-width: 600px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);';
+        warningBanner.innerHTML = `
+          <strong>⚠️ Aviso:</strong> ${data.warning}<br>
+          <small>Datos de hace ${Math.round(data.cache_age_hours)} horas. Última actualización: ${new Date(data.fecha).toLocaleString('es-MX')}</small>
+        `;
+        document.body.appendChild(warningBanner);
+
+        // Ocultar banner después de 10 segundos
+        setTimeout(() => warningBanner.remove(), 10000);
+      }
+
       if (!data.success) {
         throw new Error(data.error || 'Error al cargar datos');
       }
