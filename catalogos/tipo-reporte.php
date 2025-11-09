@@ -4,7 +4,7 @@ $pageDescription = "Catálogo de tipos de reporte PLD/FT: operaciones relevantes
 $pageKeywords = "catalogo cnbv, rips f36, pld sofom, catálogo: tipo de reporte";
 $canonicalUrl = "https://sofomes.com/catalogos/tipo-reporte";
 $activeMenu = "catalogos";
-$cssPath = "../assets/css/main-v2.css";
+$cssPath = "../assets/css/main.css";
 $useDatatables = true;
 include '../includes/header.php';
 ?>

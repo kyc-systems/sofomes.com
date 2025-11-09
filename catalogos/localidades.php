@@ -5,7 +5,7 @@ $pageDescription = "Catálogo de localidades de México por estado, municipio y 
 $pageKeywords = "catalogo cnbv, rips f36, pld sofom, catálogo: localidades";
 $canonicalUrl = "https://sofomes.com/catalogos/localidades";
 $activeMenu = "catalogos";
-$cssPath = "../assets/css/main-v2.css";
+$cssPath = "../assets/css/main.css";
 $useDatatables = true;
 
 include '../includes/header.php';

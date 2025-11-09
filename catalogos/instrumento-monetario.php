@@ -4,7 +4,7 @@ $pageDescription = "Catálogo de instrumentos monetarios para reportes PLD/FT: e
 $pageKeywords = "catalogo cnbv, rips f36, pld sofom, catálogo: instrumentos monetarios";
 $canonicalUrl = "https://sofomes.com/catalogos/instrumento-monetario";
 $activeMenu = "catalogos";
-$cssPath = "../assets/css/main-v2.css";
+$cssPath = "../assets/css/main.css";
 $useDatatables = true;
 include '../includes/header.php';
 ?>

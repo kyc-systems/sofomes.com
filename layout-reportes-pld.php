@@ -5,7 +5,7 @@ $pageDescription = "Referencia técnica completa del layout de 36 campos para Re
 $pageKeywords = "layout pld, rips f36, 36 campos cnbv, reportes pld sofom, formato reportes cnbv";
 $canonicalUrl = "https://sofomes.com/layout-reportes-pld";
 $activeMenu = "reportes";
-$cssPath = "/assets/css/main-v2.css";
+$cssPath = "/assets/css/main.css";
 
 include 'includes/header.php';
 ?>

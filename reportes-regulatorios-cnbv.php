@@ -5,7 +5,7 @@ $pageDescription = "Guía completa de Operaciones Relevantes (≥$7,500 USD con 
 $pageKeywords = "operaciones relevantes inusuales preocupantes cnbv, pld sofom, reportes regulatorios, operaciones relevantes pld, operaciones inusuales pld, operaciones internas preocupantes";
 $canonicalUrl = "https://sofomes.com/reportes-regulatorios-cnbv";
 $activeMenu = "reportes";
-$cssPath = "/assets/css/main-v2.css";
+$cssPath = "/assets/css/main.css";
 
 // Schemas JSON-LD
 $schemaJson = <<<'SCHEMA'

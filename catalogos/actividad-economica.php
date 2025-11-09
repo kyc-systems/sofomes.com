@@ -5,7 +5,7 @@ $pageDescription = "Catálogo completo de 1,263 actividades económicas SCIAN pa
 $pageKeywords = "catalogo cnbv, rips f36, pld sofom, catálogo: actividad económica";
 $canonicalUrl = "https://sofomes.com/catalogos/actividad-economica";
 $activeMenu = "catalogos";
-$cssPath = "../assets/css/main-v2.css";
+$cssPath = "../assets/css/main.css";
 $useDatatables = true;
 
 include '../includes/header.php';

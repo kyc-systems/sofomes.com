@@ -4,7 +4,7 @@ $pageDescription = "Catálogo de tipos de operación con asesor externo para rep
 $pageKeywords = "catalogo cnbv, rips f36, pld sofom, catálogo: tipo de operación asesor";
 $canonicalUrl = "https://sofomes.com/catalogos/tipo-operacion-asesor";
 $activeMenu = "catalogos";
-$cssPath = "../assets/css/main-v2.css";
+$cssPath = "../assets/css/main.css";
 $useDatatables = true;
 include '../includes/header.php';
 ?>

@@ -82,10 +82,10 @@ if (strpos($uri, 'index.php') !== false) {
   <link rel="dns-prefetch" href="https://www.googletagmanager.com">
 
   <!-- Preload -->
-  <link rel="preload" href="<?php echo $basePath; ?>assets/css/main-v2.css" as="style">
+  <link rel="preload" href="<?php echo $basePath; ?>assets/css/main.css" as="style">
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="<?php echo $basePath; ?>assets/css/main-v2.css">
+  <link rel="stylesheet" href="<?php echo $basePath; ?>assets/css/main.css">
 
   <?php if (isset($useDatatables) && $useDatatables): ?>
   <!-- DataTables CSS -->

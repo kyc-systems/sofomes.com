@@ -5,7 +5,7 @@ $pageDescription = "Catálogos oficiales CNBV para reportes RIPS F36: Actividad 
 $pageKeywords = "catalogos cnbv, rips f36, catalogos pld, actividad economica scian, catalogos reportes";
 $canonicalUrl = "https://sofomes.com/catalogos-rips-f36";
 $activeMenu = "catalogos";
-$cssPath = "/assets/css/main-v2.css";
+$cssPath = "/assets/css/main.css";
 
 include 'includes/header.php';
 ?>

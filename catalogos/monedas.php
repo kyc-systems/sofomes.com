@@ -4,7 +4,7 @@ $pageDescription = "Catálogo de monedas ISO 4217 para reportes internacionales:
 $pageKeywords = "catalogo cnbv, rips f36, pld sofom, catálogo: monedas";
 $canonicalUrl = "https://sofomes.com/catalogos/monedas";
 $activeMenu = "catalogos";
-$cssPath = "../assets/css/main-v2.css";
+$cssPath = "../assets/css/main.css";
 $useDatatables = true;
 include '../includes/header.php';
 ?>
