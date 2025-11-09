@@ -82,13 +82,13 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule ^(.*)$ $1.php [L,QSA]
 
-# Redirección de www a no-www (opcional, descomentar si lo necesitas)
-# RewriteCond %{HTTP_HOST} ^www\.sofomes\.com [NC]
-# RewriteRule ^(.*)$ https://sofomes.com/$1 [L,R=301]
+# Redirección HTTPS (forzar SSL)
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# Redirección HTTP a HTTPS (descomentar cuando tengas SSL)
-# RewriteCond %{HTTPS} off
-# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# Redirección www a non-www (versión canónica)
+RewriteCond %{HTTP_HOST} ^www\.sofomes\.com [NC]
+RewriteRule ^(.*)$ https://sofomes.com/$1 [L,R=301]
 
 # Errores personalizados (opcional)
 # ErrorDocument 404 /404.html

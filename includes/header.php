@@ -29,9 +29,9 @@
   <?php endif; ?>
 
   <?php
-// Generar canonical automáticamente
-$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https" : "http";
-$host = $_SERVER['HTTP_HOST'];
+// Generar canonical automáticamente (siempre sin www)
+$protocol = "https"; // Siempre HTTPS
+$host = "sofomes.com"; // Siempre sin www (versión canónica)
 $uri = strtok($_SERVER['REQUEST_URI'], '?'); // Elimina parámetros de consulta
 
 // Si es index.php, apunta a la raíz
