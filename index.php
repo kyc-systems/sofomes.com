@@ -816,29 +816,29 @@ include 'includes/header.php';
       </p>
 
       <div class="grid grid-2" style="margin-top: 2rem;">
-        <div style="background: linear-gradient(135deg, #1F2937 0%, #111827 100%); color: white; padding: 2.5rem; border-radius: var(--border-radius-lg);">
-          <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">📋 11 Funciones Obligatorias CNBV</h3>
-          <ul style="margin: 0; line-height: 1.8;">
-            <li>✅ <strong>Expedientes KYC digitales</strong> con consulta instantánea</li>
-            <li>✅ <strong>Reportes RIPS F41/F36</strong> automáticos a UIF/CNBV</li>
-            <li>✅ <strong>Alertas en tiempo real</strong> de operaciones sospechosas</li>
-            <li>✅ <strong>Detección automática</strong> PPE y listas bloqueadas (OFAC, ONU, SAT)</li>
-            <li>✅ <strong>Monitoreo transaccional</strong> con Machine Learning</li>
-            <li>✅ <strong>Seguridad bancaria:</strong> Cifrado AES-256, MFA, auditoría</li>
+        <div style="background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%); border: 2px solid var(--primary-200); padding: 2.5rem; border-radius: var(--border-radius-lg);">
+          <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--primary-900);">📋 11 Funciones Obligatorias CNBV</h3>
+          <ul style="margin: 0; line-height: 1.8; color: var(--neutral-700);">
+            <li>✅ <strong style="color: var(--neutral-900);">Expedientes KYC digitales</strong> con consulta instantánea</li>
+            <li>✅ <strong style="color: var(--neutral-900);">Reportes RIPS F41/F36</strong> automáticos a UIF/CNBV</li>
+            <li>✅ <strong style="color: var(--neutral-900);">Alertas en tiempo real</strong> de operaciones sospechosas</li>
+            <li>✅ <strong style="color: var(--neutral-900);">Detección automática</strong> PPE y listas bloqueadas (OFAC, ONU, SAT)</li>
+            <li>✅ <strong style="color: var(--neutral-900);">Monitoreo transaccional</strong> con Machine Learning</li>
+            <li>✅ <strong style="color: var(--neutral-900);">Seguridad bancaria:</strong> Cifrado AES-256, MFA, auditoría</li>
           </ul>
-          <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.2);">
+          <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 2px solid var(--primary-200);">
             <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; text-align: center;">
               <div>
-                <strong style="display: block; font-size: 1.5rem; color: var(--success-400);">11</strong>
-                <span style="font-size: 0.875rem; opacity: 0.8;">Funciones</span>
+                <strong style="display: block; font-size: 1.5rem; color: var(--success-600);">11</strong>
+                <span style="font-size: 0.875rem; color: var(--neutral-600);">Funciones</span>
               </div>
               <div>
-                <strong style="display: block; font-size: 1.5rem; color: var(--warning-400);">53</strong>
-                <span style="font-size: 0.875rem; opacity: 0.8;">Checklist</span>
+                <strong style="display: block; font-size: 1.5rem; color: var(--warning-600);">53</strong>
+                <span style="font-size: 0.875rem; color: var(--neutral-600);">Checklist</span>
               </div>
               <div>
-                <strong style="display: block; font-size: 1.5rem; color: var(--danger-400);">$30K</strong>
-                <span style="font-size: 0.875rem; opacity: 0.8;">Dictamen</span>
+                <strong style="display: block; font-size: 1.5rem; color: var(--danger-600);">$30K</strong>
+                <span style="font-size: 0.875rem; color: var(--neutral-600);">Dictamen</span>
               </div>
             </div>
           </div>

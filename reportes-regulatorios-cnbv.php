@@ -1,8 +1,8 @@
 <?php
 // Variables para header.php
-$pageTitle = "Operaciones Relevantes, Inusuales e Internas Preocupantes CNBV | Guía Completa 2025";
-$pageDescription = "Guía completa de Operaciones Relevantes (≥$7,500 USD con billetes/monedas), Operaciones Inusuales (perfil transaccional) e Internas Preocupantes (lavado de dinero). Formatos oficiales, layouts, plazos, ejemplos prácticos.";
-$pageKeywords = "operaciones relevantes inusuales preocupantes cnbv, pld sofom, reportes regulatorios, operaciones relevantes pld, operaciones inusuales pld, operaciones internas preocupantes";
+$pageTitle = "Catálogos RIPS F36 CNBV: Operaciones Relevantes, Inusuales e Internas Preocupantes | Guía 2025";
+$pageDescription = "Catálogos RIPS F36 CNBV oficiales: 6 catálogos para reportes de Operaciones Relevantes (≥$7,500 USD), Inusuales e Internas Preocupantes. Layouts de 36 campos, plazos, formatos y ejemplos prácticos para SOFOM ENR.";
+$pageKeywords = "catálogos rips f36 cnbv, operaciones relevantes inusuales preocupantes cnbv, pld sofom, reportes regulatorios, rips f36, catálogos cnbv sofom enr";
 $canonicalUrl = "https://sofomes.com/reportes-regulatorios-cnbv";
 $activeMenu = "reportes";
 $cssPath = "/assets/css/main.css";
@@ -104,10 +104,10 @@ include 'includes/header.php';
   <section class="hero" style="padding: 4rem 0;">
     <div class="container">
       <h1 class="hero-title" style="text-align: center; font-size: 2.5rem;">
-        Operaciones Relevantes, Inusuales e Internas Preocupantes CNBV
+        Catálogos RIPS F36 CNBV: Operaciones Relevantes, Inusuales e Internas Preocupantes
       </h1>
       <p class="hero-subtitle" style="text-align: center; max-width: 900px; margin: 1rem auto;">
-        Guía oficial completa para SOFOMes sobre reportes PLD/FT ante la CNBV: Operaciones Relevantes (≥$7,500 USD), Operaciones Inusuales (perfil transaccional) y Operaciones Internas Preocupantes (lavado de dinero). Incluye formatos oficiales, layouts de 36 campos, plazos y ejemplos prácticos.
+        Guía oficial completa con los 6 catálogos RIPS F36 CNBV obligatorios para reportes PLD/FT de SOFOM ENR: Operaciones Relevantes (≥$7,500 USD), Operaciones Inusuales (perfil transaccional) y Operaciones Internas Preocupantes (lavado de dinero). Incluye formatos oficiales, layouts de 36 campos, plazos y ejemplos prácticos.
       </p>
 
       <div style="text-align: center; margin-top: 2rem;">
@@ -118,6 +118,83 @@ include 'includes/header.php';
           <span style="color: var(--neutral-400);">|</span>
           <span style="font-weight: 600; color: var(--primary-700);">📋 Layout 36 Campos</span>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catálogos RIPS F36 CNBV -->
+  <section class="section" style="background: linear-gradient(135deg, #ECFDF5 0%, #D1FAE5 100%); border-top: 4px solid #059669;">
+    <div class="container">
+      <h2 class="section-title" style="text-align: center; color: #047857;">📚 Catálogos RIPS F36 CNBV para SOFOM ENR</h2>
+      <p style="text-align: center; max-width: 800px; margin: 0 auto 2rem; font-size: 1.125rem; color: var(--neutral-700);">
+        6 catálogos oficiales obligatorios de la CNBV que debes usar para llenar correctamente los campos de tus reportes de operaciones relevantes, inusuales e internas preocupantes.
+      </p>
+
+      <div class="grid grid-3" style="gap: 1.5rem;">
+        <!-- Actividad Económica -->
+        <div style="background: white; border: 2px solid #10B981; border-radius: 12px; padding: 1.5rem; text-align: center; transition: all 0.3s;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">📊</div>
+          <h3 style="font-size: 1.25rem; font-weight: 700; color: #047857; margin-bottom: 0.5rem;">Actividad Económica</h3>
+          <p style="font-size: 1.5rem; font-weight: 700; color: #059669; margin: 0.5rem 0;">1,265 actividades</p>
+          <p style="font-size: 0.875rem; color: var(--neutral-600); margin-bottom: 1.5rem;">Clasificación oficial del giro comercial de tus clientes</p>
+          <a href="catalogos-enr/actividad-economica" class="btn" style="width: 100%; background: #10B981; color: white;">Ver Catálogo →</a>
+        </div>
+
+        <!-- Monedas -->
+        <div style="background: white; border: 2px solid #10B981; border-radius: 12px; padding: 1.5rem; text-align: center; transition: all 0.3s;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">💱</div>
+          <h3 style="font-size: 1.25rem; font-weight: 700; color: #047857; margin-bottom: 0.5rem;">Monedas</h3>
+          <p style="font-size: 1.5rem; font-weight: 700; color: #059669; margin: 0.5rem 0;">192 monedas</p>
+          <p style="font-size: 0.875rem; color: var(--neutral-600); margin-bottom: 1.5rem;">Códigos de divisas internacionales</p>
+          <a href="catalogos-enr/monedas" class="btn" style="width: 100%; background: #10B981; color: white;">Ver Catálogo →</a>
+        </div>
+
+        <!-- Localidades -->
+        <div style="background: white; border: 2px solid #10B981; border-radius: 12px; padding: 1.5rem; text-align: center; transition: all 0.3s;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">📍</div>
+          <h3 style="font-size: 1.25rem; font-weight: 700; color: #047857; margin-bottom: 0.5rem;">Localidades</h3>
+          <p style="font-size: 1.5rem; font-weight: 700; color: #059669; margin: 0.5rem 0;">3,689 localidades</p>
+          <p style="font-size: 0.875rem; color: var(--neutral-600); margin-bottom: 1.5rem;">Catálogo INEGI de localidades de México</p>
+          <a href="catalogos-enr/localidades" class="btn" style="width: 100%; background: #10B981; color: white;">Ver Catálogo →</a>
+        </div>
+
+        <!-- Instrumento Monetario -->
+        <div style="background: white; border: 2px solid #10B981; border-radius: 12px; padding: 1.5rem; text-align: center; transition: all 0.3s;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">💵</div>
+          <h3 style="font-size: 1.25rem; font-weight: 700; color: #047857; margin-bottom: 0.5rem;">Instrumento Monetario</h3>
+          <p style="font-size: 1.5rem; font-weight: 700; color: #059669; margin: 0.5rem 0;">10 instrumentos</p>
+          <p style="font-size: 0.875rem; color: var(--neutral-600); margin-bottom: 1.5rem;">Efectivo, cheque, transferencia, etc.</p>
+          <a href="catalogos-enr/instrumento-monetario" class="btn" style="width: 100%; background: #10B981; color: white;">Ver Catálogo →</a>
+        </div>
+
+        <!-- Tipo Operación SOFOM -->
+        <div style="background: white; border: 2px solid #10B981; border-radius: 12px; padding: 1.5rem; text-align: center; transition: all 0.3s;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">💼</div>
+          <h3 style="font-size: 1.25rem; font-weight: 700; color: #047857; margin-bottom: 0.5rem;">Tipo Operación SOFOM</h3>
+          <p style="font-size: 1.5rem; font-weight: 700; color: #059669; margin: 0.5rem 0;">19 tipos</p>
+          <p style="font-size: 0.875rem; color: var(--neutral-600); margin-bottom: 1.5rem;">Crédito, factoraje, arrendamiento, etc.</p>
+          <a href="catalogos-enr/tipo-operacion-sofom" class="btn" style="width: 100%; background: #10B981; color: white;">Ver Catálogo →</a>
+        </div>
+
+        <!-- Tipo Reporte -->
+        <div style="background: white; border: 2px solid #10B981; border-radius: 12px; padding: 1.5rem; text-align: center; transition: all 0.3s;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">📝</div>
+          <h3 style="font-size: 1.25rem; font-weight: 700; color: #047857; margin-bottom: 0.5rem;">Tipo Reporte</h3>
+          <p style="font-size: 1.5rem; font-weight: 700; color: #059669; margin: 0.5rem 0;">3 tipos</p>
+          <p style="font-size: 0.875rem; color: var(--neutral-600); margin-bottom: 1.5rem;">Relevantes, Inusuales, Preocupantes</p>
+          <a href="catalogos-enr/tipo-reporte" class="btn" style="width: 100%; background: #10B981; color: white;">Ver Catálogo →</a>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="catalogos-rips" class="btn btn-lg" style="background: #047857; color: white; padding: 1rem 2rem; font-size: 1.125rem;">
+          Ver Todos los Catálogos RIPS F36 CNBV →
+        </a>
+      </div>
+
+      <div class="alert alert-info" style="margin-top: 2rem;">
+        <strong>💡 ¿Por qué necesitas estos catálogos?</strong><br>
+        Los 36 campos del layout de reportes CNBV requieren que uses códigos específicos de estos catálogos oficiales. Por ejemplo, el campo 28 "Actividad Económica" debe llenarse con una clave del catálogo de 1,265 actividades. Usar códigos incorrectos o inventados causará rechazo automático de tu reporte.
       </div>
     </div>
   </section>

@@ -1,7 +1,7 @@
 <?php
-$pageTitle = "Catálogos RIPS F41 y F36 | SOFOMES.COM";
-$pageDescription = "Catálogos oficiales CNBV para reportes PLD/FT: RIPS F41 (SOFOM ER) y RIPS F36 (SOFOM ENR). Actividades económicas, monedas, localidades, tipo de reporte.";
-$pageKeywords = "catalogos cnbv, rips f41, rips f36, pld sofom, sofom er, sofom enr";
+$pageTitle = "Catálogos RIPS F36 y F41 CNBV 2025: Actividades Económicas, Monedas, Localidades | SOFOM ER y ENR";
+$pageDescription = "Catálogos RIPS oficiales CNBV 2025 para reportes PLD/FT: 7 catálogos F36 (SOFOM ENR) con 1,265 actividades y 19 tipos de operación, 7 catálogos F41 (SOFOM ER) con 245 países. Descarga Excel, consulta online.";
+$pageKeywords = "catalogos rips f36 cnbv, catalogos rips f41, actividades economicas sofom, monedas cnbv, localidades mexico, catalogo paises, tipo operacion sofom, reportes pld sofom";
 $canonicalUrl = "https://sofomes.com/catalogos-rips";
 $activeMenu = "catalogos";
 $cssPath = "assets/css/main.css";
@@ -10,17 +10,187 @@ include 'includes/header.php';
 
 <section class="hero" style="padding: 4rem 0;">
   <div class="container">
-    <h1 class="hero-title" style="text-align: center; font-size: 3rem;">📚 Catálogos CNBV</h1>
+    <h1 class="hero-title" style="text-align: center; font-size: 3rem;">📚 Catálogos RIPS F36 y F41 CNBV 2025</h1>
     <p class="hero-subtitle" style="text-align: center; font-size: 1.25rem;">
-      Catálogos oficiales para reportes PLD/FT ante la CNBV
+      Catálogos oficiales para reportes de Operaciones Relevantes, Inusuales e Internas Preocupantes
     </p>
     <p style="text-align: center; margin-top: 1rem; color: var(--neutral-600);">
-      Selecciona tu tipo de SOFOM para ver los catálogos correspondientes
+      Actividades económicas, monedas, localidades, tipos de operación y más para SOFOMes ER y ENR
     </p>
   </div>
 </section>
 
-<section class="section">
+<!-- SEO Content Section -->
+<section class="section" style="background: white;">
+  <div class="container" style="max-width: 900px;">
+
+    <div style="background: linear-gradient(135deg, #ECFDF5 0%, #D1FAE5 100%); border-left: 4px solid #10B981; padding: 2rem; border-radius: 8px; margin-bottom: 3rem;">
+      <h2 style="font-size: 1.75rem; margin-bottom: 1rem; color: var(--success-900);">
+        ¿Qué son los Catálogos RIPS F36 y F41 de la CNBV?
+      </h2>
+      <p style="color: var(--neutral-700); line-height: 1.8; margin-bottom: 1rem;">
+        Los <strong>catálogos RIPS (Reportes de Operaciones Relevantes, Inusuales e Internas Preocupantes)</strong> son listados oficiales estandarizados publicados por la <strong>Comisión Nacional Bancaria y de Valores (CNBV)</strong> que todas las SOFOMes deben utilizar obligatoriamente al presentar sus reportes de prevención de lavado de dinero (PLD) y financiamiento al terrorismo (FT).
+      </p>
+      <p style="color: var(--neutral-700); line-height: 1.8;">
+        Existen dos formatos principales: <strong>F36 para SOFOM ENR</strong> (Entidades No Reguladas) y <strong>F41 para SOFOM ER</strong> (Entidades Reguladas). Cada formato incluye 7 catálogos específicos adaptados al tipo de operaciones que realiza cada categoría de SOFOM.
+      </p>
+    </div>
+
+    <div style="margin-bottom: 3rem;">
+      <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--primary-900);">
+        📋 ¿Por qué son obligatorios estos catálogos?
+      </h2>
+      <p style="color: var(--neutral-700); line-height: 1.8; margin-bottom: 1rem;">
+        La <strong>Ley Federal para la Prevención e Identificación de Operaciones con Recursos de Procedencia Ilícita (LFPIORPI)</strong> establece que todas las SOFOMes, sin importar si son ER o ENR, deben reportar a la <strong>Unidad de Inteligencia Financiera (UIF)</strong> de la Secretaría de Hacienda las siguientes operaciones:
+      </p>
+      <ul style="color: var(--neutral-700); line-height: 1.8; margin-bottom: 1rem; padding-left: 2rem;">
+        <li><strong>Operaciones Relevantes:</strong> Todas las operaciones iguales o superiores al equivalente a <strong>$7,500 USD</strong> (aproximadamente $161,250 MXN según tipo de cambio 2025). Se reportan mensualmente a más tardar el día 17 del mes siguiente.</li>
+        <li><strong>Operaciones Inusuales:</strong> Aquellas que no coinciden con el perfil transaccional del cliente o carecen de justificación económica o legal aparente. Plazo: 60 días después de detectadas.</li>
+        <li><strong>Operaciones Internas Preocupantes:</strong> Operaciones que involucran recursos que pudieran estar relacionados con actividades ilícitas, detectadas por el personal de la SOFOM. Plazo: inmediato (dentro de las 24 horas).</li>
+      </ul>
+      <p style="color: var(--neutral-700); line-height: 1.8;">
+        Para garantizar la estandarización y facilitar el análisis masivo de datos por parte de las autoridades, la CNBV publica estos catálogos que deben usarse <strong>exactamente como se especifican</strong>, utilizando las claves y descripciones oficiales.
+      </p>
+    </div>
+
+    <div style="margin-bottom: 3rem;">
+      <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--primary-900);">
+        🔑 Los 7 Catálogos RIPS: ¿Qué contiene cada uno?
+      </h2>
+
+      <div style="background: #F9FAFB; border: 1px solid #E5E7EB; border-radius: 8px; padding: 1.5rem; margin-bottom: 1rem;">
+        <h3 style="font-size: 1.125rem; color: var(--primary-700); margin-bottom: 0.75rem;">
+          1️⃣ Catálogo de Actividades Económicas
+        </h3>
+        <p style="color: var(--neutral-700); line-height: 1.8; margin-bottom: 0.5rem;">
+          Clasifica la actividad principal del cliente según el <strong>Sistema de Clasificación Industrial de América del Norte</strong>. Esencial para identificar sectores de alto riesgo (joyerías, casas de cambio, inmobiliarias, construcción).
+        </p>
+        <p style="color: var(--neutral-600); font-size: 0.875rem;">
+          <strong>F41 (ER):</strong> 1,172 actividades | <strong>F36 (ENR):</strong> 1,265 actividades (+91 adicionales)
+        </p>
+      </div>
+
+      <div style="background: #F9FAFB; border: 1px solid #E5E7EB; border-radius: 8px; padding: 1.5rem; margin-bottom: 1rem;">
+        <h3 style="font-size: 1.125rem; color: var(--primary-700); margin-bottom: 0.75rem;">
+          2️⃣ Catálogo de Monedas
+        </h3>
+        <p style="color: var(--neutral-700); line-height: 1.8; margin-bottom: 0.5rem;">
+          Lista las divisas autorizadas para reportar operaciones en moneda extranjera. Incluye desde USD, EUR, hasta criptomonedas y metales preciosos como Onzas Libertad.
+        </p>
+        <p style="color: var(--neutral-600); font-size: 0.875rem;">
+          <strong>F41 (ER):</strong> 123 monedas | <strong>F36 (ENR):</strong> 192 monedas (+67 adicionales)
+        </p>
+      </div>
+
+      <div style="background: #F9FAFB; border: 1px solid #E5E7EB; border-radius: 8px; padding: 1.5rem; margin-bottom: 1rem;">
+        <h3 style="font-size: 1.125rem; color: var(--primary-700); margin-bottom: 0.75rem;">
+          3️⃣ Catálogo de Localidades
+        </h3>
+        <p style="color: var(--neutral-700); line-height: 1.8; margin-bottom: 0.5rem;">
+          Clasifica ciudades, municipios y localidades de México con clave única. Permite geolocalizar operaciones y detectar patrones regionales de lavado.
+        </p>
+        <p style="color: var(--neutral-600); font-size: 0.875rem;">
+          <strong>Ambos formatos:</strong> 3,689 localidades (idéntico)
+        </p>
+      </div>
+
+      <div style="background: #F9FAFB; border: 1px solid #E5E7EB; border-radius: 8px; padding: 1.5rem; margin-bottom: 1rem;">
+        <h3 style="font-size: 1.125rem; color: var(--primary-700); margin-bottom: 0.75rem;">
+          4️⃣ Catálogo de Tipos de Operación
+        </h3>
+        <p style="color: var(--neutral-700); line-height: 1.8; margin-bottom: 0.5rem;">
+          <strong>F41 (ER):</strong> 40 tipos incluyendo operaciones de banca, valores, seguros, almacenes generales de depósito. <strong>F36 (ENR):</strong> 19 tipos específicos para crédito, arrendamiento, factoraje, tarjetas prepagadas + 4 tipos para asesores de inversión.
+        </p>
+        <p style="color: var(--neutral-600); font-size: 0.875rem;">
+          ⚠️ Este es el catálogo con <strong>mayor diferencia</strong> entre ER y ENR.
+        </p>
+      </div>
+
+      <div style="background: #F9FAFB; border: 1px solid #E5E7EB; border-radius: 8px; padding: 1.5rem; margin-bottom: 1rem;">
+        <h3 style="font-size: 1.125rem; color: var(--primary-700); margin-bottom: 0.75rem;">
+          5️⃣ Catálogo de Instrumentos Monetarios
+        </h3>
+        <p style="color: var(--neutral-700); line-height: 1.8; margin-bottom: 0.5rem;">
+          Define los medios de pago: efectivo, cheques, transferencias electrónicas, tarjetas de débito/crédito, criptomonedas, metales preciosos, etc.
+        </p>
+        <p style="color: var(--neutral-600); font-size: 0.875rem;">
+          <strong>Ambos formatos:</strong> 10 instrumentos (idéntico)
+        </p>
+      </div>
+
+      <div style="background: #F9FAFB; border: 1px solid #E5E7EB; border-radius: 8px; padding: 1.5rem; margin-bottom: 1rem;">
+        <h3 style="font-size: 1.125rem; color: var(--primary-700); margin-bottom: 0.75rem;">
+          6️⃣ Catálogo de Países
+        </h3>
+        <p style="color: var(--neutral-700); line-height: 1.8; margin-bottom: 0.5rem;">
+          Lista los 245 países del mundo con clave oficial. <strong>Solo disponible para SOFOM ER</strong> que realizan operaciones internacionales.
+        </p>
+        <p style="color: var(--neutral-600); font-size: 0.875rem;">
+          <strong>F41 (ER):</strong> 245 países | <strong>F36 (ENR):</strong> ❌ No aplica
+        </p>
+      </div>
+
+      <div style="background: #F9FAFB; border: 1px solid #E5E7EB; border-radius: 8px; padding: 1.5rem;">
+        <h3 style="font-size: 1.125rem; color: var(--primary-700); margin-bottom: 0.75rem;">
+          7️⃣ Catálogo de Tipos de Reporte
+        </h3>
+        <p style="color: var(--neutral-700); line-height: 1.8; margin-bottom: 0.5rem;">
+          Define los 3 tipos de reportes obligatorios: Operaciones Relevantes, Operaciones Inusuales, Operaciones Internas Preocupantes.
+        </p>
+        <p style="color: var(--neutral-600); font-size: 0.875rem;">
+          <strong>Ambos formatos:</strong> 3 tipos (idéntico)
+        </p>
+      </div>
+    </div>
+
+    <div style="margin-bottom: 3rem;">
+      <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--primary-900);">
+        ⚙️ ¿Cómo se utilizan estos catálogos en los reportes?
+      </h2>
+      <p style="color: var(--neutral-700); line-height: 1.8; margin-bottom: 1rem;">
+        Cuando una SOFOM genera el archivo <strong>.txt</strong> para enviar a la plataforma SIPRES de la CNBV, debe <strong>referenciar las claves exactas</strong> de estos catálogos en cada campo correspondiente. Por ejemplo:
+      </p>
+      <div style="background: #1F2937; color: #F9FAFB; padding: 1.5rem; border-radius: 6px; font-family: monospace; font-size: 0.875rem; overflow-x: auto; margin-bottom: 1rem;">
+        <code>
+          Operación relevante: crédito automotriz de $250,000 MXN<br>
+          → Tipo operación: <span style="color: #34D399;">06</span> (Crédito simple)<br>
+          → Moneda: <span style="color: #34D399;">MXN</span><br>
+          → Actividad económica cliente: <span style="color: #34D399;">811110</span> (Reparación mecánica)<br>
+          → Instrumento monetario: <span style="color: #34D399;">01</span> (Efectivo)<br>
+          → Localidad: <span style="color: #34D399;">090010001</span> (Ciudad de México)
+        </code>
+      </div>
+      <p style="color: var(--neutral-700); line-height: 1.8;">
+        Si usas un software de compliance o generas los archivos manualmente, <strong>SIEMPRE debes consultar estos catálogos</strong> para asegurar que las claves coincidan con los valores oficiales. Un error en las claves resulta en <strong>rechazo automático del reporte</strong> y posibles sanciones.
+      </p>
+    </div>
+
+    <div style="background: linear-gradient(135deg, #FEF2F2 0%, #FEE2E2 100%); border-left: 4px solid #EF4444; padding: 2rem; border-radius: 8px; margin-bottom: 3rem;">
+      <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: #991B1B;">
+        ⚠️ Errores comunes al usar los catálogos RIPS
+      </h2>
+      <ul style="color: var(--neutral-700); line-height: 1.8; padding-left: 2rem;">
+        <li style="margin-bottom: 0.75rem;"><strong>Usar catálogos del año incorrecto:</strong> La CNBV actualiza ocasionalmente los catálogos. Siempre descarga la versión más reciente desde el sitio oficial.</li>
+        <li style="margin-bottom: 0.75rem;"><strong>Mezclar catálogos F41 y F36:</strong> Una SOFOM ER NUNCA debe usar catálogos F36 (ENR) y viceversa. Esto causa rechazo inmediato.</li>
+        <li style="margin-bottom: 0.75rem;"><strong>Inventar claves:</strong> Algunos oficiales de cumplimiento intentan "crear" claves basándose en patrones. Todas las claves DEBEN existir en el catálogo oficial.</li>
+        <li style="margin-bottom: 0.75rem;"><strong>Confundir códigos similares:</strong> Por ejemplo, "06 - Crédito simple" vs "07 - Crédito revolvente". La diferencia es crítica para análisis de riesgo.</li>
+        <li style="margin-bottom: 0.75rem;"><strong>No actualizar el software:</strong> Si usas un sistema de compliance, asegúrate de que tenga cargados los catálogos más recientes de la CNBV.</li>
+      </ul>
+    </div>
+
+    <div style="text-align: center; background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%); padding: 2rem; border-radius: 12px;">
+      <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--primary-900);">
+        📥 Descarga los Catálogos Oficiales CNBV 2025
+      </h2>
+      <p style="color: var(--neutral-700); margin-bottom: 1.5rem; line-height: 1.6;">
+        Selecciona tu tipo de SOFOM para acceder a los 7 catálogos correspondientes en formato consultable online y descargable en Excel.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" style="background: var(--neutral-50);">
   <div class="container">
 
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem; margin-bottom: 4rem;">
