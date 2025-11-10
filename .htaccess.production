@@ -1,0 +1,109 @@
+# .htaccess para sofomes.com - PRODUCCIÓN
+# Generado: 2025-11-10
+# Actualizado: Fix para títulos duplicados (URLs con/sin .php)
+
+# Habilitar engine de reescritura
+RewriteEngine On
+RewriteBase /
+
+# Página de inicio predeterminada (PHP primero, HTML como fallback)
+DirectoryIndex index.php index.html
+
+# Habilitar seguimiento de enlaces simbólicos
+Options +FollowSymLinks
+
+# Prevenir listado de directorios
+Options -Indexes
+
+# Permitir acceso a archivos CSS, JS, imágenes
+<FilesMatch "\.(css|js|jpg|jpeg|png|gif|svg|webp|woff|woff2|ttf|eot|ico|pdf|txt|xml|json)$">
+  Order Allow,Deny
+  Allow from all
+</FilesMatch>
+
+# Permitir acceso a archivos HTML y PHP
+<FilesMatch "\.(html|htm|php)$">
+  Order Allow,Deny
+  Allow from all
+</FilesMatch>
+
+# Configuración de tipos MIME
+AddType text/css .css
+AddType application/javascript .js
+AddType image/svg+xml .svg
+AddType application/x-font-woff .woff
+AddType application/x-font-woff2 .woff2
+AddType application/json .json
+
+# Habilitar compresión GZIP
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+</IfModule>
+
+# Cache para recursos estáticos
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType application/pdf "access plus 1 month"
+  ExpiresByType font/woff "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType application/json "access plus 1 week"
+</IfModule>
+
+# Seguridad: Bloquear acceso a archivos sensibles
+<FilesMatch "^\.">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
+
+# Bloquear acceso a archivos de configuración
+<FilesMatch "\.(env|log|bak|sql|config)$">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
+
+# Headers de seguridad
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set X-XSS-Protection "1; mode=block"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Redirección HTTPS (forzar SSL)
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]
+
+# Redirección www a non-www (versión canónica)
+RewriteCond %{HTTP_HOST} ^www\.sofomes\.com$ [NC]
+RewriteRule ^(.*)$ https://sofomes.com/$1 [L,R=301]
+
+# Redirección de /index a / (evitar duplicados)
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+index[/\s?] [NC]
+RewriteRule ^index/?$ / [R=301,L]
+
+# IMPORTANTE: Redirección 301 para eliminar .php de URLs (versión canónica sin extensión)
+# Esto previene contenido duplicado y títulos duplicados en Semrush/Google
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.php [NC]
+RewriteRule ^ %1 [R=301,L]
+
+# Redirecciones 301: HTML → PHP (mantener SEO)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)\.html$ /$1.php [L,R=301]
+
+# URLs amigables: permitir acceso sin extensión (reescritura interna, no redirección)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php [L,QSA]
+
+# Errores personalizados (opcional)
+# ErrorDocument 404 /404.html
+# ErrorDocument 403 /403.html
+# ErrorDocument 500 /500.html

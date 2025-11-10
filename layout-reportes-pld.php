@@ -372,7 +372,7 @@ include 'includes/header.php';
       <p class="section-subtitle" style="max-width: 700px; margin: 0 auto 2rem;">
         Consulta los catálogos oficiales CNBV necesarios: Actividad Económica, Localidades, Monedas, Instrumentos Monetarios.
       </p>
-      <a href="catalogos-rips-f36.php" class="btn btn-primary btn-lg">
+      <a href="catalogos-rips" class="btn btn-primary btn-lg">
         📚 Ver Catálogos RIPS F36
       </a>
     </div>

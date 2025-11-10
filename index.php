@@ -900,7 +900,7 @@ include 'includes/header.php';
               <strong>190</strong> monedas
             </div>
           </div>
-          <a href="catalogos-rips-f36.php" class="btn btn-primary btn-lg">
+          <a href="catalogos-rips" class="btn btn-primary btn-lg">
             Ver Catálogos Completos →
           </a>
         </div>

@@ -8,6 +8,6 @@
 
 // Redirección 301 permanente
 header("HTTP/1.1 301 Moved Permanently");
-header("Location: https://sofomes.com/catalogos-rips.php");
+header("Location: https://sofomes.com/catalogos-rips");
 exit();
 ?>

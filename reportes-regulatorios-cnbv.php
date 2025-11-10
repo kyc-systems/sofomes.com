@@ -411,7 +411,7 @@ include 'includes/header.php';
       </div>
 
       <div style="text-align: center; margin-top: 2rem;">
-        <a href="catalogos-rips-f36.php" class="btn btn-outline">
+        <a href="catalogos-rips" class="btn btn-outline">
           Ver Todos los Catálogos RIPS F36 →
         </a>
       </div>
@@ -567,7 +567,7 @@ include 'includes/header.php';
       </div>
 
       <div class="alert alert-info" style="margin-top: 3rem; max-width: 900px; margin-left: auto; margin-right: auto;">
-        <strong>💡 ¿Más dudas?</strong> Consulta el <a href="layout-reportes-pld.php" style="color: var(--primary-700); text-decoration: underline;">layout completo de 36 campos</a> con validaciones específicas y ejemplos, o revisa los <a href="catalogos-rips-f36.php" style="color: var(--primary-700); text-decoration: underline;">catálogos oficiales CNBV</a> necesarios para llenar correctamente cada campo.
+        <strong>💡 ¿Más dudas?</strong> Consulta el <a href="layout-reportes-pld.php" style="color: var(--primary-700); text-decoration: underline;">layout completo de 36 campos</a> con validaciones específicas y ejemplos, o revisa los <a href="catalogos-rips" style="color: var(--primary-700); text-decoration: underline;">catálogos oficiales CNBV</a> necesarios para llenar correctamente cada campo.
       </div>
     </div>
   </section>
