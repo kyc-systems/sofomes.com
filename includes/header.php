@@ -13,8 +13,10 @@
   $levels = substr_count($scriptDir, '/') - substr_count($_SERVER['DOCUMENT_ROOT'], '/');
   if ($levels < 0) $levels = 0;
 
-  // Si estamos en un subdirectorio de catalogos, necesitamos subir un nivel más
-  if (strpos($scriptPath, '/catalogos/') !== false) {
+  // Si estamos en un subdirectorio de catalogos (cualquier variante), necesitamos subir un nivel más
+  if (strpos($scriptPath, '/catalogos/') !== false ||
+      strpos($scriptPath, '/catalogos-er/') !== false ||
+      strpos($scriptPath, '/catalogos-enr/') !== false) {
     $basePath = '../';
   } else {
     $basePath = './';
@@ -121,8 +123,8 @@ if (strpos($uri, 'index.php') !== false) {
         <?php
         $activeMenu = isset($activeMenu) ? $activeMenu : '';
 
-        // Determinar si estamos en index
-        $isIndex = (basename($_SERVER['PHP_SELF']) == 'index.php');
+        // Determinar si estamos en index de la raíz (no subdirectorios)
+        $isIndex = (basename($_SERVER['PHP_SELF']) == 'index.php' && dirname($_SERVER['PHP_SELF']) == '/');
 
         if ($isIndex) {
           // Menú para index.php (con anclas locales)
@@ -140,7 +142,7 @@ if (strpos($uri, 'index.php') !== false) {
           echo '<a href="' . $basePath . 'index.php#constituir"' . ($activeMenu == 'constituir' ? ' class="active"' : '') . '>Constituir</a>';
         }
         ?>
-        <a href="<?php echo $basePath; ?>catalogos-rips-f36.php"<?php echo ($activeMenu == 'catalogos' ? ' class="active"' : ''); ?>>Catálogos RIPS F36</a>
+        <a href="<?php echo $basePath; ?>catalogos-rips.php"<?php echo ($activeMenu == 'catalogos' ? ' class="active"' : ''); ?>>Catálogos RIPS</a>
         <a href="<?php echo $basePath; ?>reportes-regulatorios-cnbv.php"<?php echo ($activeMenu == 'reportes' ? ' class="active"' : ''); ?>>Reportes</a>
       </div>
     </div>

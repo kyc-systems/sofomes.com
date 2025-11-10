@@ -1,0 +1,14 @@
+[
+  {
+    "CLAVE TIPO REPORTE": "1",
+    "TIPO DE REPORTE": "RELEVANTES"
+  },
+  {
+    "CLAVE TIPO REPORTE": "2",
+    "TIPO DE REPORTE": "INUSUALES"
+  },
+  {
+    "CLAVE TIPO REPORTE": "3",
+    "TIPO DE REPORTE": "PREOCUPANTES"
+  }
+]

@@ -488,9 +488,9 @@ include 'includes/header.php';
         "descripcion": "MONEDA",
         "tipo": "Alfanumérico",
         "longitud": "3",
-        "validaciones_ros": ["* VRC12R1: El campo es alfanumérico", "* VRC12R2: El campo debe medir 3 caracteres", "* VRC12R3: El campo es obligatorio", "* VRC12R4: Debe existir en el catálogo de monedas CNBV (ISO 4217)", "* VRC12R5: Ejemplos: MXN, USD, EUR"],
-        "validaciones_roin": ["* VIC12R1: El campo es alfanumérico", "* VIC12R2: El campo debe medir 3 caracteres", "* VIC12R3: El campo es obligatorio", "* VIC12R4: Debe existir en el catálogo de monedas CNBV (ISO 4217)"],
-        "validaciones_roip": ["* VPC12R1: El campo es alfanumérico", "* VPC12R2: El campo debe medir 3 caracteres", "* VPC12R3: El campo es obligatorio", "* VPC12R4: Debe existir en el catálogo de monedas CNBV (ISO 4217)"]
+        "validaciones_ros": ["* VRC12R1: El campo es alfanumérico", "* VRC12R2: El campo debe medir 3 caracteres", "* VRC12R3: El campo es obligatorio", "* VRC12R4: Debe existir en el catálogo de monedas CNBV", "* VRC12R5: Ejemplos: MXN, USD, EUR"],
+        "validaciones_roin": ["* VIC12R1: El campo es alfanumérico", "* VIC12R2: El campo debe medir 3 caracteres", "* VIC12R3: El campo es obligatorio", "* VIC12R4: Debe existir en el catálogo de monedas CNBV"],
+        "validaciones_roip": ["* VPC12R1: El campo es alfanumérico", "* VPC12R2: El campo debe medir 3 caracteres", "* VPC12R3: El campo es obligatorio", "* VPC12R4: Debe existir en el catálogo de monedas CNBV"]
       },
       {
         "columna": "13",
@@ -632,9 +632,9 @@ include 'includes/header.php';
         "descripcion": "ACTIVIDAD ECONOMICA",
         "tipo": "Alfanumérico",
         "longitud": "7",
-        "validaciones_ros": ["* VRC28R1: El campo es alfanumérico", "* VRC28R2: El campo debe medir 7 caracteres", "* VRC28R3: El campo es obligatorio", "* VRC28R4: Debe existir en el catálogo de actividad económica CNBV (SCIAN)", "* VRC28R5: Usar nivel más específico disponible"],
-        "validaciones_roin": ["* VIC28R1: El campo es alfanumérico", "* VIC28R2: El campo debe medir 7 caracteres", "* VIC28R3: El campo es obligatorio", "* VIC28R4: Debe existir en el catálogo de actividad económica CNBV (SCIAN)"],
-        "validaciones_roip": ["* VPC28R1: El campo es alfanumérico", "* VPC28R2: El campo debe medir 7 caracteres", "* VPC28R3: El campo es obligatorio", "* VPC28R4: Debe existir en el catálogo de actividad económica CNBV (SCIAN)"]
+        "validaciones_ros": ["* VRC28R1: El campo es alfanumérico", "* VRC28R2: El campo debe medir 7 caracteres", "* VRC28R3: El campo es obligatorio", "* VRC28R4: Debe existir en el catálogo de actividad económica CNBV", "* VRC28R5: Usar nivel más específico disponible"],
+        "validaciones_roin": ["* VIC28R1: El campo es alfanumérico", "* VIC28R2: El campo debe medir 7 caracteres", "* VIC28R3: El campo es obligatorio", "* VIC28R4: Debe existir en el catálogo de actividad económica CNBV"],
+        "validaciones_roip": ["* VPC28R1: El campo es alfanumérico", "* VPC28R2: El campo debe medir 7 caracteres", "* VPC28R3: El campo es obligatorio", "* VPC28R4: Debe existir en el catálogo de actividad económica CNBV"]
       },
       {
         "columna": "29",

@@ -1,8 +1,19 @@
 <?php
+// Leer total de SOFOMes desde caché (para SEO - evita "Cargando..." en crawlers)
+$sofomesTotal = '2,000+'; // Default fallback
+$cacheFile = __DIR__ . '/api/condusef-cache.json';
+
+if (file_exists($cacheFile)) {
+    $cacheData = json_decode(file_get_contents($cacheFile), true);
+    if (isset($cacheData['total']) && $cacheData['total'] > 0) {
+        $sofomesTotal = number_format($cacheData['total'], 0, '.', ',');
+    }
+}
+
 // Variables para header.php
 $pageTitle = "SOFOMes México " . date('Y') . " | Directorio CONDUSEF";
-$pageDescription = "Directorio completo de SOFOMes en operación en México. Financiamiento PyMEs, constitución SOFOM ENR, lista CONDUSEF actualizada. Casos reales: Konfío, Kueski, más.";
-$pageKeywords = "SOFOM, SOFOM ENR, SOFOM FOVISSSTE, lista sofomes condusef, financiamiento pymes mexico, constituir sofom, kyc systems";
+$pageDescription = "{$sofomesTotal} SOFOMes México " . date('Y') . ": Directorio CONDUSEF actualizado. 70% aprobación vs 20% bancos. Casos reales: Konfío $1.3B, Kueski Top 250 Fintech, Crédito Para Ti #1 FOVISSSTE.";
+$pageKeywords = "SOFOM, SOFOM ENR, SOFOM FOVISSSTE, lista sofomes condusef, financiamiento pymes mexico, constituir sofom, kyc systems, mejores sofomes";
 $canonicalUrl = "https://sofomes.com/";
 $activeMenu = "inicio";
 
@@ -40,6 +51,218 @@ $schemaJson = <<<'SCHEMA'
     }
   }
   </script>
+
+  <!-- Schema.org - BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://sofomes.com/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema.org - HowTo (Constituir SOFOM) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Cómo Constituir una SOFOM ENR en México",
+    "description": "Proceso completo paso a paso para constituir una SOFOM ENR (Entidad No Regulada) en México, con costos reales y plazos regulatorios verificables.",
+    "totalTime": "P4M",
+    "estimatedCost": {
+      "@type": "MonetaryAmount",
+      "currency": "MXN",
+      "value": "285000",
+      "minValue": "85000",
+      "maxValue": "500000"
+    },
+    "step": [
+      {
+        "@type": "HowToStep",
+        "position": 1,
+        "name": "Denominación Social",
+        "text": "Solicitud a la Secretaría de Economía (SE). Debe incluir 'S.A. DE C.V. SOFOM E.N.R.' en la razón social.",
+        "url": "https://sofomes.com/#constituir",
+        "estimatedTime": "P7D"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 2,
+        "name": "Opinión CONDUSEF",
+        "text": "Solicitar opinión para uso de denominación SOFOM en SIPRES (Sistema de Registro de Prestadores de Servicios Financieros).",
+        "url": "https://sofomes.com/#constituir",
+        "estimatedTime": "P30D"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 3,
+        "name": "Constitución Notarial",
+        "text": "Acta constitutiva con objeto social específico, estatutos, y capital social mínimo de 50K UDIS.",
+        "url": "https://sofomes.com/#constituir",
+        "estimatedTime": "P30D",
+        "monetaryRequirement": {
+          "@type": "MonetaryAmount",
+          "currency": "MXN",
+          "value": "65000",
+          "minValue": "50000",
+          "maxValue": "80000"
+        }
+      },
+      {
+        "@type": "HowToStep",
+        "position": 4,
+        "name": "Dictamen Técnico CNBV",
+        "text": "Perito certificado evalúa sistema automatizado PLD/FT con checklist de 53 preguntas. Costo oficial: $30,241 MXN.",
+        "url": "https://sofomes.com/software-pld-ft-requisitos-cnbv.php",
+        "estimatedTime": "P50D",
+        "monetaryRequirement": {
+          "@type": "MonetaryAmount",
+          "currency": "MXN",
+          "value": "30241"
+        }
+      },
+      {
+        "@type": "HowToStep",
+        "position": 5,
+        "name": "Contrato SIC CONDUSEF",
+        "text": "Contratar con Sociedad de Información Crediticia (Buró de Crédito o Círculo de Crédito) para consulta de historial crediticio de clientes.",
+        "url": "https://sofomes.com/#constituir"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 6,
+        "name": "Inscripción SIPRES",
+        "text": "Registro oficial en Sistema de Registro de Prestadores de Servicios Financieros de CONDUSEF.",
+        "url": "https://sofomes.com/#constituir",
+        "estimatedTime": "P10D"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 7,
+        "name": "Clave SITI PLD/FT",
+        "text": "Registro en Sistema Integral de Tecnología e Información de la Unidad de Inteligencia Financiera (UIF) para reportes PLD/FT.",
+        "url": "https://sofomes.com/#constituir",
+        "estimatedTime": "P7D"
+      }
+    ],
+    "tool": [
+      {
+        "@type": "HowToTool",
+        "name": "Software PLD/FT Automatizado",
+        "description": "Sistema automatizado obligatorio para cumplimiento de Prevención de Lavado de Dinero y Financiamiento al Terrorismo. Debe cubrir 11 funciones obligatorias según CNBV."
+      },
+      {
+        "@type": "HowToTool",
+        "name": "Certificación Oficial de Cumplimiento",
+        "description": "Curso CNBV obligatorio de 100 horas + examen + registro. Costo: $16,558 MXN."
+      }
+    ],
+    "supply": [
+      {
+        "@type": "HowToSupply",
+        "name": "Capital Social",
+        "description": "Capital práctico recomendado: 50 millones de pesos para viabilidad operativa real (aunque legalmente no hay mínimo para SOFOM ENR)."
+      },
+      {
+        "@type": "HowToSupply",
+        "name": "Asesoría Legal Especializada",
+        "description": "Constitución + manuales + políticas + representación regulatoria. Costo: $100,000 - $300,000 MXN."
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema.org - ItemList (Casos de Éxito) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Casos de Éxito: 5 SOFOMes que Debes Conocer",
+    "description": "Ejemplos reales de SOFOMes exitosas en México con datos verificables y métricas de desempeño.",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "Organization",
+          "name": "Konfío",
+          "url": "https://sofomes.com/#casos-exito",
+          "description": "SOFOM enfocada en créditos en línea para PyMEs. Valuación $1,300M USD (2021). Inversionista: Softbank. Unicornio mexicano.",
+          "foundingDate": "2014",
+          "award": "Top 100 Fintech LATAM 2024"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "Organization",
+          "name": "Kueski",
+          "url": "https://sofomes.com/#casos-exito",
+          "description": "Primera SOFOM E.N.R. 100% digital. Top 250 Fintech mundial (CB Insights 2022). Mejor plataforma BNPL en Fintech Breakthrough Awards 2023.",
+          "foundingDate": "2012",
+          "award": "Top 250 Fintech Mundial"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "Organization",
+          "name": "Crédito Para Ti",
+          "url": "https://sofomes.com/#casos-exito",
+          "description": "SOFOM especializada en créditos FOVISSSTE para trabajadores del gobierno. #1 en financiamiento hipotecario para servidores públicos.",
+          "award": "Insignia CONDUSEF de Adultos Mayores"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "Organization",
+          "name": "Arrendadora y Factor Banorte",
+          "url": "https://sofomes.com/#casos-exito",
+          "description": "SOFOM E.R. del Grupo Financiero Banorte. Líder en arrendamiento y factoraje financiero para empresas.",
+          "award": "Regulación CNBV Integral"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "item": {
+          "@type": "Organization",
+          "name": "Cetelem",
+          "url": "https://sofomes.com/#casos-exito",
+          "description": "SOFOM E.R. con desempeño excepcional. Índice de Reclamación (IR) de solo 2.82 por cada 10,000 contratos, muy por debajo del promedio sectorial de 18.45.",
+          "award": "Bajo Índice de Quejas"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema.org - Table (Comparativa ER vs ENR) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Table",
+    "about": {
+      "@type": "Thing",
+      "name": "Comparativa SOFOM ER vs ENR",
+      "description": "Tabla comparativa de características entre SOFOM Entidad Regulada (ER) y SOFOM Entidad No Regulada (ENR) en México."
+    },
+    "name": "SOFOM ER vs ENR: Comparativa Completa",
+    "description": "Comparación detallada de las diferencias entre SOFOM ER (Entidad Regulada) con 38 entidades (1.8% del mercado) y SOFOM ENR (Entidad No Regulada) con 2,038 entidades (98.2% del mercado).",
+    "url": "https://sofomes.com/#que-es"
+  }
+  </script>
 SCHEMA;
 
 include 'includes/header.php';
@@ -53,7 +276,7 @@ include 'includes/header.php';
       <div class="hero-content">
         <div class="hero-text">
           <h1 class="hero-title">
-            <span id="hero-total">Cargando...</span> SOFOMes en Operación en México:<br>Directorio Completo CONDUSEF <span class="current-year"></span>
+            <span id="hero-total"><?php echo $sofomesTotal; ?></span> SOFOMes en Operación en México:<br>Directorio Completo CONDUSEF <span class="current-year"></span>
           </h1>
           <p class="hero-subtitle">
             La única base de datos pública searchable de <strong>todas las SOFOMes registradas</strong> en México.
@@ -169,7 +392,10 @@ include 'includes/header.php';
             <strong>Ejemplos SOFOM ENR:</strong> Konfío, Kueski, Crédito Para Ti
           </p>
 
-          <a href="#casos-exito" class="btn btn-outline">Ver Casos de Éxito →</a>
+          <div style="display: flex; gap: 1rem; margin-top: 1.5rem; flex-wrap: wrap;">
+            <a href="sofom-er-vs-enr.php" class="btn btn-primary">Ver Comparativa Completa ER vs ENR →</a>
+            <a href="#casos-exito" class="btn btn-outline">Ver Casos de Éxito →</a>
+          </div>
         </div>
       </div>
     </div>
@@ -465,6 +691,17 @@ include 'includes/header.php';
         <strong>Contexto del sector:</strong> Las SOFOMes son la figura financiera más numerosa en México,
         con más de 20 millones de clientes y cerca del 20% de penetración en el financiamiento total del sector privado.
       </div>
+
+      <div class="cta-box" style="margin-top: 2rem; text-align: center;">
+        <h3 style="margin-bottom: 1rem;">¿Buscas la Mejor SOFOM para tu Negocio?</h3>
+        <p style="margin-bottom: 1.5rem;">
+          Consulta nuestro ranking completo con las <strong>Top 10 mejores SOFOMes de México 2025</strong>,
+          incluyendo análisis de tasas, aprobación, portafolio y reputación verificada.
+        </p>
+        <a href="mejores-sofomes-mexico-2025.php" class="btn btn-primary btn-lg">
+          Ver Ranking Completo Top 10 →
+        </a>
+      </div>
     </div>
   </section>
 
@@ -569,161 +806,66 @@ include 'includes/header.php';
     </div>
   </section>
 
-  <!-- Section: Software PLD/FT -->
+  <!-- Section: Software PLD/FT (Resumen) -->
   <section id="software-pld" class="section">
     <div class="container">
-      <h2 class="section-title">Software PLD/FT para SOFOMes: Requisitos CNBV <span class="current-year"></span></h2>
+      <h2 class="section-title">Software PLD/FT: Requisito Obligatorio para SOFOMes</h2>
       <p class="section-subtitle">
-        Sistema automatizado obligatorio para cumplir con las Disposiciones de Carácter General (DCG)
-        en materia de Prevención de Lavado de Dinero y Financiamiento al Terrorismo.
+        Sistema automatizado obligatorio según CNBV para Prevención de Lavado de Dinero.
+        11 funciones obligatorias + Dictamen Técnico.
       </p>
 
-      <div style="background: var(--neutral-50); padding: 2rem; border-radius: var(--border-radius-lg); margin-top: 2rem;">
-        <h3 style="color: var(--primary-900); margin-bottom: 1.5rem; font-size: 1.5rem;">
-          📋 SISTEMAS AUTOMATIZADOS
-        </h3>
-
-        <p style="margin-bottom: 1.5rem; line-height: 1.7;">
-          Cada Entidad, como parte de su Infraestructura Tecnológica, deberá contar con sistemas
-          automatizados que desarrollen, entre otras, las siguientes funciones:
-        </p>
-
-        <div style="display: grid; gap: 1rem;">
-          <!-- Fracción I -->
-          <div style="background: white; padding: 1.5rem; border-radius: var(--border-radius); border-left: 4px solid var(--primary-500);">
-            <p style="margin: 0;">
-              <strong style="color: var(--primary-600);">I.</strong>
-              Conservar y actualizar, así como permitir la consulta de los datos relativos a los registros de la
-              información que obre en el respectivo expediente de identificación de cada Cliente.
-            </p>
-          </div>
-
-          <!-- Fracción II -->
-          <div style="background: white; padding: 1.5rem; border-radius: var(--border-radius); border-left: 4px solid var(--primary-500);">
-            <p style="margin: 0 0 1rem 0;">
-              <strong style="color: var(--primary-600);">II.</strong>
-              Generar y transmitir de forma segura a la Secretaría, por conducto de la Comisión, la información
-              relativa a los reportes de Operaciones Relevantes, Operaciones Inusuales y Operaciones Internas
-              Preocupantes a que se refieren las presentes Disposiciones, así como aquella que deba comunicar a la
-              Secretaría o a la Comisión, en los términos y conforme a los plazos establecidos en las presentes
-              Disposiciones.
-            </p>
-            <p style="margin: 0; padding-left: 1rem; border-left: 3px solid var(--neutral-300); font-size: 0.9rem; color: var(--neutral-700);">
-              <em>Como excepción a lo señalado en esta fracción, las Entidades podrán generar de forma manual el reporte
-              a que se refiere la 10ª Ter de las presentes Disposiciones.</em>
-            </p>
-          </div>
-
-          <!-- Fracción III -->
-          <div style="background: white; padding: 1.5rem; border-radius: var(--border-radius); border-left: 4px solid var(--primary-500);">
-            <p style="margin: 0;">
-              <strong style="color: var(--primary-600);">III.</strong>
-              Clasificar los tipos de Operaciones o productos financieros que ofrezcan las Entidades a sus Clientes o
-              Usuarios, con base en los criterios que establezca la propia Entidad, a fin de detectar posibles Operaciones
-              Inusuales.
-            </p>
-          </div>
-
-          <!-- Fracción IV -->
-          <div style="background: white; padding: 1.5rem; border-radius: var(--border-radius); border-left: 4px solid var(--primary-500);">
-            <p style="margin: 0;">
-              <strong style="color: var(--primary-600);">IV.</strong>
-              Detectar y monitorear las Operaciones realizadas por un mismo Cliente, o por un mismo Usuario de los
-              señalados en la 14ª, 15ª y 16ª de las presentes Disposiciones, así como aquellas previstas en la fracción IV
-              de la 30ª de estas Disposiciones.
-            </p>
-          </div>
-
-          <!-- Fracción V -->
-          <div style="background: white; padding: 1.5rem; border-radius: var(--border-radius); border-left: 4px solid var(--primary-500);">
-            <p style="margin: 0;">
-              <strong style="color: var(--primary-600);">V.</strong>
-              Ejecutar el sistema de alertas contemplado en la 21ª de las presentes Disposiciones.
-            </p>
-          </div>
-
-          <!-- Fracción V Bis -->
-          <div style="background: white; padding: 1.5rem; border-radius: var(--border-radius); border-left: 4px solid var(--primary-500);">
-            <p style="margin: 0;">
-              <strong style="color: var(--primary-600);">V. Bis.</strong>
-              Contribuir a la detección, seguimiento y análisis de las posibles Operaciones Inusuales y
-              Operaciones Internas Preocupantes, considerando al menos, la información que haya sido proporcionada por
-              el Cliente al inicio de la relación comercial, los registros históricos de las Operaciones realizadas por este, el
-              comportamiento transaccional, los saldos promedio y cualquier otro parámetro que pueda aportar mayores
-              elementos para el análisis de este tipo de Operaciones.
-            </p>
-          </div>
-
-          <!-- Fracción VI -->
-          <div style="background: white; padding: 1.5rem; border-radius: var(--border-radius); border-left: 4px solid var(--primary-500);">
-            <p style="margin: 0;">
-              <strong style="color: var(--primary-600);">VI.</strong>
-              Agrupar en una base consolidada los diferentes contratos de un mismo Cliente, a efecto de controlar y
-              dar seguimiento integral a sus saldos y Operaciones.
-            </p>
-          </div>
-
-          <!-- Fracción VII -->
-          <div style="background: white; padding: 1.5rem; border-radius: var(--border-radius); border-left: 4px solid var(--primary-500);">
-            <p style="margin: 0;">
-              <strong style="color: var(--primary-600);">VII.</strong>
-              Conservar registros históricos de las posibles Operaciones Inusuales y Operaciones Internas
-              Preocupantes.
-            </p>
-          </div>
-
-          <!-- Fracción VIII -->
-          <div style="background: white; padding: 1.5rem; border-radius: var(--border-radius); border-left: 4px solid var(--primary-500);">
-            <p style="margin: 0;">
-              <strong style="color: var(--primary-600);">VIII.</strong>
-              Servir de medio para que el personal de las Entidades reporte a las áreas internas que las mismas
-              determinen, de forma segura, confidencial y auditable, las posibles Operaciones Inusuales u Operaciones
-              Internas Preocupantes.
-            </p>
-          </div>
-
-          <!-- Fracción IX -->
-          <div style="background: white; padding: 1.5rem; border-radius: var(--border-radius); border-left: 4px solid var(--primary-500);">
-            <p style="margin: 0;">
-              <strong style="color: var(--primary-600);">IX.</strong>
-              Mantener esquemas de seguridad de la información procesada, que garanticen la integridad,
-              disponibilidad, auditabilidad y confidencialidad de la misma.
-            </p>
-          </div>
-
-          <!-- Fracción IX Bis -->
-          <div style="background: white; padding: 1.5rem; border-radius: var(--border-radius); border-left: 4px solid var(--primary-500);">
-            <p style="margin: 0;">
-              <strong style="color: var(--primary-600);">IX. Bis.</strong>
-              Proveer la información que las Entidades incluirán en la metodología que deben elaborar conforme
-              a lo establecido en la 17ª-1 de estas Disposiciones.
-            </p>
-          </div>
-
-          <!-- Fracción X -->
-          <div style="background: white; padding: 1.5rem; border-radius: var(--border-radius); border-left: 4px solid var(--primary-500);">
-            <p style="margin: 0;">
-              <strong style="color: var(--primary-600);">X.</strong>
-              Ejecutar un sistema de alertas respecto de aquellas operaciones que se pretendan llevar a cabo con
-              personas referidas en la fracción X de la 30ª de las presentes Disposiciones, con Personas Políticamente
-              Expuestas, de conformidad con lo señalado en la 58ª de estas Disposiciones, así como con quienes se
-              encuentren dentro de la Lista de Personas Bloqueadas.
-            </p>
-          </div>
-
-          <!-- Fracción XI -->
-          <div style="background: white; padding: 1.5rem; border-radius: var(--border-radius); border-left: 4px solid var(--primary-500);">
-            <p style="margin: 0;">
-              <strong style="color: var(--primary-600);">XI.</strong>
-              Facilitar la verificación de los datos y documentos proporcionados de forma no presencial por el
-              Cliente.
-            </p>
+      <div class="grid grid-2" style="margin-top: 2rem;">
+        <div style="background: linear-gradient(135deg, #1F2937 0%, #111827 100%); color: white; padding: 2.5rem; border-radius: var(--border-radius-lg);">
+          <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">📋 11 Funciones Obligatorias CNBV</h3>
+          <ul style="margin: 0; line-height: 1.8;">
+            <li>✅ <strong>Expedientes KYC digitales</strong> con consulta instantánea</li>
+            <li>✅ <strong>Reportes RIPS F41/F36</strong> automáticos a UIF/CNBV</li>
+            <li>✅ <strong>Alertas en tiempo real</strong> de operaciones sospechosas</li>
+            <li>✅ <strong>Detección automática</strong> PPE y listas bloqueadas (OFAC, ONU, SAT)</li>
+            <li>✅ <strong>Monitoreo transaccional</strong> con Machine Learning</li>
+            <li>✅ <strong>Seguridad bancaria:</strong> Cifrado AES-256, MFA, auditoría</li>
+          </ul>
+          <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.2);">
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; text-align: center;">
+              <div>
+                <strong style="display: block; font-size: 1.5rem; color: var(--success-400);">11</strong>
+                <span style="font-size: 0.875rem; opacity: 0.8;">Funciones</span>
+              </div>
+              <div>
+                <strong style="display: block; font-size: 1.5rem; color: var(--warning-400);">53</strong>
+                <span style="font-size: 0.875rem; opacity: 0.8;">Checklist</span>
+              </div>
+              <div>
+                <strong style="display: block; font-size: 1.5rem; color: var(--danger-400);">$30K</strong>
+                <span style="font-size: 0.875rem; opacity: 0.8;">Dictamen</span>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="alert alert-danger" style="margin-top: 2rem;">
-          <strong>⚠️ Cumplimiento Obligatorio:</strong> La falta de sistema automatizado puede resultar en
-          <strong>cancelación del registro CONDUSEF</strong> y sanciones millonarias por la CNBV.
+        <div>
+          <h3 style="margin-bottom: 1rem;">Costos de Implementación</h3>
+          <div style="background: var(--neutral-50); padding: 1.5rem; border-radius: var(--border-radius); margin-bottom: 1rem;">
+            <p style="margin: 0; margin-bottom: 0.5rem;"><strong>SOFOM Pequeña</strong> (< 500 clientes)</p>
+            <p style="margin: 0; font-size: 1.25rem; color: var(--success-600); font-weight: 600;">$180K - $330K MXN/año</p>
+          </div>
+          <div style="background: var(--neutral-50); padding: 1.5rem; border-radius: var(--border-radius); margin-bottom: 1rem;">
+            <p style="margin: 0; margin-bottom: 0.5rem;"><strong>SOFOM Mediana</strong> (500-5K clientes)</p>
+            <p style="margin: 0; font-size: 1.25rem; color: var(--warning-600); font-weight: 600;">$330K - $830K MXN/año</p>
+          </div>
+          <div style="background: var(--neutral-50); padding: 1.5rem; border-radius: var(--border-radius); margin-bottom: 1.5rem;">
+            <p style="margin: 0; margin-bottom: 0.5rem;"><strong>SOFOM Grande/ER</strong> (>5K clientes)</p>
+            <p style="margin: 0; font-size: 1.25rem; color: var(--danger-600); font-weight: 600;">$930K - $4.5M+ MXN/año</p>
+          </div>
+
+          <div class="alert alert-danger">
+            <strong>⚠️ Obligatorio:</strong> La falta de software PLD/FT resulta en <strong>cancelación de registro CONDUSEF</strong> y multas millonarias.
+          </div>
+
+          <a href="software-pld-ft-requisitos-cnbv.php" class="btn btn-primary btn-lg" style="width: 100%; margin-top: 1rem;">
+            Ver 11 Funciones + Checklist 53 Preguntas →
+          </a>
         </div>
       </div>
     </div>
@@ -745,7 +887,7 @@ include 'includes/header.php';
             Catálogos RIPS F36
           </h3>
           <p style="color: var(--neutral-700); margin-bottom: 1.5rem; line-height: 1.7;">
-            6 catálogos oficiales CNBV con <strong>5,159 registros</strong>: Actividad Económica, Localidades, Monedas, Instrumentos Monetarios y más. Búsqueda en tiempo real y exportación CSV.
+            6 catálogos oficiales CNBV: Actividad Económica, Localidades, Monedas, Instrumentos Monetarios y más. Búsqueda en tiempo real.
           </p>
           <div style="display: flex; gap: 1rem; justify-content: center; margin-bottom: 1.5rem; flex-wrap: wrap;">
             <div style="padding: 0.5rem 1rem; background: var(--primary-50); border-radius: var(--border-radius); font-size: 0.875rem;">

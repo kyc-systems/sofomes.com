@@ -1,7 +1,7 @@
 <?php
 // Variables para header.php
 $pageTitle = "Catálogo: Actividad Económica | SOFOMES.COM";
-$pageDescription = "Catálogo completo de 1,263 actividades económicas SCIAN para reportes RIPS F36. Clasificación oficial CNBV para SOFOMes en PLD/FT.";
+$pageDescription = "Catálogo completo de 1,263 actividades económicas para reportes RIPS F36. Clasificación oficial CNBV para SOFOMes en PLD/FT.";
 $pageKeywords = "catalogo cnbv, rips f36, pld sofom, catálogo: actividad económica";
 $canonicalUrl = "https://sofomes.com/catalogos/actividad-economica";
 $activeMenu = "catalogos";
@@ -9,6 +9,21 @@ $cssPath = "../assets/css/main.css";
 $useDatatables = true;
 
 include '../includes/header.php';
+
+// Generate Dataset Schema for SEO
+include '../includes/dataset-schema.php';
+$datasetSchema = generateDatasetSchema([
+    'name' => 'Catálogo de Actividades Económicas CNBV RIPS F36',
+    'description' => 'Catálogo oficial con 1,263 actividades económicas según el clasificación oficial para reportes regulatorios PLD/FT ante CNBV. Campo 28 del layout F36.',
+    'url' => 'https://sofomes.com/catalogos/actividad-economica',
+    'keywords' => ['RIPS F36', 'CNBV', 'actividad económica', 'PLD/FT', 'SOFOM', 'reportes regulatorios', 'prevención lavado dinero'],
+    'jsonFile' => 'actividad-economica.json',
+    'recordCount' => 1263,
+    'field' => '28',
+    'fieldDescription' => 'Actividad Económica del cliente según clasificación'
+]);
+
+echo $datasetSchema;
 ?>
 
 
@@ -19,7 +34,7 @@ include '../includes/header.php';
         📊 Actividad Económica RIPS F36
       </h1>
       <p class="hero-subtitle" style="text-align: center;">
-        <span id="total-count">1,263</span> actividades según SCIAN adaptado a CNBV
+        <span id="total-count">1,263</span> actividades CNBV
       </p>
     </div>
   </section>
@@ -27,16 +42,113 @@ include '../includes/header.php';
   <section class="section">
     <div class="container">
       <div class="alert alert-info">
-        <strong>📋 Catálogo oficial CNBV</strong><br>
-        Clasificación de actividades económicas de clientes basada en el Sistema de Clasificación Industrial de América del Norte (SCIAN) adaptado para reportes RIPS F36.
+        <strong>📋 ¿Para qué sirve este catálogo?</strong><br>
+        Clasificación oficial de actividades económicas de tus clientes. Se reporta en la <strong>columna 28 del layout F36</strong> para todos los reportes PLD/FT.
       </div>
 
+      <!-- Introducción práctica -->
+      <article class="catalog-guide">
+        <h2>💼 ¿Cuándo y cómo usar este catálogo?</h2>
+
+        <p>
+          Al clasificar a tus clientes, debes asignar la actividad económica que mejor describe su giro comercial.
+          Esta información es <strong>obligatoria</strong> en reportes de operaciones relevantes, inusuales e internas preocupantes.
+        </p>
+
+        <section>
+          <h3>📍 Dónde se reporta</h3>
+          <ul>
+            <li><strong>Campo 28:</strong> "Actividad Económica" en layout F36</li>
+            <li><strong>Formato:</strong> Código numérico de 6 dígitos</li>
+            <li><strong>Obligatorio:</strong> Sí, en todos los reportes RIPS F36</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>⚠️ Uso en Matriz de Riesgo</h3>
+          <p>
+            <strong>Recomendación:</strong> Asigna un nivel de riesgo a cada actividad económica en tu matriz de riesgo.
+            Algunas actividades son más vulnerables según la LFPIORPI:
+          </p>
+          <ul>
+            <li><strong>Alto riesgo:</strong> Casas de cambio, joyerías, compraventa de metales/piedras preciosas, bienes raíces</li>
+            <li><strong>Riesgo medio:</strong> Comercio al por mayor, servicios financieros, construcción</li>
+            <li><strong>Bajo riesgo:</strong> Servicios profesionales, manufactura, agricultura</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>💡 Ejemplos de uso práctico</h3>
+          <div class="examples-grid">
+            <div class="catalog-example">
+              <strong>Ejemplo 1 - Cliente SOFOM</strong>
+              <dl>
+                <dt>Cliente:</dt>
+                <dd>"Joyería El Diamante"</dd>
+                <dt>Actividad:</dt>
+                <dd><code>464121</code> - Comercio al por menor de joyería y relojes</dd>
+                <dt>Riesgo recomendado:</dt>
+                <dd><span class="risk-high">ALTO</span> (LFPIORPI Art. 17, Fracción XIV)</dd>
+                <dt>Razón:</dt>
+                <dd>Comercio de metales y piedras preciosas, vulnerable a lavado de dinero.</dd>
+              </dl>
+            </div>
+
+            <div class="catalog-example">
+              <strong>Ejemplo 2 - Cliente SOFOM</strong>
+              <dl>
+                <dt>Cliente:</dt>
+                <dd>"Constructora Torres S.A."</dd>
+                <dt>Actividad:</dt>
+                <dd><code>236111</code> - Edificación residencial</dd>
+                <dt>Riesgo recomendado:</dt>
+                <dd><span class="risk-medium">MEDIO</span></dd>
+                <dt>Razón:</dt>
+                <dd>Montos elevados, pero sector regulado.</dd>
+              </dl>
+            </div>
+
+            <div class="catalog-example">
+              <strong>Ejemplo 3 - Cliente SOFOM</strong>
+              <dl>
+                <dt>Cliente:</dt>
+                <dd>"Despacho Contable López y Asociados"</dd>
+                <dt>Actividad:</dt>
+                <dd><code>541211</code> - Servicios de contabilidad</dd>
+                <dt>Riesgo recomendado:</dt>
+                <dd><span class="risk-low">BAJO</span></dd>
+                <dt>Razón:</dt>
+                <dd>Servicios profesionales, operaciones predecibles.</dd>
+              </dl>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h3>🎯 Actividades de mayor vigilancia</h3>
+          <p>Según LFPIORPI y lineamientos CNBV, presta especial atención a:</p>
+          <ul>
+            <li>Comercio de vehículos automotores</li>
+            <li>Inmobiliarias y desarrolladores</li>
+            <li>Casas de empeño</li>
+            <li>Joyerías y relojerías</li>
+            <li>Arte y antigüedades</li>
+            <li>Casinos y juegos de azar</li>
+          </ul>
+        </section>
+      </article>
+
+      <h2 class="section-title">📋 Catálogo completo de actividades económicas</h2>
+
       <div class="directory-table">
-        <table id="catalog-table">
+        <table id="catalog-table" aria-describedby="catalog-description">
+          <caption class="sr-only">
+            Catálogo completo de 1,263 actividades económicas CNBV para reportes RIPS F36
+          </caption>
           <thead>
             <tr>
-              <th style="width: 120px; text-align: center;">Clave</th>
-              <th>Actividad Económica</th>
+              <th scope="col" style="width: 120px; text-align: center;">Clave</th>
+              <th scope="col">Actividad Económica</th>
             </tr>
           </thead>
           <tbody id="table-body">
@@ -48,7 +160,18 @@ include '../includes/header.php';
             </tr>
           </tbody>
         </table>
+
+        <p id="catalog-description" class="sr-only">
+          Tabla con 1,263 actividades económicas oficiales de México según el Sistema de
+          Clasificación oficial. Cada fila contiene una
+          clave numérica de 6 dígitos y la descripción completa de la actividad económica.
+          Este catálogo se reporta en el Campo 28 del layout RIPS F36 para cumplimiento
+          PLD/FT ante la CNBV.
+        </p>
       </div>
+
+      <?php echo generateDownloadButton('actividad-economica.json', 1263); ?>
+
     </div>
   </section>
 

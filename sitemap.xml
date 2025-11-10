@@ -4,64 +4,169 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-
+<!-- Páginas principales -->
 <url>
   <loc>https://sofomes.com/</loc>
-  <lastmod>2025-11-09T16:00:00+00:00</lastmod>
+  <lastmod>2025-11-10T18:00:00+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://sofomes.com/catalogos-rips-f36.php</loc>
-  <lastmod>2025-11-09T16:00:00+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://sofomes.com/lista-sofomes-mexico.php</loc>
+  <lastmod>2025-11-10T18:00:00+00:00</lastmod>
+  <priority>0.90</priority>
 </url>
+
+<!-- Páginas de contenido estratégico -->
+<url>
+  <loc>https://sofomes.com/sofom-er-vs-enr.php</loc>
+  <lastmod>2025-11-10T18:00:00+00:00</lastmod>
+  <priority>0.85</priority>
+</url>
+<url>
+  <loc>https://sofomes.com/mejores-sofomes-mexico-2025.php</loc>
+  <lastmod>2025-11-10T18:00:00+00:00</lastmod>
+  <priority>0.85</priority>
+</url>
+<url>
+  <loc>https://sofomes.com/software-pld-ft-requisitos-cnbv.php</loc>
+  <lastmod>2025-11-10T18:00:00+00:00</lastmod>
+  <priority>0.85</priority>
+</url>
+
+<!-- Reportes y layouts -->
 <url>
   <loc>https://sofomes.com/reportes-regulatorios-cnbv.php</loc>
-  <lastmod>2025-11-09T16:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://sofomes.com/lista-sofomes-mexico.php</loc>
-  <lastmod>2025-11-09T16:00:00+00:00</lastmod>
+  <lastmod>2025-11-10T18:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sofomes.com/layout-reportes-pld.php</loc>
-  <lastmod>2025-11-09T16:00:00+00:00</lastmod>
+  <lastmod>2025-11-10T18:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<!-- Catálogos - Índices principales -->
+<url>
+  <loc>https://sofomes.com/catalogos-rips.php</loc>
+  <lastmod>2025-11-10T18:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://sofomes.com/catalogos/actividad-economica.php</loc>
-  <lastmod>2025-11-09T16:00:00+00:00</lastmod>
-  <priority>0.64</priority>
+  <loc>https://sofomes.com/catalogos-er/</loc>
+  <lastmod>2025-11-10T18:00:00+00:00</lastmod>
+  <priority>0.75</priority>
 </url>
 <url>
-  <loc>https://sofomes.com/catalogos/localidades.php</loc>
-  <lastmod>2025-11-09T16:00:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://sofomes.com/catalogos/monedas.php</loc>
-  <lastmod>2025-11-09T16:00:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://sofomes.com/catalogos/tipo-operacion-asesor.php</loc>
-  <lastmod>2025-11-09T16:00:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://sofomes.com/catalogos/tipo-reporte.php</loc>
-  <lastmod>2025-11-09T16:00:00+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://sofomes.com/catalogos/instrumento-monetario.php</loc>
-  <lastmod>2025-11-09T16:00:00+00:00</lastmod>
-  <priority>0.64</priority>
+  <loc>https://sofomes.com/catalogos-enr/</loc>
+  <lastmod>2025-11-10T18:00:00+00:00</lastmod>
+  <priority>0.75</priority>
 </url>
 
+<!-- Catálogos SOFOM ER (F41) -->
+<url>
+  <loc>https://sofomes.com/catalogos-er/actividad-economica</loc>
+  <lastmod>2025-11-10T18:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://sofomes.com/catalogos-er/monedas</loc>
+  <lastmod>2025-11-10T18:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://sofomes.com/catalogos-er/pais</loc>
+  <lastmod>2025-11-10T18:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://sofomes.com/catalogos-er/tipo-operacion</loc>
+  <lastmod>2025-11-10T18:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://sofomes.com/catalogos-er/instrumento-monetario</loc>
+  <lastmod>2025-11-10T18:00:00+00:00</lastmod>
+  <priority>0.65</priority>
+</url>
+<url>
+  <loc>https://sofomes.com/catalogos-er/localidades</loc>
+  <lastmod>2025-11-10T18:00:00+00:00</lastmod>
+  <priority>0.65</priority>
+</url>
+<url>
+  <loc>https://sofomes.com/catalogos-er/tipo-reporte</loc>
+  <lastmod>2025-11-10T18:00:00+00:00</lastmod>
+  <priority>0.65</priority>
+</url>
+
+<!-- Catálogos SOFOM ENR (F36) -->
+<url>
+  <loc>https://sofomes.com/catalogos-enr/actividad-economica</loc>
+  <lastmod>2025-11-10T18:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://sofomes.com/catalogos-enr/monedas</loc>
+  <lastmod>2025-11-10T18:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://sofomes.com/catalogos-enr/tipo-operacion-sofom</loc>
+  <lastmod>2025-11-10T18:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://sofomes.com/catalogos-enr/tipo-operacion-asesores-inv</loc>
+  <lastmod>2025-11-10T18:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://sofomes.com/catalogos-enr/instrumento-monetario</loc>
+  <lastmod>2025-11-10T18:00:00+00:00</lastmod>
+  <priority>0.65</priority>
+</url>
+<url>
+  <loc>https://sofomes.com/catalogos-enr/localidades</loc>
+  <lastmod>2025-11-10T18:00:00+00:00</lastmod>
+  <priority>0.65</priority>
+</url>
+<url>
+  <loc>https://sofomes.com/catalogos-enr/tipo-reporte</loc>
+  <lastmod>2025-11-10T18:00:00+00:00</lastmod>
+  <priority>0.65</priority>
+</url>
+
+<!-- Catálogos legacy (raíz - redirigen a ENR) -->
+<url>
+  <loc>https://sofomes.com/catalogos/actividad-economica</loc>
+  <lastmod>2025-11-10T18:00:00+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://sofomes.com/catalogos/monedas</loc>
+  <lastmod>2025-11-10T18:00:00+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://sofomes.com/catalogos/localidades</loc>
+  <lastmod>2025-11-10T18:00:00+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://sofomes.com/catalogos/tipo-operacion-asesor</loc>
+  <lastmod>2025-11-10T18:00:00+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://sofomes.com/catalogos/tipo-reporte</loc>
+  <lastmod>2025-11-10T18:00:00+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://sofomes.com/catalogos/instrumento-monetario</loc>
+  <lastmod>2025-11-10T18:00:00+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
 
 </urlset>

@@ -1,0 +1,165 @@
+
+/* Catalog Guide Styles */
+.catalog-guide {
+  background: #F9FAFB;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  border-left: 4px solid var(--primary-600);
+}
+
+.catalog-guide h2 {
+  margin-top: 0;
+  color: var(--primary-600);
+  font-size: 1.5rem;
+}
+
+.catalog-guide h3 {
+  color: var(--primary-600);
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+.catalog-guide ul {
+  margin-left: 1.5rem;
+  line-height: 1.8;
+}
+
+.catalog-example {
+  background: white;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+.catalog-example strong {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.risk-high {
+  color: #DC2626;
+  font-weight: 600;
+}
+
+.risk-medium {
+  color: #F59E0B;
+  font-weight: 600;
+}
+
+.risk-low {
+  color: #059669;
+  font-weight: 600;
+}
+
+.catalog-tip {
+  background: #FEF3C7;
+  padding: 1rem;
+  border-left: 4px solid #F59E0B;
+  margin-top: 1.5rem;
+  border-radius: 4px;
+}
+
+.catalog-warning {
+  background: #FEE2E2;
+  padding: 1rem;
+  border-left: 4px solid #DC2626;
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
+}
+
+/* Additional Semantic Catalog Styles */
+.catalog-guide p {
+  margin-bottom: 1rem;
+}
+
+.catalog-guide section {
+  margin-bottom: 2rem;
+}
+
+.catalog-guide section:last-child {
+  margin-bottom: 0;
+}
+
+.catalog-info-box {
+  background: #E0F2FE;
+  padding: 1rem;
+  border-left: 4px solid #0284C7;
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
+}
+
+.examples-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.catalog-example dl {
+  margin: 0.5rem 0 0 0;
+}
+
+.catalog-example dt {
+  font-weight: 600;
+  color: var(--neutral-700);
+  margin-top: 0.5rem;
+}
+
+.catalog-example dd {
+  margin: 0 0 0.5rem 0;
+}
+
+.catalog-example code {
+  background: var(--neutral-100);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: monospace;
+  font-weight: 600;
+}
+
+/* Colored report type boxes for tipo-reporte.php */
+.report-box {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+.report-box-relevant {
+  border-left: 4px solid #059669;
+}
+
+.report-box-unusual {
+  border-left: 4px solid #F59E0B;
+}
+
+.report-box-concerning {
+  border-left: 4px solid #DC2626;
+}
+
+.report-alert {
+  padding: 0.75rem;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+.report-alert-warning {
+  background: #FEF3C7;
+}
+
+.report-alert-danger {
+  background: #FEE2E2;
+}
+
+.report-resources {
+  background: #E0F2FE;
+  padding: 1rem;
+  border-left: 4px solid #0284C7;
+  margin-top: 1.5rem;
+  border-radius: 4px;
+}
+
+.report-resources a {
+  color: #0284C7;
+  font-weight: 600;
+}

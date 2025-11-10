@@ -1,0 +1,302 @@
+<?php
+$pageTitle = "SOFOM ER vs ENR: Diferencias y Comparativa | SOFOMES.COM";
+$pageDescription = "Guía completa de diferencias entre SOFOM ER (Entidad Regulada) y SOFOM ENR (Entidad No Regulada). Supervisión CNBV, catálogos RIPS F41 vs F36, costos y requisitos.";
+$pageKeywords = "sofom er, sofom enr, diferencias, entidad regulada, entidad no regulada, cnbv, rips f41, rips f36";
+$canonicalUrl = "https://sofomes.com/sofom-er-vs-enr";
+$activeMenu = "";
+$cssPath = "assets/css/main.css";
+include 'includes/header.php';
+?>
+
+<section class="hero" style="padding: 4rem 0; background: linear-gradient(135deg, #1F2937 0%, #042c64 50%, #059669 100%);">
+  <div class="container">
+    <h1 class="hero-title" style="text-align: center; font-size: 3rem; color: white;">
+      SOFOM ER vs SOFOM ENR
+    </h1>
+    <p class="hero-subtitle" style="text-align: center; font-size: 1.25rem; color: rgba(255,255,255,0.9);">
+      Guía completa para identificar tu tipo de SOFOM y entender las diferencias regulatorias
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    
+    <!-- Quick Comparison Cards -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 4rem;">
+      
+      <div style="background: white; border: 3px solid #374151; border-radius: 12px; padding: 2rem;">
+        <div style="text-align: center; margin-bottom: 1.5rem;">
+          <span class="badge-er" style="font-size: 1.2rem; padding: 0.75rem 1.5rem;">SOFOM ER</span>
+        </div>
+        <h2 style="text-align: center; margin-bottom: 1rem; color: #1F2937;">Entidad Regulada</h2>
+        <p style="text-align: center; color: var(--neutral-600); font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem;">
+          ~10% del mercado
+        </p>
+        <p style="text-align: center; color: var(--neutral-600); margin-bottom: 1.5rem;">
+          ~500 SOFOMes ER en México
+        </p>
+        <ul style="list-style: none; padding: 0;">
+          <li style="padding: 0.5rem 0; border-bottom: 1px solid #E5E7EB;">✓ Supervisión prudencial COMPLETA</li>
+          <li style="padding: 0.5rem 0; border-bottom: 1px solid #E5E7EB;">✓ Vinculadas a bancos/holdings</li>
+          <li style="padding: 0.5rem 0; border-bottom: 1px solid #E5E7EB;">✓ Pueden emitir valores públicos</li>
+          <li style="padding: 0.5rem 0; border-bottom: 1px solid #E5E7EB;">✓ Reportes RIPS F41</li>
+          <li style="padding: 0.5rem 0;">✓ Operaciones internacionales</li>
+        </ul>
+      </div>
+
+      <div style="background: white; border: 3px solid #059669; border-radius: 12px; padding: 2rem;">
+        <div style="text-align: center; margin-bottom: 1.5rem;">
+          <span class="badge-enr" style="font-size: 1.2rem; padding: 0.75rem 1.5rem;">SOFOM ENR</span>
+        </div>
+        <h2 style="text-align: center; margin-bottom: 1rem; color: #059669;">Entidad No Regulada</h2>
+        <p style="text-align: center; color: var(--neutral-600); font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem;">
+          ~90% del mercado
+        </p>
+        <p style="text-align: center; color: var(--neutral-600); margin-bottom: 1.5rem;">
+          ~4,500 SOFOMes ENR en México
+        </p>
+        <ul style="list-style: none; padding: 0;">
+          <li style="padding: 0.5rem 0; border-bottom: 1px solid #E5E7EB;">✓ Supervisión SOLO en PLD/FT</li>
+          <li style="padding: 0.5rem 0; border-bottom: 1px solid #E5E7EB;">✓ Independientes</li>
+          <li style="padding: 0.5rem 0; border-bottom: 1px solid #E5E7EB;">✓ NO emiten valores públicos</li>
+          <li style="padding: 0.5rem 0; border-bottom: 1px solid #E5E7EB;">✓ Reportes RIPS F36</li>
+          <li style="padding: 0.5rem 0;">✓ Operaciones nacionales principalmente</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Main Differences -->
+    <h2 style="text-align: center; margin-bottom: 2rem; font-size: 2.5rem;">📊 Diferencias Principales</h2>
+
+    <div class="directory-table" style="margin-bottom: 3rem;">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col" style="width: 30%;">Aspecto</th>
+            <th scope="col">SOFOM ER</th>
+            <th scope="col">SOFOM ENR</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Supervisión CNBV</strong></td>
+            <td>✅ Completa (prudencial + PLD/FT)</td>
+            <td>⚠️ Solo PLD/FT</td>
+          </tr>
+          <tr>
+            <td><strong>Vinculación</strong></td>
+            <td>✅ Con banco o holding financiero</td>
+            <td>❌ Independiente</td>
+          </tr>
+          <tr>
+            <td><strong>Emisión valores públicos</strong></td>
+            <td>✅ Permitido</td>
+            <td>❌ No permitido</td>
+          </tr>
+          <tr>
+            <td><strong>Capital mínimo</strong></td>
+            <td>$5M - $15M MXN</td>
+            <td>$300K - $1M MXN</td>
+          </tr>
+          <tr>
+            <td><strong>Reportes RIPS</strong></td>
+            <td><span class="badge-format">F41</span> (7 catálogos)</td>
+            <td><span class="badge-format">F36</span> (7 catálogos)</td>
+          </tr>
+          <tr>
+            <td><strong>Catálogo País</strong></td>
+            <td>✅ 245 países</td>
+            <td>❌ No aplica</td>
+          </tr>
+          <tr>
+            <td><strong>Tipos de Operación</strong></td>
+            <td>40 tipos (multisector)</td>
+            <td>19 tipos SOFOM + 4 asesores</td>
+          </tr>
+          <tr>
+            <td><strong>Monedas</strong></td>
+            <td>123 (incluye Onzas Libertad)</td>
+            <td>192 (ISO 4217 completo)</td>
+          </tr>
+          <tr>
+            <td><strong>Actividades Económicas</strong></td>
+            <td>1,172 actividades</td>
+            <td>1,265 actividades</td>
+          </tr>
+          <tr>
+            <td><strong>Operaciones Internacionales</strong></td>
+            <td>✅ Sí (reportan país)</td>
+            <td>❌ Principalmente nacionales</td>
+          </tr>
+          <tr>
+            <td><strong>Inspecciones CNBV</strong></td>
+            <td>✅ Periódicas (prudenciales)</td>
+            <td>⚠️ Solo PLD/FT</td>
+          </tr>
+          <tr>
+            <td><strong>Reportes Financieros</strong></td>
+            <td>✅ Mensuales a CNBV</td>
+            <td>❌ No obligatorios</td>
+          </tr>
+          <tr>
+            <td><strong>Costo Constitución</strong></td>
+            <td>$500K - $2M MXN</td>
+            <td>$100K - $300K MXN</td>
+          </tr>
+          <tr>
+            <td><strong>Tiempo Constitución</strong></td>
+            <td>12-18 meses</td>
+            <td>4-8 meses</td>
+          </tr>
+          <tr>
+            <td><strong>Gobierno Corporativo</strong></td>
+            <td>✅ Obligatorio (comités, políticas)</td>
+            <td>⚠️ Recomendado pero no obligatorio</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Catalogs Comparison -->
+    <h2 style="text-align: center; margin-bottom: 2rem; font-size: 2.5rem;">📚 Comparación de Catálogos RIPS</h2>
+
+    <div style="background: #F9FAFB; padding: 2rem; border-radius: 12px; margin-bottom: 3rem;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+        
+        <div>
+          <h3 style="color: #1F2937; margin-bottom: 1rem;">
+            <span class="badge-er" style="margin-right: 0.5rem;">ER</span> RIPS F41
+          </h3>
+          <ul style="font-size: 0.95rem;">
+            <li>1,172 Actividades Económicas</li>
+            <li>10 Instrumentos Monetarios</li>
+            <li>3,689 Localidades</li>
+            <li>123 Monedas (+ Onzas Libertad)</li>
+            <li><strong>245 Países ⭐</strong></li>
+            <li><strong>40 Tipos Operación ⭐</strong></li>
+            <li>3 Tipos Reporte</li>
+          </ul>
+          <p style="text-align: center; margin-top: 1rem;">
+            <a href="catalogos-er/actividad-economica" class="btn btn-sm" style="background: #374151; color: white;">Ver Catálogos F41 →</a>
+          </p>
+        </div>
+
+        <div>
+          <h3 style="color: #059669; margin-bottom: 1rem;">
+            <span class="badge-enr" style="margin-right: 0.5rem;">ENR</span> RIPS F36
+          </h3>
+          <ul style="font-size: 0.95rem;">
+            <li>1,265 Actividades Económicas</li>
+            <li>10 Instrumentos Monetarios</li>
+            <li>3,689 Localidades</li>
+            <li>192 Monedas (ISO completo)</li>
+            <li><strong>19 Tipos Operación SOFOM ⭐</strong></li>
+            <li><strong>4 Tipos Operación Asesores ⭐</strong></li>
+            <li>3 Tipos Reporte</li>
+          </ul>
+          <p style="text-align: center; margin-top: 1rem;">
+            <a href="catalogos-enr/actividad-economica" class="btn btn-sm btn-success">Ver Catálogos F36 →</a>
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <h2 style="text-align: center; margin-bottom: 2rem; font-size: 2.5rem;">❓ Preguntas Frecuentes</h2>
+
+    <div class="faq-grid">
+      
+      <div class="faq-item">
+        <div class="faq-question">¿Cómo sé si soy SOFOM ER o ENR?</div>
+        <div class="faq-answer">
+          <p>Verifica tu escritura constitutiva y denominación social:</p>
+          <ul>
+            <li><strong>ER:</strong> Incluye "SOFOM, E.R." y tienes vínculo con banco/holding</li>
+            <li><strong>ENR:</strong> Incluye "SOFOM, E.N.R." y eres independiente</li>
+          </ul>
+          <p>También puedes consultar el <a href="lista-sofomes-mexico">Directorio de SOFOMes</a> y buscar tu entidad.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">¿Las obligaciones PLD/FT son iguales para ambas?</div>
+        <div class="faq-answer">
+          <p><strong>SÍ.</strong> Tanto ER como ENR deben:</p>
+          <ul>
+            <li>Reportar operaciones relevantes (≥$7,500 USD)</li>
+            <li>Reportar operaciones inusuales (60 días)</li>
+            <li>Reportar operaciones preocupantes (24 horas)</li>
+            <li>Tener Oficial de Cumplimiento designado</li>
+            <li>Manual PLD/FT aprobado por CNBV</li>
+            <li>Dictamen técnico PLD/FT anual</li>
+          </ul>
+          <p>La LFPIORPI aplica igual a ambas. Solo cambia el formato de reporte (F41 vs F36).</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">¿Cuál me conviene: ER o ENR?</div>
+        <div class="faq-answer">
+          <p><strong>ER te conviene si:</strong></p>
+          <ul>
+            <li>Tienes vínculo con banco o holding financiero</li>
+            <li>Planeas emitir deuda pública (valores)</li>
+            <li>Realizarás operaciones internacionales frecuentes</li>
+            <li>Tienes capital suficiente ($5M-$15M MXN)</li>
+            <li>Buscas máxima credibilidad institucional</li>
+          </ul>
+          <p><strong>ENR te conviene si:</strong></p>
+          <ul>
+            <li>Eres independiente (sin vínculo bancario)</li>
+            <li>Operarás principalmente en México</li>
+            <li>Buscas menores costos operativos</li>
+            <li>Quieres mayor flexibilidad regulatoria</li>
+            <li>Te enfocas en crédito/factoraje especializado</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">¿Puedo cambiar de ENR a ER o viceversa?</div>
+        <div class="faq-answer">
+          <p><strong>ENR → ER:</strong> SÍ, si adquieres vínculo con entidad financiera autorizada o emites valores públicos. Requiere autorización CNBV.</p>
+          <p><strong>ER → ENR:</strong> Difícil. Requiere romper vínculo financiero y dejar de emitir valores. Consulta legal especializado.</p>
+          <p>Ambos cambios requieren modificación de escrituras, avisos a CNBV y trámites ante CONDUSEF.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">¿Dónde descargo los catálogos oficiales?</div>
+        <div class="faq-answer">
+          <p><strong>CNBV (oficial):</strong></p>
+          <ul>
+            <li><strong>F41 (ER):</strong> <a href="https://www.cnbv.gob.mx/PrevencionDeLavadoDeDinero/Documents/CATALOGOS_SOT_2019.zip" target="_blank">CATALOGOS_SOT_2019.zip</a></li>
+            <li><strong>F36 (ENR):</strong> <a href="https://www.cnbv.gob.mx/PrevencionDeLavadoDeDinero/Documents/CATALOGO_SOFOMESENR_2019.zip" target="_blank">CATALOGO_SOFOMESENR_2019.zip</a></li>
+          </ul>
+          <p><strong>SOFOMES.COM (procesados y con explicaciones):</strong></p>
+          <ul>
+            <li><a href="catalogos-er/actividad-economica">Catálogos ER (F41)</a></li>
+            <li><a href="catalogos-enr/actividad-economica">Catálogos ENR (F36)</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-box" style="margin-top: 4rem;">
+      <h3>¿Listo para usar los catálogos correctos?</h3>
+      <p>Accede a los catálogos RIPS específicos para tu tipo de SOFOM</p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="catalogos-er/actividad-economica" class="btn btn-lg" style="background: #374151; color: white;">Ver Catálogos ER →</a>
+        <a href="catalogos-enr/actividad-economica" class="btn btn-lg btn-success">Ver Catálogos ENR →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<?php include 'includes/footer.php'; ?>

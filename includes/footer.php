@@ -21,7 +21,10 @@
           <h4>Recursos</h4>
           <ul class="footer-links">
             <li><a href="<?php echo $basePath; ?>lista-sofomes-mexico.php">Lista Completa SOFOMes</a></li>
-            <li><a href="<?php echo $basePath; ?>catalogos-rips-f36.php">Catálogos RIPS F36</a></li>
+            <li><a href="<?php echo $basePath; ?>mejores-sofomes-mexico-2025.php">Top 10 Mejores SOFOMes</a></li>
+            <li><a href="<?php echo $basePath; ?>catalogos-rips.php">Catálogos RIPS F41/F36</a></li>
+            <li><a href="<?php echo $basePath; ?>sofom-er-vs-enr.php">SOFOM ER vs ENR</a></li>
+            <li><a href="<?php echo $basePath; ?>software-pld-ft-requisitos-cnbv.php">Software PLD/FT</a></li>
             <li><a href="<?php echo $basePath; ?>reportes-regulatorios-cnbv.php">Reportes Regulatorios</a></li>
             <li><a href="<?php echo $basePath; ?>layout-reportes-pld.php">Layout 36 Campos</a></li>
             <li><a href="<?php echo $basePath; ?>index.php#constituir">Guía Constitución</a></li>

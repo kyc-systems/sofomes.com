@@ -3,6 +3,7 @@
 
 # Habilitar engine de reescritura
 RewriteEngine On
+RewriteBase /sofomes.com/
 
 # Página de inicio predeterminada (PHP primero, HTML como fallback)
 DirectoryIndex index.php index.html
@@ -72,7 +73,12 @@ AddType application/x-font-woff2 .woff2
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
 </IfModule>
 
-# Redirecciones 301: HTML → PHP (mantener SEO)
+# Redirección para directorio raíz (con o sin barra final)
+RewriteCond %{REQUEST_URI} ^/sofomes\.com/?$
+RewriteRule ^ /sofomes.com/index.php [L]
+
+# Redirecciones 301: HTML → PHP (mantener SEO) - SOLO EN PRODUCCIÓN
+RewriteCond %{HTTP_HOST} ^(www\.)?sofomes\.com$ [NC]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.*)\.html$ /$1.php [L,R=301]
 
@@ -82,12 +88,13 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule ^(.*)$ $1.php [L,QSA]
 
-# Redirección HTTPS (forzar SSL)
+# Redirección HTTPS (forzar SSL) - SOLO EN PRODUCCIÓN
+RewriteCond %{HTTP_HOST} ^(www\.)?sofomes\.com$ [NC]
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# Redirección www a non-www (versión canónica)
-RewriteCond %{HTTP_HOST} ^www\.sofomes\.com [NC]
+# Redirección www a non-www (versión canónica) - SOLO EN PRODUCCIÓN
+RewriteCond %{HTTP_HOST} ^www\.sofomes\.com$ [NC]
 RewriteRule ^(.*)$ https://sofomes.com/$1 [L,R=301]
 
 # Errores personalizados (opcional)
