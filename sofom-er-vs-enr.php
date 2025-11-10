@@ -552,20 +552,12 @@ include 'includes/header.php';
 </section>
 
 <!-- CTA Final -->
-<section class="section" style="background: linear-gradient(135deg, #1F2937 0%, #111827 100%); color: white; padding: 4rem 0;">
+<section class="section" style="background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%); padding: 4rem 0;">
   <div class="container" style="text-align: center;">
-    <h2 style="font-size: 2rem; margin-bottom: 1rem;">¿Necesitas Asesoría Personalizada?</h2>
-    <p style="font-size: 1.125rem; opacity: 0.9; max-width: 600px; margin: 0 auto 2rem;">
+    <h2 style="font-size: 2rem; margin-bottom: 1rem; font-weight: 700; color: var(--primary-900);">¿Necesitas Asesoría Personalizada?</h2>
+    <p style="font-size: 1.125rem; max-width: 600px; margin: 0 auto; line-height: 1.6; color: var(--neutral-700);">
       La decisión entre ER y ENR depende de tu modelo de negocio, portafolio proyectado, y fuentes de fondeo. Contáctanos para análisis detallado.
     </p>
-    <div class="grid grid-2" style="gap: 1rem; max-width: 600px; margin: 0 auto;">
-      <a href="https://wa.me/5215512345678?text=Hola%2C%20necesito%20asesoría%20SOFOM%20ER%20vs%20ENR" class="btn btn-primary btn-lg" style="width: 100%;">
-        Consulta WhatsApp
-      </a>
-      <a href="/" class="btn btn-secondary btn-lg" style="width: 100%; background: rgba(255,255,255,0.1); color: white; border: 2px solid rgba(255,255,255,0.3);">
-        Ver Directorio SOFOMes
-      </a>
-    </div>
   </div>
 </section>
 

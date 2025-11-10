@@ -82,8 +82,8 @@ echo $datasetSchema;
           const tbody = document.getElementById('table-body');
           tbody.innerHTML = data.map(item => `
             <tr>
-              <td style="text-align: center; font-family: monospace; font-weight: 600;">${item['CLAVE TIPO REPORTE'])}</td>
-              <td>${item['TIPO DE REPORTE'])}</td>
+              <td style="text-align: center; font-family: monospace; font-weight: 600;">${item['CLAVE TIPO REPORTE']}</td>
+              <td>${item['TIPO DE REPORTE']}</td>
             </tr>
           `).join('');
           $('#catalog-table').DataTable({
