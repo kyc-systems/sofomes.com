@@ -1,0 +1,178 @@
+<!-- ============================================================
+     CONTENIDO PARA WIKIPEDIA - ARTÍCULO: SOFOM
+     Preparado siguiendo las políticas de Wikipedia al pie de la letra
+
+     INSTRUCCIONES:
+     1. Crea cuenta en Wikipedia (nombre neutral, NO "sofomescom")
+     2. Espera 4 días y haz 10+ ediciones menores en otros artículos
+     3. Ve a: https://es.wikipedia.org/wiki/Sofom
+     4. Click en "Editar" (pestaña superior)
+     5. Copia SOLO el contenido wiki (sin estos comentarios)
+     6. Pégalo después de la sección existente o reemplaza si está incompleto
+     7. Click "Publicar cambios"
+     8. En resumen de edición escribe: "Ampliación: marco regulatorio,
+        obligaciones PLD/FT, tipos de reportes. Referencias oficiales CNBV/DOF"
+
+     IMPORTANTE: NO incluyas enlaces a sofomes.com en esta primera edición.
+     Eso se hace DESPUÉS de que esta edición sea aceptada.
+     ============================================================ -->
+
+
+== Marco regulatorio ==
+
+=== Base legal para constitución ===
+
+Las Sociedades Financieras de Objeto Múltiple se constituyen conforme al '''Artículo 87-B de la [[Ley General de Organizaciones y Actividades Auxiliares del Crédito]]''' (LGOAAC), publicada en el [[Diario Oficial de la Federación]].<ref name="lgoaac">{{cita web |url=https://www.diputados.gob.mx/LeyesBiblio/pdf/145_200521.pdf |título=Ley General de Organizaciones y Actividades Auxiliares del Crédito |sitioweb=Cámara de Diputados |fechaacceso=25 de noviembre de 2025}}</ref>
+
+Según este artículo, el objeto social principal de una SOFOM debe ser la realización habitual y profesional de una o más de las siguientes actividades:
+* Otorgamiento de [[crédito]]
+* [[Arrendamiento financiero]]
+* [[Factoraje financiero]]
+
+La denominación social debe incluir la expresión "Sociedad Financiera de Objeto Múltiple" o su acrónimo "SOFOM", seguido de "E.R." (Entidad Regulada) o "E.N.R." (Entidad No Regulada) según corresponda.<ref name="lgoaac"/>
+
+=== Diferencia con actividades vulnerables ===
+
+Es importante distinguir que las SOFOMes, al ser entidades del '''sector financiero''', se rigen por las '''Disposiciones de Carácter General''' (DCG) emitidas por la [[Comisión Nacional Bancaria y de Valores]] (CNBV) en materia de prevención de lavado de dinero.<ref name="dcg-cnbv">{{cita web |url=https://www.cnbv.gob.mx/Normatividad/Disposiciones%20de%20car%C3%A1cter%20general%20aplicables%20a%20las%20SOFOM%20ENR.pdf |título=Disposiciones de Carácter General aplicables a las Sociedades Financieras de Objeto Múltiple |sitioweb=CNBV |fechaacceso=25 de noviembre de 2025}}</ref>
+
+Esto las diferencia de las denominadas "[[Actividades Vulnerables]]" (notarías, joyerías, inmobiliarias, blindadoras, entre otras), las cuales se rigen por la '''[[Ley Federal para la Prevención e Identificación de Operaciones con Recursos de Procedencia Ilícita]]''' (LFPIORPI) y reportan a la [[Secretaría de Hacienda y Crédito Público|SHCP]].<ref>{{cita web |url=https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPIORPI.pdf |título=Ley Federal para la Prevención e Identificación de Operaciones con Recursos de Procedencia Ilícita |sitioweb=Cámara de Diputados |fechaacceso=25 de noviembre de 2025}}</ref>
+
+== Supervisión ==
+
+=== SOFOM Entidad Regulada (ER) ===
+
+Las SOFOM ER están sujetas a supervisión prudencial completa por parte de la CNBV debido a sus vínculos patrimoniales con [[Institución de crédito|instituciones de crédito]], [[Grupo financiero|grupos financieros]], o por emitir valores inscritos en el [[Registro Nacional de Valores]].<ref name="cnbv-er">{{cita web |url=https://www.cnbv.gob.mx/SECTORES-SUPERVISADOS/OTROS-SUPERVISADOS/Paginas/SOFOM-ER.aspx |título=SOFOM Entidades Reguladas |sitioweb=CNBV |fechaacceso=25 de noviembre de 2025}}</ref>
+
+=== SOFOM Entidad No Regulada (ENR) ===
+
+Las SOFOM ENR están sujetas a supervisión de la CNBV '''únicamente''' en materia de Prevención de Lavado de Dinero (PLD) y Financiamiento al Terrorismo (FT), conforme al '''Artículo 56 de la LGOAAC'''.<ref name="lgoaac"/>
+
+En sus contratos y material promocional, las SOFOM ENR deben incluir la leyenda: ''"Para su constitución y operación con tal carácter, no requieren de autorización de la Secretaría de Hacienda y Crédito Público, y están sujetas a la supervisión de la Comisión Nacional Bancaria y de Valores, únicamente para efectos de lo dispuesto por el artículo 56 de la Ley General de Organizaciones y Actividades Auxiliares del Crédito"''.<ref name="lgoaac"/>
+
+== Registro y dictamen técnico ==
+
+=== Registro ante CONDUSEF ===
+
+Para operar legalmente, las SOFOMes deben registrarse en el Sistema de Registro de Prestadores de Servicios Financieros (SIPRES) de la [[Comisión Nacional para la Protección y Defensa de los Usuarios de Servicios Financieros|CONDUSEF]].<ref name="condusef-sipres">{{cita web |url=https://www.condusef.gob.mx/?p=contenido&idc=379&idcat=1 |título=Registro de Prestadores de Servicios Financieros |sitioweb=CONDUSEF |fechaacceso=25 de noviembre de 2025}}</ref>
+
+Los requisitos incluyen:
+* Escritura pública de constitución
+* Opinión favorable de CONDUSEF sobre los estatutos sociales
+* Dictamen técnico favorable de la CNBV (para SOFOM ENR)
+* Contrato con al menos una [[Sociedad de Información Crediticia]] (SIC)
+* Designación de [[Oficial de Cumplimiento]] certificado
+
+=== Dictamen técnico CNBV ===
+
+El '''Dictamen Técnico''' (DT) es emitido por la CNBV para las SOFOM ENR y tiene como objetivo acreditar que la sociedad cuenta con los elementos mínimos para prevenir:<ref name="cnbv-enr">{{cita web |url=https://www.cnbv.gob.mx/SECTORES-SUPERVISADOS/OTROS-SUPERVISADOS/Paginas/SOFOM-ENR.aspx |título=SOFOM Entidades No Reguladas |sitioweb=CNBV |fechaacceso=25 de noviembre de 2025}}</ref>
+* Financiamiento al terrorismo (Artículo 139 Quáter del [[Código Penal Federal]])
+* Operaciones con recursos de procedencia ilícita (Artículo 400 Bis del Código Penal Federal)
+
+La solicitud se realiza a través del portal SITI PLD/FT de la CNBV y requiere demostrar el cumplimiento de las Disposiciones de Carácter General mediante el Cuestionario '''Apéndice A-3'''.<ref name="cnbv-enr"/>
+
+== Obligaciones en materia de PLD/FT ==
+
+=== Sistema automatizado ===
+
+Las Disposiciones de Carácter General de la CNBV establecen que toda SOFOM debe contar con un '''sistema automatizado''' que desarrolle las siguientes funciones obligatorias:<ref name="dcg-cnbv"/>
+
+# Integración de expedientes de identificación de clientes y usuarios ([[KYC|Conoce a tu Cliente]])
+# Captura y almacenamiento seguro de información de clientes y operaciones
+# Identificación de operaciones relevantes, inusuales e internas preocupantes
+# Generación automática de reportes regulatorios
+# Detección de operaciones potencialmente fraccionadas
+# Clasificación de clientes por grado de riesgo (alto, medio, bajo)
+# Alertas sobre clientes en listas de personas bloqueadas ([[OFAC]], [[Organización de las Naciones Unidas|ONU]], [[Servicio de Administración Tributaria|SAT]])
+# Alertas sobre operaciones con países o jurisdicciones de alto riesgo
+# Monitoreo de parámetros transaccionales inusuales
+# Identificación de [[Persona políticamente expuesta|Personas Políticamente Expuestas]] (PPE)
+# Conservación de información por los plazos legales establecidos (10 años)
+
+=== Tipos de reportes obligatorios ===
+
+Las SOFOMes deben presentar ante la CNBV reportes de operaciones, los cuales son remitidos posteriormente a la [[Unidad de Inteligencia Financiera]] (UIF) de la SHCP:<ref name="cnbv-pld">{{cita web |url=https://www.cnbv.gob.mx/PrevencionDeLavadoDeDinero/Paginas/default.aspx |título=Prevención de Lavado de Dinero |sitioweb=CNBV |fechaacceso=25 de noviembre de 2025}}</ref>
+
+{| class="wikitable"
+|+ Tipos de reportes de operaciones
+|-
+! Tipo de reporte !! Criterio de identificación !! Plazo de envío
+|-
+| '''Operaciones Relevantes''' || Operaciones realizadas con billetes, monedas, cheques de viajero o metales preciosos por monto igual o superior al equivalente a 7,500 [[dólar estadounidense|dólares estadounidenses]] || Trimestral: dentro de los 10 últimos días hábiles de enero, abril, julio y octubre
+|-
+| '''Operaciones Inusuales''' || Operaciones que no concuerdan con los antecedentes o perfil transaccional del cliente, o que por su monto, frecuencia, o características carecen de justificación económica o legal aparente || 60 días naturales a partir de su detección
+|-
+| '''Operaciones Internas Preocupantes''' || Operaciones en las que existe sospecha fundada de que los recursos pudieran estar destinados a favorecer la comisión de delitos de lavado de dinero o financiamiento al terrorismo || 60 días naturales a partir de su detección
+|}
+
+La '''Disposición 30ª''' de las DCG establece 13 circunstancias específicas que deben considerarse como indicios de operaciones inusuales.<ref name="dcg-cnbv"/>
+
+=== Catálogos RIPS ===
+
+Para la presentación de reportes, la CNBV proporciona catálogos estandarizados denominados '''RIPS''' (Reportes de Operaciones). Existen dos formatos según el tipo de SOFOM:<ref name="cnbv-catalogos">{{cita web |url=https://www.cnbv.gob.mx/PrevencionDeLavadoDeDinero/Documents/CATALOGOS_SOT_2019.zip |título=Catálogos SOT 2019 (F41) |sitioweb=CNBV |fechaacceso=25 de noviembre de 2025}}</ref><ref name="cnbv-catalogos-enr">{{cita web |url=https://www.cnbv.gob.mx/PrevencionDeLavadoDeDinero/Documents/CATALOGO_SOFOMESENR_2019.zip |título=Catálogos SOFOM ENR 2019 (F36) |sitioweb=CNBV |fechaacceso=25 de noviembre de 2025}}</ref>
+
+{| class="wikitable"
+|+ Catálogos por tipo de SOFOM
+|-
+! Catálogo !! F41 (SOFOM ER) !! F36 (SOFOM ENR)
+|-
+| Actividades económicas || 1,172 códigos || 1,265 códigos
+|-
+| Monedas || 123 códigos || 192 códigos
+|-
+| Localidades || 3,689 códigos || 3,689 códigos
+|-
+| Instrumentos monetarios || 10 códigos || 10 códigos
+|-
+| Tipos de reporte || 3 códigos || 3 códigos
+|-
+| Países || 245 códigos || No aplica
+|-
+| Tipos de operación || 40 códigos (general) || 19 códigos SOFOM + 4 códigos asesores
+|}
+
+Los reportes se envían en archivos de texto plano (.txt) con estructura de 36 campos, siguiendo las especificaciones técnicas establecidas en las Disposiciones.<ref name="dcg-cnbv"/>
+
+== Estadísticas ==
+
+Según datos del SIPRES de la CONDUSEF, en México operan más de 2,000 SOFOMes registradas, de las cuales aproximadamente el 98% son Entidades No Reguladas (ENR) y el 2% restante son Entidades Reguladas (ER).<ref name="condusef-sipres"/>
+
+== Véase también ==
+* [[Comisión Nacional Bancaria y de Valores]]
+* [[CONDUSEF]]
+* [[Lavado de dinero]]
+* [[Arrendamiento financiero]]
+* [[Factoraje]]
+* [[Sociedad Financiera de Objeto Limitado]]
+* [[Sociedad Financiera Popular]]
+
+== Referencias ==
+{{listaref}}
+
+== Enlaces externos ==
+* [https://www.cnbv.gob.mx/SECTORES-SUPERVISADOS/OTROS-SUPERVISADOS/Paginas/SOFOM-ENR.aspx SOFOM ENR - CNBV]
+* [https://www.cnbv.gob.mx/SECTORES-SUPERVISADOS/OTROS-SUPERVISADOS/Paginas/SOFOM-ER.aspx SOFOM ER - CNBV]
+* [https://www.condusef.gob.mx/?p=contenido&idc=379&idcat=1 Registro SIPRES - CONDUSEF]
+* [https://www.gob.mx/cnbv/acciones-y-programas/prevencion-de-lavado-de-dinero Prevención de Lavado de Dinero - CNBV]
+
+
+<!-- ============================================================
+     FIN DEL CONTENIDO PARA WIKIPEDIA
+
+     PRÓXIMOS PASOS (después de que esta edición sea aceptada):
+
+     1. Espera 1-2 semanas para ver si la edición permanece
+     2. Si permanece, puedes agregar sofomes.com como referencia
+        para el dato de estadísticas, reemplazando:
+
+        ANTES:
+        <ref name="condusef-sipres"/>
+
+        DESPUÉS:
+        <ref>{{cita web |url=https://sofomes.com/lista-sofomes-mexico
+        |título=Directorio de SOFOMes en México - Datos CONDUSEF
+        |sitioweb=SOFOMES.COM |fechaacceso=25 de noviembre de 2025}}</ref>
+
+     3. En el resumen de edición escribe:
+        "Actualización referencia estadísticas con fuente que
+        agrega datos CONDUSEF en formato consultable"
+     ============================================================ -->
