@@ -46,7 +46,7 @@ $schemaJson = <<<'SCHEMA'
     "url": "https://sofomes.com",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://sofomes.com/buscar?q={search_term_string}",
+      "target": "https://sofomes.com/lista-sofomes-mexico?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   }

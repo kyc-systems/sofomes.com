@@ -1,9 +1,20 @@
 # .htaccess para sofomes.com
 # Generado: 2025-10-28
+# Actualizado: 2025-12-02
 
 # Habilitar engine de reescritura
 RewriteEngine On
-RewriteBase /sofomes.com/
+
+# RewriteBase dinámico: / para producción, /sofomes.com/ para local
+# En producción (sofomes.com), usa la raíz
+RewriteCond %{HTTP_HOST} ^(www\.)?sofomes\.com$ [NC]
+RewriteRule ^ - [E=BASE:/]
+
+# En local (cualquier otro host), usa /sofomes.com/
+RewriteCond %{HTTP_HOST} !^(www\.)?sofomes\.com$ [NC]
+RewriteRule ^ - [E=BASE:/sofomes.com/]
+
+RewriteBase /
 
 # Página de inicio predeterminada (PHP primero, HTML como fallback)
 DirectoryIndex index.php index.html
@@ -73,9 +84,14 @@ AddType application/x-font-woff2 .woff2
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
 </IfModule>
 
-# Redirección para directorio raíz (con o sin barra final)
+# Redirección para directorio raíz en local
+RewriteCond %{HTTP_HOST} !^(www\.)?sofomes\.com$ [NC]
 RewriteCond %{REQUEST_URI} ^/sofomes\.com/?$
 RewriteRule ^ /sofomes.com/index.php [L]
+
+# Redirección 301: /buscar → /lista-sofomes-mexico (URL legacy de SearchAction)
+RewriteCond %{HTTP_HOST} ^(www\.)?sofomes\.com$ [NC]
+RewriteRule ^buscar$ /lista-sofomes-mexico [R=301,L,QSA]
 
 # Redirecciones 301: HTML → PHP (mantener SEO) - SOLO EN PRODUCCIÓN
 RewriteCond %{HTTP_HOST} ^(www\.)?sofomes\.com$ [NC]

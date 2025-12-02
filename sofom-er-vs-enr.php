@@ -561,5 +561,4 @@ include 'includes/header.php';
   </div>
 </section>
 
-<?php echo $schemaJson; ?>
 <?php include 'includes/footer.php'; ?>
