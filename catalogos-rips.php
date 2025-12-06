@@ -41,16 +41,21 @@ include 'includes/header.php';
         📋 ¿Por qué son obligatorios estos catálogos?
       </h2>
       <p style="color: var(--neutral-700); line-height: 1.8; margin-bottom: 1rem;">
-        La <strong>Ley Federal para la Prevención e Identificación de Operaciones con Recursos de Procedencia Ilícita (LFPIORPI)</strong> establece que todas las SOFOMes, sin importar si son ER o ENR, deben reportar a la <strong>Unidad de Inteligencia Financiera (UIF)</strong> de la Secretaría de Hacienda las siguientes operaciones:
+        Las <strong>Disposiciones de Carácter General (DCG)</strong> emitidas por la <strong>Comisión Nacional Bancaria y de Valores (CNBV)</strong> establecen que todas las SOFOMes, sin importar si son ER o ENR, deben reportar ante la CNBV las siguientes operaciones (que posteriormente son remitidas a la UIF):
       </p>
       <ul style="color: var(--neutral-700); line-height: 1.8; margin-bottom: 1rem; padding-left: 2rem;">
-        <li><strong>Operaciones Relevantes:</strong> Todas las operaciones iguales o superiores al equivalente a <strong>$7,500 USD</strong> (aproximadamente $161,250 MXN según tipo de cambio 2025). Se reportan mensualmente a más tardar el día 17 del mes siguiente.</li>
-        <li><strong>Operaciones Inusuales:</strong> Aquellas que no coinciden con el perfil transaccional del cliente o carecen de justificación económica o legal aparente. Plazo: 60 días después de detectadas.</li>
-        <li><strong>Operaciones Internas Preocupantes:</strong> Operaciones que involucran recursos que pudieran estar relacionados con actividades ilícitas, detectadas por el personal de la SOFOM. Plazo: inmediato (dentro de las 24 horas).</li>
+        <li><strong>Operaciones Relevantes:</strong> Operaciones en efectivo iguales o superiores al equivalente a <strong>$7,500 USD</strong>. Se reportan <strong>trimestralmente</strong> dentro de los 10 últimos días hábiles de enero, abril, julio y octubre.</li>
+        <li><strong>Operaciones Inusuales:</strong> Aquellas que no coinciden con el perfil transaccional del cliente o carecen de justificación económica o legal aparente. Plazo: <strong>60 días naturales</strong> después de detectadas.</li>
+        <li><strong>Operaciones Internas Preocupantes:</strong> Operaciones con sospecha fundada de estar relacionadas con lavado de dinero o financiamiento al terrorismo. Plazo: <strong>60 días naturales</strong> después de detectadas.</li>
       </ul>
-      <p style="color: var(--neutral-700); line-height: 1.8;">
+      <p style="color: var(--neutral-700); line-height: 1.8; margin-bottom: 1rem;">
         Para garantizar la estandarización y facilitar el análisis masivo de datos por parte de las autoridades, la CNBV publica estos catálogos que deben usarse <strong>exactamente como se especifican</strong>, utilizando las claves y descripciones oficiales.
       </p>
+      <div style="background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 1rem; border-radius: 4px;">
+        <p style="color: #92400E; margin: 0; font-size: 0.9rem;">
+          <strong>Nota importante:</strong> Las SOFOMes, al ser parte del <strong>sector financiero</strong>, se rigen por las DCG de la CNBV. La LFPIORPI (Ley Federal para la Prevención e Identificación de Operaciones con Recursos de Procedencia Ilícita) aplica únicamente a las <strong>Actividades Vulnerables</strong> (notarías, joyerías, inmobiliarias, etc.), que son un sector diferente.
+        </p>
+      </div>
     </div>
 
     <div style="margin-bottom: 3rem;">
@@ -370,7 +375,7 @@ include 'includes/header.php';
           ¿Las obligaciones PLD/FT son iguales para ER y ENR?
         </h3>
         <p style="color: var(--neutral-600);">
-          SÍ. Ambas deben reportar operaciones relevantes, inusuales y preocupantes. El catálogo de "Tipo de Reporte" es IDÉNTICO (3 tipos). La LFPIORPI aplica igual a ambas.
+          SÍ. Ambas deben reportar operaciones relevantes, inusuales y preocupantes ante la CNBV según las Disposiciones de Carácter General (DCG). El catálogo de "Tipo de Reporte" es IDÉNTICO (3 tipos) para ambos formatos.
         </p>
       </div>
 
