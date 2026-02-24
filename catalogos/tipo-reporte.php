@@ -12,9 +12,9 @@ include '../includes/header.php';
 include '../includes/dataset-schema.php';
 $datasetSchema = generateDatasetSchema([
     'name' => 'Catálogo de Tipos de Reporte PLD/FT CNBV RIPS F36',
-    'description' => 'Catálogo oficial con 3 tipos de reporte ante la UIF: Operaciones Relevantes (≥$7,500 USD), Operaciones Inusuales (60 días) y Operaciones Internas Preocupantes (24 horas). Campo 1 del layout F36.',
+    'description' => 'Catálogo oficial con 3 tipos de reporte ante la CNBV: Operaciones Relevantes (≥$7,500 USD, trimestral), Operaciones Inusuales (60 días) y Operaciones Internas Preocupantes (60 días). Campo 1 del layout F36.',
     'url' => 'https://sofomes.com/catalogos/tipo-reporte',
-    'keywords' => ['RIPS F36', 'CNBV', 'tipo de reporte', 'PLD/FT', 'SOFOM', 'operaciones relevantes', 'operaciones inusuales', 'UIF', 'LFPIORPI'],
+    'keywords' => ['RIPS F36', 'CNBV', 'tipo de reporte', 'PLD/FT', 'SOFOM', 'operaciones relevantes', 'operaciones inusuales', 'UIF', 'DCG'],
     'jsonFile' => 'tipo-reporte.json',
     'recordCount' => 3,
     'field' => '1',
@@ -43,7 +43,7 @@ echo $datasetSchema;
         <h2>🚨 ¿Cuándo y cómo usar este catálogo?</h2>
 
         <p>
-          Este es el catálogo MÁS IMPORTANTE de todos. Define el tipo de reporte PLD/FT que estás enviando a la UIF. Cada reporte tiene criterios, plazos y consecuencias diferentes según la LFPIORPI.
+          Este es el catálogo MÁS IMPORTANTE de todos. Define el tipo de reporte PLD/FT que estás enviando a la CNBV (que remite a la UIF). Cada reporte tiene criterios, plazos y consecuencias diferentes según las Disposiciones de Carácter General de la CNBV.
         </p>
 
         <h3>📍 Dónde se reporta</h3>
@@ -57,10 +57,10 @@ echo $datasetSchema;
 
         <div class="report-box report-box-relevant">
           <h4>1️⃣ Operaciones Relevantes (Tipo 1)</h4>
-          <p><strong>Criterio automático:</strong> Operaciones ≥ $7,500 USD (o su equivalente en otras divisas)</p>
-          <p><strong>Plazo de reporte:</strong> 17 días hábiles del mes siguiente</p>
+          <p><strong>Criterio automático:</strong> Operaciones en efectivo ≥ $7,500 USD (o su equivalente en otras divisas)</p>
+          <p><strong>Plazo de reporte:</strong> Trimestral (10 últimos días hábiles de enero, abril, julio y octubre)</p>
           <p><strong>Obligatoriedad:</strong> SÍ, todas las operaciones que superen el umbral</p>
-          <p><strong>Base legal:</strong> LFPIORPI Art. 17, Disposiciones CNBV</p>
+          <p><strong>Base legal:</strong> DCG CNBV, Disposición 28ª</p>
 
           <p><strong>Ejemplos:</strong></p>
           <ul>
@@ -74,9 +74,9 @@ echo $datasetSchema;
         <div class="report-box report-box-unusual">
           <h4>2️⃣ Operaciones Inusuales (Tipo 2)</h4>
           <p><strong>Criterio:</strong> Operaciones que NO coinciden con el perfil transaccional del cliente</p>
-          <p><strong>Plazo de reporte:</strong> 60 días hábiles desde detección</p>
+          <p><strong>Plazo de reporte:</strong> 60 días naturales desde detección</p>
           <p><strong>Obligatoriedad:</strong> SÍ, si detectas incongruencias según tu matriz de riesgo</p>
-          <p><strong>Base legal:</strong> LFPIORPI Art. 17, Lineamientos UIF</p>
+          <p><strong>Base legal:</strong> DCG CNBV, Disposición 30ª</p>
 
           <p><strong>Ejemplos:</strong></p>
           <ul>
@@ -94,9 +94,9 @@ echo $datasetSchema;
         <div class="report-box report-box-concerning">
           <h4>3️⃣ Operaciones Internas Preocupantes (Tipo 3)</h4>
           <p><strong>Criterio:</strong> Operaciones con FUERTES INDICIOS de recursos de procedencia ilícita o con vínculos a lavado de dinero/terrorismo</p>
-          <p><strong>Plazo de reporte:</strong> INMEDIATO (24 horas hábiles)</p>
+          <p><strong>Plazo de reporte:</strong> 60 días naturales desde detección</p>
           <p><strong>Obligatoriedad:</strong> SÍ, en cuanto detectes señales de alerta graves</p>
-          <p><strong>Base legal:</strong> LFPIORPI Art. 17, Circular Única CNBV</p>
+          <p><strong>Base legal:</strong> DCG CNBV, Art. 400 Bis y 139 Quáter CPF</p>
 
           <p><strong>Ejemplos de señales de alerta graves:</strong></p>
           <ul>

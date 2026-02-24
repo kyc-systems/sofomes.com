@@ -59,7 +59,7 @@ echo $datasetSchema;
           <strong>Recomendación para tu matriz de riesgo:</strong> Asigna ponderaciones diferentes según el nivel de trazabilidad del instrumento:
         </p>
         <ul>
-          <li><strong>Alto riesgo:</strong> Efectivo (01), Metales preciosos amonedados (05) - Difícil rastreo, alta vulnerabilidad LFPIORPI</li>
+          <li><strong>Alto riesgo:</strong> Efectivo (01), Metales preciosos amonedados (05) - Difícil rastreo, alta vulnerabilidad PLD</li>
           <li><strong>Riesgo medio:</strong> Cheques (10), Cheques de viajero (11) - Trazabilidad moderada</li>
           <li><strong>Bajo riesgo:</strong> Transferencias (03), Tarjetas (02) - Alta trazabilidad bancaria</li>
         </ul>
@@ -79,7 +79,7 @@ echo $datasetSchema;
           Cliente: "Juan Pérez" paga enganche de $180,000 MXN en efectivo<br>
           Medio de pago: Billetes en sucursal<br>
           Instrumento: <code>01</code> - Billetes y monedas<br>
-          Riesgo: <span class="risk-high">ALTO</span> (LFPIORPI Art. 17)<br>
+          Riesgo: <span class="risk-high">ALTO</span> (DCG CNBV, Disposición 30ª)<br>
           <em>Razón: Monto inusual en efectivo, sin trazabilidad bancaria previa.</em>
         </div>
 
@@ -88,15 +88,15 @@ echo $datasetSchema;
           Cliente: "Inversiones del Norte" liquida crédito con Centenarios de oro<br>
           Medio de pago: 15 monedas Centenario Oro<br>
           Instrumento: <code>05</code> - Oro amonedado<br>
-          Riesgo: <span class="risk-high">ALTO</span> (LFPIORPI Art. 17, Frac. XIV)<br>
-          <em>Razón: Metales preciosos, actividad vulnerable según ley.</em>
+          Riesgo: <span class="risk-high">ALTO</span> (DCG CNBV)<br>
+          <em>Razón: Metales preciosos amonedados, instrumento de difícil rastreo.</em>
         </div>
 
         <h3>🚨 Instrumentos de mayor vigilancia</h3>
-        <p>Según LFPIORPI y lineamientos UIF, presta especial atención a:</p>
+        <p>Según las DCG de la CNBV, presta especial atención a:</p>
         <ul>
           <li><strong>01 - Efectivo:</strong> Montos ≥ $7,500 USD son operaciones relevantes automáticas</li>
-          <li><strong>05 - Oro/platino amonedado:</strong> Actividad vulnerable Art. 17 Frac. XIV</li>
+          <li><strong>05 - Oro/platino amonedado:</strong> Instrumento de alto riesgo por difícil rastreo</li>
           <li><strong>10 - Cheques:</strong> Verificar endosos múltiples, cheques de otros titulares</li>
           <li><strong>11 - Cheques de viajero:</strong> Poco comunes hoy, revisar procedencia</li>
         </ul>

@@ -68,7 +68,7 @@ echo $datasetSchema;
           <h3>⚠️ Uso en Matriz de Riesgo</h3>
           <p>
             <strong>Recomendación:</strong> Asigna un nivel de riesgo a cada actividad económica en tu matriz de riesgo.
-            Algunas actividades son más vulnerables según la LFPIORPI:
+            Según las DCG de la CNBV, algunas actividades requieren mayor vigilancia:
           </p>
           <ul>
             <li><strong>Alto riesgo:</strong> Casas de cambio, joyerías, compraventa de metales/piedras preciosas, bienes raíces</li>
@@ -88,7 +88,7 @@ echo $datasetSchema;
                 <dt>Actividad:</dt>
                 <dd><code>464121</code> - Comercio al por menor de joyería y relojes</dd>
                 <dt>Riesgo recomendado:</dt>
-                <dd><span class="risk-high">ALTO</span> (LFPIORPI Art. 17, Fracción XIV)</dd>
+                <dd><span class="risk-high">ALTO</span> (DCG CNBV - sector de alta vigilancia)</dd>
                 <dt>Razón:</dt>
                 <dd>Comercio de metales y piedras preciosas, vulnerable a lavado de dinero.</dd>
               </dl>
@@ -126,7 +126,7 @@ echo $datasetSchema;
 
         <section>
           <h3>🎯 Actividades de mayor vigilancia</h3>
-          <p>Según LFPIORPI y lineamientos CNBV, presta especial atención a:</p>
+          <p>Según las DCG de la CNBV, presta especial atención a clientes con estas actividades:</p>
           <ul>
             <li>Comercio de vehículos automotores</li>
             <li>Inmobiliarias y desarrolladores</li>

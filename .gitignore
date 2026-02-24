@@ -1,7 +1,16 @@
-# Cache de API CONDUSEF
-api/condusef-cache.json
+# CI4
+vendor/
+writable/logs/*
+writable/cache/*
+writable/session/*
+writable/uploads/*
+writable/debugbar/*
+!writable/logs/index.html
+!writable/cache/index.html
+.env
 
-# Respuestas de debug
+# Cache de API CONDUSEF (legacy)
+api/condusef-cache.json
 api/condusef-response-*.json
 
 # Backups
@@ -19,7 +28,7 @@ error_log
 *.tmp
 *~
 *.bak
-.DS_Store
-assets/.DS_Store
-.DS_Store
-.DS_Store
+
+# IDE
+.idea/
+.vscode/

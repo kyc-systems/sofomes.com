@@ -1,0 +1,76 @@
+# .htaccess para sofomes.com - CodeIgniter 4
+# DocumentRoot = /public/
+
+# Disable directory browsing
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+    Options +FollowSymlinks
+    RewriteEngine On
+
+    # ─── Redirecciones de producción (solo en sofomes.com) ────────────
+    # Forzar HTTPS
+    RewriteCond %{HTTP_HOST} ^(www\.)?sofomes\.com$ [NC]
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # www → non-www
+    RewriteCond %{HTTP_HOST} ^www\.sofomes\.com$ [NC]
+    RewriteRule ^(.*)$ https://sofomes.com/$1 [L,R=301]
+
+    # ─── Trailing slashes removal ─────────────────────────────────────
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # ─── CI4 Front Controller ─────────────────────────────────────────
+    # Si el archivo o directorio existe, sirve directamente (assets, JSON, etc.)
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^([\s\S]*)$ index.php/$1 [L,NC,QSA]
+
+    # Authorization header passthrough
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+</IfModule>
+
+<IfModule !mod_rewrite.c>
+    ErrorDocument 404 index.php
+</IfModule>
+
+# ─── Headers de seguridad ─────────────────────────────────────────
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# ─── Compresión GZIP ─────────────────────────────────────────────
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css
+    AddOutputFilterByType DEFLATE application/javascript application/json
+</IfModule>
+
+# ─── Cache para recursos estáticos ───────────────────────────────
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css                  "access plus 1 month"
+    ExpiresByType application/javascript    "access plus 1 month"
+    ExpiresByType image/jpeg                "access plus 1 year"
+    ExpiresByType image/png                 "access plus 1 year"
+    ExpiresByType image/webp                "access plus 1 year"
+    ExpiresByType image/svg+xml             "access plus 1 year"
+    ExpiresByType font/woff2                "access plus 1 year"
+    ExpiresByType application/json          "access plus 1 day"
+    ExpiresByType application/pdf           "access plus 1 month"
+</IfModule>
+
+# ─── Bloquear archivos sensibles ─────────────────────────────────
+<FilesMatch "\.(env|log|bak|sql|config)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Disable server signature
+ServerSignature Off

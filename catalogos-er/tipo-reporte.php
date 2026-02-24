@@ -42,14 +42,14 @@ echo $datasetSchema;
 
       <div class="alert alert-success" style="background: #D1FAE5; border-left: 4px solid #059669;">
         <strong>✅ Este catálogo es IDÉNTICO para ER y ENR</strong><br>
-        Las obligaciones PLD/FT son las mismas en RIPS F41 (ER) y F36 (ENR) según LFPIORPI.
+        Las obligaciones PLD/FT son las mismas en RIPS F41 (ER) y F36 (ENR) según las Disposiciones de Carácter General (DCG) de la CNBV.
       </div>
 
       <article class="catalog-guide">
         <h2>🚨 ¿Cuándo y cómo usar este catálogo?</h2>
 
         <p>
-          Este es el catálogo MÁS IMPORTANTE. Define el tipo de reporte PLD/FT que estás enviando a la UIF. Cada reporte tiene criterios, plazos y consecuencias diferentes según la LFPIORPI.
+          Este es el catálogo MÁS IMPORTANTE. Define el tipo de reporte PLD/FT que estás enviando a la CNBV (que remite a la UIF). Cada reporte tiene criterios, plazos y consecuencias diferentes según las Disposiciones de Carácter General de la CNBV.
         </p>
 
         <h3>📍 Dónde se reporta</h3>
@@ -63,10 +63,10 @@ echo $datasetSchema;
 
         <div class="report-box report-box-relevant">
           <h4>1️⃣ Operaciones Relevantes (Tipo 1)</h4>
-          <p><strong>Criterio automático:</strong> Operaciones ≥ $7,500 USD (o su equivalente en otras divisas)</p>
-          <p><strong>Plazo de reporte:</strong> 17 días hábiles del mes siguiente</p>
+          <p><strong>Criterio automático:</strong> Operaciones en efectivo ≥ $7,500 USD (o su equivalente en otras divisas)</p>
+          <p><strong>Plazo de reporte:</strong> Trimestral (10 últimos días hábiles de enero, abril, julio y octubre)</p>
           <p><strong>Obligatoriedad:</strong> SÍ, todas las operaciones que superen el umbral</p>
-          <p><strong>Base legal:</strong> LFPIORPI Art. 17, Disposiciones CNBV</p>
+          <p><strong>Base legal:</strong> DCG CNBV, Disposición 28ª</p>
 
           <p><strong>Ejemplos para SOFOM ER:</strong></p>
           <ul>
@@ -80,9 +80,9 @@ echo $datasetSchema;
         <div class="report-box report-box-unusual">
           <h4>2️⃣ Operaciones Inusuales (Tipo 2)</h4>
           <p><strong>Criterio:</strong> Operaciones que NO coinciden con el perfil transaccional del cliente</p>
-          <p><strong>Plazo de reporte:</strong> 60 días hábiles desde detección</p>
+          <p><strong>Plazo de reporte:</strong> 60 días naturales desde detección</p>
           <p><strong>Obligatoriedad:</strong> SÍ, si detectas incongruencias según tu matriz de riesgo</p>
-          <p><strong>Base legal:</strong> LFPIORPI Art. 17, Lineamientos UIF</p>
+          <p><strong>Base legal:</strong> DCG CNBV, Disposición 30ª</p>
 
           <p><strong>Ejemplos para SOFOM ER:</strong></p>
           <ul>
@@ -100,9 +100,9 @@ echo $datasetSchema;
         <div class="report-box report-box-concerning">
           <h4>3️⃣ Operaciones Internas Preocupantes (Tipo 3)</h4>
           <p><strong>Criterio:</strong> Operaciones con FUERTES INDICIOS de recursos de procedencia ilícita o vínculos a lavado de dinero/terrorismo</p>
-          <p><strong>Plazo de reporte:</strong> INMEDIATO (24 horas hábiles)</p>
+          <p><strong>Plazo de reporte:</strong> 60 días naturales desde detección</p>
           <p><strong>Obligatoriedad:</strong> SÍ, en cuanto detectes señales de alerta graves</p>
-          <p><strong>Base legal:</strong> LFPIORPI Art. 17, Circular Única CNBV</p>
+          <p><strong>Base legal:</strong> DCG CNBV, Art. 400 Bis y 139 Quáter CPF</p>
 
           <p><strong>Ejemplos de señales de alerta graves (SOFOM ER):</strong></p>
           <ul>
@@ -115,7 +115,7 @@ echo $datasetSchema;
           </ul>
 
           <div class="report-alert report-alert-danger">
-            <strong>🚨 CRÍTICO:</strong> Este reporte es URGENTE (24 horas). Consulta INMEDIATAMENTE con tu Oficial de Cumplimiento. Considera RECHAZAR la operación.
+            <strong>🚨 CRÍTICO:</strong> Aunque el plazo es 60 días, se recomienda actuar con urgencia. Consulta INMEDIATAMENTE con tu Oficial de Cumplimiento. Considera RECHAZAR la operación.
           </div>
         </div>
 
@@ -153,7 +153,7 @@ echo $datasetSchema;
           </tbody>
         </table>
         <p id="catalog-description" class="sr-only">
-          Catálogo oficial de tipos de reporte PLD/FT ante la UIF. IDÉNTICO para ER y ENR según LFPIORPI. Campo 1 del layout RIPS F41.
+          Catálogo oficial de tipos de reporte PLD/FT ante la CNBV. IDÉNTICO para ER y ENR según DCG CNBV. Campo 1 del layout RIPS F41.
         </p>
       </div>
 

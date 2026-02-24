@@ -1,0 +1,982 @@
+[
+  {
+    "CLAVE PAIS": "AD",
+    "PAIS": "ANDORRA"
+  },
+  {
+    "CLAVE PAIS": "AE",
+    "PAIS": "EMIRATOS ARABES UNIDOS"
+  },
+  {
+    "CLAVE PAIS": "AF",
+    "PAIS": "AFGANISTAN"
+  },
+  {
+    "CLAVE PAIS": "AG",
+    "PAIS": "ANTIGUA Y BARBUDA"
+  },
+  {
+    "CLAVE PAIS": "AI",
+    "PAIS": "ANGUILA"
+  },
+  {
+    "CLAVE PAIS": "AL",
+    "PAIS": "ALBANIA"
+  },
+  {
+    "CLAVE PAIS": "AM",
+    "PAIS": "ARMENIA"
+  },
+  {
+    "CLAVE PAIS": "AN",
+    "PAIS": "ANTILLAS NEERLANDESAS"
+  },
+  {
+    "CLAVE PAIS": "AO",
+    "PAIS": "ANGOLA"
+  },
+  {
+    "CLAVE PAIS": "AQ",
+    "PAIS": "ANTARTIDA"
+  },
+  {
+    "CLAVE PAIS": "AR",
+    "PAIS": "ARGENTINA"
+  },
+  {
+    "CLAVE PAIS": "AS",
+    "PAIS": "SAMOA AMERICANA"
+  },
+  {
+    "CLAVE PAIS": "AT",
+    "PAIS": "AUSTRIA"
+  },
+  {
+    "CLAVE PAIS": "AU",
+    "PAIS": "AUSTRALIA"
+  },
+  {
+    "CLAVE PAIS": "AW",
+    "PAIS": "ARUBA"
+  },
+  {
+    "CLAVE PAIS": "AX",
+    "PAIS": "ISLAS ÅLAND"
+  },
+  {
+    "CLAVE PAIS": "AZ",
+    "PAIS": "AZERBAIYAN"
+  },
+  {
+    "CLAVE PAIS": "BA",
+    "PAIS": "BOSNIA Y HERZEGOVINA"
+  },
+  {
+    "CLAVE PAIS": "BB",
+    "PAIS": "BARBADOS"
+  },
+  {
+    "CLAVE PAIS": "BD",
+    "PAIS": "BANGLADESH"
+  },
+  {
+    "CLAVE PAIS": "BE",
+    "PAIS": "BELGICA"
+  },
+  {
+    "CLAVE PAIS": "BF",
+    "PAIS": "BURKINA FASO"
+  },
+  {
+    "CLAVE PAIS": "BG",
+    "PAIS": "BULGARIA"
+  },
+  {
+    "CLAVE PAIS": "BH",
+    "PAIS": "BAHREIN"
+  },
+  {
+    "CLAVE PAIS": "BI",
+    "PAIS": "BURUNDI"
+  },
+  {
+    "CLAVE PAIS": "BJ",
+    "PAIS": "BENIN"
+  },
+  {
+    "CLAVE PAIS": "BM",
+    "PAIS": "BERMUDAS"
+  },
+  {
+    "CLAVE PAIS": "BN",
+    "PAIS": "BRUNEI"
+  },
+  {
+    "CLAVE PAIS": "BO",
+    "PAIS": "BOLIVIA"
+  },
+  {
+    "CLAVE PAIS": "BR",
+    "PAIS": "BRASIL"
+  },
+  {
+    "CLAVE PAIS": "BS",
+    "PAIS": "BAHAMAS"
+  },
+  {
+    "CLAVE PAIS": "BT",
+    "PAIS": "BHUTAN"
+  },
+  {
+    "CLAVE PAIS": "BV",
+    "PAIS": "ISLA BOUVET"
+  },
+  {
+    "CLAVE PAIS": "BW",
+    "PAIS": "BOTSUANA"
+  },
+  {
+    "CLAVE PAIS": "BY",
+    "PAIS": "BELARUS"
+  },
+  {
+    "CLAVE PAIS": "BZ",
+    "PAIS": "BELICE"
+  },
+  {
+    "CLAVE PAIS": "CA",
+    "PAIS": "CANADA"
+  },
+  {
+    "CLAVE PAIS": "CC",
+    "PAIS": "ISLAS COCOS"
+  },
+  {
+    "CLAVE PAIS": "CD",
+    "PAIS": "REPUBLICA DEMOCRATICA DEL CONGO"
+  },
+  {
+    "CLAVE PAIS": "CF",
+    "PAIS": "REPUBLICA CENTROAFRICANA"
+  },
+  {
+    "CLAVE PAIS": "CG",
+    "PAIS": "CONGO"
+  },
+  {
+    "CLAVE PAIS": "CH",
+    "PAIS": "SUIZA"
+  },
+  {
+    "CLAVE PAIS": "CI",
+    "PAIS": "COSTA DE MARFIL"
+  },
+  {
+    "CLAVE PAIS": "CK",
+    "PAIS": "ISLAS COOK"
+  },
+  {
+    "CLAVE PAIS": "CL",
+    "PAIS": "CHILE"
+  },
+  {
+    "CLAVE PAIS": "CM",
+    "PAIS": "CAMERUN"
+  },
+  {
+    "CLAVE PAIS": "CN",
+    "PAIS": "CHINA"
+  },
+  {
+    "CLAVE PAIS": "CO",
+    "PAIS": "COLOMBIA"
+  },
+  {
+    "CLAVE PAIS": "CP",
+    "PAIS": "CLIPPERTON"
+  },
+  {
+    "CLAVE PAIS": "CR",
+    "PAIS": "COSTA RICA"
+  },
+  {
+    "CLAVE PAIS": "CU",
+    "PAIS": "CUBA"
+  },
+  {
+    "CLAVE PAIS": "CV",
+    "PAIS": "CABO VERDE"
+  },
+  {
+    "CLAVE PAIS": "CX",
+    "PAIS": "ISLA CHRISTMAS"
+  },
+  {
+    "CLAVE PAIS": "CY",
+    "PAIS": "CHIPRE"
+  },
+  {
+    "CLAVE PAIS": "CZ",
+    "PAIS": "CHEQUIA"
+  },
+  {
+    "CLAVE PAIS": "DE",
+    "PAIS": "ALEMANIA"
+  },
+  {
+    "CLAVE PAIS": "DJ",
+    "PAIS": "YIBUTI"
+  },
+  {
+    "CLAVE PAIS": "DK",
+    "PAIS": "DINAMARCA"
+  },
+  {
+    "CLAVE PAIS": "DM",
+    "PAIS": "DOMINICA"
+  },
+  {
+    "CLAVE PAIS": "DO",
+    "PAIS": "REPUBLICA DOMINICANA"
+  },
+  {
+    "CLAVE PAIS": "DZ",
+    "PAIS": "ARGELIA"
+  },
+  {
+    "CLAVE PAIS": "EC",
+    "PAIS": "ECUADOR"
+  },
+  {
+    "CLAVE PAIS": "EE",
+    "PAIS": "ESTONIA"
+  },
+  {
+    "CLAVE PAIS": "EG",
+    "PAIS": "EGIPTO"
+  },
+  {
+    "CLAVE PAIS": "EH",
+    "PAIS": "SAHARA OCCIDENTAL"
+  },
+  {
+    "CLAVE PAIS": "EL",
+    "PAIS": "GRECIA"
+  },
+  {
+    "CLAVE PAIS": "ER",
+    "PAIS": "ERITREA"
+  },
+  {
+    "CLAVE PAIS": "ES",
+    "PAIS": "ESPAÑA"
+  },
+  {
+    "CLAVE PAIS": "ET",
+    "PAIS": "ETIOPIA"
+  },
+  {
+    "CLAVE PAIS": "FI",
+    "PAIS": "FINLANDIA"
+  },
+  {
+    "CLAVE PAIS": "FJ",
+    "PAIS": "FIYI"
+  },
+  {
+    "CLAVE PAIS": "FK",
+    "PAIS": "ISLAS MALVINAS"
+  },
+  {
+    "CLAVE PAIS": "FM",
+    "PAIS": "MICRONESIA"
+  },
+  {
+    "CLAVE PAIS": "FO",
+    "PAIS": "ISLAS FEROE"
+  },
+  {
+    "CLAVE PAIS": "FR",
+    "PAIS": "FRANCIA"
+  },
+  {
+    "CLAVE PAIS": "GA",
+    "PAIS": "GABON"
+  },
+  {
+    "CLAVE PAIS": "GD",
+    "PAIS": "GRANADA"
+  },
+  {
+    "CLAVE PAIS": "GE",
+    "PAIS": "GEORGIA"
+  },
+  {
+    "CLAVE PAIS": "GF",
+    "PAIS": "GUAYANA FRANCESA"
+  },
+  {
+    "CLAVE PAIS": "GG",
+    "PAIS": "GUERNESEY"
+  },
+  {
+    "CLAVE PAIS": "GH",
+    "PAIS": "GHANA"
+  },
+  {
+    "CLAVE PAIS": "GI",
+    "PAIS": "GIBRALTAR"
+  },
+  {
+    "CLAVE PAIS": "GL",
+    "PAIS": "GROENLANDIA"
+  },
+  {
+    "CLAVE PAIS": "GM",
+    "PAIS": "GAMBIA"
+  },
+  {
+    "CLAVE PAIS": "GN",
+    "PAIS": "GUINEA"
+  },
+  {
+    "CLAVE PAIS": "GP",
+    "PAIS": "GUADALUPE"
+  },
+  {
+    "CLAVE PAIS": "GQ",
+    "PAIS": "GUINEA ECUATORIAL"
+  },
+  {
+    "CLAVE PAIS": "GS",
+    "PAIS": "GEORGIA DEL SUR E ISLAS SANDWICH DEL SUR"
+  },
+  {
+    "CLAVE PAIS": "GT",
+    "PAIS": "GUATEMALA"
+  },
+  {
+    "CLAVE PAIS": "GU",
+    "PAIS": "GUAM"
+  },
+  {
+    "CLAVE PAIS": "GW",
+    "PAIS": "GUINEA-BISSAU"
+  },
+  {
+    "CLAVE PAIS": "GY",
+    "PAIS": "GUYANA"
+  },
+  {
+    "CLAVE PAIS": "HK",
+    "PAIS": "HONG KONG"
+  },
+  {
+    "CLAVE PAIS": "HM",
+    "PAIS": "ISLAS HEARD Y MCDONALD"
+  },
+  {
+    "CLAVE PAIS": "HN",
+    "PAIS": "HONDURAS"
+  },
+  {
+    "CLAVE PAIS": "HR",
+    "PAIS": "CROACIA"
+  },
+  {
+    "CLAVE PAIS": "HT",
+    "PAIS": "HAITI"
+  },
+  {
+    "CLAVE PAIS": "HU",
+    "PAIS": "HUNGRIA"
+  },
+  {
+    "CLAVE PAIS": "ID",
+    "PAIS": "INDONESIA"
+  },
+  {
+    "CLAVE PAIS": "IE",
+    "PAIS": "IRLANDA"
+  },
+  {
+    "CLAVE PAIS": "IL",
+    "PAIS": "ISRAEL"
+  },
+  {
+    "CLAVE PAIS": "IM",
+    "PAIS": "ISLA DE MAN"
+  },
+  {
+    "CLAVE PAIS": "IN",
+    "PAIS": "INDIA"
+  },
+  {
+    "CLAVE PAIS": "IO",
+    "PAIS": "TERRITORIO BRITANICO DEL OCEANO INDICO"
+  },
+  {
+    "CLAVE PAIS": "IQ",
+    "PAIS": "IRAQ"
+  },
+  {
+    "CLAVE PAIS": "IR",
+    "PAIS": "IRAN"
+  },
+  {
+    "CLAVE PAIS": "IS",
+    "PAIS": "ISLANDIA"
+  },
+  {
+    "CLAVE PAIS": "IT",
+    "PAIS": "ITALIA"
+  },
+  {
+    "CLAVE PAIS": "JE",
+    "PAIS": "JERSEY"
+  },
+  {
+    "CLAVE PAIS": "JM",
+    "PAIS": "JAMAICA"
+  },
+  {
+    "CLAVE PAIS": "JO",
+    "PAIS": "JORDANIA"
+  },
+  {
+    "CLAVE PAIS": "JP",
+    "PAIS": "JAPON"
+  },
+  {
+    "CLAVE PAIS": "KE",
+    "PAIS": "KENIA"
+  },
+  {
+    "CLAVE PAIS": "KG",
+    "PAIS": "KIRGUISTAN"
+  },
+  {
+    "CLAVE PAIS": "KH",
+    "PAIS": "CAMBOYA"
+  },
+  {
+    "CLAVE PAIS": "KI",
+    "PAIS": "KIRIBATI"
+  },
+  {
+    "CLAVE PAIS": "KM",
+    "PAIS": "COMORAS"
+  },
+  {
+    "CLAVE PAIS": "KN",
+    "PAIS": "SAN CRISTOBAL Y NIEVES"
+  },
+  {
+    "CLAVE PAIS": "KP",
+    "PAIS": "COREA DEL NORTE"
+  },
+  {
+    "CLAVE PAIS": "KR",
+    "PAIS": "COREA DEL SUR"
+  },
+  {
+    "CLAVE PAIS": "KW",
+    "PAIS": "KUWAIT"
+  },
+  {
+    "CLAVE PAIS": "KY",
+    "PAIS": "ISLAS CAIMAN"
+  },
+  {
+    "CLAVE PAIS": "KZ",
+    "PAIS": "KAZAJSTAN"
+  },
+  {
+    "CLAVE PAIS": "LA",
+    "PAIS": "LAOS"
+  },
+  {
+    "CLAVE PAIS": "LB",
+    "PAIS": "LIBANO"
+  },
+  {
+    "CLAVE PAIS": "LC",
+    "PAIS": "SANTA LUCIA"
+  },
+  {
+    "CLAVE PAIS": "LI",
+    "PAIS": "LIECHTENSTEIN"
+  },
+  {
+    "CLAVE PAIS": "LK",
+    "PAIS": "SRI LANKA"
+  },
+  {
+    "CLAVE PAIS": "LR",
+    "PAIS": "LIBERIA"
+  },
+  {
+    "CLAVE PAIS": "LS",
+    "PAIS": "LESOTHO"
+  },
+  {
+    "CLAVE PAIS": "LT",
+    "PAIS": "LITUANIA"
+  },
+  {
+    "CLAVE PAIS": "LU",
+    "PAIS": "LUXEMBURGO"
+  },
+  {
+    "CLAVE PAIS": "LV",
+    "PAIS": "LETONIA"
+  },
+  {
+    "CLAVE PAIS": "LY",
+    "PAIS": "LIBIA"
+  },
+  {
+    "CLAVE PAIS": "MA",
+    "PAIS": "MARRUECOS"
+  },
+  {
+    "CLAVE PAIS": "MC",
+    "PAIS": "MONACO"
+  },
+  {
+    "CLAVE PAIS": "MD",
+    "PAIS": "MOLDOVA"
+  },
+  {
+    "CLAVE PAIS": "ME",
+    "PAIS": "MONTENEGRO"
+  },
+  {
+    "CLAVE PAIS": "MG",
+    "PAIS": "MADAGASCAR"
+  },
+  {
+    "CLAVE PAIS": "MH",
+    "PAIS": "ISLAS MARSHALL"
+  },
+  {
+    "CLAVE PAIS": "ML",
+    "PAIS": "MALI"
+  },
+  {
+    "CLAVE PAIS": "MM",
+    "PAIS": "MYANMAR"
+  },
+  {
+    "CLAVE PAIS": "MN",
+    "PAIS": "MONGOLIA"
+  },
+  {
+    "CLAVE PAIS": "MO",
+    "PAIS": "MACAO"
+  },
+  {
+    "CLAVE PAIS": "MP",
+    "PAIS": "ISLAS MARIANAS DEL NORTE"
+  },
+  {
+    "CLAVE PAIS": "MQ",
+    "PAIS": "MARTINICA"
+  },
+  {
+    "CLAVE PAIS": "MR",
+    "PAIS": "MAURITANIA"
+  },
+  {
+    "CLAVE PAIS": "MS",
+    "PAIS": "MONTSERRAT"
+  },
+  {
+    "CLAVE PAIS": "MT",
+    "PAIS": "MALTA"
+  },
+  {
+    "CLAVE PAIS": "MU",
+    "PAIS": "MAURICIO"
+  },
+  {
+    "CLAVE PAIS": "MV",
+    "PAIS": "MALDIVAS"
+  },
+  {
+    "CLAVE PAIS": "MW",
+    "PAIS": "MALAWI"
+  },
+  {
+    "CLAVE PAIS": "MX",
+    "PAIS": "MEXICO"
+  },
+  {
+    "CLAVE PAIS": "MY",
+    "PAIS": "MALASIA"
+  },
+  {
+    "CLAVE PAIS": "MZ",
+    "PAIS": "MOZAMBIQUE"
+  },
+  {
+    "CLAVE PAIS": "NA",
+    "PAIS": "NAMIBIA"
+  },
+  {
+    "CLAVE PAIS": "NC",
+    "PAIS": "NUEVA CALEDONIA"
+  },
+  {
+    "CLAVE PAIS": "ND",
+    "PAIS": "SE DESCONOCE"
+  },
+  {
+    "CLAVE PAIS": "NE",
+    "PAIS": "NIGER"
+  },
+  {
+    "CLAVE PAIS": "NF",
+    "PAIS": "ISLA NORFOLK"
+  },
+  {
+    "CLAVE PAIS": "NG",
+    "PAIS": "NIGERIA"
+  },
+  {
+    "CLAVE PAIS": "NI",
+    "PAIS": "NICARAGUA"
+  },
+  {
+    "CLAVE PAIS": "NL",
+    "PAIS": "PAISES BAJOS"
+  },
+  {
+    "CLAVE PAIS": "NO",
+    "PAIS": "NORUEGA"
+  },
+  {
+    "CLAVE PAIS": "NP",
+    "PAIS": "NEPAL"
+  },
+  {
+    "CLAVE PAIS": "NR",
+    "PAIS": "NAURU"
+  },
+  {
+    "CLAVE PAIS": "NU",
+    "PAIS": "NIUE"
+  },
+  {
+    "CLAVE PAIS": "NZ",
+    "PAIS": "NUEVA ZELANDA"
+  },
+  {
+    "CLAVE PAIS": "OM",
+    "PAIS": "OMAN"
+  },
+  {
+    "CLAVE PAIS": "PA",
+    "PAIS": "PANAMA"
+  },
+  {
+    "CLAVE PAIS": "PE",
+    "PAIS": "PERU"
+  },
+  {
+    "CLAVE PAIS": "PF",
+    "PAIS": "POLINESIA FRANCESA"
+  },
+  {
+    "CLAVE PAIS": "PG",
+    "PAIS": "PAPUA NUEVA GUINEA"
+  },
+  {
+    "CLAVE PAIS": "PH",
+    "PAIS": "FILIPINAS"
+  },
+  {
+    "CLAVE PAIS": "PK",
+    "PAIS": "PAKISTAN"
+  },
+  {
+    "CLAVE PAIS": "PL",
+    "PAIS": "POLONIA"
+  },
+  {
+    "CLAVE PAIS": "PM",
+    "PAIS": "SAN PEDRO Y MIQUELON"
+  },
+  {
+    "CLAVE PAIS": "PN",
+    "PAIS": "ISLAS PITCAIRN"
+  },
+  {
+    "CLAVE PAIS": "PR",
+    "PAIS": "PUERTO RICO"
+  },
+  {
+    "CLAVE PAIS": "PS",
+    "PAIS": "TERRITORIOS PALESTINOS"
+  },
+  {
+    "CLAVE PAIS": "PT",
+    "PAIS": "PORTUGAL"
+  },
+  {
+    "CLAVE PAIS": "PW",
+    "PAIS": "PALAOS"
+  },
+  {
+    "CLAVE PAIS": "PY",
+    "PAIS": "PARAGUAY"
+  },
+  {
+    "CLAVE PAIS": "QA",
+    "PAIS": "QATAR"
+  },
+  {
+    "CLAVE PAIS": "RE",
+    "PAIS": "REUNION"
+  },
+  {
+    "CLAVE PAIS": "RO",
+    "PAIS": "RUMANIA"
+  },
+  {
+    "CLAVE PAIS": "RS",
+    "PAIS": "SERBIA"
+  },
+  {
+    "CLAVE PAIS": "RU",
+    "PAIS": "RUSIA"
+  },
+  {
+    "CLAVE PAIS": "RW",
+    "PAIS": "RUANDA"
+  },
+  {
+    "CLAVE PAIS": "SA",
+    "PAIS": "ARABIA SAUDI"
+  },
+  {
+    "CLAVE PAIS": "SB",
+    "PAIS": "ISLAS SALOMON"
+  },
+  {
+    "CLAVE PAIS": "SC",
+    "PAIS": "SEYCHELLES"
+  },
+  {
+    "CLAVE PAIS": "SD",
+    "PAIS": "SUDAN"
+  },
+  {
+    "CLAVE PAIS": "SE",
+    "PAIS": "SUECIA"
+  },
+  {
+    "CLAVE PAIS": "SG",
+    "PAIS": "SINGAPUR"
+  },
+  {
+    "CLAVE PAIS": "SH",
+    "PAIS": "SANTA ELENA"
+  },
+  {
+    "CLAVE PAIS": "SI",
+    "PAIS": "ESLOVENIA"
+  },
+  {
+    "CLAVE PAIS": "SJ",
+    "PAIS": "SVALBARD Y JAN MAYEN"
+  },
+  {
+    "CLAVE PAIS": "SK",
+    "PAIS": "ESLOVAQUIA"
+  },
+  {
+    "CLAVE PAIS": "SL",
+    "PAIS": "SIERRA LEONA"
+  },
+  {
+    "CLAVE PAIS": "SM",
+    "PAIS": "SAN MARINO"
+  },
+  {
+    "CLAVE PAIS": "SN",
+    "PAIS": "SENEGAL"
+  },
+  {
+    "CLAVE PAIS": "SO",
+    "PAIS": "SOMALIA"
+  },
+  {
+    "CLAVE PAIS": "SR",
+    "PAIS": "SURINAM"
+  },
+  {
+    "CLAVE PAIS": "ST",
+    "PAIS": "SANTO TOME Y PRINCIPE"
+  },
+  {
+    "CLAVE PAIS": "SV",
+    "PAIS": "EL SALVADOR"
+  },
+  {
+    "CLAVE PAIS": "SY",
+    "PAIS": "SIRIA"
+  },
+  {
+    "CLAVE PAIS": "SZ",
+    "PAIS": "SUAZILANDIA"
+  },
+  {
+    "CLAVE PAIS": "TC",
+    "PAIS": "ISLAS TURCAS Y CAICOS"
+  },
+  {
+    "CLAVE PAIS": "TD",
+    "PAIS": "CHAD"
+  },
+  {
+    "CLAVE PAIS": "TF",
+    "PAIS": "TERRITORIOS AUSTRALES FRANCESES"
+  },
+  {
+    "CLAVE PAIS": "TG",
+    "PAIS": "TOGO"
+  },
+  {
+    "CLAVE PAIS": "TH",
+    "PAIS": "TAILANDIA"
+  },
+  {
+    "CLAVE PAIS": "TJ",
+    "PAIS": "TAYIKISTAN"
+  },
+  {
+    "CLAVE PAIS": "TK",
+    "PAIS": "TOKELAU"
+  },
+  {
+    "CLAVE PAIS": "TL",
+    "PAIS": "TIMOR ORIENTAL"
+  },
+  {
+    "CLAVE PAIS": "TM",
+    "PAIS": "TURKMENISTAN"
+  },
+  {
+    "CLAVE PAIS": "TN",
+    "PAIS": "TUNEZ"
+  },
+  {
+    "CLAVE PAIS": "TO",
+    "PAIS": "TONGA"
+  },
+  {
+    "CLAVE PAIS": "TR",
+    "PAIS": "TURQUIA"
+  },
+  {
+    "CLAVE PAIS": "TT",
+    "PAIS": "TRINIDAD Y TOBAGO"
+  },
+  {
+    "CLAVE PAIS": "TV",
+    "PAIS": "TUVALU"
+  },
+  {
+    "CLAVE PAIS": "TW",
+    "PAIS": "TAIWAN"
+  },
+  {
+    "CLAVE PAIS": "TZ",
+    "PAIS": "TANZANIA"
+  },
+  {
+    "CLAVE PAIS": "UA",
+    "PAIS": "UCRANIA"
+  },
+  {
+    "CLAVE PAIS": "UG",
+    "PAIS": "UGANDA"
+  },
+  {
+    "CLAVE PAIS": "UK",
+    "PAIS": "REINO UNIDO"
+  },
+  {
+    "CLAVE PAIS": "UM",
+    "PAIS": "ISLAS MENORES ALEJADAS DE LOS ESTADOS UNIDOS"
+  },
+  {
+    "CLAVE PAIS": "US",
+    "PAIS": "ESTADOS UNIDOS"
+  },
+  {
+    "CLAVE PAIS": "UY",
+    "PAIS": "URUGUAY"
+  },
+  {
+    "CLAVE PAIS": "UZ",
+    "PAIS": "UZBEKISTAN"
+  },
+  {
+    "CLAVE PAIS": "VA",
+    "PAIS": "SANTA SEDE / ESTADO DE LA CIUDAD DEL VATICANO"
+  },
+  {
+    "CLAVE PAIS": "VC",
+    "PAIS": "SAN VICENTE Y LAS GRANADINAS"
+  },
+  {
+    "CLAVE PAIS": "VE",
+    "PAIS": "VENEZUELA"
+  },
+  {
+    "CLAVE PAIS": "VG",
+    "PAIS": "ISLAS VIRGENES BRITANICAS"
+  },
+  {
+    "CLAVE PAIS": "VI",
+    "PAIS": "ISLAS VIRGENES DE LOS ESTADOS UNIDOS"
+  },
+  {
+    "CLAVE PAIS": "VN",
+    "PAIS": "VIETNAM"
+  },
+  {
+    "CLAVE PAIS": "VU",
+    "PAIS": "VANUATU"
+  },
+  {
+    "CLAVE PAIS": "WF",
+    "PAIS": "WALLIS Y FUTUNA"
+  },
+  {
+    "CLAVE PAIS": "WS",
+    "PAIS": "SAMOA"
+  },
+  {
+    "CLAVE PAIS": "YE",
+    "PAIS": "YEMEN"
+  },
+  {
+    "CLAVE PAIS": "YT",
+    "PAIS": "MAYOTTE"
+  },
+  {
+    "CLAVE PAIS": "ZA",
+    "PAIS": "SUDAFRICA"
+  },
+  {
+    "CLAVE PAIS": "ZM",
+    "PAIS": "ZAMBIA"
+  },
+  {
+    "CLAVE PAIS": "ZW",
+    "PAIS": "ZIMBABUE"
+  }
+]

@@ -87,7 +87,7 @@ echo $datasetSchema;
           Lugar de operación: <code>06007001</code> (Manzanillo)<br>
           Actividad: Importación de maquinaria<br>
           Riesgo geográfico: <span class="risk-high">ALTO</span><br>
-          <em>Razón: Puerto marítimo vulnerable a contrabando y flujos internacionales. LFPIORPI requiere atención especial en zonas portuarias.</em>
+          <em>Razón: Puerto marítimo vulnerable a contrabando y flujos internacionales. Las DCG de la CNBV requieren atención especial en zonas fronterizas y portuarias.</em>
         </div>
 
         <div class="catalog-example">
