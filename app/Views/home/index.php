@@ -539,7 +539,7 @@
   <div class="container">
     <h2 class="section-title">Software PLD/FT: Requisito Obligatorio para SOFOMes</h2>
     <p class="section-subtitle">
-      Sistema automatizado obligatorio seg&uacute;n CNBV para Prevenci&oacute;n de Lavado de Dinero.
+      El <a href="https://kyc-systems.com" target="_blank" rel="noopener" style="color: var(--primary-700); text-decoration: underline; font-weight: 600;">software PLD CNBV</a> es un sistema automatizado obligatorio para Prevenci&oacute;n de Lavado de Dinero.
       11 funciones obligatorias + Dictamen T&eacute;cnico.
     </p>
 
